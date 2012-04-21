@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<response xmlns="http://www.freshbooks.com/api/" status="ok">  
+	<clients page="1" per_page="100" pages="1" total="1">    
+		<client>      
+			<client_id>3</client_id>      
+			<username>kevinmalone</username>      
+			<first_name>Kevin</first_name>      
+			<last_name>Malone</last_name>            
+			<organization>ExecuTime Software, LLC</organization>            
+			<email>kevin@executime.net</email>            
+			<contacts>              
+				<contact>                
+					<contact_id>2</contact_id>                
+					<username>jennifercrispin</username>          	      
+					<first_name>Jennifer</first_name>                
+					<last_name>Crispin</last_name>                
+					<email>jennifer@executime.net</email>                
+					<phone1></phone1>                
+					<phone2></phone2>              
+				</contact>             
+				<contact>          
+					<contact_id>1</contact_id>          
+					<username>kathythomas</username>          
+					<first_name>Kathy</first_name>          	      
+					<last_name>Thomas</last_name>                
+					<email>kathy@executime.net</email>                
+					<phone1></phone1>                
+					<phone2></phone2>              
+				</contact>            
+			</contacts>            
+			<work_phone>479.442.1435</work_phone>            
+			<home_phone>918.551.7676</home_phone>            
+			<mobile>918.289.4390</mobile>            
+			<fax>413.235.6374</fax>            
+			<vat_name></vat_name>            
+			<vat_number></vat_number>            
+			<p_street1>427 S Boston Suite 707</p_street1>            
+			<p_street2></p_street2>            
+			<p_city>Tulsa</p_city>            
+			<p_state>Oklahoma</p_state>            
+			<p_country>United States</p_country>            
+			<p_code>74103</p_code>            
+			<s_street1></s_street1>            
+			<s_street2></s_street2>            
+			<s_city></s_city>            
+			<s_state></s_state>            
+			<s_country></s_country>            
+			<s_code></s_code>            
+			<notes></notes>            
+			<language>en</language>            
+			<currency_code>USD</currency_code>            
+			<credit currency="USD" deprecated="true">0</credit>            
+			<credits>              
+				<credit currency="USD">0</credit>            
+			</credits>            
+			<url deprecated="true">https://monstersoftwarellc.freshbooks.com/view/3a4E6KWgJ4vEvMNj</url>            
+			<auth_url deprecated="true">https://monstersoftwarellc.freshbooks.com/clients/3</auth_url>            
+			<links>              
+				<client_view>https://monstersoftwarellc.freshbooks.com/view/3a4E6KWgJ4vEvMNj</client_view>              
+				<view>https://monstersoftwarellc.freshbooks.com/clients/3</view>              
+				<statement>https://monstersoftwarellc.freshbooks.com/view/3qanhM5mmK8X6StZ</statement>            
+			</links>            
+			<updated>2011-06-30 22:34:10</updated>            
+			<folder>active</folder>          
+		</client>        
+	</clients>      
+</response>

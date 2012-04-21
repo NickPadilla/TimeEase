@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Bundle-Vendor: %Bundle-Vendor
+Bundle-RequiredExecutionEnvironment: J2SE-1.4
+Bundle-Name: %Bundle-Name
+Bundle-SymbolicName: org.aopalliance
+Eclipse-SourceReferences: scm:cvs:pserver:dev.eclipse.org:/cvsroot/too
+ ls:org.eclipse.orbit/org.aopalliance;tag=v201105210816
+Export-Package: org.aopalliance.aop;version="1.0.0",org.aopalliance.in
+ tercept;version="1.0.0"
+Bundle-Version: 1.0.0.v201105210816
+Bundle-ManifestVersion: 2
+
+Name: org/aopalliance/intercept/MethodInterceptor.class
+SHA1-Digest: 1qyBzS9Gpf2Ya4JN7I+2keKAMbA=
+
+Name: org/aopalliance/aop/Advice.class
+SHA1-Digest: sOT3ng83hKZSHtgneclnztV25x4=
+
+Name: org/aopalliance/intercept/Interceptor.class
+SHA1-Digest: RUwojEaINkMyHcinnDhHAZ7R86s=
+
+Name: org/aopalliance/intercept/Joinpoint.class
+SHA1-Digest: yOzU4hcSf08dXUGhczNlm63e8VA=
+
+Name: org/aopalliance/intercept/ConstructorInterceptor.class
+SHA1-Digest: JxafGoH3oSm/po5JHvM+v1TJFZQ=
+
+Name: org/aopalliance/aop/AspectException.class
+SHA1-Digest: 2XYXHZfNWK15OA4e5PP1VTwE2lQ=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: KyT9FF7C7t86NoBoa2kZT3ZJBfw=
+
+Name: org/aopalliance/intercept/ConstructorInvocation.class
+SHA1-Digest: 2eATpRB8l3yPS+h4dtKCson/gPo=
+
+Name: org/aopalliance/intercept/Invocation.class
+SHA1-Digest: qdpr3xJU1MhX6zWJTX1nEa1VJfE=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: /3cIzgG5FplBlsVVm3FuUcfy4GU=
+
+Name: org/aopalliance/intercept/MethodInvocation.class
+SHA1-Digest: eXx2XbWy5+8K4txV16bj2kguAnQ=
+
+Name: about.html
+SHA1-Digest: oEP7+R9Q9TUozyn3XVE27Xm/ZZE=
+

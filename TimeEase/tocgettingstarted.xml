@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?NLS TYPE="org.eclipse.help.toc"?>
+
+<toc label="Getting Started" link_to="toc.xml#gettingstarted"> 
+	<topic label="Time Ease"  href="html/gettingstarted/timeeaseMain.html"> 
+		<topic label="Coming Soon!" href="html/gettingstarted/comingSoonSub.html" /> 
+	</topic>
+</toc>

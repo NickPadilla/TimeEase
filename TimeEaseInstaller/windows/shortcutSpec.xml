@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+
+<shortcuts>
+	<skipIfNotSupported />
+	<programGroup defaultName="Time Ease" location="applications" />
+	<shortcut name="Time Ease" target="$INSTALL_PATH\timeease.exe"
+		description="Launch Time Ease" workingDirectory="$INSTALL_PATH"
+		commandLine="" iconFile="$INSTALL_PATH/icon.ico" initialState="normal" programGroup="yes"
+		desktop="no" applications="yes" startMenu="no" startup="no">
+
+		<createForPack name="TimeEase" />
+	</shortcut>
+
+	<shortcut name="Time Ease Uninstaller" target="$INSTALL_PATH\Uninstaller\uninstaller.jar"
+		commandLine="-jar
+     		&quot;$INSTALL_PATH/Uninstaller/uninstaller.jar&quot;"
+		initialState="noShow" description="Uninstall Time Ease" iconFile=""
+		workingDirectory="$INSTALL_PATH" programGroup="yes" desktop="no"
+		applications="no" startMenu="no" startup="no">
+
+		<createForPack name="TimeEase" />
+	</shortcut>
+
+</shortcuts>

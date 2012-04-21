@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="iso-8859-1"  ?>
+
+<installation version="1.0">
+
+  <info>
+    <appname>TimeEase</appname>
+    <appversion>1.0.0</appversion>
+    <javaversion>1.6</javaversion>
+    <authors>
+       <author name="Nicholas Padilla" email="nicholas@monstersoftwarellc.com"/>
+    </authors>
+    <url>http://www.time-ease.com</url>
+    <uninstaller>${INSTALL_PATH}/Uninstaller</uninstaller>
+    <pack200/>
+  </info>
+
+  <locale>
+    <langpack iso3="eng"/>
+  </locale>
+
+  <guiprefs width="800" height="600" resizable="no">
+    <splash>images/peas_load.gif</splash>
+    <laf name="substance">
+      <os family="windows" />
+      <os family="unix" />
+      <param name="variant" value="mist-silver" />
+    </laf>
+    <laf name="substance">
+      <os family="mac" />
+      <param name="variant" value="mist-aqua" />
+    </laf>
+    <modifier key="useHeadingPanel" value="yes" />
+  </guiprefs>
+
+  <resources>
+     <res id="LicencePanel.licence" src="../TimeEaseInstaller/license.txt"/>
+     <res id="InfoPanel.info" src="../TimeEaseInstaller/readme.txt"/>
+  </resources>
+
+  <panels>
+    <panel classname="HelloPanel"/>        
+    <panel classname="InfoPanel"/>
+    <panel classname="LicencePanel"/>
+    <panel classname="TargetPanel"/>
+    <panel classname="PacksPanel"/>
+    <panel classname="SummaryPanel"/>
+    <panel classname="InstallPanel"/>
+    <panel classname="ShortcutPanel"/>
+    <panel classname="FinishPanel"/>
+  </panels>
+
+  <packs>
+    <pack name="TimeEase" preselected="yes" required="yes">
+      <description>The core files needed for the Time Ease application</description>
+      <fileset dir="macosx.cocoa.x86_64/TimeEase" targetdir="${INSTALL_PATH}" override="true">
+      </fileset>
+      <executable targetfile="$INSTALL_PATH/timeease.app" keep="true" />
+    </pack>
+  </packs>
+
+</installation>
+
+

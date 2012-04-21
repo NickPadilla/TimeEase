@@ -1,0 +1,5772 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: oBRscE9CPBetbnGvfDdE5XerQO4=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: A4NU8AxXihAUea3Uut3YFReN7Ew=
+
+Name: org/apache/derby/impl/store/access/RAMAccessManager.class
+SHA1-Digest: V7X2FBXn2v/wLuLpqFe1HUMQJwc=
+
+Name: org/apache/derby/loc/m18_en.properties
+SHA1-Digest: KKnjOSdN7dIfqsxzZxnqrm4DW0w=
+
+Name: org/apache/derby/iapi/types/SQLDecimal.class
+SHA1-Digest: 9k+Wb3tA8qhbUXSijJkHReUo2HA=
+
+Name: org/apache/derby/iapi/sql/compile/JoinStrategy.class
+SHA1-Digest: V2gR2on4XGGeJZfcOL/pfWFsEjw=
+
+Name: org/apache/derby/iapi/store/access/RowUtil.class
+SHA1-Digest: 5p5LQrkHgJjtX3oKqZe//BL909w=
+
+Name: org/apache/derby/impl/sql/catalog/SYSCONSTRAINTSRowFactory.class
+SHA1-Digest: oKcC4vCWtadqyw/QvjkCnpQ5dHw=
+
+Name: org/apache/derby/impl/sql/compile/TablePrivilegesNode.class
+SHA1-Digest: OkGtJVJd16VsM32HParUBKG3LXk=
+
+Name: org/apache/derby/loc/drda/messages_pt_BR.properties
+SHA1-Digest: H5whGJDtg61lWujRuuXuW4S5TYQ=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLockingRR.class
+SHA1-Digest: 5VK9iX1jbdPc+zbdnAM9Q/upO94=
+
+Name: org/apache/derby/impl/store/access/UTFQualifier.class
+SHA1-Digest: HMEDRtvsgg8mo93AEgUae2gPXyo=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealSetOpResultSetStatisti
+ cs.class
+SHA1-Digest: rQA2zBA6x/VZAssTTVhgaH2293E=
+
+Name: org/apache/derby/impl/sql/execute/DropAliasConstantAction.class
+SHA1-Digest: 0zRjDDlsfbI/6Y5olDDJ3q/klKA=
+
+Name: org/apache/derby/client/am/Sqlca.class
+SHA1-Digest: x4mXmhomkL0GkdL2mTxL7muPkXE=
+
+Name: org/apache/derby/iapi/sql/dictionary/DependencyDescriptor.class
+SHA1-Digest: EhF9xBENZgpDNiQ0OtPSMfXPli4=
+
+Name: org/apache/derby/impl/services/monitor/ProtocolKey.class
+SHA1-Digest: oFNOv7DoiEyv9m4U2Wpv//0RLDw=
+
+Name: org/apache/derby/iapi/sql/dictionary/KeyConstraintDescriptor.cla
+ ss
+SHA1-Digest: dJEzK4tE3mBCG+W81MwU45LrekM=
+
+Name: org/apache/derby/impl/io/vfmem/DataStore.class
+SHA1-Digest: b+/dULJ/IW8/Q1UZ1bsdH7viB0U=
+
+Name: org/apache/derby/impl/sql/compile/LockTableNode.class
+SHA1-Digest: jLObWAz05P1lCVZfuuXX4AJtzbM=
+
+Name: org/apache/derby/impl/sql/compile/PredicateList$PredicateWrapper
+ List.class
+SHA1-Digest: 985vsF+qkYNCmSQGJQkLPO3O7Zs=
+
+Name: org/apache/derby/iapi/types/StringDataValue.class
+SHA1-Digest: Qszu5TQwO9uAXIyN+HrK2bI0Vtc=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Long_info.clas
+ s
+SHA1-Digest: t3R9zejYdjEe5mNTgeOtsMFAUVQ=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeLockingPolicy.clas
+ s
+SHA1-Digest: BBbxqn070VMCcJzhfx8NlhMrOdY=
+
+Name: org/apache/derby/iapi/services/io/RegisteredFormatIds.class
+SHA1-Digest: ajBlx8o8eM/xRS9F9x9cQdsy5Eo=
+
+Name: org/apache/derby/impl/store/raw/data/OverflowInputStream.class
+SHA1-Digest: ZFJkUA8Imhr5UWu8zzbG2PlT8eU=
+
+Name: org/apache/derby/impl/load/LoadError.class
+SHA1-Digest: T87BRKiCJHjOwt8YpH4INQmeYLM=
+
+Name: org/apache/derby/impl/store/raw/data/CachedPage.class
+SHA1-Digest: pFcp2niXPhdV0BSkSkMc/v4Wgl4=
+
+Name: org/apache/derby/impl/sql/compile/BinaryListOperatorNode.class
+SHA1-Digest: TOI0Ye/Vuz4iUF/43aARACM8xIM=
+
+Name: org/apache/derby/client/am/DisconnectException.class
+SHA1-Digest: MKvxR4kCf2PykGlVWiyvsltKLsU=
+
+Name: org/apache/derby/iapi/types/DataValueFactory.class
+SHA1-Digest: KfRUP3DYokC+7UpR0YT/ZFqEMWE=
+
+Name: org/apache/derby/jdbc/EmbedPooledConnection.class
+SHA1-Digest: utO7Ex3sJ/sKSYXH95jQwZhRrT0=
+
+Name: org/apache/derby/impl/sql/compile/RemapCRsVisitor.class
+SHA1-Digest: XfmHjPkbgqfWZGi7fdkr5yHGaLU=
+
+Name: org/apache/derby/impl/sql/compile/CursorNode.class
+SHA1-Digest: XbFiKkGZZ3PLitoFrzcDjjvpX3M=
+
+Name: org/apache/derby/impl/sql/compile/AndNode.class
+SHA1-Digest: aKEPBC12hi+uoRvnKJXIeMTgskA=
+
+Name: org/apache/derby/impl/store/access/heap/HeapRowLocation.class
+SHA1-Digest: jbKFquQWUrBzsa2PFh2QKAani9I=
+
+Name: org/apache/derby/catalog/types/SynonymAliasInfo.class
+SHA1-Digest: A9SPOaBGOGDP2E6xsxLhozHnqIg=
+
+Name: org/apache/derby/impl/drda/PiggyBackedSessionData.class
+SHA1-Digest: IFvcrNifKO6dPGMd6yGT0uUH8RI=
+
+Name: org/apache/derby/iapi/db/ConsistencyChecker.class
+SHA1-Digest: 1yRsPXsxuUSQcQBEvryiKpAanbs=
+
+Name: org/apache/derby/loc/m22_en.properties
+SHA1-Digest: Beuv2mPbrmL8OZUm6dx37eD+0wk=
+
+Name: org/apache/derby/client/am/LossOfPrecisionConversionException.cl
+ ass
+SHA1-Digest: Nw5NWLivFbr1KNPo+ij+W/YoCaw=
+
+Name: org/apache/derby/iapi/sql/compile/CompilerContext.class
+SHA1-Digest: Sii/r4oSPzPveBpUtnBhtFYVq6M=
+
+Name: org/apache/derby/iapi/store/raw/ContainerHandle.class
+SHA1-Digest: VmDZZ/wTp53F9YagHWbfFqQ/m2I=
+
+Name: org/apache/derby/iapi/store/access/DynamicCompiledOpenConglomInf
+ o.class
+SHA1-Digest: meFGA6ZX2A2jW35hDuNoYWogMfQ=
+
+Name: org/apache/derby/io/WritableStorageFactory.class
+SHA1-Digest: 4gRvPK7m0ey/I5rim91PisYf574=
+
+Name: org/apache/derby/impl/sql/compile/WindowNode.class
+SHA1-Digest: +i5z91edqy5VMmaSlkNHaMaD4SI=
+
+Name: org/apache/derby/catalog/types/RoutineAliasInfo.class
+SHA1-Digest: 0N3FNHXlR9lbbb4h7VWxXZyiqI4=
+
+Name: org/apache/derby/impl/sql/execute/ReferencedKeyRIChecker.class
+SHA1-Digest: 3Z6PK6JfIZxPfYWFbs88tvaiOgQ=
+
+Name: org/apache/derby/client/am/StatementCacheInteractor.class
+SHA1-Digest: 8YhHIvlopNCGy8ksBmsfKCyQIAY=
+
+Name: org/apache/derby/iapi/sql/dictionary/SubCheckConstraintDescripto
+ r.class
+SHA1-Digest: Rb9CuyDAG/x5wuCflRn1XG2AnrI=
+
+Name: org/apache/derby/impl/store/raw/xact/ContainerLocking2.class
+SHA1-Digest: PupSwcDUaJPS/aEyQFCPaVtF5YU=
+
+Name: org/apache/derby/impl/sql/execute/UpdateConstantAction.class
+SHA1-Digest: VjWjeE+ZJxyX00eIvvc4LElQjFc=
+
+Name: org/apache/derby/iapi/services/locks/LockOwner.class
+SHA1-Digest: 2P3YKZwHszRT5QIHR/7jh1duKZI=
+
+Name: org/apache/derby/iapi/sql/Row.class
+SHA1-Digest: QhQslo1pNWhY7ToR22LI7Rldx+A=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredStatementControl.class
+SHA1-Digest: IB0O8ehEpSy8YVRGeeZV3io1rnk=
+
+Name: org/apache/derby/impl/sql/compile/BaseTypeCompiler.class
+SHA1-Digest: KulnUx6zBlFVdH3JwOMksF5VSkc=
+
+Name: org/apache/derby/client/net/ResultSetReplyInterface.class
+SHA1-Digest: b9itA9CSCp3qfh++pmRYgmquLmU=
+
+Name: org/apache/derby/impl/jdbc/EmbedCallableStatement40.class
+SHA1-Digest: ZL/su4suMnJpJh92rGnz+ya4GTg=
+
+Name: org/apache/derby/impl/sql/conn/CachedStatement.class
+SHA1-Digest: 8w3ZJqoj7+vr17UEYNvkMPU3wuw=
+
+Name: org/apache/derby/iapi/sql/depend/Dependent.class
+SHA1-Digest: 9TPRzyXgHgP7VsY7pPXvS/mfTuE=
+
+Name: org/apache/derby/impl/store/raw/log/LogRecord.class
+SHA1-Digest: QPU1XN/9yDY2w6JQ2irs2iUFcIk=
+
+Name: org/apache/derby/iapi/store/raw/Page.class
+SHA1-Digest: 2Me27+8KVIAFeXs7adF/OQVDvZQ=
+
+Name: org/apache/derby/impl/io/vfmem/VirtualRandomAccessFile.class
+SHA1-Digest: Fs1Kls606bvqixPaH43LH1iUt6Q=
+
+Name: org/apache/derby/loc/m44_en.properties
+SHA1-Digest: G+hAStvvF295sBAGz3ByZsLpYiU=
+
+Name: org/apache/derby/impl/services/locks/ActiveLock.class
+SHA1-Digest: ZiR8etj++JTvZbTb0yqWnJXJq5A=
+
+Name: org/apache/derby/iapi/types/WorkHorseForCollatorDatatypes.class
+SHA1-Digest: Y1xv59RoRk33zvYzRzwaafnBnvI=
+
+Name: org/apache/derby/impl/store/raw/data/BaseContainerHandle.class
+SHA1-Digest: ma+sFuFI1/Wu+sWQMIzGyMrBRow=
+
+Name: org/apache/derby/loc/drda/servlet_ja_JP.properties
+SHA1-Digest: pobD1NfkubGXP3aSX9BjTlkyIqo=
+
+Name: org/apache/derby/impl/sql/compile/IsNode.class
+SHA1-Digest: jyQYFPcrQYVgv59Lh8JmrKIJgDU=
+
+Name: org/apache/derby/impl/sql/execute/GrantRoleConstantAction.class
+SHA1-Digest: sR7nQWyPhYQeIdPXDHYpt9MMaJ4=
+
+Name: org/apache/derby/impl/store/raw/data/BaseDataFileFactoryJ4.class
+SHA1-Digest: oA406LfHKUdVe78QezoGq8tPANk=
+
+Name: org/apache/derby/iapi/db/OptimizerTrace.class
+SHA1-Digest: A23PcO0UiVQiSYcb9fTetxa74E0=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealUnionResultSetStatisti
+ cs.class
+SHA1-Digest: UQli/TSzuyX9tWGsa0tlivr2djQ=
+
+Name: org/apache/derby/vti/VTITemplate.class
+SHA1-Digest: I/iL3c9S6rTUk6xH7k3yXiBqzic=
+
+Name: org/apache/derby/iapi/services/io/Formatable.class
+SHA1-Digest: +AF43KDbKTHE3JysFxtE09LiDgA=
+
+Name: org/apache/derby/impl/sql/compile/SetRoleNode.class
+SHA1-Digest: ZwIfEtEGy17BxDaEJ3uM8RbgWnM=
+
+Name: org/apache/derby/client/am/ClobLocatorInputStream.class
+SHA1-Digest: Zp45oZsikTCl91IQSKXzXcaTKSg=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealScalarAggregateStatist
+ ics.class
+SHA1-Digest: 8MJ/zQOwKL5VlYtLljPU+n13q0Q=
+
+Name: org/apache/derby/impl/sql/compile/SQLBooleanConstantNode.class
+SHA1-Digest: DVLzc4NVrFAqKNJMfjhPJMbZnkU=
+
+Name: org/apache/derby/impl/sql/compile/CastNode.class
+SHA1-Digest: EQtEVu0wqfb/Sb0AntWfrSz76aA=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2I_10_3.class
+SHA1-Digest: BYFeQDclgDNmI+wZKIF6qPkjMuI=
+
+Name: org/apache/derby/iapi/types/BitDataValue.class
+SHA1-Digest: 7fym7ztLwUK8Nkwee0Vvwnl14uY=
+
+Name: org/apache/derby/iapi/store/access/GenericScanController.class
+SHA1-Digest: Hk7JbEBzjhnp+ERy2hJCrk1mWcs=
+
+Name: org/apache/derby/iapi/sql/dictionary/IndexRowGenerator.class
+SHA1-Digest: f/3W8ZhdrnWcdDJRFTThdwefIpg=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredConnectionControl.class
+SHA1-Digest: XvHqp7CexUoek5/zW9ivjUScZLc=
+
+Name: org/apache/derby/loc/drda/messages_zh_CN.properties
+SHA1-Digest: o/DbJHc3+/RZ4NCe7hgTSC3FdWs=
+
+Name: org/apache/derby/impl/sql/execute/RIBulkChecker.class
+SHA1-Digest: m4c7CwirssqxVAXuitcVtwa9PP4=
+
+Name: org/apache/derby/impl/services/locks/TableNameInfo.class
+SHA1-Digest: 49igEJp+cDaFJRY5A3WngDEnXlo=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Jar.class
+SHA1-Digest: MlSwe9v+C7MCZtpRzpOkHRxtBIM=
+
+Name: org/apache/derby/impl/jdbc/TransactionResourceImpl.class
+SHA1-Digest: Iy4WpB5pf4ka3yVLhQNeh5RzKh0=
+
+Name: org/apache/derby/iapi/db/Database.class
+SHA1-Digest: 7XqlnJnglIXBfe2owNpUcOWKXAA=
+
+Name: org/apache/derby/iapi/types/SQLClob$HeaderInfo.class
+SHA1-Digest: eMC1+lsVG4vmFTYtNtzZQMZ1rnQ=
+
+Name: org/apache/derby/iapi/sql/dictionary/FileInfoDescriptor.class
+SHA1-Digest: fML8euJa7Lqf/FMGK/RLiD/C5Kc=
+
+Name: org/apache/derby/iapi/sql/conn/LanguageConnectionFactory.class
+SHA1-Digest: +XUjBpYufoDn0xxoITjeu+lJCL0=
+
+Name: org/apache/derby/client/am/CloseFilterInputStream.class
+SHA1-Digest: tfec/CLH2GGam3vg5AvA/ENn/I4=
+
+Name: org/apache/derby/iapi/services/memory/LowMemory.class
+SHA1-Digest: Q2LDkejDg1ibDaVn1KSKNAarPA0=
+
+Name: org/apache/derby/impl/store/access/sort/UniqueWithDuplicateNulls
+ MergeSort.class
+SHA1-Digest: H/SEhHEqCTxJ4qq55ELXAEkh1kU=
+
+Name: org/apache/derby/tools/JDBCDisplayUtil.class
+SHA1-Digest: buddXlPqkAy/Wo+itOrsxmrOXu0=
+
+Name: about_files/NOTICE
+SHA1-Digest: HT/pR8N54L6xQrjE+TiUJiCnqmA=
+
+Name: org/apache/derby/impl/sql/catalog/SYSTABLESRowFactory.class
+SHA1-Digest: LsyV9foT5Ktav2Nv4CvmDI1hlDI=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IMaxScan.class
+SHA1-Digest: TDnboayLcCuadgkAXBKwqSLokcg=
+
+Name: org/apache/derby/iapi/services/classfile/ClassFormatOutput.class
+SHA1-Digest: +3VQOmrQ9YrJmsM/VWV5/CPtA20=
+
+Name: org/apache/derby/loc/m7_en.properties
+SHA1-Digest: 3seoqki2Qzj3MbjRYPyO2MIE64E=
+
+Name: org/apache/derby/impl/store/raw/xact/EndXact.class
+SHA1-Digest: nsXc8BkILIDQDbDsBIeUoNCuPRk=
+
+Name: org/apache/derby/impl/store/raw/xact/NoLocking.class
+SHA1-Digest: p3gRKFuHHpyLKOW9H/IcobSysik=
+
+Name: org/apache/derby/impl/load/ImportLobFile$1.class
+SHA1-Digest: lyzg6Y421q4SdLUUBohJAMI4EWs=
+
+Name: org/apache/derby/iapi/services/io/FormatIdUtil.class
+SHA1-Digest: Ekl5zlXXL3RH3Lf+OX0ZKljVwe8=
+
+Name: org/apache/derby/client/am/Cursor.class
+SHA1-Digest: cy2epZkCKYmIf84laSyczLshOs0=
+
+Name: org/apache/derby/client/net/EncodedInputStream.class
+SHA1-Digest: a2ZuPeQE5Y+WHt9RFEo+AFblPhg=
+
+Name: org/apache/derby/impl/sql/compile/FromList.class
+SHA1-Digest: dVcLHIw2OC3rhG6RDjGoEvluDk0=
+
+Name: org/apache/derby/impl/store/access/btree/BranchControlRow.class
+SHA1-Digest: iaRzpQK/AkHmoLxL0HGKwcLdJRw=
+
+Name: org/apache/derby/diag/StatementCache.class
+SHA1-Digest: 0DuRquPIYrLIUpBLaWLI2A15s7s=
+
+Name: org/apache/derby/impl/sql/execute/DistinctGroupedAggregateResult
+ Set.class
+SHA1-Digest: YsNElG8SkQXxWSGqwNyTfrfEf2c=
+
+Name: org/apache/derby/iapi/store/access/KeyHasher.class
+SHA1-Digest: ibAgufTFA1pX6vIcJzcruSVnyRM=
+
+Name: org/apache/derby/impl/sql/compile/ReplaceAggregatesWithCRVisitor
+ .class
+SHA1-Digest: qzAexrw/XpqILih7KXkkJZG7Vog=
+
+Name: org/apache/derby/iapi/services/io/NewByteArrayInputStream.class
+SHA1-Digest: 8pbzC77bhUwPrYH06G/ZsFJaL7w=
+
+Name: org/apache/derby/client/am/ClobLocatorReader.class
+SHA1-Digest: Gg4SvBdmHg667XLhZryz1bpzlbg=
+
+Name: org/apache/derby/impl/sql/compile/IsNullNode.class
+SHA1-Digest: YGAKjfV94jJoosEMvXNfYp42mxs=
+
+Name: org/apache/derby/impl/store/raw/data/BaseDataFileFactory$2.class
+SHA1-Digest: LqAA36dN/oKnn0IlQqMprzPIQX8=
+
+Name: org/apache/derby/iapi/jdbc/DRDAServerStarter.class
+SHA1-Digest: 0OapYQG0N+U9wLoyE8E4upYcPdg=
+
+Name: org/apache/derby/iapi/store/access/StoreCostController.class
+SHA1-Digest: WF7mko+pUfiBgFkx5tCU7Wa/PrY=
+
+Name: org/apache/derby/impl/sql/compile/ConcatenationOperatorNode.clas
+ s
+SHA1-Digest: 9xo4VQfzv1FYYjdZjEZPdpMReQk=
+
+Name: org/apache/derby/impl/store/access/sort/SortBufferRowSource.clas
+ s
+SHA1-Digest: dreN1aehCS3nFLlG2GQSDQZ69cw=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealDeleteResultSetStatist
+ ics.class
+SHA1-Digest: +ShB+t7uUOrMvtoa540coOcC/bg=
+
+Name: org/apache/derby/iapi/store/access/XATransactionController.class
+SHA1-Digest: wupPaSdVyYqeQNtpLnDnpg6BHdg=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealHashScanStatistics.cla
+ ss
+SHA1-Digest: zLchvGyjBVGKYo+FmzaCimtUmKA=
+
+Name: org/apache/derby/impl/sql/execute/DropSchemaConstantAction.class
+SHA1-Digest: ZE3evlqFiSEO1BHT7U/GUr2mSW0=
+
+Name: org/apache/derby/client/am/UnitOfWorkListener.class
+SHA1-Digest: 2FqY84cXsFaTuM9OYGWAtke1g/8=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$1.c
+ lass
+SHA1-Digest: CDqEPC9hmG+v5GpytxiQjkr+D/4=
+
+Name: org/apache/derby/impl/sql/compile/TransactionStatementNode.class
+SHA1-Digest: IyIPzlLtasJ+5yfSDdWdu487KCw=
+
+Name: org/apache/derby/impl/sql/compile/StatementNode.class
+SHA1-Digest: Arc1YF8E9vb696UUcOhiYl51Q0A=
+
+Name: org/apache/derby/client/am/SectionManager.class
+SHA1-Digest: hU2WieMAITnui4XlHbBVNF+452c=
+
+Name: org/apache/derby/impl/drda/Session.class
+SHA1-Digest: Neu+e53mG3LR0gBVarEsRZAHVFc=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$3.class
+SHA1-Digest: LfIjth9a22LhviaIlvgHDeDGlQU=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealDeleteCascadeResultSet
+ Statistics.class
+SHA1-Digest: EoSarFWChSFT99Y0V1FGd3MpLZA=
+
+Name: org/apache/derby/iapi/types/SQLLongvarchar.class
+SHA1-Digest: JSf+hz+WCBw3R9Ye7ITSc20MnmU=
+
+Name: org/apache/derby/iapi/services/sanity/SanityManager.class
+SHA1-Digest: Lbq2/dDpwOyUAY0NZ6lkpp28qyw=
+
+Name: org/apache/derby/iapi/sql/dictionary/UniqueTupleDescriptor.class
+SHA1-Digest: QhCyROxn8XNWzRV/FaJT9Y5pk+0=
+
+Name: org/apache/derby/iapi/types/DateTimeParser.class
+SHA1-Digest: fNwOFuA3toHUxaNNC92lhqxjHvU=
+
+Name: org/apache/derby/impl/sql/execute/DeleteVTIResultSet.class
+SHA1-Digest: HnqMw9EkZlX9Kg9ZNpvUY/4zeuo=
+
+Name: org/apache/derby/iapi/store/raw/StreamContainerHandle.class
+SHA1-Digest: eE+gwxYRdkdlb0b+aYD75OFgYlU=
+
+Name: org/apache/derby/loc/m15_en.properties
+SHA1-Digest: e4bM/6aZb7mT6nbnNFI2wpTCOQI=
+
+Name: org/apache/derby/iapi/sql/dictionary/ConsInfo.class
+SHA1-Digest: urCkrgr+9WhGbLpMG/RrOvt+pzo=
+
+Name: org/apache/derby/impl/sql/compile/SubqueryNode.class
+SHA1-Digest: 2jFKEPDhRYYeGne/2so2VxBlXzU=
+
+Name: org/apache/derby/jdbc/Driver40.class
+SHA1-Digest: /w4oSl95YE+DzvvwQjsMSlpkNlQ=
+
+Name: org/apache/derby/impl/sql/execute/NoRowsResultSetImpl.class
+SHA1-Digest: Jj/n+zp8r5PvD3h6NTwskIZ2zUk=
+
+Name: org/apache/derby/impl/load/ExportWriteData.class
+SHA1-Digest: w75bYqMPPIiGx2euQNXzaCooKU8=
+
+Name: org/apache/derby/client/am/LogicalPreparedStatement40.class
+SHA1-Digest: qg43+2Is0UrzzY498o5ZWet3bwI=
+
+Name: org/apache/derby/client/net/CodePoint.class
+SHA1-Digest: i2nKo6wnM2zypkJPEvtf5myXZhw=
+
+Name: org/apache/derby/iapi/services/context/ContextManager.class
+SHA1-Digest: eTZpsnktowUc4QCvD2FBieMsgJg=
+
+Name: org/apache/derby/iapi/types/CollationElementsInterface.class
+SHA1-Digest: 2f8pQIoy1DBV64iMfOKcJJ8chxo=
+
+Name: org/apache/derby/impl/services/reflect/ReflectGeneratedClass.cla
+ ss
+SHA1-Digest: VzeqBt1b47UxT75l9VBM4zXaxuU=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService.class
+SHA1-Digest: UASDiRzKr1rYY72eBXukQ8rd3qA=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementRolePermission.cla
+ ss
+SHA1-Digest: F3isF8HKIdHijh9i6We62z/JFNI=
+
+Name: org/apache/derby/impl/sql/execute/HashJoinResultSet.class
+SHA1-Digest: viLM3X/WNPqPWXuO8sO97cHs5Bs=
+
+Name: org/apache/derby/catalog/SystemProcedures.class
+SHA1-Digest: pd0tgfs79PJsYNQObmB0W+XFSdc=
+
+Name: org/apache/derby/iapi/services/io/LimitReader.class
+SHA1-Digest: A7vEPZqNlwz8WezKADkQLo0QVR4=
+
+Name: org/apache/derby/iapi/sql/execute/ExecPreparedStatement.class
+SHA1-Digest: CJ7WTZDYP71AngwZj6Hi4xZWHcU=
+
+Name: org/apache/derby/impl/jdbc/metadata.properties
+SHA1-Digest: g3Gvy7qNeyLeXeaYQAbLpqX8O80=
+
+Name: org/apache/derby/tools/sysinfo.class
+SHA1-Digest: BFqu2jxC85OZITTb2OQqPXRvvvk=
+
+Name: org/apache/derby/impl/load/ExportResultSetForObject.class
+SHA1-Digest: /61o1ODPh2zxuRRORWGny9G+rCk=
+
+Name: org/apache/derby/client/net/NetResultSetRequest.class
+SHA1-Digest: HtuMBgAtrexOdirs82xXm5mMM8c=
+
+Name: org/apache/derby/impl/services/locks/Lock.class
+SHA1-Digest: 1om2Mf80wRNkgtpC9IyFCyCIFaY=
+
+Name: org/apache/derby/iapi/store/raw/PageTimeStamp.class
+SHA1-Digest: UNtEVMAJsnK6Y6x607xHiEUEUZw=
+
+Name: org/apache/derby/impl/sql/compile/AggregateNode.class
+SHA1-Digest: mXX09TQ+EnxvgsmwFjpOOczJWeQ=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$12.
+ class
+SHA1-Digest: ZuWFrEXj4NZgjMinC9eNY557KXc=
+
+Name: org/apache/derby/jdbc/ReferenceableDataSource.class
+SHA1-Digest: 3BFNSLtM1CWaLajxUJK8vPrJmlQ=
+
+Name: org/apache/derby/loc/m37_en.properties
+SHA1-Digest: tHVMuWtXZomwy4BvubQNuNcfQ8Q=
+
+Name: org/apache/derby/iapi/sql/execute/TargetResultSet.class
+SHA1-Digest: zFWaU0b6sKslj+GGcdoYYno+CDw=
+
+Name: org/apache/derby/iapi/services/monitor/PersistentService.class
+SHA1-Digest: IiVtX4HyeShh92E2W73UXtkqROI=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Table.class
+SHA1-Digest: WcizlHk2UaHc9YYtarH94ntePik=
+
+Name: org/apache/derby/impl/sql/compile/RelationalOperator.class
+SHA1-Digest: bDAiPYAG4owScsk8P1I4ieQIY+c=
+
+Name: org/apache/derby/iapi/store/raw/RawStoreFactory.class
+SHA1-Digest: 9SQvhYpShq4BFrG4tqtjb4F7nnk=
+
+Name: org/apache/derby/iapi/types/SQLVarbit.class
+SHA1-Digest: dTSrgVAoikXqxqcZHcoBsv2LqGY=
+
+Name: org/apache/derby/impl/store/raw/data/ContainerOperation.class
+SHA1-Digest: 94XmBO7JtRpWCgcPSot/hmH+7lQ=
+
+Name: org/apache/derby/jdbc/EmbedXAConnection40.class
+SHA1-Digest: Gz/E2AypJN7ZU9mEbdBT4L0YCvA=
+
+Name: org/apache/derby/impl/jdbc/AutoPositioningStream.class
+SHA1-Digest: LEZA2DxRLDt8UokWJ6goBST54I8=
+
+Name: org/apache/derby/iapi/services/classfile/MemberTable.class
+SHA1-Digest: VS+NcEntL9UQL8s2bwE2l5g/2DY=
+
+Name: org/apache/derby/client/net/NetDatabaseMetaData40.class
+SHA1-Digest: 30GEouUM6Tzj67qdAkEWx/OC7Eo=
+
+Name: org/apache/derby/impl/db/BasicDatabase.class
+SHA1-Digest: UamnPX++jBal8pE9aj4gievbipg=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$2.class
+SHA1-Digest: /+N5YZNmi1U08JT5KXXahEh1nJw=
+
+Name: org/apache/derby/impl/sql/compile/NonStaticMethodCallNode.class
+SHA1-Digest: 9IJm2habOD8WiJ7Xpab5hc3TMPc=
+
+Name: org/apache/derby/impl/sql/GenericPreparedStatement.class
+SHA1-Digest: kF2Kda6C70/E7Nd/8/am6h9iO9U=
+
+Name: org/apache/derby/impl/services/locks/LockTableVTI.class
+SHA1-Digest: 0V8DaA+1HFh1Ph3YiuNEzKCUV8Q=
+
+Name: org/apache/derby/impl/store/replication/slave/SlaveController$Sl
+ aveLogReceiverThread.class
+SHA1-Digest: 6ML4HW9BbbUV8FvTFzsyLekPsH0=
+
+Name: org/apache/derby/impl/sql/compile/FromTable.class
+SHA1-Digest: h3RjKJ5S1JJ6t19KSec1S6XTpcc=
+
+Name: org/apache/derby/impl/store/raw/log/FlushedScanHandle.class
+SHA1-Digest: yQVeUQZs4Xmkdk5NV3Rmc7sZwRU=
+
+Name: org/apache/derby/impl/sql/execute/RowResultSet.class
+SHA1-Digest: 6/HBIRWOBZueM0n7zIq1q/XpiYY=
+
+Name: org/apache/derby/client/am/SignedBinary.class
+SHA1-Digest: kOvmapmLkR8aVQboGS6y6rRZ/WU=
+
+Name: org/apache/derby/impl/sql/catalog/DropDependencyFilter.class
+SHA1-Digest: VvpjsXCsnRgksKA4yP8wKgymr5c=
+
+Name: org/apache/derby/tools/JDBCDisplayUtil$1.class
+SHA1-Digest: n7EiecFCB7KIWiMrZNxBd+323Z8=
+
+Name: org/apache/derby/impl/store/access/btree/BTree.class
+SHA1-Digest: l5TltkL6txExMLRdu/QY0eJfaG0=
+
+Name: org/apache/derby/impl/sql/depend/BasicDependency.class
+SHA1-Digest: yIyyY4soVrl0t8PoS8bTqiGLw6w=
+
+Name: org/apache/derby/impl/services/cache/ConcurrentCacheFactory.clas
+ s
+SHA1-Digest: Hyd4BKvn/dguYvjTLZuNnGTh6+I=
+
+Name: org/apache/derby/iapi/types/SqlXmlUtil$1.class
+SHA1-Digest: a1sMmKeSaj29odURC/q4wx/IjJA=
+
+Name: org/apache/derby/iapi/services/context/SystemContext.class
+SHA1-Digest: uVV8OMoQVcF7TuZFf21k9BP6/Rk=
+
+Name: org/apache/derby/iapi/store/raw/Corruptable.class
+SHA1-Digest: 7vARu9kDTuYJoCwLk/0f94nCO00=
+
+Name: org/apache/derby/jdbc/JDBC.class
+SHA1-Digest: aiUUUUkhH5tNqdo0dzFyHniiP5A=
+
+Name: org/apache/derby/impl/sql/compile/OrderedColumn.class
+SHA1-Digest: p+f2IZWSXRLhacZR9DNUpPYxUhc=
+
+Name: org/apache/derby/diag/TransactionTable.class
+SHA1-Digest: geEPmNB1WfZIQl+FrC24PZ2fcN0=
+
+Name: org/apache/derby/impl/services/reflect/DatabaseClasses.class
+SHA1-Digest: h9Vtwkptuk7pIm0h95veotLjSfo=
+
+Name: org/apache/derby/impl/sql/GenericResultDescription.class
+SHA1-Digest: Aqh3PCvAGMY1Zy4drOxX7K10P3A=
+
+Name: org/apache/derby/impl/drda/SQLTypes.class
+SHA1-Digest: DDweqi+Hvket5DjXzA5UR6qUYFU=
+
+Name: org/apache/derby/impl/tools/ij/ijStatementResult.class
+SHA1-Digest: D1dLuhJEcKsTka63PIftxkstass=
+
+Name: org/apache/derby/impl/sql/execute/RevokeRoleConstantAction.class
+SHA1-Digest: Ho89lbequHcr5TZPFBJrho4bfCE=
+
+Name: org/apache/derby/impl/sql/compile/RowCountNode.class
+SHA1-Digest: nqZam0PjQdWXEjry7DWmwEnK80M=
+
+Name: org/apache/derby/shared/common/sanity/ThreadDump.class
+SHA1-Digest: RpCFkgmGsX6/ehL8MOb34s+gXM8=
+
+Name: org/apache/derby/iapi/sql/dictionary/AliasDescriptor.class
+SHA1-Digest: 9X+/kFMNa3qxCkW/+E646BeVQAc=
+
+Name: org/apache/derby/loc/m41_en.properties
+SHA1-Digest: I6nN+tuAbJ+uZddUSz7SmBakQ1o=
+
+Name: org/apache/derby/iapi/sql/PreparedStatement.class
+SHA1-Digest: sZ+F2W+pQEWmMjvbh9uA17f3kKc=
+
+Name: org/apache/derby/impl/drda/DRDAStatement.class
+SHA1-Digest: jW8MsRpgpN0zhow7VTuNRNgJgIA=
+
+Name: org/apache/derby/client/net/NetConfiguration.class
+SHA1-Digest: CaRX1dVaT8smT74Pb3555Lt1SQE=
+
+Name: org/apache/derby/impl/sql/execute/PrivilegeInfo.class
+SHA1-Digest: AzSoXVUz9XoSZEU2EnuiYZSmIsQ=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IRowLocking1.cl
+ ass
+SHA1-Digest: +wRPPt8i5OCokk8zWPBkP3Piy+0=
+
+Name: org/apache/derby/impl/store/raw/data/BaseContainer.class
+SHA1-Digest: Be0P5qaC4bzoTholGA+xhrIFiu8=
+
+Name: org/apache/derby/impl/sql/compile/HashTableNode.class
+SHA1-Digest: 2d3QDj5tSWKOIilMBI1lOKPCqTU=
+
+Name: org/apache/derby/impl/sql/execute/BaseActivation.class
+SHA1-Digest: +AmUp6ku9ZfDQ6INAPYrhqC/U2I=
+
+Name: org/apache/derby/impl/sql/GenericParameterValueSet.class
+SHA1-Digest: VfM+wnTF3g8lh47eDCaeLxnmwsE=
+
+Name: org/apache/derby/iapi/jdbc/ConnectionContext.class
+SHA1-Digest: PFyvPGxa1xhwR9dSEw3P5fFpzrU=
+
+Name: org/apache/derby/iapi/sql/depend/ProviderInfo.class
+SHA1-Digest: YgjdB3BCdKCtd5fO2OrlB24HQHo=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$2.class
+SHA1-Digest: Yyt0FzA6Mou4+UVaI4LscDMdipI=
+
+Name: org/apache/derby/impl/sql/compile/ModifyColumnNode.class
+SHA1-Digest: JhkykTCQ3t4DDM35OahGeUFyQQ0=
+
+Name: org/apache/derby/impl/sql/execute/VTIResultSet.class
+SHA1-Digest: HQe9CaYpjcNca+NcgdnIxu3QkZ0=
+
+Name: org/apache/derby/iapi/services/io/LimitObjectInput.class
+SHA1-Digest: 1N8FwKhbZFlF5SbbgETFYF5W8ik=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealCurrentOfStatistics.cl
+ ass
+SHA1-Digest: lLuPum0Wx5zZ8636WW/5bQsvgRY=
+
+Name: org/apache/derby/iapi/services/monitor/ModuleControl.class
+SHA1-Digest: jeeDNjJidKUY+yhFVuoyy0lMLQ8=
+
+Name: org/apache/derby/iapi/services/locks/Latch.class
+SHA1-Digest: TKmShrA+fKUnj+hh3vsj5VTR8RA=
+
+Name: org/apache/derby/loc/clientmessages_hu.properties
+SHA1-Digest: SDi394M1KKkpwFVPQu1TV+0pW8k=
+
+Name: org/apache/derby/iapi/sql/StatementUtil.class
+SHA1-Digest: HbA44XKfhqMV5Bils5JVRBc7rOc=
+
+Name: org/apache/derby/loc/drda/messages_ko_KR.properties
+SHA1-Digest: TX4AGinIfx7RYncT5hP4OlMvby0=
+
+Name: org/apache/derby/iapi/sql/compile/OptimizablePredicateList.class
+SHA1-Digest: 87FTlM8rlwN3wJnn0p9zin2OntA=
+
+Name: org/apache/derby/impl/sql/compile/UpdateNode.class
+SHA1-Digest: VcRKpIRiTXma5lQ1r5hB5m5bpXM=
+
+Name: org/apache/derby/iapi/services/locks/Lockable.class
+SHA1-Digest: 3cZbYBEAgdIiMHQkKPJ37pnaHrc=
+
+Name: org/apache/derby/iapi/sql/ResultDescription.class
+SHA1-Digest: Rs8zLOYZuRDZ27l9WFqJye3rH4w=
+
+Name: org/apache/derby/client/am/SqlCode.class
+SHA1-Digest: H1mHrTm9sxKMWcl9yzm7nEtTKAo=
+
+Name: org/apache/derby/impl/sql/compile/TableOperatorNode.class
+SHA1-Digest: dOjoSK5SjhdCTqsh8RixHrh1Pcg=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Key.class
+SHA1-Digest: pNM3tog3U0LmCHrHiAao0CgUEho=
+
+Name: org/apache/derby/impl/sql/compile/Token.class
+SHA1-Digest: wkAzw+hSR+6GiWo/V9ImWhfzIz0=
+
+Name: org/apache/derby/impl/tools/ij/ijMultiResult.class
+SHA1-Digest: t56vfksxtK84ZTaXBI2eJoZ+wpw=
+
+Name: org/apache/derby/impl/sql/compile/WindowFunctionColumnNode.class
+SHA1-Digest: buGqq39h51hDZEckEzDrumBnwj0=
+
+Name: org/apache/derby/iapi/store/raw/data/RawContainerHandle.class
+SHA1-Digest: g4KYc08ICwp8NYG0GNzPAd7Kru0=
+
+Name: org/apache/derby/iapi/store/access/SortObserver.class
+SHA1-Digest: O1DJt2iWmO8b5Py9GAEyiKl6fjU=
+
+Name: org/apache/derby/impl/store/raw/data/EncryptData.class
+SHA1-Digest: yslRTtxjMb8JzAYjvolI/3hWqA0=
+
+Name: org/apache/derby/impl/load/ControlInfo.class
+SHA1-Digest: vr+HBDS6Npz2SXm557u18+9+WqQ=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Schema.class
+SHA1-Digest: 72qyUMr/HUrLVTYST/GCoyWRMMs=
+
+Name: org/apache/derby/impl/services/uuid/BasicUUIDFactory.class
+SHA1-Digest: l6YOk4DESIn7LoyDZP98GfCw84c=
+
+Name: org/apache/derby/iapi/store/access/ConglomerateController.class
+SHA1-Digest: o+LQqres6uOirx8KftbaC1jC+Qo=
+
+Name: org/apache/derby/iapi/sql/ParameterValueSet.class
+SHA1-Digest: UJjejYHPgBT5gk1vTzpBpul7WEw=
+
+Name: org/apache/derby/impl/sql/execute/DDLConstantAction.class
+SHA1-Digest: 82bo7fTkTNb5EFPlswV4UhJEemk=
+
+Name: org/apache/derby/client/am/ConnectionCallbackInterface.class
+SHA1-Digest: BBTgOhtr4bm0D97ts5YKazOKnvE=
+
+Name: org/apache/derby/impl/sql/execute/JarUtil$1.class
+SHA1-Digest: pGjtDpODKZQt/S1z+W3qksqCx0o=
+
+Name: org/apache/derby/client/net/StatementRequestInterface.class
+SHA1-Digest: PrmMl3jt0rhxAZabRUb79IkOoh4=
+
+Name: org/apache/derby/loc/m4_en.properties
+SHA1-Digest: cou8YyTclaCw+LYkxjy753E5ysk=
+
+Name: org/apache/derby/impl/store/access/sort/Node.class
+SHA1-Digest: 4jokh2JKakMN2c+hhHH41mGa4mk=
+
+Name: org/apache/derby/impl/jdbc/TemporaryClob.class
+SHA1-Digest: QhtOlBEqk307ayddaYuVgbmTwQk=
+
+Name: org/apache/derby/iapi/sql/depend/Dependency.class
+SHA1-Digest: bJl0VYgn8A4V2ZMJz5CV8V633DQ=
+
+Name: org/apache/derby/impl/sql/compile/RenameNode.class
+SHA1-Digest: /jrLbeXE7LTGwCUugU1xGwQza/A=
+
+Name: org/apache/derby/impl/store/access/heap/HeapScanInfo.class
+SHA1-Digest: sHboUgAhY8krGHbTmxCIrta4o3w=
+
+Name: org/apache/derby/iapi/sql/LanguageFactory.class
+SHA1-Digest: QoiZO4RcaP9bsLrVV5hS1Aa6iHs=
+
+Name: org/apache/derby/impl/io/JarStorageFactory.class
+SHA1-Digest: 1aIkvVVW16rUMT1sJJfcGKzDimg=
+
+Name: org/apache/derby/impl/sql/compile/TriggerReferencingStruct.class
+SHA1-Digest: Lymihm/ACdU6wd2yh60JNoaYSCQ=
+
+Name: org/apache/derby/impl/services/bytecode/Type.class
+SHA1-Digest: kSTpr3noZJWFdd+XYqdR2uPcnOE=
+
+Name: org/apache/derby/impl/sql/execute/CreateRoleConstantAction.class
+SHA1-Digest: BjJSuvnkxHLSKZIJMEhwCLw0ulM=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementRoutinePermission.
+ class
+SHA1-Digest: qZPgxd6Eq5ELxcdn3wi+fsIhyM4=
+
+Name: org/apache/derby/impl/sql/compile/BaseJoinStrategy.class
+SHA1-Digest: vWadRwX71v9TEkucBp9lJLVi0T4=
+
+Name: org/apache/derby/iapi/services/info/JVMInfo.class
+SHA1-Digest: 98hUIIO3Jamcuunpb0wNBaI3v44=
+
+Name: org/apache/derby/impl/store/raw/data/RemoveFile.class
+SHA1-Digest: mQI/9hqPwJPOE/EB4/HGZoJyK3M=
+
+Name: org/apache/derby/impl/tools/ij/AttributeHolder.class
+SHA1-Digest: mVosQPetUReZCjbeCK+Kq3DO9hI=
+
+Name: org/apache/derby/impl/sql/GenericParameter.class
+SHA1-Digest: fzVUSuAYIEHHflBVITZ8G6Gxpog=
+
+Name: org/apache/derby/impl/sql/execute/NormalizeResultSet.class
+SHA1-Digest: Tb8JSJlWaLxmUHKswbFzRcuc9XY=
+
+Name: org/apache/derby/iapi/types/TypeId.class
+SHA1-Digest: vp2qZl89IrVjgSv03/QbKCJio+k=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IStaticCompiled
+ Info.class
+SHA1-Digest: h655OjLlRfTBmuw5A1JME07CVTM=
+
+Name: org/apache/derby/impl/sql/compile/DB2LengthOperatorNode.class
+SHA1-Digest: lzGVhhTkVpMPa+yiiwBIDw3OOvM=
+
+Name: org/apache/derby/iapi/error/SQLWarningFactory.class
+SHA1-Digest: cUTsjuBtjFF9PmyG10kAgasxdUE=
+
+Name: org/apache/derby/shared/common/sanity/SanityManager.class
+SHA1-Digest: O+m4m+1L/Oz98bSY0kQ/dFAA1Bw=
+
+Name: org/apache/derby/iapi/services/context/ContextService.class
+SHA1-Digest: +ezCX36wX1KXERU7PNFQcP+cxWE=
+
+Name: org/apache/derby/client/am/CrossConverters.class
+SHA1-Digest: lvs8c124z6Y/5L/QGIYdocFmRmg=
+
+Name: org/apache/derby/impl/tools/ij/ijResultSetResult.class
+SHA1-Digest: aReSeFPKNErTQSCDpz8sGIGMjO8=
+
+Name: org/apache/derby/impl/load/ColumnInfo.class
+SHA1-Digest: PJU+mbc7cA7m30LTy5LzWvWpLgk=
+
+Name: org/apache/derby/impl/load/ImportAbstract.class
+SHA1-Digest: NM7xn/omJK681wTnqlHUPgaI0MQ=
+
+Name: org/apache/derby/iapi/services/context/ContextImpl.class
+SHA1-Digest: h9wQ7wLHhh/g9PC6jfO1BduHouE=
+
+Name: org/apache/derby/impl/sql/execute/InsertConstantAction.class
+SHA1-Digest: KikCOGa1kAfb+a3LDd1CW1KMvHc=
+
+Name: org/apache/derby/impl/sql/compile/TypeCompilerFactoryImpl.class
+SHA1-Digest: 7frMh7Kt9QunCKf2TYoIvJoQZLc=
+
+Name: org/apache/derby/impl/store/access/sort/Scan.class
+SHA1-Digest: 3u/sL+aeyidtMxVpqW8Dy28KI2Y=
+
+Name: org/apache/derby/impl/sql/execute/RenameConstantAction.class
+SHA1-Digest: 15A7JD+98VwAw5ImEf74ZG5aDyk=
+
+Name: org/apache/derby/impl/store/access/sort/MergeScanRowSource.class
+SHA1-Digest: taTB8r87zF6l5awOO7VQFC7gemQ=
+
+Name: org/apache/derby/iapi/store/raw/Transaction.class
+SHA1-Digest: Shwrq3t8mwIH1DG9Fd6XGo6i3yU=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealWindowResultSetStatist
+ ics.class
+SHA1-Digest: VM05kDnWZapNj/0vZmryGlTa8uU=
+
+Name: org/apache/derby/loc/m12_en.properties
+SHA1-Digest: fOTaOgp4DN5PoiFOnZr8C9xVpR8=
+
+Name: org/apache/derby/impl/sql/execute/DropTriggerConstantAction.clas
+ s
+SHA1-Digest: F17myjCIwWAavgGcvJjQmPIAsZU=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Alias.class
+SHA1-Digest: cTFy/iDvPoSIun64HmdkW4eXKrY=
+
+Name: org/apache/derby/impl/sql/compile/BinaryRelationalOperatorNode.c
+ lass
+SHA1-Digest: +YF8xOriCQqQGGKu7n1+lkhqTfY=
+
+Name: org/apache/derby/impl/sql/execute/RowTriggerExecutor.class
+SHA1-Digest: A8lZmeNLlDZjMEDY4aHx6EtUwpM=
+
+Name: org/apache/derby/iapi/types/PositionedStream.class
+SHA1-Digest: tASbyl6ZJhHR+R8KMddLljkmj2o=
+
+Name: org/apache/derby/impl/sql/execute/TemporaryRowHolderResultSet.cl
+ ass
+SHA1-Digest: Ilf7uFpy6LS0C2yKfQuMwirREVk=
+
+Name: org/apache/derby/impl/store/raw/data/AllocPage.class
+SHA1-Digest: JCTqq5IJo+GbPV28jGhA/1Q/3dI=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementSchemaPermission.c
+ lass
+SHA1-Digest: mgUOU9CtuF82EW1a2kV+ZFSvoGc=
+
+Name: org/apache/derby/iapi/error/ErrorStringBuilder.class
+SHA1-Digest: bDpQqrmtT6DFB4ofiG0vKGtcDf4=
+
+Name: org/apache/derby/iapi/jdbc/EngineLOB.class
+SHA1-Digest: d2sPih0/VwedetSrKLk6sjfUNXs=
+
+Name: org/apache/derby/iapi/services/io/FormatIdOutputStream.class
+SHA1-Digest: IHdS/Wc2HdginkohKhKLQi20CjA=
+
+Name: org/apache/derby/iapi/sql/execute/TemporaryRowHolder.class
+SHA1-Digest: qrf8t/gkBRvsRIyo/w8PibQrfzg=
+
+Name: org/apache/derby/impl/sql/catalog/DDdependableFinder.class
+SHA1-Digest: wjXsqkUZdsrOrXP4Wq99TjbdPfU=
+
+Name: org/apache/derby/impl/drda/XADatabase.class
+SHA1-Digest: ABqUw1DTME3vnzQVylaTnBobJhw=
+
+Name: org/apache/derby/iapi/services/io/FormatableArrayHolder.class
+SHA1-Digest: RGgnbGEmTh/truCQ6llFeF5Qp/Y=
+
+Name: org/apache/derby/iapi/types/BigIntegerDecimal.class
+SHA1-Digest: c/X/1n68vqKwS++chGSVWzNNyz0=
+
+Name: org/apache/derby/client/ClientXid.class
+SHA1-Digest: 9Hc6Pr1lj7LehwgbQeOjmf4zctU=
+
+Name: org/apache/derby/impl/io/DirFile4.class
+SHA1-Digest: 404PA7geRHj79rx9RbmCEGV3MyI=
+
+Name: org/apache/derby/impl/sql/execute/SetRoleConstantAction.class
+SHA1-Digest: 4qsMqwefx+Hsh5b5n3zhLqA6uRQ=
+
+Name: org/apache/derby/impl/store/raw/data/ChainAllocPageOperation.cla
+ ss
+SHA1-Digest: 5EosFIRvXy9NFm1ehsWIy80F6vs=
+
+Name: org/apache/derby/impl/io/vfmem/PathUtil.class
+SHA1-Digest: +ji5/KoCuLp6Iy6GlRZD4jYVxOk=
+
+Name: org/apache/derby/impl/jdbc/authentication/NoneAuthenticationServ
+ iceImpl.class
+SHA1-Digest: sALxVRaMOUq0T3z5i4WLoVStiLg=
+
+Name: org/apache/derby/loc/m34_en.properties
+SHA1-Digest: XPnsWw4yasE2Zdjlyn5mo5kXwf0=
+
+Name: org/apache/derby/iapi/sql/execute/ExecutionContext.class
+SHA1-Digest: fXMId2Roe8sro6gXr1rxvevw5q8=
+
+Name: org/apache/derby/iapi/store/access/ScanController.class
+SHA1-Digest: h3C7u/J1PRLov++QrrekS2iiH7k=
+
+Name: org/apache/derby/iapi/services/compiler/MethodBuilder.class
+SHA1-Digest: VyTP6XsJSHJyThVfVh2wfQfH22M=
+
+Name: org/apache/derby/impl/sql/compile/DropTriggerNode.class
+SHA1-Digest: YfeBhJ242Lb1ACyJWvtd9wpnLIY=
+
+Name: org/apache/derby/client/am/stmtcache/JDBCStatementCache$BoundedL
+ inkedHashMap.class
+SHA1-Digest: hSRQJxTdxEOSrEtDdUMUcZQZ6Zg=
+
+Name: org/apache/derby/impl/sql/compile/RefTypeCompiler.class
+SHA1-Digest: 5RE9lbKefi/SOkLS9/pDkIDgB70=
+
+Name: org/apache/derby/impl/sql/compile/TestConstraintNode.class
+SHA1-Digest: KhXfOb5oOmQ/3n2jUd7HMO9DkE8=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealNoPutResultSetStatisti
+ cs.class
+SHA1-Digest: PurVzqMtUh0hABj6r2yABzH7mFo=
+
+Name: org/apache/derby/iapi/store/access/ConglomPropertyQueryable.clas
+ s
+SHA1-Digest: Q3Pvq7PNWb0YWjvmNIqAdpHBCvk=
+
+Name: org/apache/derby/impl/sql/execute/AggregateSortObserver.class
+SHA1-Digest: iLMbpmRX9qvjDMI+Df2Fj3D9FMY=
+
+Name: org/apache/derby/client/am/ClientJDBCObjectFactory.class
+SHA1-Digest: R43L4NiKzX4+pIZF4eWNlZx4CNY=
+
+Name: org/apache/derby/impl/sql/compile/ExpressionClassBuilder.class
+SHA1-Digest: /dQ663M2NPHH5o+Q+rHTBk+6IZI=
+
+Name: org/apache/derby/client/net/NetPackageRequest.class
+SHA1-Digest: ZIYB4kjpSigw6wjKFDfMglRzWKs=
+
+Name: org/apache/derby/impl/sql/compile/IntersectOrExceptNode.class
+SHA1-Digest: ownJJmFH+za+BKWT+ntNBvkb7Ao=
+
+Name: org/apache/derby/impl/sql/execute/JoinResultSet.class
+SHA1-Digest: 8xHU64K5jK/omqIvw/Ca+Rkt+ng=
+
+Name: org/apache/derby/jdbc/EmbeddedXADataSource.class
+SHA1-Digest: HR5tJfNvpvNwgr9ibpL/iR6gWuE=
+
+Name: org/apache/derby/iapi/store/access/SpaceInfo.class
+SHA1-Digest: BAj4SKM+YHMoBXCCynwXexunLrA=
+
+Name: org/apache/derby/client/net/CcsidManager.class
+SHA1-Digest: clGFmyJ/Kiym3gZj5RoOobfFIHg=
+
+Name: org/apache/derby/client/am/Configuration.class
+SHA1-Digest: zBtg5W2G/LSLIXm2A2nejf1rIDo=
+
+Name: org/apache/derby/diag/LockTable.class
+SHA1-Digest: M2u5lyke96ZCVq+d2Hqv5HaqZqQ=
+
+Name: org/apache/derby/impl/sql/execute/TablePrivilegeInfo.class
+SHA1-Digest: MOIWS7w4d1I/IiM65ciFfP+ZZms=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageTr
+ ansmit$MasterReceiverThread.class
+SHA1-Digest: OqGYSi6BnbBDPQ6ij8jWKaegC3E=
+
+Name: org/apache/derby/impl/services/cache/ConcurrentCache.class
+SHA1-Digest: KXz85m78fbmigDB6kascsikCHio=
+
+Name: org/apache/derby/impl/sql/catalog/SYSCHECKSRowFactory.class
+SHA1-Digest: D3D8tbXsErxTuqGJPqF9SGLWlMk=
+
+Name: org/apache/derby/impl/sql/compile/BinaryComparisonOperatorNode.c
+ lass
+SHA1-Digest: py+1U+YC3opUyfw1qN35sGESuk8=
+
+Name: org/apache/derby/impl/store/raw/data/RFResource.class
+SHA1-Digest: q1REXmFXSJl8w3KXmBgROw7R0m8=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$4.c
+ lass
+SHA1-Digest: jGSZVKnrmOM/aRXvLtmtyLHgmgc=
+
+Name: org/apache/derby/client/am/CachingLogicalConnection.class
+SHA1-Digest: ghPXGGJ7fejwO8up9pet1ydaRoc=
+
+Name: org/apache/derby/impl/drda/EXTDTAReaderInputStream.class
+SHA1-Digest: LEJ3mRZzfCbEBNowmK2DJqMA1bY=
+
+Name: org/apache/derby/client/net/FdocaSimpleDataArray.class
+SHA1-Digest: u0BSTrRte6tIS1vMfCCeH+Hwydw=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$6.class
+SHA1-Digest: AISw0Pw2ZLLrkQjzaJmDR9Xqjws=
+
+Name: org/apache/derby/catalog/AliasInfo.class
+SHA1-Digest: uhf/Roif37LuZNiDVfUbSKr96NE=
+
+Name: org/apache/derby/impl/tools/ij/Session.class
+SHA1-Digest: Ja8/Cx73+UibFQ1bQo3Pv5OaUGs=
+
+Name: org/apache/derby/impl/io/InputStreamFile.class
+SHA1-Digest: Fxq3jQxvOSlvx7WVDYbZ7eNbNDI=
+
+Name: org/apache/derby/impl/sql/compile/VirtualColumnNode.class
+SHA1-Digest: dVT4wi9U+aHD7O8MWULVDIDK/J8=
+
+Name: org/apache/derby/iapi/services/daemon/DaemonService.class
+SHA1-Digest: 1DXe44wfilPQuWcoQeJZJye3ykA=
+
+Name: org/apache/derby/impl/store/raw/data/DirectActions.class
+SHA1-Digest: 299NMawtYOuwFQfzWBJD+F0JccI=
+
+Name: org/apache/derby/loc/clientmessages_ru.properties
+SHA1-Digest: naqzuO5sVrAYncaXZWZk9ZBXclA=
+
+Name: org/apache/derby/client/am/ParameterMetaData40.class
+SHA1-Digest: lcWcoOMEW+A94Vpzv0q2V3BP8RI=
+
+Name: org/apache/derby/impl/sql/compile/AccessPathImpl.class
+SHA1-Digest: TvFY87ZNpW2fTQr3yA40Gz2MyZE=
+
+Name: org/apache/derby/client/net/FdocaConstants.class
+SHA1-Digest: cZPdr1LPZNoW3V8PMjngVVIvYbQ=
+
+Name: org/apache/derby/client/am/Blob.class
+SHA1-Digest: eqkJ1MkdfutYTeWaFizRBOVaNL4=
+
+Name: org/apache/derby/impl/sql/compile/TokenMgrError.class
+SHA1-Digest: dZAbEnpc+vrXJrV4IzJpUcnkCRo=
+
+Name: org/apache/derby/impl/store/access/StorableFormatId.class
+SHA1-Digest: 9rOMt87vAWFbP6SQLHl6ClvWUjI=
+
+Name: org/apache/derby/iapi/security/SecurityUtil$1.class
+SHA1-Digest: Us3/5aQsdqquxVs78jYFj2wybVM=
+
+Name: org/apache/derby/impl/store/raw/data/InvalidatePageOperation.cla
+ ss
+SHA1-Digest: n41Kx8H7cxk+lKGgAQ8RvdE6WT4=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredStatement40.class
+SHA1-Digest: SiwJH2XkqddJGEdBUyWmw7CZcwU=
+
+Name: org/apache/derby/impl/io/vfmem/BlockedByteArray.class
+SHA1-Digest: 2Cj6yQMSvwifhALkNHnLTXYQmQM=
+
+Name: org/apache/derby/impl/services/timer/SingletonTimerFactory.class
+SHA1-Digest: JIJqMPqv/F+GuNvCUnf8K+jUVJs=
+
+Name: org/apache/derby/client/am/BatchUpdateException.class
+SHA1-Digest: FR2q/l9CZ4NFMx6Ti5G6fAM+dfo=
+
+Name: org/apache/derby/io/StorageFile.class
+SHA1-Digest: eo/P1sGRPUCD/A9qM12ABzj7xtQ=
+
+Name: org/apache/derby/impl/sql/execute/BaseExpressionActivation.class
+SHA1-Digest: 3dwNfP2buc9izxjrQFsgViOlxtY=
+
+Name: org/apache/derby/impl/services/reflect/ReflectMethod.class
+SHA1-Digest: 0nwLawyMVnc1U9ZjmqfXto4q7y8=
+
+Name: org/apache/derby/loc/clientmessages_it.properties
+SHA1-Digest: ctEOSpnU9yVKoO+e/GhmWT0ceIc=
+
+Name: org/apache/derby/impl/sql/execute/SetSchemaConstantAction.class
+SHA1-Digest: udj13ctQlhHF6UAY7j/EgMJdHbg=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealDistinctScalarAggregat
+ eStatistics.class
+SHA1-Digest: oTiiJo/WTHNxnDjDYH+D32OogYs=
+
+Name: org/apache/derby/impl/sql/compile/ScrollInsensitiveResultSetNode
+ .class
+SHA1-Digest: Yt6RATd//A/E/qU46ELts9EXpHM=
+
+Name: org/apache/derby/impl/sql/conn/GenericLanguageConnectionContext.
+ class
+SHA1-Digest: gNK6Qaq6nSEIYVspkk8K2A8vpdQ=
+
+Name: org/apache/derby/iapi/sql/execute/ExecIndexRow.class
+SHA1-Digest: ujdnvs9E1tlwy9jtdg5hYlRpLlc=
+
+Name: org/apache/derby/loc/drda/servlet_hu.properties
+SHA1-Digest: wooMY5anihT3miAnQ8zaV8JQb90=
+
+Name: org/apache/derby/iapi/types/SQLTinyint.class
+SHA1-Digest: nSAJ333JIPfw5DUZxE0d5vgFIpo=
+
+Name: org/apache/derby/impl/store/raw/data/PurgeOperation.class
+SHA1-Digest: iDndfuw/soSYi6ct7H+PsLygKto=
+
+Name: org/apache/derby/impl/drda/DRDAConnThread$PublicBufferOutputStre
+ am.class
+SHA1-Digest: PUbYu3udeVWHDuJr5LRL/GWPa0o=
+
+Name: org/apache/derby/impl/sql/execute/DropViewConstantAction.class
+SHA1-Digest: r3HF4NozzDMGhTdC0NtzZGEjwoE=
+
+Name: org/apache/derby/impl/jdbc/EmbedParameterSetMetaData.class
+SHA1-Digest: JSlySAtrXnYrcYCVlyGX0kW9UzE=
+
+Name: org/apache/derby/client/am/ClobLocatorOutputStream.class
+SHA1-Digest: JJZazk+R3w7MP9HIfS056vbwtDA=
+
+Name: org/apache/derby/client/am/ColumnMetaData.class
+SHA1-Digest: TEQr+N0xg2XC0vu+1T7BFQvlZHQ=
+
+Name: org/apache/derby/impl/sql/compile/OptimizerFactoryImpl.class
+SHA1-Digest: HiI/TAzjc7q2nif0tbeCEOMio6I=
+
+Name: org/apache/derby/client/am/LogicalCallableStatement.class
+SHA1-Digest: 2cfERvRzLm8s0DBB7b6vSvaUWM8=
+
+Name: org/apache/derby/impl/sql/catalog/SYSTRIGGERSRowFactory.class
+SHA1-Digest: EUsw/sQICS7U0AXyKdvWiKeHN/U=
+
+Name: org/apache/derby/impl/sql/execute/SetOpResultSet.class
+SHA1-Digest: k93Wpjq7jtgo9H1RObRxKDuXjBs=
+
+Name: org/apache/derby/iapi/store/raw/LogicalUndoable.class
+SHA1-Digest: tlL+t3PYeWTmK2XV+ITmZko1vYA=
+
+Name: org/apache/derby/catalog/types/MethodAliasInfo.class
+SHA1-Digest: ocAJ31Po3vtNda8mkjShSn6JY+E=
+
+Name: org/apache/derby/impl/drda/DRDAXid.class
+SHA1-Digest: sMwuSvJNEvS9r8CwaSlbzQFC8OM=
+
+Name: org/apache/derby/iapi/sql/compile/Optimizer.class
+SHA1-Digest: FoSMfCRcFW43uFIh3SO9JHiJkZU=
+
+Name: org/apache/derby/impl/io/DirRandomAccessFile.class
+SHA1-Digest: nLYBK3tEITaTYfXLSIWOArZ0wI8=
+
+Name: org/apache/derby/impl/jdbc/EmbedSavepoint30.class
+SHA1-Digest: qeyOApOuOMyPKjoJkT0fhcngcyI=
+
+Name: org/apache/derby/iapi/db/ConnectionInfo.class
+SHA1-Digest: nGONMNVTnaTLRILxL2GdR0IWKBA=
+
+Name: org/apache/derby/iapi/services/io/FormatableProperties.class
+SHA1-Digest: TJ68Pr0YtOrmNScFTPDBZYSC04E=
+
+Name: org/apache/derby/impl/sql/execute/IndexConstantAction.class
+SHA1-Digest: cGZdPjgqe2Owk52IYZXmzOSmbw4=
+
+Name: org/apache/derby/impl/store/access/heap/HeapController.class
+SHA1-Digest: VtumNxZZwCnnqHEz8U011SBovRg=
+
+Name: org/apache/derby/iapi/sql/dictionary/TupleDescriptor.class
+SHA1-Digest: YeLZ7IP4/Wjgi7J8M19J7nHeSbw=
+
+Name: org/apache/derby/iapi/store/access/DiskHashtable$ElementEnum.cla
+ ss
+SHA1-Digest: JDLSTa02LkOEnasoNpxUxFxAUJI=
+
+Name: org/apache/derby/impl/sql/catalog/SYSFILESRowFactory.class
+SHA1-Digest: aGeGqPqcNQVaAquoSLEWtEiJYBo=
+
+Name: org/apache/derby/loc/drda/messages_ja_JP.properties
+SHA1-Digest: sSFEAM5zR/6q3woXFo//slZgOx4=
+
+Name: org/apache/derby/impl/services/daemon/SingleThreadDaemonFactory.
+ class
+SHA1-Digest: mP7T3KavhyuuaEkWLfhAcqbH8lY=
+
+Name: org/apache/derby/impl/drda/CharacterEncodings.class
+SHA1-Digest: 0NpZHBkdva6ooHD+iNk4Je+12kM=
+
+Name: org/apache/derby/iapi/services/i18n/MessageService.class
+SHA1-Digest: HFHOZJPbp+AGj2dkcvBrxPkzVlk=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$5.class
+SHA1-Digest: PtjSkmhThpCKr8tSO1EQPDlQa2Y=
+
+Name: org/apache/derby/iapi/sql/compile/TypeCompilerFactory.class
+SHA1-Digest: H/bCL+BX53z234muaI1o0BkbdVQ=
+
+Name: org/apache/derby/iapi/sql/execute/NoPutResultSet.class
+SHA1-Digest: oqMWmJvAybkkGcptiBDWqzdiCH8=
+
+Name: org/apache/derby/iapi/types/VariableSizeDataValue.class
+SHA1-Digest: yKN2Old35u1B9k3x0rXPsMvjRTA=
+
+Name: org/apache/derby/impl/jdbc/EmbedStatement40.class
+SHA1-Digest: oFCDVtZNOqmM55XxS5xo+ukx8eM=
+
+Name: org/apache/derby/impl/sql/compile/SetSchemaNode.class
+SHA1-Digest: hff4xzSb0uc//iMoI1SiElpnYJg=
+
+Name: org/apache/derby/impl/sql/catalog/CoreDDFinderClassInfo.class
+SHA1-Digest: pu2MIb8LdIzqTy2lxcDMbRdu3bE=
+
+Name: org/apache/derby/impl/store/raw/log/FileLogger.class
+SHA1-Digest: c4mBFeBctLDeEth+z16lXcvl6Ww=
+
+Name: org/apache/derby/loc/m1_en.properties
+SHA1-Digest: a8ykrjQrchkRE9huvXEAnWad+Lc=
+
+Name: org/apache/derby/client/am/CachingLogicalConnection40.class
+SHA1-Digest: wFU4tLjwevu6vJ34xAJU9SNnxIs=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageRe
+ ceive$1.class
+SHA1-Digest: q+tPpA/BmcDQC0lJgTXOmEGx740=
+
+Name: org/apache/derby/iapi/services/classfile/AttributeEntry.class
+SHA1-Digest: PZXqTogV3tOf3AfOwcJVuV1JBIs=
+
+Name: org/apache/derby/iapi/sql/dictionary/ConstraintDescriptorList.cl
+ ass
+SHA1-Digest: G+DYajC0oP1BARpqWa5Cfl/IWeE=
+
+Name: org/apache/derby/client/am/Lob.class
+SHA1-Digest: U/fEP5M7EdRiUv5IOBZqWTju7RU=
+
+Name: org/apache/derby/impl/store/raw/xact/InternalXact.class
+SHA1-Digest: oueWuHtfBmvLR9TTmTU+AUbRvtU=
+
+Name: org/apache/derby/impl/store/raw/data/PageBasicOperation.class
+SHA1-Digest: eO2ClsZlckoPs78oCcSqgPz68NQ=
+
+Name: org/apache/derby/iapi/services/info/Version.class
+SHA1-Digest: GTv3jflxle17ekysLdoqEprig0E=
+
+Name: org/apache/derby/client/am/ByteArrayCombinerStream.class
+SHA1-Digest: T1m+VImdCm+G2n6WNThy1yzZV3w=
+
+Name: org/apache/derby/iapi/services/loader/ClassInspector.class
+SHA1-Digest: EN6szIHtDa3iddJHqyyw8QZAv9M=
+
+Name: org/apache/derby/impl/store/raw/data/LogicalPageOperation.class
+SHA1-Digest: wPRLXJ6jyDNciSlkHIZMYpGtFCM=
+
+Name: org/apache/derby/jdbc/XAStatementControl.class
+SHA1-Digest: on0L1e5oH/y47Q5EnTIKxI8efl0=
+
+Name: org/apache/derby/impl/store/access/conglomerate/GenericConglomer
+ ateController.class
+SHA1-Digest: 5RxA/tS6MUZYJH73Vffbo4G4bOs=
+
+Name: org/apache/derby/iapi/store/access/BackingStoreHashtable$Backing
+ StoreHashtableEnumeration.class
+SHA1-Digest: pjwbnPvyDL9MdYs4VGv21B+1jXA=
+
+Name: org/apache/derby/impl/db/SlaveDatabase.class
+SHA1-Digest: lNr00Z5uOTNNcaK8bIjAY5I3R6c=
+
+Name: org/apache/derby/vti/Pushable.class
+SHA1-Digest: XYxURvNNcstE8rN5ncLo3AggrD8=
+
+Name: org/apache/derby/impl/sql/compile/QueryTreeNode.class
+SHA1-Digest: Sujh5XuowsnnMIVDWPXj5bb2UD4=
+
+Name: org/apache/derby/iapi/types/DataValueDescriptor.class
+SHA1-Digest: LxFJDjG5sIGuOSVK6GbG1zQgZfE=
+
+Name: org/apache/derby/iapi/services/io/CompressedNumber.class
+SHA1-Digest: sqV3XvLXdFHJCRMHpuJhB1AZdy4=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLocking2.class
+SHA1-Digest: OMOlQp+xsKiBUAbXridZ7VMlgZE=
+
+Name: org/apache/derby/impl/store/raw/data/RemoveFileOperation.class
+SHA1-Digest: wV/orG1L8lVxgLXXyGYmdR2bApo=
+
+Name: org/apache/derby/client/am/SqlWarning.class
+SHA1-Digest: Qw3FnnGrNupPNn5uwuMGnWL+y9c=
+
+Name: org/apache/derby/impl/sql/compile/CurrentDatetimeOperatorNode.cl
+ ass
+SHA1-Digest: gGFx2xUkRvuN5YjirYYQunPUJsE=
+
+Name: org/apache/derby/impl/tools/ij/StatementFinder.class
+SHA1-Digest: SaR/+p1ar5lOBd90N12+p955/8g=
+
+Name: org/apache/derby/client/am/EncryptionManager.class
+SHA1-Digest: Pjn57GIFCOLO5oJ1RPkGBY4VOmQ=
+
+Name: org/apache/derby/client/net/NetDatabaseMetaData.class
+SHA1-Digest: s0BWoyWY1fxF64/c5aoJUxK90ws=
+
+Name: org/apache/derby/impl/sql/execute/GenericResultSetFactory.class
+SHA1-Digest: WmdLk3ksOYsGQJSzU+sZ8UMU6OY=
+
+Name: org/apache/derby/iapi/types/ClobStreamHeaderGenerator.class
+SHA1-Digest: xtfhp5DWedAMdxNBamL1qvyqtrU=
+
+Name: org/apache/derby/loc/m27_en.properties
+SHA1-Digest: tTdAv/40Gepia04Gao4ovImIiXE=
+
+Name: org/apache/derby/impl/sql/catalog/IndexInfoImpl.class
+SHA1-Digest: oR1bq0qEUcGsoktBmdwf8AzvckA=
+
+Name: org/apache/derby/iapi/services/context/ContextManager$CtxStack.c
+ lass
+SHA1-Digest: htVTqTTWYLAqzXU8nerotXpW/Nk=
+
+Name: org/apache/derby/iapi/sql/dictionary/DDUtils.class
+SHA1-Digest: 1EaBXcMc9tlXdFhGrmSPOEcNYD8=
+
+Name: org/apache/derby/impl/load/Import.class
+SHA1-Digest: VZm5cobt63f/DisQ+yWMqlFVc/8=
+
+Name: org/apache/derby/iapi/jdbc/CharacterStreamDescriptor$Builder.cla
+ ss
+SHA1-Digest: biBoiRqJigs6QfKqKPxPjTINHwU=
+
+Name: org/apache/derby/impl/jdbc/EmbedCallableStatement30.class
+SHA1-Digest: yms2+mDgKrFJop3/QY6kLCXJJgc=
+
+Name: org/apache/derby/client/net/ResultSetReply.class
+SHA1-Digest: j5V3ydxbY7cRfOsUX2VYe1kFeFQ=
+
+Name: org/apache/derby/impl/services/reflect/LoadedGeneratedClass.clas
+ s
+SHA1-Digest: gjyoqq105pdGFR141dT9Me0RBYQ=
+
+Name: org/apache/derby/iapi/services/context/Context.class
+SHA1-Digest: 55MlwMuexSmnCumetpEg5dDaiJM=
+
+Name: org/apache/derby/impl/store/access/sort/SortScan.class
+SHA1-Digest: 6US8nlLBQFvILiTn0lY8z1SM/m8=
+
+Name: org/apache/derby/iapi/services/io/ArrayOutputStream.class
+SHA1-Digest: Vy0ZQNxF+aVfBXa5zFuZgU7Z8W4=
+
+Name: org/apache/derby/iapi/services/io/AccessibleByteArrayOutputStrea
+ m.class
+SHA1-Digest: yhgLtAK+hahecGmSXk6y4AwDVe0=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$5.class
+SHA1-Digest: lC2l5f2Strrfyb5AJI1MxjOc2H4=
+
+Name: org/apache/derby/impl/services/jce/JCECipherProvider.class
+SHA1-Digest: wQUZphOQvqg5MRKqGjCrny4zrJM=
+
+Name: org/apache/derby/mbeans/JDBCMBean.class
+SHA1-Digest: 2tOiPJ6Fa1mpkDHtdeEHrICr8ts=
+
+Name: org/apache/derby/iapi/store/access/xa/XAXactId.class
+SHA1-Digest: T7rzJgv9v1vkC5LDHLxz6ORTQXQ=
+
+Name: org/apache/derby/client/am/ResultSet.class
+SHA1-Digest: m88XIvaRrB+WgV2Kubz1R3WGlEo=
+
+Name: org/apache/derby/diag/ErrorMessages.class
+SHA1-Digest: ReDtz698Tr2o/6y10SgqGntrBPg=
+
+Name: org/apache/derby/loc/clientmessages_es.properties
+SHA1-Digest: LZEVLdXg8OJVPDgBl2A6fFuH/QY=
+
+Name: org/apache/derby/iapi/store/access/TransactionInfo.class
+SHA1-Digest: wFNRmKYuTXOy++6wnCwkiA0QjfA=
+
+Name: org/apache/derby/impl/services/locks/LockSet.class
+SHA1-Digest: 7wRZuSNAaTj9+gvbF7BMKNWOyZQ=
+
+Name: org/apache/derby/impl/sql/compile/SQLParserTokenManager.class
+SHA1-Digest: O7sTR+I9Hpvyayk0p8l6wDO2Z8M=
+
+Name: org/apache/derby/iapi/store/raw/LockingPolicy.class
+SHA1-Digest: MXrVBas5qezVmviReMIrR0mPeXk=
+
+Name: org/apache/derby/impl/sql/compile/ColumnDefinitionNode.class
+SHA1-Digest: yjFAAAheh7D+id/o3n9TI5Boq0A=
+
+Name: org/apache/derby/impl/sql/catalog/DD_Version.class
+SHA1-Digest: zxXLhJEnUh5slEzXcuFSazCG9+k=
+
+Name: org/apache/derby/impl/sql/execute/RowCountResultSet.class
+SHA1-Digest: 1+PH/Pym0TRpdPM+/j5/TNLd9Hs=
+
+Name: org/apache/derby/iapi/types/NumberDataType.class
+SHA1-Digest: n2Im6I3oRX49iSB3iOnG+5YebnQ=
+
+Name: org/apache/derby/impl/services/reflect/UpdateLoader.class
+SHA1-Digest: RZtX8hIt7DORg+7HtFXRT08KZRU=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeCostController.cla
+ ss
+SHA1-Digest: E4jAIa34OWOQRFMEAQimxEaXbw0=
+
+Name: org/apache/derby/diag/SpaceTable.class
+SHA1-Digest: SnU+RJnspr1Jp+T70QeaFF5REHI=
+
+Name: org/apache/derby/impl/store/raw/log/LogAccessFileBuffer.class
+SHA1-Digest: tjlJjQElEaGoGmtntNpcuJN/y/o=
+
+Name: org/apache/derby/jdbc/Driver169.class
+SHA1-Digest: cioR3ecHq6/xFQAh7syN8vlLgn4=
+
+Name: org/apache/derby/loc/m49_en.properties
+SHA1-Digest: 4YPwXCR3q2M8PPphM6Oup/E1wEA=
+
+Name: org/apache/derby/impl/sql/execute/SortResultSet.class
+SHA1-Digest: FIiV0DT/8C/urv7pLIEhy8LBppo=
+
+Name: org/apache/derby/impl/sql/execute/CardinalityCounter.class
+SHA1-Digest: 0MzVistbpFTL4zAJ7JUhDBTtKkY=
+
+Name: org/apache/derby/impl/jdbc/InternalClob.class
+SHA1-Digest: 4vUhUq7oLMUEtBOp7e1nbNisoPo=
+
+Name: org/apache/derby/client/net/NetResultSet40.class
+SHA1-Digest: rgbUvU4omVCY911jlXGT3WM9NSY=
+
+Name: org/apache/derby/impl/sql/compile/HasNodeVisitor.class
+SHA1-Digest: sa3pLxomGN0L0q9Am/OLYnm08jw=
+
+Name: org/apache/derby/impl/sql/compile/PrivilegeNode.class
+SHA1-Digest: aLu4C7IhnuMa6qAxyZPuw9+S8eo=
+
+Name: org/apache/derby/impl/drda/EXTDTAInputStream.class
+SHA1-Digest: gwxTiFqnzGwDwvWLInOdlKRUD5I=
+
+Name: org/apache/derby/vti/VTIEnvironment.class
+SHA1-Digest: CPSj4BY3Y1QsQNZISHio4AQChH8=
+
+Name: org/apache/derby/catalog/types/ReferencedColumnsDescriptorImpl.c
+ lass
+SHA1-Digest: 0G695DiFtAJES6/9zb6oUhl1soA=
+
+Name: org/apache/derby/iapi/sql/compile/NodeFactory.class
+SHA1-Digest: uPmJ0EM472FOSOKqcXZsDimsQ5w=
+
+Name: org/apache/derby/impl/services/bytecode/BCMethodDescriptor.class
+SHA1-Digest: AwXCEGMHPo7zYlT5qq/qVsf01ek=
+
+Name: org/apache/derby/loc/m31_en.properties
+SHA1-Digest: nnILIA8/5HXAKLZv5tymLvCMIpI=
+
+Name: org/apache/derby/iapi/db/Factory.class
+SHA1-Digest: i8S2OY+kZo9sOnAQFlBdFzWzsao=
+
+Name: org/apache/derby/impl/drda/DRDAProtocolException.class
+SHA1-Digest: 7detUtBuped9jipDML2q37E8xlw=
+
+Name: org/apache/derby/impl/sql/compile/C_NodeNames.class
+SHA1-Digest: RYGOkqHoeQydYT9We4OQKtmSXdA=
+
+Name: org/apache/derby/client/am/LogWriter.class
+SHA1-Digest: XNDXbUDu4vTRcx6f9IYfoil1FZ8=
+
+Name: org/apache/derby/client/am/stmtcache/StatementKey.class
+SHA1-Digest: Pu9SnCeeLHPVPElv+jNnVibC+5c=
+
+Name: org/apache/derby/impl/tools/ij/TokenMgrError.class
+SHA1-Digest: m5ZU6+nA8MxpMLpJzCnQ9ZiPgu4=
+
+Name: org/apache/derby/client/am/UpdateSensitiveBlobLocatorInputStream
+ .class
+SHA1-Digest: Z5Y9LSaVyiACBh/bl1r7VEcRh4U=
+
+Name: org/apache/derby/impl/sql/compile/AggregateDefinition.class
+SHA1-Digest: jyVPYGp0wlkATaJRrMfm1mxXvi4=
+
+Name: org/apache/derby/impl/sql/depend/BasicDependencyManager.class
+SHA1-Digest: XQnHFzJhkrN50w7jhCenwXVeo+8=
+
+Name: org/apache/derby/impl/sql/compile/GroupByList.class
+SHA1-Digest: g0iDL+FQ6yjG78mFRBcwHn8MdEc=
+
+Name: org/apache/derby/iapi/services/stream/InfoStreams.class
+SHA1-Digest: XXk/qINeVEKPBhgsDB0ywfTTdpc=
+
+Name: org/apache/derby/client/net/NetConnectionReply.class
+SHA1-Digest: zarW3/5Iq+Bp1BlwyWmPCELd1fE=
+
+Name: org/apache/derby/impl/jdbc/EmbedConnection40.class
+SHA1-Digest: l/2fb033gUiQ6gXwI+6SZT1TIZE=
+
+Name: org/apache/derby/impl/store/access/RllRAMAccessManager.class
+SHA1-Digest: Im1LYjtj+YJDIo8uWzJSBi9lleo=
+
+Name: org/apache/derby/impl/sql/execute/DependentResultSet.class
+SHA1-Digest: zMjlFwMcaLE927FgkkkJX3UrFXI=
+
+Name: org/apache/derby/iapi/store/raw/FetchDescriptor.class
+SHA1-Digest: S/SPbHr0sXY9PkTj8PVL8VhytMs=
+
+Name: org/apache/derby/impl/services/timer/SingletonTimerFactory$1.cla
+ ss
+SHA1-Digest: CQV4tY/u4uf9CxyYEvCxMcCT9hM=
+
+Name: org/apache/derby/impl/sql/execute/RowChangerImpl.class
+SHA1-Digest: 5gLkI+ZhzYCAA3E7SZ9n2AcT968=
+
+Name: org/apache/derby/client/am/Clob.class
+SHA1-Digest: OP08cbdaJGW3tcpREgnbDGO+AsA=
+
+Name: org/apache/derby/client/am/ClientMessageId.class
+SHA1-Digest: vGUwAmWM5e7hBiwpWckjvIyCuwY=
+
+Name: org/apache/derby/iapi/sql/dictionary/SystemColumn.class
+SHA1-Digest: yk/8TdUqZFNE9bvayanmFqm13gE=
+
+Name: org/apache/derby/impl/sql/execute/GenericTriggerExecutor.class
+SHA1-Digest: e9e/z95v3g5Zv/nvDyTo7QSjrAo=
+
+Name: org/apache/derby/impl/sql/compile/JavaValueNode.class
+SHA1-Digest: TnHuGFCQapHRS6L0QkT9U37WNwk=
+
+Name: org/apache/derby/loc/drda/servlet_ru.properties
+SHA1-Digest: a3ftSmEQ6Vz8rxhrvnYJGYhUslU=
+
+Name: org/apache/derby/iapi/sql/dictionary/ConglomerateDescriptorList.
+ class
+SHA1-Digest: mT+Lqyk0wONVuMOxYGfxYBWTfDA=
+
+Name: org/apache/derby/impl/sql/compile/UserDefinedTypeCompiler.class
+SHA1-Digest: r9VTQJieDQ3Thv7zEmxK0UxCfi0=
+
+Name: org/apache/derby/impl/jdbc/StoreStreamClob$1.class
+SHA1-Digest: 9u6MhtMw4UkbBM0/7Kl9lNWqv9U=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredCallableStatement40.class
+SHA1-Digest: +uJuKCwuaBS02wZFjF4xBIYgV9s=
+
+Name: org/apache/derby/jdbc/EmbeddedDriver.class
+SHA1-Digest: vCIZQgDaP/98k/TycgmOeK+wF+M=
+
+Name: org/apache/derby/impl/tools/ij/ijXid.class
+SHA1-Digest: Q5KTNMtdigcg8ahkWAJu/FjmEDY=
+
+Name: org/apache/derby/client/net/NetIndoubtTransaction.class
+SHA1-Digest: C/dkB7guJ4cVkITQ4qjJBk8909Y=
+
+Name: org/apache/derby/iapi/store/access/Qualifier.class
+SHA1-Digest: +E+kxy/GIemfVe5sXQLIBF+klY4=
+
+Name: org/apache/derby/impl/tools/ij/ijFatalException.class
+SHA1-Digest: ZxqSWM3VhfUWgZbp4JpHuVq+Of0=
+
+Name: org/apache/derby/loc/drda/servlet_it.properties
+SHA1-Digest: 7eA2jd/nBqYEOy3iW1XdRrj+Yp8=
+
+Name: org/apache/derby/drda/NetServlet$1.class
+SHA1-Digest: NP6HBe5i6MmkBAw1np5lJQ8kUIE=
+
+Name: org/apache/derby/client/am/Version.class
+SHA1-Digest: ztQ18wxSJNV23vVaYa7hhVLodbE=
+
+Name: org/apache/derby/iapi/types/UserType.class
+SHA1-Digest: AfA8UnAtz2bxIf7lgux/LpIS3p0=
+
+Name: org/apache/derby/impl/sql/execute/rts/ResultSetStatistics.class
+SHA1-Digest: QW8c4HLiOmWQB6FOeVkv5QLTxlo=
+
+Name: org/apache/derby/impl/store/raw/data/AllocPageOperation.class
+SHA1-Digest: AQgnqH7Na9CPUxC2SGUwsh9qyuA=
+
+Name: org/apache/derby/iapi/types/SQLTime.class
+SHA1-Digest: HEU4z60umxattdeVHN3mQD3OejU=
+
+Name: org/apache/derby/impl/sql/execute/StatementTriggerExecutor.class
+SHA1-Digest: usw+HBsunh88znUAxSxtK7pYqYE=
+
+Name: org/apache/derby/loc/drda/servlet_de_DE.properties
+SHA1-Digest: Vv0qKhJNKYL8W2njIrrLcS2a3+k=
+
+Name: org/apache/derby/vti/VTICosting.class
+SHA1-Digest: lkkBb783Alxyh/KlrtIq8d81YL8=
+
+Name: org/apache/derby/impl/services/bytecode/GClass.class
+SHA1-Digest: l2pKIH7o4twCSqBroi9es/MGkg8=
+
+Name: org/apache/derby/iapi/services/loader/InstanceGetter.class
+SHA1-Digest: LNQsMh2m4yt+BDtX5CUwnBRkI24=
+
+Name: org/apache/derby/client/am/SQLExceptionFactory.class
+SHA1-Digest: fEGf35c3oLsjtoC96woSINjVPEE=
+
+Name: org/apache/derby/iapi/services/loader/ClassFactoryContext.class
+SHA1-Digest: 9zwmemccxpXriM0hVU5W0rhWiI4=
+
+Name: org/apache/derby/impl/store/access/conglomerate/GenericCostContr
+ oller.class
+SHA1-Digest: TqM+eKwsZkxbFh/SkcPti7dOYKY=
+
+Name: org/apache/derby/jdbc/Driver30.class
+SHA1-Digest: 29KSm6cqCQZB5N9CxvcGoRqUgJg=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealInsertVTIResultSetStat
+ istics.class
+SHA1-Digest: zRyW1PfFg8u6p8Aq1OvTTrBqYfg=
+
+Name: org/apache/derby/impl/store/access/heap/HeapScan.class
+SHA1-Digest: 3426wSzRCMJYl0OILoBVCjroTdU=
+
+Name: org/apache/derby/impl/sql/execute/HashLeftOuterJoinResultSet.cla
+ ss
+SHA1-Digest: ijeZ7qHU+ijZDb29q+HHpkbknX8=
+
+Name: org/apache/derby/client/net/NetXAConnectionRequest.class
+SHA1-Digest: Etd3taq+3ZZ/zmQSO0Ni07ZPrB4=
+
+Name: org/apache/derby/iapi/types/SQLDate.class
+SHA1-Digest: eD/j5h3hYzrmd2NrWbdKooGN8YM=
+
+Name: org/apache/derby/client/ClientPooledConnection40.class
+SHA1-Digest: 1CJFpkbJZEemIaErimfMFf2FQnY=
+
+Name: org/apache/derby/client/net/NetXAConnection.class
+SHA1-Digest: w8heuUtH0uxEWLSV9eAGFnLUTvs=
+
+Name: org/apache/derby/impl/sql/execute/RealResultSetStatisticsFactory
+ .class
+SHA1-Digest: Zzz/aRTSwukin/CVCeiparjfglE=
+
+Name: org/apache/derby/client/net/NetConnectionRequest.class
+SHA1-Digest: LUUJKwIRwToAUhMJ5wGtlC034VI=
+
+Name: org/apache/derby/iapi/types/DataTypeUtilities.class
+SHA1-Digest: XKDs5ZqM/YYs/xGE2ODzBVcssos=
+
+Name: org/apache/derby/impl/store/access/conglomerate/GenericConglomer
+ ate.class
+SHA1-Digest: L3/ScZ8XEyOcPJyRMCxWfjbMMq0=
+
+Name: org/apache/derby/impl/services/jce/JCECipherFactory.class
+SHA1-Digest: g4nrItAs8oUGEtv3in4IPRIdzs4=
+
+Name: org/apache/derby/impl/load/Export$1.class
+SHA1-Digest: RohWMBdoGJ9k4zbKxL9aHjsl1Mw=
+
+Name: org/apache/derby/iapi/jdbc/EngineStatement.class
+SHA1-Digest: UCXnZlgAUjvR4IbQ4AVCCBGFWWg=
+
+Name: org/apache/derby/info/dnc.properties
+SHA1-Digest: uVFXlLTti3u2Gjf7fR/ZGq6jXcQ=
+
+Name: org/apache/derby/impl/store/access/sort/NodeAllocator.class
+SHA1-Digest: x39idcB5l7fZ+huhk6wGBvuUCW8=
+
+Name: org/apache/derby/impl/drda/memCheck.class
+SHA1-Digest: JvkIE2ac0peflktCdm4nfRqLrMA=
+
+Name: org/apache/derby/iapi/services/jmx/ManagementService.class
+SHA1-Digest: LL5wCARoz3ySArJJ5UqigGUu0eM=
+
+Name: org/apache/derby/iapi/sql/execute/CursorActivation.class
+SHA1-Digest: gCVyak8ODaJLjapwuXXZw2m+W74=
+
+Name: org/apache/derby/jdbc/EmbeddedXADataSource40.class
+SHA1-Digest: vNhXHMTwNgVFKkOP0MNIS/8CMoU=
+
+Name: org/apache/derby/iapi/sql/compile/RowOrdering.class
+SHA1-Digest: 7FPU0a2+4fFjmdC3DcZX33VfL7I=
+
+Name: org/apache/derby/client/am/PreparedStatement40.class
+SHA1-Digest: Zo6feUxaIR+JKTN+YvFbG7IdVDI=
+
+Name: org/apache/derby/iapi/sql/depend/Provider.class
+SHA1-Digest: mScD9ioED0pA+Wo/wNsl+0r89nU=
+
+Name: org/apache/derby/impl/sql/CursorInfo.class
+SHA1-Digest: dh+z4/cTB5inH++RLeIQxTEybLU=
+
+Name: org/apache/derby/catalog/Dependable.class
+SHA1-Digest: X6r0vyYSq+VLDwGSkGm2xhoonGA=
+
+Name: org/apache/derby/catalog/types/RowMultiSetImpl.class
+SHA1-Digest: oNy6TpH8fanTTAJy36lOYoGjoIM=
+
+Name: org/apache/derby/impl/sql/compile/TableElementList.class
+SHA1-Digest: mGlf1IIEJAzJvZunpDE6skQa6mM=
+
+Name: org/apache/derby/io/StorageFactory.class
+SHA1-Digest: zNDKuYS1yyDo3IfTzQm+o0YRRPU=
+
+Name: org/apache/derby/impl/sql/execute/InsertResultSet.class
+SHA1-Digest: RA9DW8dFvOEnWFDJUImHWdZUWxs=
+
+Name: org/apache/derby/iapi/util/UTF8Util.class
+SHA1-Digest: kTe+B5aozPIXsfWUWnBrqoQ9JD8=
+
+Name: org/apache/derby/jdbc/EmbeddedConnectionPoolDataSource.class
+SHA1-Digest: QhBFoHym0IkJsUzx+ZBUdUibc1k=
+
+Name: org/apache/derby/client/net/NetAgent.class
+SHA1-Digest: nmroGGiE2BV/vnqgucigKDJpYP0=
+
+Name: org/apache/derby/impl/sql/compile/CostEstimateImpl.class
+SHA1-Digest: HeNw0+cYnIPB8qGtSCIuTTAaurQ=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$7.c
+ lass
+SHA1-Digest: 1De++7M0K0bdXQupQSGNKRINas4=
+
+Name: org/apache/derby/iapi/services/cache/CacheableFactory.class
+SHA1-Digest: FRRn0Lyd1ReQkWde5twUCctMtwY=
+
+Name: org/apache/derby/iapi/util/DoubleProperties.class
+SHA1-Digest: dI7tVwBb0SmLs4N5rVFcicZjgzY=
+
+Name: org/apache/derby/impl/sql/catalog/SYSROUTINEPERMSRowFactory.clas
+ s
+SHA1-Digest: 8kN421nHCYJb1hgwxOf1VuYXFC0=
+
+Name: org/apache/derby/impl/drda/ClientThread$1.class
+SHA1-Digest: afPc289z0fJn1+9TeeUYbw7l7/A=
+
+Name: org/apache/derby/iapi/services/cache/SizedCacheable.class
+SHA1-Digest: 0xZwDPpY8qQ+MYS1mcPOHIxB+Mg=
+
+Name: org/apache/derby/iapi/types/BooleanDataValue.class
+SHA1-Digest: L5G5w4EgFyvz5NZ+/4jx1GO2UQ0=
+
+Name: org/apache/derby/iapi/sql/Activation.class
+SHA1-Digest: oPDVhempw9clgHevMZJ8GChJWxM=
+
+Name: org/apache/derby/iapi/types/SQLBinary.class
+SHA1-Digest: ipUtCdBh9HUVGm/JkWvCwbWftJ8=
+
+Name: org/apache/derby/client/am/BlobOutputStream.class
+SHA1-Digest: K3fUi16rcDDj5M7wfS1Au+GZQwE=
+
+Name: org/apache/derby/impl/tools/ij/xaHelper.class
+SHA1-Digest: 9/cMGk5ehIHxVYDvnag9HSO6920=
+
+Name: org/apache/derby/impl/store/raw/data/UpdateOperation.class
+SHA1-Digest: BUDN80MqR6stRYbAyTftq5+QhI4=
+
+Name: org/apache/derby/impl/sql/execute/WriteCursorConstantAction.clas
+ s
+SHA1-Digest: Y+1T5H4qK8ERe2gVpzn28lMhQ5A=
+
+Name: org/apache/derby/iapi/sql/dictionary/SubKeyConstraintDescriptor.
+ class
+SHA1-Digest: LTw61ic7XFi9hVip7NtIbw0CuK0=
+
+Name: org/apache/derby/impl/sql/compile/CLOBTypeCompiler.class
+SHA1-Digest: XrB5mLpQ9GNxMU9opB5NZju/Nnw=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementPermission.class
+SHA1-Digest: vK0yGqucRPBh8cbYVv+Wf7LX5cQ=
+
+Name: org/apache/derby/impl/tools/ij/ConnectionEnv.class
+SHA1-Digest: RE6UYCyDkzMJC+kX13qLv9RgQgI=
+
+Name: org/apache/derby/iapi/util/IdUtil.class
+SHA1-Digest: I3yLMpNiVJbxGKcJnmpuFSAT++o=
+
+Name: org/apache/derby/loc/clientmessages_fr.properties
+SHA1-Digest: 6THBtVHkDbt5AY9+Xe61Or3cLH0=
+
+Name: org/apache/derby/loc/m24_en.properties
+SHA1-Digest: 7Dnav7aB8uR8YnZ406bfaWfGDwc=
+
+Name: org/apache/derby/impl/services/uuid/BasicUUID.class
+SHA1-Digest: qfC9EENIqYCaGJPf9qY45FnZMeg=
+
+Name: org/apache/derby/loc/drda/servlet_es.properties
+SHA1-Digest: buB8vVqSZoEak78xcOouqC0dB+c=
+
+Name: org/apache/derby/client/net/NetXAResource.class
+SHA1-Digest: RUqifDPZibiyuNj6/++UsAAAceg=
+
+Name: org/apache/derby/iapi/sql/dictionary/ReferencedKeyConstraintDesc
+ riptor.class
+SHA1-Digest: 2Hqkq8vSanMmZNUV2zNR7dvArKg=
+
+Name: org/apache/derby/impl/sql/execute/SetTransactionResultSet.class
+SHA1-Digest: KWlwYINQl1oi+yltUZXZQM+ZEOk=
+
+Name: org/apache/derby/impl/store/access/sort/UniqueWithDuplicateNulls
+ ExternalSortFactory.class
+SHA1-Digest: MgwIU4Nu78v0Z+8JkYtv8tmAg8g=
+
+Name: org/apache/derby/impl/services/locks/LockControl.class
+SHA1-Digest: HpY1xFIWidh3b+vPT3OccXdeUJU=
+
+Name: org/apache/derby/iapi/services/locks/CompatibilitySpace.class
+SHA1-Digest: MntminOdwwP0br7A/imHC/gGWdA=
+
+Name: org/apache/derby/iapi/types/CDCDataValueFactory.class
+SHA1-Digest: Q7WQPr/XKvAVruD0/4fVY7Bbhjo=
+
+Name: org/apache/derby/impl/store/replication/master/AsynchronousLogSh
+ ipper.class
+SHA1-Digest: R3GsZNXXzNRLZIoQF0A5FH83D0s=
+
+Name: org/apache/derby/vti/UpdatableVTITemplate.class
+SHA1-Digest: aHi9gzybfJ50KPp4jJeq5nio94o=
+
+Name: org/apache/derby/impl/sql/execute/ColumnInfo.class
+SHA1-Digest: H9uOUOYm1FVnHZUjw3QxKidhF4s=
+
+Name: org/apache/derby/iapi/types/Resetable.class
+SHA1-Digest: +yM5IfxMxYSpXaT1fzEBN8dEJoM=
+
+Name: org/apache/derby/iapi/services/loader/GeneratedByteCode.class
+SHA1-Digest: Bj15GsKeFJjjRfS6wRiDlh1XSzA=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$Dir
+ ectoryList.class
+SHA1-Digest: wlRW5v/W3urzSImNlFEcAvMarEE=
+
+Name: org/apache/derby/impl/sql/execute/AlterTableConstantAction.class
+SHA1-Digest: 6rOFt9cLlcD6Z3gRTsHOEO99W2w=
+
+Name: org/apache/derby/mbeans/Management.class
+SHA1-Digest: E4pLzfdCVWpCxRsESbCqJ/bW+1c=
+
+Name: org/apache/derby/impl/tools/ij/xaAbstractHelper.class
+SHA1-Digest: 163sDPCf2DUgG61MhNrB30fJVUs=
+
+Name: org/apache/derby/client/am/LogicalPreparedStatement.class
+SHA1-Digest: PcXyMM/Qj3mUXOUDs1HSsxXeT2Q=
+
+Name: org/apache/derby/impl/sql/compile/PredicateList.class
+SHA1-Digest: vDLOUQCWTfte9G2LmYi2SjUsMPE=
+
+Name: org/apache/derby/iapi/store/access/ScanInfo.class
+SHA1-Digest: 3R6peOqDhNxG8pX3GdG82dq6Dj4=
+
+Name: org/apache/derby/impl/services/bytecode/d_BCValidate.class
+SHA1-Digest: KEOtl3ga0G0IOvlMdhG1l/3QUjk=
+
+Name: org/apache/derby/impl/sql/compile/GrantNode.class
+SHA1-Digest: vS9mMU31QW31Xc97OOGVhgoqZaQ=
+
+Name: org/apache/derby/shared/common/i18n/MessageUtil.class
+SHA1-Digest: 2vYGWmMpoNWq/LbAH4XhRzWHgms=
+
+Name: org/apache/derby/loc/m46_en.properties
+SHA1-Digest: SN2v+Yq1/DLRDOavQ1jIBJxZg+g=
+
+Name: org/apache/derby/iapi/types/SQLBlob.class
+SHA1-Digest: VFyo0lNsG/5fv828fMmRWLTD0Rg=
+
+Name: org/apache/derby/impl/sql/execute/CursorActivation.class
+SHA1-Digest: HZiHUEHDc3kihQVc83kdAAF9LGQ=
+
+Name: org/apache/derby/impl/sql/execute/IndexChanger.class
+SHA1-Digest: VndZGT+nS0boNFmaFYENmiFU4FU=
+
+Name: org/apache/derby/jdbc/ClientConnectionPoolDataSource40.class
+SHA1-Digest: bdVtrY+IlbwwUn9p2opzvIToNjo=
+
+Name: org/apache/derby/client/am/StatementCallbackInterface.class
+SHA1-Digest: BM2Yor3YY07+QIYdxJTNWPj/7MU=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Trigger.class
+SHA1-Digest: MXpttpbiM0oDpGPBnCeSgAB5RR4=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Roles.class
+SHA1-Digest: qxyQJrV6GSu42bIj5D+aaVEoLqo=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSet20.class
+SHA1-Digest: 39DH8P7c5jIpTCjpoPhIT3Q+QyY=
+
+Name: org/apache/derby/impl/store/access/sort/MergeScan.class
+SHA1-Digest: lM6R4sg0SR9UnjEHlqbQGT6myR8=
+
+Name: org/apache/derby/iapi/sql/compile/OptimizablePredicate.class
+SHA1-Digest: 90t4qRqDWI5eizIueANxvwUUONk=
+
+Name: org/apache/derby/shared/common/error/ExceptionUtil.class
+SHA1-Digest: N5zPEw8n4poX93xR6Vop+fpWl7E=
+
+Name: org/apache/derby/impl/services/stream/SingleStream.class
+SHA1-Digest: PxM1S1XoWbGB9+ku+HuG6TiNkRk=
+
+Name: org/apache/derby/impl/sql/compile/ConditionalNode.class
+SHA1-Digest: VelbNW3aaebNvRiQaRzZpZjYlZ4=
+
+Name: org/apache/derby/impl/services/locks/ConcurrentPool.class
+SHA1-Digest: agO6nX11mYx5FHwHTifaJd9BGu0=
+
+Name: org/apache/derby/impl/sql/catalog/SYSVIEWSRowFactory.class
+SHA1-Digest: Cg/2AJO4IYDVzH92AMWjWwHT21k=
+
+Name: org/apache/derby/iapi/sql/dictionary/PermissionsDescriptor.class
+SHA1-Digest: uk13cFH6GmwfTuCMdoZfG5gK5FU=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealIndexRowToBaseRowStati
+ stics.class
+SHA1-Digest: z1ZXRfE7F1DleeoC0BCyEZj5AEA=
+
+Name: org/apache/derby/impl/store/raw/data/RAFContainer.class
+SHA1-Digest: pAXjPBRnPsyVGu0H6q2P++JQv2M=
+
+Name: org/apache/derby/client/net/ClientJDBCObjectFactoryImpl.class
+SHA1-Digest: EuvtmnJyB7AhhgDU5dEFCorLII4=
+
+Name: org/apache/derby/impl/sql/catalog/PermissionsCatalogRowFactory.c
+ lass
+SHA1-Digest: MYTGk3XIgfNPEEipKL1kJh8oNfo=
+
+Name: org/apache/derby/impl/sql/catalog/SYSDEPENDSRowFactory.class
+SHA1-Digest: mKoMoo6Lzial4hSFHEyzOwHcCaE=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageRe
+ ceive.class
+SHA1-Digest: p9rSDh4vGibKd38UpwPfEYYMpfs=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSetMetaData40.class
+SHA1-Digest: YhSMIjg+8C9lbuuiU7QjAZVLOTI=
+
+Name: org/apache/derby/impl/store/access/heap/HeapPostCommit.class
+SHA1-Digest: ggzNqTuVWuB0oVagUo+n/xVo/Cw=
+
+Name: org/apache/derby/impl/sql/compile/StaticMethodCallNode.class
+SHA1-Digest: W/QK/JwEDG3VwtMhNOiiAvib31k=
+
+Name: org/apache/derby/iapi/sql/conn/ConnectionUtil.class
+SHA1-Digest: uZeXXhMqrFCCZjmREA/tf0ANC9U=
+
+Name: org/apache/derby/impl/store/access/heap/HeapCompressScan.class
+SHA1-Digest: ji6cXoiSLrNPmtAwyFAgubCjCyo=
+
+Name: org/apache/derby/impl/sql/compile/CallStatementNode.class
+SHA1-Digest: x3xoukIX/id8B59/qPI3kEx5308=
+
+Name: org/apache/derby/impl/store/access/heap/HeapConglomerateFactory.
+ class
+SHA1-Digest: +fD9KNdAk1k5zomg1i9n3gPdOIE=
+
+Name: org/apache/derby/iapi/sql/conn/SQLSessionContext.class
+SHA1-Digest: 8hxMNlT8Sx/kh1CQibSB65jx/M8=
+
+Name: org/apache/derby/impl/sql/depend/DepClassInfo.class
+SHA1-Digest: mvjIF0PXReDSBZF6VNkvzXkH4n4=
+
+Name: org/apache/derby/loc/m9_en.properties
+SHA1-Digest: vbPQQ3mdeaB2RsqcyuY/DfbPhnQ=
+
+Name: org/apache/derby/iapi/store/access/RowCountable.class
+SHA1-Digest: F3BzZFYU2HOAfp6vxJUDqbEgeK4=
+
+Name: org/apache/derby/impl/store/raw/data/StoredPage.class
+SHA1-Digest: RmrK/Th2u3D6W8K3l5crJXxgwt0=
+
+Name: org/apache/derby/iapi/util/Operator.class
+SHA1-Digest: l3RMlNDby3b2fWOBUNnBAJmJQjA=
+
+Name: org/apache/derby/impl/sql/compile/CreateViewNode.class
+SHA1-Digest: ca2CR928kjQUxjJtqhaFg5P1u8o=
+
+Name: org/apache/derby/impl/sql/compile/TimeTypeCompiler.class
+SHA1-Digest: UIY3qnV/RE/yR9Dr7v2buyo1mWY=
+
+Name: org/apache/derby/iapi/reference/Attribute.class
+SHA1-Digest: E0EqFOwYVdhtzyrM40Zlj6/QS0g=
+
+Name: org/apache/derby/iapi/services/classfile/ClassHolder.class
+SHA1-Digest: 5XkR8g9SE0K8Wr0YUjgClJt5RsM=
+
+Name: org/apache/derby/info/net.properties
+SHA1-Digest: gGg5LNgcFXt4tO4IWrMKntjPNlo=
+
+Name: org/apache/derby/impl/sql/execute/DistinctScanResultSet.class
+SHA1-Digest: 5AezQ7geqOI13MJZCPxOhy6Zaro=
+
+Name: org/apache/derby/impl/store/raw/data/ContainerUndoOperation.clas
+ s
+SHA1-Digest: qLMsbdVL9YpV4vdnt0WtSUzqGLE=
+
+Name: org/apache/derby/impl/store/access/heap/Heap.class
+SHA1-Digest: VmQ1au6un6PsJF9cDk/5ynRhoIY=
+
+Name: org/apache/derby/impl/io/vfmem/BlockedByteArrayInputStream.class
+SHA1-Digest: AdYetSExGHnpuCnlwFCczQnVAyQ=
+
+Name: org/apache/derby/client/am/DatabaseMetaData.class
+SHA1-Digest: a6PEiJamNM6B3hfi/0YSMuHuJr8=
+
+Name: org/apache/derby/impl/services/locks/SinglePool.class
+SHA1-Digest: ohWb/lKcaq3MY/E5a+kCc9dSajI=
+
+Name: org/apache/derby/client/net/NetStatement.class
+SHA1-Digest: blIxv4FnIVnuBYTimslzW0o54d8=
+
+Name: org/apache/derby/iapi/tools/i18n/LocalizedInput.class
+SHA1-Digest: dSYAsGh51FmY4qhjZ5+/EnOL8qw=
+
+Name: org/apache/derby/impl/store/raw/data/SyncOnCommit.class
+SHA1-Digest: GjRY7DblrzQAELPYEXDq2ZPm0mQ=
+
+Name: org/apache/derby/client/net/EbcdicCcsidManager.class
+SHA1-Digest: dM5nHy2+GuisQjdOGpCp1YhNLi4=
+
+Name: org/apache/derby/iapi/services/io/FormatableLongHolder.class
+SHA1-Digest: qEmEwHF7PeqWQ5u9CYtE5l3Kg50=
+
+Name: org/apache/derby/impl/services/locks/LockSpace.class
+SHA1-Digest: hwn4BteJSeGzNQbKvoOvGzKlNQw=
+
+Name: org/apache/derby/impl/sql/compile/GenerationClauseNode.class
+SHA1-Digest: yx2Zpv6TZOORVkFQaliKW3JXBwo=
+
+Name: org/apache/derby/impl/store/access/sort/ExternalSortFactory.clas
+ s
+SHA1-Digest: dvYVrKA4seQwkyQvdYSPwWPUJ7c=
+
+Name: org/apache/derby/impl/sql/execute/ProjectRestrictResultSet.class
+SHA1-Digest: Oyyt9sasMAkmDsE0Ip8Q8dYQ7+M=
+
+Name: org/apache/derby/catalog/DependableFinder.class
+SHA1-Digest: 8Wl7NR7P/Mjmw3N/cZznDiL11WI=
+
+Name: org/apache/derby/loc/clientmessages_pl.properties
+SHA1-Digest: 0GAuRrDjlBu1tBHpLf6LX7NhGPk=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Float_info.cla
+ ss
+SHA1-Digest: eo0q2qJghaoh8jZmfTh6aLK/SBI=
+
+Name: org/apache/derby/impl/services/cache/Clock.class
+SHA1-Digest: 4scq/4qrWDnXpNmEWXz6ITQJXUE=
+
+Name: org/apache/derby/impl/store/raw/xact/XactFactory.class
+SHA1-Digest: PZSEgPWAU7KpTCGby8vLMrHNXOg=
+
+Name: org/apache/derby/impl/store/raw/data/AllocationCache.class
+SHA1-Digest: K7lo1nmFk/iv6qG7BhHd+06+00U=
+
+Name: org/apache/derby/impl/store/access/conglomerate/ConglomerateUtil
+ .class
+SHA1-Digest: GoYC6xLxt+079P3YDxKXfz3LqLw=
+
+Name: org/apache/derby/client/am/LogicalConnection40.class
+SHA1-Digest: wc63u30ogMmtS18oVv/1HJ8qOqM=
+
+Name: org/apache/derby/iapi/services/cache/CacheManager.class
+SHA1-Digest: WAu7uSDKlz2XAo8kc8LOx/Aw+/o=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredCallableStatement.class
+SHA1-Digest: YvFm6p5Wyuh6X0xu83ClW5T6obI=
+
+Name: org/apache/derby/modules.properties
+SHA1-Digest: P8TyH43PCNukiTNf4mZXMkSdGM0=
+
+Name: org/apache/derby/impl/store/access/CacheableConglomerate.class
+SHA1-Digest: fwDehesCnKaOC0hHaR0UXP3AH1Q=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/Conglomerate.cla
+ ss
+SHA1-Digest: 2quFznE6NioQ+rd+IEUfek6vrdU=
+
+Name: org/apache/derby/loc/m17_en.properties
+SHA1-Digest: Fy9MklE4lcBXakaYgHj4l86gWqU=
+
+Name: org/apache/derby/iapi/sql/conn/LanguageConnectionContext.class
+SHA1-Digest: 0IB/QRTdUnmj8rO/0ABGPwbqOHo=
+
+Name: org/apache/derby/impl/sql/compile/CharTypeCompiler.class
+SHA1-Digest: 4IyDT54SEqruTW1G0HUQkh4DmaA=
+
+Name: org/apache/derby/client/net/NetXAConnectionReply.class
+SHA1-Digest: pnft+NrekVlpYdQivgMn6g7yVPw=
+
+Name: org/apache/derby/impl/store/raw/data/BaseDataFileFactory$1.class
+SHA1-Digest: ZEnrb0bmuSW5CW7axT7KIuZJSU0=
+
+Name: org/apache/derby/impl/store/raw/xact/XactId.class
+SHA1-Digest: RaYh9c7XxaYYlbzaRj9SV9YjSDU=
+
+Name: org/apache/derby/impl/sql/compile/CharStream.class
+SHA1-Digest: NqCF+/86ASCoxRptH+upD326yFo=
+
+Name: org/apache/derby/iapi/store/raw/log/LogFactory.class
+SHA1-Digest: 67lvZhh/3SlRsqUiVfeytVoEhRw=
+
+Name: org/apache/derby/impl/sql/compile/CharConstantNode.class
+SHA1-Digest: 6QVKV6sfOm20oGvMsBK4OKrPMJA=
+
+Name: org/apache/derby/impl/sql/execute/TriggerEvent.class
+SHA1-Digest: BpDTJotBcLN7aG2P1cxU5V5LahY=
+
+Name: org/apache/derby/impl/store/replication/slave/ReplicationLogScan
+ .class
+SHA1-Digest: NJDi3vGSxUqzIa3qSIoL6mWzXxo=
+
+Name: org/apache/derby/impl/jdbc/UpdatableBlobStream.class
+SHA1-Digest: mfPfCaqAd++h/Wyfl7wwfc3dKsU=
+
+Name: org/apache/derby/impl/drda/CcsidManager.class
+SHA1-Digest: nMU/ehaXIdAvkKGcYtZn0XHUhvo=
+
+Name: org/apache/derby/impl/sql/compile/DropTableNode.class
+SHA1-Digest: wptVPryJcsbl5SBhCEWLQrEkitM=
+
+Name: org/apache/derby/impl/sql/compile/DropAliasNode.class
+SHA1-Digest: iCTvpbCuX6diemLhcwXfRW6CBLA=
+
+Name: org/apache/derby/impl/store/raw/xact/TransactionTableEntry.class
+SHA1-Digest: OxDO7WDVH8Xq4/T4aXrPADJ1DH0=
+
+Name: org/apache/derby/impl/tools/ij/ConnectionEnv$1.class
+SHA1-Digest: lFaKHCGmPGcfL23iMcxHeo3mwxc=
+
+Name: org/apache/derby/impl/sql/compile/HasVariantValueNodeVisitor.cla
+ ss
+SHA1-Digest: 51l2lLVOgdqWziJPdcsATGe1954=
+
+Name: org/apache/derby/impl/sql/compile/SetOperatorNode.class
+SHA1-Digest: ERRrKCu00A5aHAalRuxD9f67axY=
+
+Name: org/apache/derby/impl/store/access/sort/MergeSortInfo.class
+SHA1-Digest: qk7Nv5QUD6z3oRtDHjmBW7PdZsg=
+
+Name: org/apache/derby/impl/load/ImportLobFile.class
+SHA1-Digest: aWBiyzat/al3SY5iZBusKApCNS8=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$2.class
+SHA1-Digest: ZBJwYfYjmkipYQzED7xg5XBjKbw=
+
+Name: org/apache/derby/impl/sql/compile/DropViewNode.class
+SHA1-Digest: 2oaTO8juQj59BmevOsWnFauOapc=
+
+Name: org/apache/derby/client/net/StatementReplyInterface.class
+SHA1-Digest: 7Hqf4UygVtU7p9iSsEY+wfojTf8=
+
+Name: org/apache/derby/impl/sql/compile/NestedLoopJoinStrategy.class
+SHA1-Digest: jv92FTurU0KzYLI8V9bp3jOemBY=
+
+Name: org/apache/derby/impl/store/raw/data/RecordId.class
+SHA1-Digest: MLwqu7vr4YkOfXWYqGcwaS+65Ko=
+
+Name: org/apache/derby/impl/sql/compile/OrderedColumnList.class
+SHA1-Digest: K9gjAYwLy1UhVu58PzI5LGzUxz4=
+
+Name: org/apache/derby/iapi/services/io/FormatableHashtable.class
+SHA1-Digest: 9EMf69A8n1ge0VCzHsfcn9BLwMo=
+
+Name: org/apache/derby/loc/m39_en.properties
+SHA1-Digest: V5mzi7T9c5KUMCt2hDxagiWZ5Q8=
+
+Name: org/apache/derby/impl/sql/conn/TempTableInfo.class
+SHA1-Digest: DkCqkWH7LoHozOi6/4hh7bicphw=
+
+Name: org/apache/derby/loc/drda/servlet_fr.properties
+SHA1-Digest: urdppeg9UcHB9CErdPpqRnrdLm4=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealNestedLoopLeftOuterJoi
+ nStatistics.class
+SHA1-Digest: P4Lfy8Pa17nrcz+Ogp7fUaLenbA=
+
+Name: org/apache/derby/impl/jdbc/EmbedParameterMetaData40.class
+SHA1-Digest: xg24MzzWtt2rSLmehl3+iOS44+E=
+
+Name: org/apache/derby/vti/IQualifyable.class
+SHA1-Digest: hzGaReur98Ao5R/rgfkhWTUsgl4=
+
+Name: org/apache/derby/impl/sql/execute/FKInfo.class
+SHA1-Digest: M8pVXVA4SC1lJN3iVNZLEoZRCGM=
+
+Name: org/apache/derby/impl/services/monitor/BaseMonitor$ProviderEnume
+ ration.class
+SHA1-Digest: 7Z1Xq1iMbpSO4teLK3As/KkDKRs=
+
+Name: org/apache/derby/iapi/types/CollatorSQLVarchar.class
+SHA1-Digest: GJv3pgF38IRWwCUK6nxeRuUKfrI=
+
+Name: org/apache/derby/loc/m21_en.properties
+SHA1-Digest: 3udBAdq/AfvU/HIY1V0wxlgEqlc=
+
+Name: org/apache/derby/iapi/types/CollatorSQLClob.class
+SHA1-Digest: 8taYYUQ6jtFv/j0hmby0hoEwU2Q=
+
+Name: org/apache/derby/iapi/services/io/InputStreamUtil.class
+SHA1-Digest: DjIU9YfRWqk5LoQNhBALNbcqqlc=
+
+Name: org/apache/derby/impl/sql/catalog/NameTDCacheable.class
+SHA1-Digest: KMu2mqsHWZ5jWDEAADaIiI5Vhmo=
+
+Name: org/apache/derby/jdbc/EmbeddedConnectionPoolDataSource40.class
+SHA1-Digest: S3UxowUHl4APRsybVwSGhitik8g=
+
+Name: org/apache/derby/impl/sql/depend/BasicProviderInfo.class
+SHA1-Digest: 3NQ58+PVfGpussdCe9Rb0iHH+P8=
+
+Name: org/apache/derby/impl/sql/execute/MaterializedResultSet.class
+SHA1-Digest: 6zEAHCS+cdyrZ8itflFWLeet+1w=
+
+Name: org/apache/derby/jdbc/EmbeddedDataSource40.class
+SHA1-Digest: nwGt8V3twIOu4tkauVyi0Jhh040=
+
+Name: org/apache/derby/iapi/services/locks/Limit.class
+SHA1-Digest: THCCg1aN8A6IQnEwZStDa24xEGs=
+
+Name: org/apache/derby/iapi/sql/execute/ExecutionStmtValidator.class
+SHA1-Digest: nRDyvi41KTY0tU9HQ0dcgMT40yg=
+
+Name: org/apache/derby/impl/tools/ij/ijWarningResult.class
+SHA1-Digest: K0sWuttn8W+v6GZYG0uCCCxJRA0=
+
+Name: org/apache/derby/impl/sql/compile/CountAggregateDefinition.class
+SHA1-Digest: jCNUzacYyNb9QnIAaya2tnWX5fw=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$11.
+ class
+SHA1-Digest: 0+hKm7t+796jEYiDq2WL0Ok6mTc=
+
+Name: org/apache/derby/iapi/types/SQLClob.class
+SHA1-Digest: 1Lqdkc1lp+rqIPHJxu/TGud1nJ0=
+
+Name: org/apache/derby/iapi/types/JSQLType.class
+SHA1-Digest: YH/PhiGWP0yZTlE6kLEHeAE2IC4=
+
+Name: org/apache/derby/catalog/Statistics.class
+SHA1-Digest: CtygN1W3QSKAksgl7JANU1ENAzY=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealRowResultSetStatistics
+ .class
+SHA1-Digest: KKIlB3NnhvpV8OG+3NpDmhbG7tw=
+
+Name: org/apache/derby/jdbc/EmbedXAResource.class
+SHA1-Digest: I/HsJ11SdFntSCp6/JSq6BrZqnI=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementColumnPermission.c
+ lass
+SHA1-Digest: SgDeT6w4KPByrLirSAFwvP5Npw0=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/ScanManager.clas
+ s
+SHA1-Digest: GWXdbQRI3ffFPrvgEmmkFp9quOY=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IController.cla
+ ss
+SHA1-Digest: U8c6PTdfvBKglVkqCGC8rfakzUk=
+
+Name: org/apache/derby/iapi/util/StringUtil.class
+SHA1-Digest: dH/JigBnTcRTebW9HTrQgf6iIZw=
+
+Name: org/apache/derby/impl/sql/compile/NotNode.class
+SHA1-Digest: z9erqfFHGvsHSaSRiCgXEb8pOk8=
+
+Name: org/apache/derby/client/am/stmtcache/StatementKeyFactory.class
+SHA1-Digest: l6xRd2bIeCAolRt0gzIyIZQtaYo=
+
+Name: org/apache/derby/impl/tools/ij/ijVectorResult.class
+SHA1-Digest: Tfmx9bukfJmfU7k+fKquBf+ijPM=
+
+Name: org/apache/derby/jdbc/EmbedXAConnection.class
+SHA1-Digest: S1yj2wg6zbOiMyphCvV4a6dbDWE=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$1.class
+SHA1-Digest: uhJtw6wQ/agJEA30Z0BFJGqu5do=
+
+Name: org/apache/derby/iapi/store/access/xa/XAResourceManager.class
+SHA1-Digest: kMTH2dd2Nr0swTNhfeR0mjKJLs4=
+
+Name: org/apache/derby/impl/store/access/heap/Heap_v10_2.class
+SHA1-Digest: gN1KDrmr+t1sOtfxaUggSQeE0Rw=
+
+Name: org/apache/derby/impl/drda/DDMWriter.class
+SHA1-Digest: cDOteFOyJFkkdyoPb2hIAKvRiO4=
+
+Name: org/apache/derby/loc/m43_en.properties
+SHA1-Digest: P3FROU3DW++S/1ZUNCuhb3SFrW4=
+
+Name: org/apache/derby/impl/services/jmxnone/NoManagementService.class
+SHA1-Digest: zft8oAEX4SsSkuskO3ZCnzCcdpI=
+
+Name: org/apache/derby/impl/store/raw/data/CompressSpacePageOperation.
+ class
+SHA1-Digest: b4XXtjiOb1TLm555478rrR0OOlA=
+
+Name: org/apache/derby/tools/ij.class
+SHA1-Digest: wZ9hC+eeMF0i9N8QXVANsWPR5d8=
+
+Name: org/apache/derby/impl/sql/compile/OrderByList.class
+SHA1-Digest: jLwrgbqA1pxy8cjo2lSOWpIX+VM=
+
+Name: org/apache/derby/impl/tools/ij/ij$LookaheadSuccess.class
+SHA1-Digest: 5bw3PE6PLSAnyfMCPynCHM+dj7M=
+
+Name: org/apache/derby/iapi/sql/compile/Parser.class
+SHA1-Digest: 2XjLsN2PvQ0Km4nmo0+/lB7onLw=
+
+Name: org/apache/derby/impl/store/raw/data/AllocationActions.class
+SHA1-Digest: JvfXo8mg8CM5E9b/P+0JIrlX8Ik=
+
+Name: org/apache/derby/loc/clientmessages_zh_TW.properties
+SHA1-Digest: XGcwqzckrPEGjtkX5kTbM5Yz+N4=
+
+Name: org/apache/derby/impl/sql/compile/DropSchemaNode.class
+SHA1-Digest: fLWksBpH+s7G/LiVReEPp7RJQ5M=
+
+Name: org/apache/derby/iapi/sql/conn/StatementContext.class
+SHA1-Digest: jXOlNgOtC4Rykk00zpBl2Pc4FEw=
+
+Name: org/apache/derby/impl/store/access/CacheLock.class
+SHA1-Digest: R6Hg+J36P1oOPkgwCz8CSGyDnLE=
+
+Name: org/apache/derby/impl/store/raw/data/PhysicalPageOperation.class
+SHA1-Digest: 2DyBeQrAhdnyeyY02nmGGUcosik=
+
+Name: org/apache/derby/impl/sql/compile/NormalizeResultSetNode.class
+SHA1-Digest: 5gR2QRBBLtcRiY4EvKkoChUQ7eQ=
+
+Name: org/apache/derby/impl/sql/compile/LOBTypeCompiler.class
+SHA1-Digest: th388K03Q08jnvXUAuVdks6A6+s=
+
+Name: org/apache/derby/impl/sql/compile/GroupByNode.class
+SHA1-Digest: KhzNh5wM387KOuTkAGWDFoxYsdw=
+
+Name: org/apache/derby/impl/sql/execute/DropRoleConstantAction.class
+SHA1-Digest: eTOKZyo8wZtiQE//P7jgUQOkBp0=
+
+Name: org/apache/derby/client/am/MaterialStatement.class
+SHA1-Digest: zeMcTtBnI2SOGibdFennz+pwmQE=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealProjectRestrictStatist
+ ics.class
+SHA1-Digest: NEcARZtu4C4i9UCf9IJBHuq5kuQ=
+
+Name: org/apache/derby/iapi/services/loader/JarReader.class
+SHA1-Digest: ltUmUps+XY+nlB2Ksy81m6vqnE8=
+
+Name: org/apache/derby/client/net/NetXACallInfo.class
+SHA1-Digest: EBnrZ/9AJY495vLe03UrqVKz06g=
+
+Name: org/apache/derby/iapi/services/crypto/CipherProvider.class
+SHA1-Digest: cQYi53cHa1Wqkufh3Gek3hDNApo=
+
+Name: org/apache/derby/loc/sysinfoMessages.properties
+SHA1-Digest: 7KrLHSFnST2nPLtLXzDg3xqqUnQ=
+
+Name: org/apache/derby/iapi/services/property/PropertyUtil.class
+SHA1-Digest: 0dZ+C10q37wdOM4ZnhWsA+Bwx+Q=
+
+Name: org/apache/derby/client/net/NaiveTrustManager.class
+SHA1-Digest: QhszR9JvzU2CYQ6Oa2A9AhQcWfA=
+
+Name: org/apache/derby/impl/store/raw/xact/GlobalXactId.class
+SHA1-Digest: 1RvWFztDeSnRQirhMnf7d3AsK5w=
+
+Name: org/apache/derby/impl/sql/execute/ForeignKeyRIChecker.class
+SHA1-Digest: zpYa4yH9QKhbjb7O3904BZJW/9Q=
+
+Name: org/apache/derby/impl/sql/execute/WindowResultSet.class
+SHA1-Digest: u054HCweOK3sl6XNW8lOW+TJLN0=
+
+Name: org/apache/derby/impl/store/raw/data/EncryptContainerUndoOperati
+ on.class
+SHA1-Digest: uuSOD8A44Md5mHHAkYtLB1Zxg5A=
+
+Name: org/apache/derby/iapi/sql/StorablePreparedStatement.class
+SHA1-Digest: ykQxhIbx73v5/T/VjJ39QNMRqu4=
+
+Name: org/apache/derby/impl/jdbc/EmbedBlob.class
+SHA1-Digest: 0LgmCFWzIYatQwIwwmN6p0V+DBw=
+
+Name: org/apache/derby/impl/store/access/PC_XenaVersion.class
+SHA1-Digest: 39rM6pjVZbIqjr/q39tNcHWkcNc=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/apache/derby/impl/sql/compile/LengthOperatorNode.class
+SHA1-Digest: 7G0G0xkywZ8GiELpBnB0+aqy5M8=
+
+Name: org/apache/derby/impl/store/raw/xact/EscalateContainerKey.class
+SHA1-Digest: y9/sV4OQoMxIJNlG2zbOZYZy0ro=
+
+Name: org/apache/derby/impl/store/raw/data/BasePage.class
+SHA1-Digest: poV/UVF91F/qXLgFvZFKryfywxQ=
+
+Name: org/apache/derby/impl/tools/ij/ijTokenException.class
+SHA1-Digest: +8heGE6uUSTYJJQRL+DgMrjOobI=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$1.class
+SHA1-Digest: JqeHH/+gNvV+f0cDRL6MHXGBzCM=
+
+Name: org/apache/derby/loc/m6_en.properties
+SHA1-Digest: uG/vRmwn8rCBhPE7Mh+M4orYdX4=
+
+Name: org/apache/derby/impl/jdbc/TemporaryClob$CharToBytePositionCache
+ .class
+SHA1-Digest: gDdqAcSsLFd8BalUda98XbljwJo=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredConnection.class
+SHA1-Digest: se2Z8BZTeV/NcTLqvYaipvAZL9g=
+
+Name: org/apache/derby/loc/clientmessages_cs.properties
+SHA1-Digest: zE/pj1zhjLrw41vbwAOBy4oriZw=
+
+Name: org/apache/derby/impl/sql/compile/CreateSchemaNode.class
+SHA1-Digest: vuUmFW60/Z0u59rgIL2XBIcsO08=
+
+Name: org/apache/derby/impl/sql/conn/GenericAuthorizer.class
+SHA1-Digest: t4ybmeyY7N4rTr4ZBpdiFfExErQ=
+
+Name: org/apache/derby/iapi/services/diag/Diagnosticable.class
+SHA1-Digest: q1Z3umWpXe6jGsP7+XUbChWzmjk=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/MethodFactory.cl
+ ass
+SHA1-Digest: XD+qDnwh96OuBAPgVbhEwrdazAM=
+
+Name: org/apache/derby/iapi/services/io/Storable.class
+SHA1-Digest: R5Xpx0vLWpfu6Yl9uDH9w4T2SPo=
+
+Name: org/apache/derby/client/am/CallableStatement.class
+SHA1-Digest: WZr7biqio7K5Fn1RVANGngTk4Rs=
+
+Name: org/apache/derby/impl/jdbc/EmbedCallableStatement20.class
+SHA1-Digest: TK/rFCs9lwgCzU/vZKxc7jevwgM=
+
+Name: org/apache/derby/impl/sql/catalog/SYSSCHEMASRowFactory.class
+SHA1-Digest: wq6sa592r+LMVWjAyN8BEDZGED0=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealOnceResultSetStatistic
+ s.class
+SHA1-Digest: mYZjOSvc0olpAqiX2G/c6p8Cous=
+
+Name: org/apache/derby/impl/sql/execute/InsertVTIResultSet.class
+SHA1-Digest: O/mTfB4AYDsJMEriVzZnRgd8+OE=
+
+Name: org/apache/derby/iapi/sql/dictionary/DataDescriptorGenerator.cla
+ ss
+SHA1-Digest: elQI2J4yYLTEVPWvxOaoWVgEA2w=
+
+Name: org/apache/derby/impl/services/reflect/ClassLoaderLock.class
+SHA1-Digest: 5dkNGXCjvFpoyWubsBHckKLXuJk=
+
+Name: org/apache/derby/loc/clientmessages_pt_BR.properties
+SHA1-Digest: 6vS8ip+A5EyT5NEF6M0V0v7YNFI=
+
+Name: org/apache/derby/impl/store/raw/xact/Xact.class
+SHA1-Digest: KflmbuZkyiGI+O0aTRcfB2y0W7c=
+
+Name: org/apache/derby/loc/drda/servlet_pl.properties
+SHA1-Digest: w24LOa859sFzlEGavzjVxpn3Su4=
+
+Name: org/apache/derby/iapi/services/io/DynamicByteArrayOutputStream.c
+ lass
+SHA1-Digest: ty+rmIEmtPWaCDVhNQ4hJh46w/8=
+
+Name: org/apache/derby/iapi/services/locks/ShExQual.class
+SHA1-Digest: m/dv0H439IrbPdWElVqvxZ5DKjY=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService.cla
+ ss
+SHA1-Digest: bOD75GTtRsKDSpk4lebWplv+Ad0=
+
+Name: org/apache/derby/impl/store/access/btree/WaitError.class
+SHA1-Digest: 0dGfEJjgZvUupc2KpmHDK2kPtzo=
+
+Name: org/apache/derby/impl/tools/ij/UCode_CharStream.class
+SHA1-Digest: eEjUokgqJPN4x0+o+HFvQG8o6dE=
+
+Name: org/apache/derby/impl/store/raw/data/ContainerBasicOperation.cla
+ ss
+SHA1-Digest: ZyqER5D+gTHgqN0NiM1nJj22kuk=
+
+Name: org/apache/derby/impl/sql/compile/FromSubquery.class
+SHA1-Digest: 2arOWn9LlCaXUR1mwA/PKg9wXqY=
+
+Name: org/apache/derby/impl/sql/execute/UniqueWithDuplicateNullsIndexS
+ ortObserver.class
+SHA1-Digest: DDFV94C0JTW1iI77nIJBWlxUMW4=
+
+Name: org/apache/derby/iapi/sql/ResultSet.class
+SHA1-Digest: L7omoBKaucVAKoH3CUO52B/TA7c=
+
+Name: org/apache/derby/impl/sql/compile/DMLModStatementNode.class
+SHA1-Digest: nChg5+8eJJ//x2HkExAHhD4WFlc=
+
+Name: org/apache/derby/impl/store/raw/data/DropOnCommit.class
+SHA1-Digest: M46QiFJpFVJxW/o8nzoh/HjGCho=
+
+Name: org/apache/derby/impl/tools/ij/ijConnectionResult.class
+SHA1-Digest: ySethNe/Z0lWAU4l/YpjyeEfHuU=
+
+Name: org/apache/derby/impl/store/replication/buffer/LogBufferFullExce
+ ption.class
+SHA1-Digest: vfVPOsj6XZjKidWfaIzfJaI/bA8=
+
+Name: org/apache/derby/impl/sql/compile/MaterializeResultSetNode.class
+SHA1-Digest: oBpeUKt7DCKTBLlRjRtwqg0ZKiE=
+
+Name: org/apache/derby/impl/sql/catalog/DDColumnDependableFinder.class
+SHA1-Digest: EjRlk3oa0+MU2cCMay8QpXdW9N4=
+
+Name: org/apache/derby/client/net/OpenSocketAction.class
+SHA1-Digest: Ikq9D03gh3KC48KTxoBRu4Q3CRs=
+
+Name: org/apache/derby/iapi/store/replication/master/MasterFactory.cla
+ ss
+SHA1-Digest: 5gNQoxdKYOLxoANNuWsZQ/mS5Nk=
+
+Name: org/apache/derby/impl/tools/ij/ijRowResult.class
+SHA1-Digest: cZfs8sG+A/Jur6j2PPnoHE8s/KI=
+
+Name: org/apache/derby/impl/store/access/conglomerate/OpenConglomerate
+ .class
+SHA1-Digest: aKgkLv/Cmr1y6oJ3MI4nBBkAI3o=
+
+Name: org/apache/derby/impl/store/replication/net/SlaveAddress.class
+SHA1-Digest: nHB0bWABukd2sj35H2b3WCfpCgk=
+
+Name: org/apache/derby/loc/m14_en.properties
+SHA1-Digest: x7MAHVm1PZ/ika6nG85dAVO9IQI=
+
+Name: org/apache/derby/loc/drda/messages_de_DE.properties
+SHA1-Digest: gcKRR+GFsKCUl/e2o801/PI4jIs=
+
+Name: org/apache/derby/client/am/LogicalDatabaseMetaData40.class
+SHA1-Digest: IYiszXHTRgAFScZ6/YM/IOgfxzA=
+
+Name: org/apache/derby/mbeans/drda/NetworkServerMBean.class
+SHA1-Digest: KMZ5oDjd5oakfHKW2fxetlun01o=
+
+Name: org/apache/derby/client/ClientXAConnection40.class
+SHA1-Digest: YrYSfxBAMD4EYuoW7P/y3gNxyzM=
+
+Name: org/apache/derby/impl/sql/compile/BinaryOperatorNode.class
+SHA1-Digest: JWDiye0eg2n5hgFQfKlzlbBZc+8=
+
+Name: org/apache/derby/impl/sql/compile/GroupByNode$1.class
+SHA1-Digest: 8+7t25wKPTJQS+M/+AB+BszctbE=
+
+Name: org/apache/derby/jdbc/EmbedPooledConnection40.class
+SHA1-Digest: GmqdZtTMPGlQ1fycJ1Fs/LPzAhA=
+
+Name: org/apache/derby/iapi/services/io/FileUtil.class
+SHA1-Digest: upEbP543BqDUTBgmXvN4OEWCjt4=
+
+Name: org/apache/derby/impl/jdbc/EncryptedLOBFile.class
+SHA1-Digest: KwK/ncpTK5si/SuZgO7CvqKCI4E=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl.class
+SHA1-Digest: kp1QpnlVWiXWSu+1ecJbsj23qYw=
+
+Name: org/apache/derby/impl/sql/compile/TableElementNode.class
+SHA1-Digest: Drck3DXcqxsnYN1nW/nZxzuvxmU=
+
+Name: org/apache/derby/impl/jdbc/EmbedCallableStatement.class
+SHA1-Digest: xIBoDOg/2oo/SOKjUgUTG+mZOuA=
+
+Name: org/apache/derby/iapi/sql/execute/ResultSetFactory.class
+SHA1-Digest: Y4HiIIn9RRYbENcZsKdgahyW320=
+
+Name: org/apache/derby/iapi/services/io/ArrayUtil.class
+SHA1-Digest: gyAq1wVKeD2D37deNdF67VHkIV0=
+
+Name: org/apache/derby/impl/sql/compile/UnionNode.class
+SHA1-Digest: 5h5gJq13M79ubi8vxqFTpa6Al3U=
+
+Name: org/apache/derby/impl/store/raw/data/LoggableAllocActions.class
+SHA1-Digest: 7XimNLbU8+/WT08YLsX50SoI4mc=
+
+Name: org/apache/derby/impl/sql/compile/OptimizerImpl.class
+SHA1-Digest: U9Hkxm8MeSWy0lLv4csYMGmGdjg=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IUndo.class
+SHA1-Digest: yqSbjyS35XQYE4Vdaupqq4cNOoI=
+
+Name: org/apache/derby/client/net/NetSqlca.class
+SHA1-Digest: ELXogbx8k6HiqyY6TKQb/dVtF60=
+
+Name: org/apache/derby/jdbc/XATransactionState.class
+SHA1-Digest: CnrBmCrCQXlzLkdeODiHTKUGbZU=
+
+Name: org/apache/derby/impl/store/raw/data/InputStreamContainer.class
+SHA1-Digest: aBLJrcm0lNbRvDaQX/Ki1WKgVf0=
+
+Name: org/apache/derby/jdbc/ClientBaseDataSource.class
+SHA1-Digest: G7XMU9lfrJS7Hgm5sTQqPpP3JQY=
+
+Name: org/apache/derby/impl/store/access/PropertyConglomerate.class
+SHA1-Digest: IkgWgGSdE8ma+UynGr7H/ttTpUY=
+
+Name: org/apache/derby/iapi/services/crypto/CipherFactory.class
+SHA1-Digest: A5IXM85TqnyneF9YIw5U5gmeYns=
+
+Name: org/apache/derby/tools/SignatureChecker$ParsedArgs.class
+SHA1-Digest: qaWnZFdpQfXFw1UAEaHvvwEfKm0=
+
+Name: org/apache/derby/iapi/db/DatabaseContext.class
+SHA1-Digest: oZQ52/U2e77UI9YsTvI1SDX8LP4=
+
+Name: org/apache/derby/impl/drda/NaiveTrustManager.class
+SHA1-Digest: g/Wq7qZqTT9wjuR8N9B//5E5fx8=
+
+Name: org/apache/derby/impl/services/bytecode/Conditional.class
+SHA1-Digest: n3zZPbso0DgmRpTk0K74KICFGDs=
+
+Name: org/apache/derby/iapi/sql/dictionary/ForeignKeyConstraintDescrip
+ tor.class
+SHA1-Digest: jnNkUkJjxK1R+D8J5WT3v9IL24o=
+
+Name: org/apache/derby/impl/services/locks/D_LockControl.class
+SHA1-Digest: Ff4fICkH0taiFRDG/H8mqBvGf58=
+
+Name: org/apache/derby/impl/sql/execute/DDLConstantAction$SettableBool
+ ean.class
+SHA1-Digest: 5ok7v2RpsTSkfJwyGD7N6+bAoAw=
+
+Name: org/apache/derby/impl/jdbc/EmbedConnection30.class
+SHA1-Digest: XqvxmELGs1cp46tm7c0xtgvZ8Yk=
+
+Name: org/apache/derby/impl/sql/compile/FromVTI.class
+SHA1-Digest: 03FpaU+9KU7nKHZ3HfiztYLc55I=
+
+Name: org/apache/derby/loc/m36_en.properties
+SHA1-Digest: 27XQegnG5GTOZLG44ODL9Nk5Jh0=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Check.class
+SHA1-Digest: 4wsTXkd5fcV8M2dcrHmiwG5mOwY=
+
+Name: org/apache/derby/impl/io/URLFile.class
+SHA1-Digest: EjsR+5gu5ij+eddi7dSd0jYLE8Q=
+
+Name: org/apache/derby/impl/services/bytecode/VMTypeIdCacheable.class
+SHA1-Digest: nsB3wfgigLLo6meWsCzjjGeAFmU=
+
+Name: org/apache/derby/impl/sql/execute/BasicNoPutResultSetImpl.class
+SHA1-Digest: 43D/Gj7/b1GvMvnFNZggHI2QJgc=
+
+Name: org/apache/derby/impl/sql/compile/HashJoinStrategy.class
+SHA1-Digest: R1PzThCW1QYdbEPlukPhfBka+iE=
+
+Name: org/apache/derby/impl/store/access/conglomerate/OpenConglomerate
+ ScratchSpace.class
+SHA1-Digest: kyAJPpmpdfJjlFiwhGbY3Cxek3w=
+
+Name: org/apache/derby/impl/jdbc/LOBOutputStream.class
+SHA1-Digest: ECaMHxwNJ2S32wrelp3Hhul9g9w=
+
+Name: org/apache/derby/iapi/types/SQLSmallint.class
+SHA1-Digest: HkKvExOxv8TfIpwkMbKu71Atyqg=
+
+Name: org/apache/derby/impl/sql/compile/SetTransactionIsolationNode.cl
+ ass
+SHA1-Digest: AjUK+ZyXqsxGfPCVCRzfUrUDth8=
+
+Name: org/apache/derby/impl/sql/compile/SQLParser$LookaheadSuccess.cla
+ ss
+SHA1-Digest: hYBa7IaAhytsSu99DqeGNGjdXyE=
+
+Name: org/apache/derby/impl/sql/execute/UniqueIndexSortObserver.class
+SHA1-Digest: A95ZKywwaMYQ+jTmU8nwjpIEVqA=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredCallableStatement30.class
+SHA1-Digest: IKwePJd/YU9kHVAKTLvtuooA50M=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealHashLeftOuterJoinStati
+ stics.class
+SHA1-Digest: msGKCSmEiiZGWJQlCiV19vO3Wtc=
+
+Name: org/apache/derby/impl/sql/compile/UnaryLogicalOperatorNode.class
+SHA1-Digest: xXMY8IAIHxTXd76WTJKTOtzrwd4=
+
+Name: org/apache/derby/client/net/ConnectionRequestInterface.class
+SHA1-Digest: rmdxXR3QomRZdhs4BkVn0MWQbrA=
+
+Name: org/apache/derby/impl/sql/compile/CompilerContextImpl.class
+SHA1-Digest: 6sRrZwQATHo77zTlhDVL6wgg6UM=
+
+Name: org/apache/derby/impl/sql/execute/AggregatorInfoList.class
+SHA1-Digest: rNKzzIUvbSLVtbVeq//k7u86z2g=
+
+Name: org/apache/derby/iapi/types/UserDataValue.class
+SHA1-Digest: 5KI7Us65qsNVfQtuxpqadKh9Xeg=
+
+Name: org/apache/derby/client/net/ConnectionReplyInterface.class
+SHA1-Digest: TBhfRdJ4zOm8/wHi4w8Vw9wBW8U=
+
+Name: org/apache/derby/iapi/sql/compile/AccessPath.class
+SHA1-Digest: ecf7QZXDwMiAaYAGHkYpk2WdPjo=
+
+Name: org/apache/derby/impl/sql/catalog/SYSKEYSRowFactory.class
+SHA1-Digest: Xj/r22eSt+UN9/L+QaI0D2T0O0k=
+
+Name: org/apache/derby/impl/sql/compile/ParserImpl.class
+SHA1-Digest: tKTkj0vKYssOqnOmpv00PurdysA=
+
+Name: org/apache/derby/impl/sql/execute/IndexValueRow.class
+SHA1-Digest: xOr/62+BTD9yvhuko5sJvGop3eQ=
+
+Name: org/apache/derby/impl/store/access/heap/OpenHeap.class
+SHA1-Digest: imCZf6O8lHIqoPT3MQ3sP2P3ei8=
+
+Name: org/apache/derby/impl/drda/Pkgnamcsn$StatementKey.class
+SHA1-Digest: HlS98ISmdeIkrQWBBQWKsOjFYaI=
+
+Name: org/apache/derby/loc/clientmessages_zh_CN.properties
+SHA1-Digest: I7aIFe9ak5jmfGzZtOUZbGPTEX4=
+
+Name: org/apache/derby/impl/sql/compile/ColumnReference$RemapInfo.clas
+ s
+SHA1-Digest: GFo15yzQS42SpQ3Bkf0fEzdONN8=
+
+Name: org/apache/derby/jdbc/Driver20.class
+SHA1-Digest: 0kuC+IU/aCMG8jUvuvXsMbNk0Ps=
+
+Name: org/apache/derby/impl/sql/compile/BetweenOperatorNode.class
+SHA1-Digest: zbpJCmjzMJHBSJYVz1WyE2mvveY=
+
+Name: org/apache/derby/impl/jdbc/LOBStreamControl.class
+SHA1-Digest: uItEaIST4E7pvXhN1iQiRAA+vOo=
+
+Name: org/apache/derby/iapi/sql/compile/ExpressionClassBuilderInterfac
+ e.class
+SHA1-Digest: ekRoNmOI+lZX1JZdp9D2trntli4=
+
+Name: org/apache/derby/impl/io/URLStorageFactory.class
+SHA1-Digest: wl4NGi2Upt8L3qD4T5hwgNPsKzg=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredPreparedStatement.class
+SHA1-Digest: Tx4kOsjciNOjAlGtYAkXg43/92E=
+
+Name: org/apache/derby/impl/sql/execute/CreateTriggerConstantAction.cl
+ ass
+SHA1-Digest: /723MX3q5BRsaSJcw8ql+Zkf+OE=
+
+Name: org/apache/derby/iapi/store/access/AccessFactory.class
+SHA1-Digest: W23/oJ05ymL+TABlJ4tSqeJg93w=
+
+Name: org/apache/derby/impl/sql/compile/VerifyAggregateExpressionsVisi
+ tor.class
+SHA1-Digest: 9zEsQSTMzsK5d2EyCcIhpgffApQ=
+
+Name: org/apache/derby/loc/m40_en.properties
+SHA1-Digest: 1AzUscALqFaaiFfj33w6PTPvET8=
+
+Name: org/apache/derby/impl/store/raw/log/CheckpointOperation.class
+SHA1-Digest: YkhkrGNqLwKJmZsoNCi7cJIshSY=
+
+Name: org/apache/derby/iapi/jdbc/ResourceAdapter.class
+SHA1-Digest: WHV/KYP4b1z0TdQ6O6WjjAawX0E=
+
+Name: org/apache/derby/jdbc/ClientXADataSource.class
+SHA1-Digest: CtsErcK3ffXJRPr5Ar7luqAZKkw=
+
+Name: org/apache/derby/impl/store/access/sort/MergeSort.class
+SHA1-Digest: owZ8qc7BCPuJkbuJ3x99apURG1E=
+
+Name: org/apache/derby/impl/sql/compile/SQLParserConstants.class
+SHA1-Digest: Ecprn6PsX1jLvvombDLF5BlTqPU=
+
+Name: org/apache/derby/impl/jdbc/EmbedPreparedStatement40.class
+SHA1-Digest: FpB61iPcTSGhUCBEN8jM068SSyM=
+
+Name: org/apache/derby/iapi/sql/dictionary/DataDictionary.class
+SHA1-Digest: YS/4kIiB3V4u+JuRKu7KBpfLseo=
+
+Name: org/apache/derby/client/net/CodePointNameTable.class
+SHA1-Digest: E1zkl1D4Qv3hZj7yY/zcVF/x2h8=
+
+Name: org/apache/derby/impl/load/ImportBlob.class
+SHA1-Digest: glJsBzNuxx93IEAcuNt+WYaluUs=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLocking3Escalate.class
+SHA1-Digest: st1M1pfdHajbP/RPDz9FvFqoMOM=
+
+Name: org/apache/derby/impl/sql/execute/SetConstraintsConstantAction.c
+ lass
+SHA1-Digest: 4E2YH1bZgDkFIRKKT5zjw3pqigo=
+
+Name: org/apache/derby/iapi/jdbc/DRDAServerStarter$2.class
+SHA1-Digest: U1glZ09aIlIm809DCOZHYGVLqHI=
+
+Name: org/apache/derby/impl/drda/NetworkServerMBeanImpl.class
+SHA1-Digest: Yc8aysZfz4kDaLvdajEA+Nx6g3Q=
+
+Name: org/apache/derby/iapi/store/access/BackingStoreHashtable.class
+SHA1-Digest: 0+ugFdjHGilkqJ9lEB8c+xpehIU=
+
+Name: org/apache/derby/impl/store/raw/data/DeleteOperation.class
+SHA1-Digest: 8LP4V79YYlFYwx9Qau9te0uPrQY=
+
+Name: org/apache/derby/iapi/types/CloneableObject.class
+SHA1-Digest: i94m59Lr1bq8A3gHpq6KNN0oCPE=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$3.c
+ lass
+SHA1-Digest: rNv29NmPeQLriAMdre6EStrz+6g=
+
+Name: org/apache/derby/impl/sql/compile/CurrentOfNode.class
+SHA1-Digest: HtljRoTk8mb47ffRa+PFvPNx4Mg=
+
+Name: org/apache/derby/impl/sql/compile/GrantRoleNode.class
+SHA1-Digest: FzoIWfoS7zbaCfAoyRBHqQ6zH7o=
+
+Name: org/apache/derby/impl/sql/execute/InternalTriggerExecutionContex
+ t.class
+SHA1-Digest: yJZsgB+srqPaNluTdhzvUjF/mXc=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$5.class
+SHA1-Digest: 7wYe1V2F6wc+p3mVA10OesZ2AnE=
+
+Name: org/apache/derby/impl/sql/execute/HashScanResultSet.class
+SHA1-Digest: YT1PvfK3aej+R9U+r7q0b3KDzE4=
+
+Name: org/apache/derby/catalog/SystemProcedures$1.class
+SHA1-Digest: fOJr0zdjAG4c8f7W/htSHenXE3c=
+
+Name: org/apache/derby/impl/jdbc/EmbedClob.class
+SHA1-Digest: 2Rtq4wvBmcd/tyTUAgsaxasJ9Fw=
+
+Name: org/apache/derby/impl/io/BaseStorageFactory.class
+SHA1-Digest: 2w2P8CYsrMOyiP2p6ZhD4EMhjB0=
+
+Name: org/apache/derby/client/ClientXAConnection.class
+SHA1-Digest: Vv0Zb/jeV63MTugjxNTBwsYtu34=
+
+Name: org/apache/derby/impl/services/cache/BackgroundCleaner.class
+SHA1-Digest: nWQpNRYGEAJN27MFRdsaZstUdog=
+
+Name: org/apache/derby/iapi/types/SQLTimestamp.class
+SHA1-Digest: PjmYLUwUF7HwAdrGFIgQfHhYyao=
+
+Name: org/apache/derby/iapi/sql/execute/ExecCursorTableReference.class
+SHA1-Digest: En+RSJSvG4LLwMCqp4Fx0lMl8Zc=
+
+Name: org/apache/derby/impl/sql/compile/TimestampTypeCompiler.class
+SHA1-Digest: QeAMBCjGn/0Wnz+BcSdo+g/0S1c=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealRowCountStatistics.cla
+ ss
+SHA1-Digest: 8Q9BWOAzEhA6+BqSvHvKUbR+zxg=
+
+Name: org/apache/derby/catalog/types/DefaultInfoImpl.class
+SHA1-Digest: fbSk6ijYIPCr0UcteMO9OM+wuWQ=
+
+Name: org/apache/derby/impl/store/raw/data/FileContainer.class
+SHA1-Digest: ihzW/7jA8K+oPEKr6ih7wCgVHi4=
+
+Name: org/apache/derby/iapi/services/io/TypedFormat.class
+SHA1-Digest: KnKQoh8K8uU08EOD25dsRgTP1L8=
+
+Name: org/apache/derby/impl/sql/catalog/DataDictionaryImpl.class
+SHA1-Digest: 6r+kvR9CoQ1JBVEmZ0we6EAULoo=
+
+Name: org/apache/derby/impl/store/raw/data/RememberBytesInputStream.cl
+ ass
+SHA1-Digest: YHiFW9NEcrAyzwCIUvCUaRMP3Lc=
+
+Name: org/apache/derby/info/DBMS.properties
+SHA1-Digest: LZSntvNJtD2Sc+KpzI5YSTNdLqE=
+
+Name: org/apache/derby/iapi/store/access/GroupFetchScanController.clas
+ s
+SHA1-Digest: rNqTjtYFVK7P9nJBOSan0cbeGuE=
+
+Name: org/apache/derby/loc/drda/servlet_cs.properties
+SHA1-Digest: sdaHk26ID+i7fzyYfcGe8NfjjZA=
+
+Name: org/apache/derby/iapi/store/raw/ContainerLock.class
+SHA1-Digest: 7l9sBfyJTSIg7+hu6LYF8K/cAC4=
+
+Name: org/apache/derby/iapi/services/monitor/ModuleFactory.class
+SHA1-Digest: emQfJMGKcKtHxGb5jEPcyLg6ZIY=
+
+Name: org/apache/derby/iapi/store/raw/xact/TransactionId.class
+SHA1-Digest: GfxoGcDgZPmgvWL8RS6+oDZRH6c=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeForwardScan.class
+SHA1-Digest: uFVr27zB6rQToWy6inQyCZRyrcw=
+
+Name: org/apache/derby/loc/m3_en.properties
+SHA1-Digest: DbYprbalLX421aKixuNuOJOkj7Q=
+
+Name: org/apache/derby/iapi/sql/compile/OptimizableList.class
+SHA1-Digest: kb2FP6AJrIrll8HjRXaydg1862Y=
+
+Name: org/apache/derby/jdbc/ClientBaseDataSource$1.class
+SHA1-Digest: +jPWCcI/AR9ZMDNIdTpEcWDFs5k=
+
+Name: org/apache/derby/impl/sql/compile/CreateTableNode.class
+SHA1-Digest: JEJq/DGzkVd3g7FHaS5rT4UziAQ=
+
+Name: org/apache/derby/iapi/services/classfile/ClassMember.class
+SHA1-Digest: ioHUP14dbAIC9btdv4LNOuqWsrc=
+
+Name: org/apache/derby/impl/sql/compile/CreateAliasNode.class
+SHA1-Digest: O9zdGT3SsU5PflrkqxwzbR4rS5E=
+
+Name: org/apache/derby/iapi/services/io/ArrayInputStream.class
+SHA1-Digest: DnE1ZuDSXca85VT6kTQo8oTPtG4=
+
+Name: org/apache/derby/impl/sql/catalog/OIDTDCacheable.class
+SHA1-Digest: 0qFBK+kura6KZ66uCqrCrVFXQNM=
+
+Name: org/apache/derby/impl/store/raw/data/StoredRecordHeader$1.class
+SHA1-Digest: YVN72xPm+Iv/eGBgxujAbRdjito=
+
+Name: org/apache/derby/iapi/services/loader/ClassInfo.class
+SHA1-Digest: LWvMNYuCjAEK376gzlA5yaaB5+Y=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IRowLockingRR.c
+ lass
+SHA1-Digest: SI+0mTxN8M5YYBwzhAtWwkcj9DQ=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageTr
+ ansmit.class
+SHA1-Digest: MDL6kpc8msqhKYZ7DU5PbXOg8J0=
+
+Name: org/apache/derby/mbeans/VersionMBean.class
+SHA1-Digest: Ny6hOedu0NRJFI9Rx52y51LjozY=
+
+Name: org/apache/derby/impl/services/cache/CachedItem.class
+SHA1-Digest: f470BQh6cLLZgLUAKHBW0c94KuM=
+
+Name: org/apache/derby/client/am/Diagnosable.class
+SHA1-Digest: KiPFqRfdOLG3WVjlzciaARo+HPo=
+
+Name: org/apache/derby/client/am/LogWriter$1.class
+SHA1-Digest: EZ7aPaMKGeorpP/wMEHpf3fAQqQ=
+
+Name: org/apache/derby/impl/sql/compile/IndexToBaseRowNode.class
+SHA1-Digest: Aaw42eBir+3gDtrPlw5LZWprNvg=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$4.class
+SHA1-Digest: T5HD6PnNGRkCdoiNHVqh6WvbOJA=
+
+Name: org/apache/derby/client/am/FloatingPoint.class
+SHA1-Digest: kRQE5Fr9OEgroI/3fEI0z+yns6o=
+
+Name: org/apache/derby/iapi/store/raw/Compensation.class
+SHA1-Digest: jaLU2gGohARvPkmE19ulrDHrx3I=
+
+Name: org/apache/derby/impl/services/daemon/SingleThreadDaemonFactory$
+ 1.class
+SHA1-Digest: Ddr4kUCqDP0D/l2LdiAWoNozOt0=
+
+Name: org/apache/derby/impl/store/raw/data/NoSpaceOnPage.class
+SHA1-Digest: /MUzpYTCsI5eBNWBM+yyRV3Q3Wo=
+
+Name: org/apache/derby/loc/m29_en.properties
+SHA1-Digest: NYLNIhfRbf2qXewCQvDsbTakd6U=
+
+Name: org/apache/derby/impl/store/access/sort/MergeInserter.class
+SHA1-Digest: 7W7TI3ZQk8NFVWbSC4xh+Ej9DAY=
+
+Name: org/apache/derby/iapi/types/BinaryDecimal.class
+SHA1-Digest: 94KZJ8/CvMJA0peHJTRqPaUTSaU=
+
+Name: org/apache/derby/impl/sql/compile/ColumnOrdering.class
+SHA1-Digest: HFEib8LORm7P6g/Mf955u3/FpyI=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealHashTableStatistics.cl
+ ass
+SHA1-Digest: LIf0DqLz1fJFcevx3P3qJ2KB+9Q=
+
+Name: org/apache/derby/impl/jdbc/StoreStreamClob.class
+SHA1-Digest: OTGT6A0m++I9BP5Dc6GuOnXuzPI=
+
+Name: org/apache/derby/impl/sql/compile/SQLParser.class
+SHA1-Digest: a2KZwNzU8mQQufPVcZhs3IraRqo=
+
+Name: org/apache/derby/impl/sql/execute/TemporaryRowHolderImpl.class
+SHA1-Digest: ImR8bVSnhXmfdK+B6ujBse/EjF0=
+
+Name: org/apache/derby/impl/jdbc/SQLExceptionFactory40.class
+SHA1-Digest: t353rm0+iBm3R9do9Fsdo7sqcwE=
+
+Name: org/apache/derby/iapi/sql/dictionary/RoutinePermsDescriptor.clas
+ s
+SHA1-Digest: 55epmd0tnZCt1gGS0v1JeBz7AkM=
+
+Name: org/apache/derby/impl/tools/ij/ijResult.class
+SHA1-Digest: FMGSXLIwhvCbmU3yeZHhJ20NRkw=
+
+Name: org/apache/derby/impl/io/vfmem/VirtualFile.class
+SHA1-Digest: rFMIi2+qO3+rCzreqqliJ42AEoo=
+
+Name: org/apache/derby/iapi/types/SQLInteger.class
+SHA1-Digest: Mpms0ayMiPOABJryWJs9SuYzH/c=
+
+Name: org/apache/derby/iapi/types/Like.class
+SHA1-Digest: 8tuoHBq3BTawJy5jUcm55uHeZFo=
+
+Name: org/apache/derby/loc/m11_en.properties
+SHA1-Digest: xyxawbyod3n+0zSpQx1id9QTG/k=
+
+Name: org/apache/derby/iapi/sql/compile/Visitor.class
+SHA1-Digest: YYKhK8uxwFcL6mVQncNymK5Bt7w=
+
+Name: org/apache/derby/iapi/security/SecurityUtil.class
+SHA1-Digest: 2W+p4w96WJOkyy4+djVDHcvSVKY=
+
+Name: org/apache/derby/catalog/types/TypeDescriptorImpl.class
+SHA1-Digest: pbygRAtQrDoRQuP/8eNecLPQSUw=
+
+Name: org/apache/derby/impl/sql/compile/Level2CostEstimateImpl.class
+SHA1-Digest: aU7w7yMxfONHJV+aBUryY3t9GRM=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealJoinResultSetStatistic
+ s.class
+SHA1-Digest: oSdUBDhZfSBqROB7HKJaTVQM2gM=
+
+Name: org/apache/derby/impl/store/raw/data/BaseDataFileFactory.class
+SHA1-Digest: YVi0eTASCzPH0jezy9keuw9HjlI=
+
+Name: org/apache/derby/impl/services/reflect/ReflectClassesJava2.class
+SHA1-Digest: VBv5BgyjNp3sJozZ1SYqbgWSpz8=
+
+Name: org/apache/derby/impl/tools/ij/AsyncStatement.class
+SHA1-Digest: usk/0rwMVwQRlCvD7ZvOVR6R0oM=
+
+Name: org/apache/derby/iapi/types/SQLRef.class
+SHA1-Digest: mSLvlNvKIYu+offso7D2AkKeQX4=
+
+Name: org/apache/derby/impl/services/monitor/ServiceBootContext.class
+SHA1-Digest: W1UHu/BYAlRFJ5OIuM0q7BpDGmA=
+
+Name: org/apache/derby/impl/tools/ij/URLCheck.class
+SHA1-Digest: 1fQHi4ZgxcZVh5+bPdLQXEWhEZw=
+
+Name: org/apache/derby/impl/sql/compile/NewInvocationNode.class
+SHA1-Digest: PPRbT6c0ZyqmheVX3iNxTgw14ag=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLocking1.class
+SHA1-Digest: jBsdZZV0uEeeLSjNih9o0rGVgOI=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2I_v10_2.class
+SHA1-Digest: YQ0oq+Y2S6S/IzjTg/K+aSIl+is=
+
+Name: org/apache/derby/impl/sql/compile/SubstituteExpressionVisitor.cl
+ ass
+SHA1-Digest: /qmn/spZAEqbvAMYGcxm2sgjT3c=
+
+Name: org/apache/derby/impl/sql/execute/NestedLoopLeftOuterJoinResultS
+ et.class
+SHA1-Digest: ErMhgA2Jf+yAAZYXyE1HHXVvpXY=
+
+Name: org/apache/derby/catalog/TriggerOldTransitionRows.class
+SHA1-Digest: 6w/YlEQm/7DYh7X92r3SZ79udzw=
+
+Name: org/apache/derby/impl/sql/GenericStorablePreparedStatement.class
+SHA1-Digest: A4jsmeaSGQTd/Z/FEE86vuJPOLM=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealDeleteVTIResultSetStat
+ istics.class
+SHA1-Digest: hGDFigvlCdb2Qizpbh68gI5ugDY=
+
+Name: org/apache/derby/impl/sql/execute/DeleteConstantAction.class
+SHA1-Digest: fBfra3vsPLUGTyjrV+9zpXImcBI=
+
+Name: org/apache/derby/client/net/ConnectionReply.class
+SHA1-Digest: NTr6OARllJAOgUKFFxIVSBOUvoE=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IRowLocking3.cl
+ ass
+SHA1-Digest: uRwOwXi5WwSOtHjdWr3erYS4qRc=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/ConglomerateFact
+ ory.class
+SHA1-Digest: Tkg5mGwkkZ5ZvbvBWWMvC5nj0YA=
+
+Name: org/apache/derby/client/am/Savepoint.class
+SHA1-Digest: iOHt5Eji4ZkaEhpf1R5eg/HdIl0=
+
+Name: org/apache/derby/impl/jdbc/PositionedStoreStream.class
+SHA1-Digest: a+9epuNyRM7EVp1sv2YjlRhpPUs=
+
+Name: org/apache/derby/client/am/ColumnMetaData40.class
+SHA1-Digest: EiVP5Ij71MAvxoopB9ZVDNl/JrM=
+
+Name: org/apache/derby/impl/jdbc/authentication/JNDIAuthenticationServ
+ ice.class
+SHA1-Digest: +7vmmIqAKB6xUxR3hYEmPpKwhew=
+
+Name: org/apache/derby/impl/sql/execute/CreateTableConstantAction.clas
+ s
+SHA1-Digest: mw97NnooCuyTHWSDjhZJ60D+XjU=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$4.class
+SHA1-Digest: PYWh6VM5uIumW8VsC3mP2g5zsxM=
+
+Name: org/apache/derby/impl/store/replication/buffer/LogBufferElement.
+ class
+SHA1-Digest: YDAjQX62B2QxLZHHYnvj3ULx3JI=
+
+Name: org/apache/derby/impl/sql/execute/NoPutResultSetImpl.class
+SHA1-Digest: YN2I1u2IlJhUqJRaj5pZv94cuD4=
+
+Name: org/apache/derby/impl/sql/compile/ProjectRestrictNode.class
+SHA1-Digest: 9bGW/UcNZJZxeRaJiKWSv+9AjZM=
+
+Name: org/apache/derby/impl/tools/ij/ij.class
+SHA1-Digest: 3VSURhErdH4baJgLg9O8uvQIe+E=
+
+Name: org/apache/derby/iapi/sql/dictionary/ColPermsDescriptor.class
+SHA1-Digest: lbrg09a4Wlk4UTt2LZUmKUnCxYw=
+
+Name: org/apache/derby/iapi/types/RefDataValue.class
+SHA1-Digest: R9MrGEBkG9SGAmQIezMo1pbT8lU=
+
+Name: org/apache/derby/client/am/ClobWriter.class
+SHA1-Digest: cCnGBhbyAG32pKEKt91I2JXQiOs=
+
+Name: org/apache/derby/drda/server.policy
+SHA1-Digest: mRFnlZEvCDt6Zr0GGp5a/qo5mlE=
+
+Name: org/apache/derby/impl/sql/compile/StaticClassFieldReferenceNode.
+ class
+SHA1-Digest: byAkvHLVOsNzcTZFcWwy2vlBrw4=
+
+Name: org/apache/derby/jdbc/XATransactionState$CancelXATransactionTask
+ .class
+SHA1-Digest: xQygffdVB/FGeI/cY09C7bwfBdA=
+
+Name: org/apache/derby/loc/m33_en.properties
+SHA1-Digest: 4H9ErmaX2t8vAFFvkeqDWDKc+tI=
+
+Name: org/apache/derby/impl/store/access/BackingStoreHashTableFromScan
+ .class
+SHA1-Digest: FqxnqS4YWvetijBiZ3pAkE2t0E0=
+
+Name: org/apache/derby/impl/store/raw/data/LogicalUndoOperation.class
+SHA1-Digest: NZKpK7hY46bHQ2YqON/7JK5Q61g=
+
+Name: org/apache/derby/client/am/Connection.class
+SHA1-Digest: LZWIEzgp3C8Ww5ioP2hioJWbyno=
+
+Name: org/apache/derby/client/am/ParameterMetaData.class
+SHA1-Digest: L1ej5O+7GQDaTYjC1UJFeUwl3Yo=
+
+Name: org/apache/derby/impl/store/access/UTF.class
+SHA1-Digest: HGURZArnDQldI+dgll4DLoHXC44=
+
+Name: org/apache/derby/iapi/services/i18n/LocaleFinder.class
+SHA1-Digest: 0VqOiLZ4Qu1p3lOQdZLSFRTz348=
+
+Name: org/apache/derby/impl/sql/catalog/metadata_net.properties
+SHA1-Digest: AH893qRHaqXWyVBlG4xhx54lorw=
+
+Name: org/apache/derby/impl/sql/execute/MaxMinAggregator.class
+SHA1-Digest: S5EpB+fPGXE8F6o18xNwEWDG1IU=
+
+Name: org/apache/derby/iapi/types/SQLDouble.class
+SHA1-Digest: wdVodsiZzApRc+ou3u3UCPDhZiU=
+
+Name: org/apache/derby/client/am/Section.class
+SHA1-Digest: Z46B7YyCCyyrmk08qF2Hyx5a0jw=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealSortStatistics.class
+SHA1-Digest: ksceuFkneB5MyMiKZmon2AH0RXY=
+
+Name: org/apache/derby/catalog/types/TypesImplInstanceGetter.class
+SHA1-Digest: VEaR7uy7fRgpzfjqy0wdBmgWNuc=
+
+Name: org/apache/derby/iapi/jdbc/CharacterStreamDescriptor$1.class
+SHA1-Digest: iDR23ZigFpBMmujRJjqrLj0Oohk=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main.class
+SHA1-Digest: MPswxUQ/FgwELBQ+mhQ+EAu7ufE=
+
+Name: org/apache/derby/impl/drda/DRDAConnThread.class
+SHA1-Digest: lCO2NvZL5LBtjswrscnXn/dXpgc=
+
+Name: org/apache/derby/iapi/sql/dictionary/TableDescriptor$1.class
+SHA1-Digest: 8jE3Kh4DYgxJY+a7icQGyhdT6PE=
+
+Name: org/apache/derby/impl/sql/compile/MaxMinAggregateDefinition.clas
+ s
+SHA1-Digest: 88R9dNHf9hzCLu4+TJIYLKsusJE=
+
+Name: org/apache/derby/client/am/PreparedStatement.class
+SHA1-Digest: BGmYbPQ66clqMvexhNjDx5vuwB4=
+
+Name: org/apache/derby/impl/sql/execute/OnceResultSet.class
+SHA1-Digest: nuZPdJATtDWm4HKLCiCe0HBvEbY=
+
+Name: org/apache/derby/impl/services/daemon/ServiceRecord.class
+SHA1-Digest: CuU/KRNaStDQ4Lg4ENiZMLSdcR0=
+
+Name: org/apache/derby/client/net/NetStatementReply.class
+SHA1-Digest: JNaHAyIvUfLmbCI1h68SLJuSfH0=
+
+Name: org/apache/derby/impl/sql/execute/SavepointConstantAction.class
+SHA1-Digest: dPoo0ad1o6ux2xPQIyFnDKGzY28=
+
+Name: org/apache/derby/impl/jdbc/EmbedDatabaseMetaData.class
+SHA1-Digest: u5N+DDwYjHfBtIW0I1bsHee7MuQ=
+
+Name: org/apache/derby/impl/sql/compile/SingleChildResultSetNode.class
+SHA1-Digest: HVd7UVvce78GzFt3lFy3fKs8Shg=
+
+Name: org/apache/derby/impl/tools/ij/ijExceptionResult.class
+SHA1-Digest: peca8S7sl5/GmvrHdaDZnqnGs04=
+
+Name: org/apache/derby/impl/sql/compile/AllResultColumn.class
+SHA1-Digest: AdB8BQzduTSBWmGXyaJmaCbA3ks=
+
+Name: org/apache/derby/diag/ErrorLogReader.class
+SHA1-Digest: Ix9HcwLBjyGBjt0KWWG+wlGo/o0=
+
+Name: org/apache/derby/iapi/error/StandardException.class
+SHA1-Digest: HH1CtLuMKXTM+Mv7WoPrJKyOK0s=
+
+Name: org/apache/derby/iapi/sql/dictionary/ViewDescriptor.class
+SHA1-Digest: pFw56MOyvknaSmIjrsjiGhmcMUs=
+
+Name: org/apache/derby/loc/clientmessages_ko_KR.properties
+SHA1-Digest: uBCRWK6QIOkTvS6mRK1ZFuvdc1I=
+
+Name: org/apache/derby/iapi/sql/compile/RequiredRowOrdering.class
+SHA1-Digest: cRiv45zrN/znWNP+JYRcp/UdEiY=
+
+Name: org/apache/derby/client/am/ClobLocatorWriter.class
+SHA1-Digest: TJvvCHRBiQKUhWGh9XxeN/vw2w4=
+
+Name: org/apache/derby/iapi/sql/dictionary/SubConstraintDescriptor.cla
+ ss
+SHA1-Digest: TDh1YBUdANfp9d2udR11c0lE1hA=
+
+Name: org/apache/derby/iapi/types/SqlXmlUtil$XMLErrorHandler.class
+SHA1-Digest: ibdjlfPybHWibEf7dn5Ua832X+w=
+
+Name: org/apache/derby/impl/load/ImportClob.class
+SHA1-Digest: YBPMa41fmk+klUPG/d//ZwfWjOM=
+
+Name: org/apache/derby/impl/sql/compile/OrderByNode.class
+SHA1-Digest: 9j5aiAlp3hudtsKLHRJbWTp8hF8=
+
+Name: org/apache/derby/impl/sql/execute/DistinctScalarAggregateResultS
+ et.class
+SHA1-Digest: Yr42T0cIq6OdM5ILn9pWXZn1gCc=
+
+Name: org/apache/derby/loc/toolsmessages.properties
+SHA1-Digest: a5OEJ2zJ1Rt3VntjPBCYF3NldWI=
+
+Name: org/apache/derby/iapi/store/replication/slave/SlaveFactory.class
+SHA1-Digest: vuCnrx48cUmPzwAUzZDmKZ44u8o=
+
+Name: org/apache/derby/impl/sql/execute/DeleteCascadeResultSet.class
+SHA1-Digest: XRNEehtWhZNhD/Zqp6SuOKo2T1o=
+
+Name: org/apache/derby/iapi/sql/execute/ExecRow.class
+SHA1-Digest: K07TDewkwHER8I6fbWcfMzo0Hmk=
+
+Name: org/apache/derby/impl/sql/execute/UpdateVTIResultSet.class
+SHA1-Digest: YnT3Q4RNqzaXuD7PmhOeMPnOYr8=
+
+Name: org/apache/derby/loc/clientmessages_en.properties
+SHA1-Digest: 5apAJaN08lLhAOkzvNCn3zbayiU=
+
+Name: org/apache/derby/database/Database.class
+SHA1-Digest: N/SKybZdVriOVZ7RlI4bM3cwPMg=
+
+Name: org/apache/derby/client/am/AsciiStream.class
+SHA1-Digest: 02lkTNdybKbXHR2SOresSLgDHao=
+
+Name: org/apache/derby/impl/tools/ij/util$1.class
+SHA1-Digest: ZDkxD55S81UaGORbnS/QxyhhItA=
+
+Name: org/apache/derby/impl/jdbc/EmbedPreparedStatement.class
+SHA1-Digest: aXiX98ADLWQGVvvsuKZivGy4U0s=
+
+Name: org/apache/derby/impl/sql/compile/JoinNode.class
+SHA1-Digest: SvC688I9MMMWKEU4xYqQ4/XyK9o=
+
+Name: org/apache/derby/impl/sql/compile/ResultColumnList.class
+SHA1-Digest: dneVWbD5lo7GLc+1howGSDBfaOo=
+
+Name: org/apache/derby/iapi/sql/dictionary/ConglomerateDescriptor.clas
+ s
+SHA1-Digest: 8eYMYMHTWKkP/vXplvttMcQirZ4=
+
+Name: org/apache/derby/impl/sql/catalog/SYSTABLEPERMSRowFactory.class
+SHA1-Digest: 6dngb+9NdInIeXmt1I0yVWrhexg=
+
+Name: org/apache/derby/impl/store/raw/data/RAFContainer4.class
+SHA1-Digest: +Am7dhNJlVW4zz849J2f5SGcODw=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSet.class
+SHA1-Digest: tOFbQVQsJFLMOgifvTGZs5ubSWw=
+
+Name: org/apache/derby/impl/drda/CodePoint.class
+SHA1-Digest: zAV4YjT5M0biq23Jd6TwnhV3raU=
+
+Name: org/apache/derby/impl/store/raw/log/LogAccessFile.class
+SHA1-Digest: Mvq9gderPh69fHHtryKFAdzbKB8=
+
+Name: org/apache/derby/iapi/sql/dictionary/CatalogRowFactory.class
+SHA1-Digest: hr2yGqGc1LpRgc/mTouZLl8F9aY=
+
+Name: org/apache/derby/impl/io/CPStorageFactory.class
+SHA1-Digest: LW0rqybJ2/EQJISnLrsfwKqIMZ8=
+
+Name: org/apache/derby/impl/tools/ij/ij$1.class
+SHA1-Digest: rMxcbRKpdSElY2ilOfSiHkpYzKI=
+
+Name: org/apache/derby/impl/sql/conn/SQLSessionContextImpl.class
+SHA1-Digest: nGPAbKFD9tMZ1zhIPUIsvooqhgg=
+
+Name: org/apache/derby/impl/jdbc/EmbedPreparedStatement169.class
+SHA1-Digest: Qo/K8yvXW6G+nhblsThJQD1PgeI=
+
+Name: org/apache/derby/client/net/NetCursor.class
+SHA1-Digest: GCJ6ZpcrHk3IAjb9M5wpIg/OP5w=
+
+Name: org/apache/derby/impl/sql/execute/DDLSingleTableConstantAction.c
+ lass
+SHA1-Digest: h7IqHRudIfmzBycMSxrmYVmoWnI=
+
+Name: org/apache/derby/impl/store/access/sort/SortBufferScan.class
+SHA1-Digest: sqlEPrq64+d78B4iDebbjzon9Ok=
+
+Name: org/apache/derby/loc/drda/messages_hu.properties
+SHA1-Digest: ni2712R09apW+p1wrNLcyjg/sfE=
+
+Name: org/apache/derby/impl/sql/compile/UnaryComparisonOperatorNode.cl
+ ass
+SHA1-Digest: fJgu8GEhtis0li3h0hngQiBLwr4=
+
+Name: org/apache/derby/iapi/services/stream/HeaderPrintWriter.class
+SHA1-Digest: lWmaEW2W0AyzzD0lenUayQocbuQ=
+
+Name: org/apache/derby/impl/io/VFMemoryStorageFactory.class
+SHA1-Digest: VhLBIDbvdbZttJ3pSMA3rh3E5Zc=
+
+Name: org/apache/derby/catalog/types/IndexDescriptorImpl.class
+SHA1-Digest: EtSm36OQLM/stH+n22HTQMSFfIY=
+
+Name: org/apache/derby/impl/io/DirRandomAccessFile4.class
+SHA1-Digest: j1Lzj11eCIemLlL6s1kYl5jjncU=
+
+Name: org/apache/derby/iapi/sql/dictionary/TablePermsDescriptor.class
+SHA1-Digest: fGiXwfSdb1NvUM8pFaRoxTssA+s=
+
+Name: org/apache/derby/impl/sql/execute/ScanResultSet.class
+SHA1-Digest: hTdWWmBR7r5Ir2Cz19u2H5ygYsY=
+
+Name: org/apache/derby/loc/m0_en.properties
+SHA1-Digest: 2aKW2gD/BjfGrn+FvTCD6YHea8o=
+
+Name: org/apache/derby/impl/jdbc/EmbedParameterMetaData30.class
+SHA1-Digest: AxlGQ1qYYP/aTD4i1BsJn+5Fp5c=
+
+Name: org/apache/derby/impl/tools/ij/Main.class
+SHA1-Digest: ZFd422xi/cUJwCBS6OUQKnw3hb0=
+
+Name: org/apache/derby/impl/drda/DssTrace$2.class
+SHA1-Digest: jtcyNUI7BJQ+7sw1T9K/RT87dog=
+
+Name: org/apache/derby/impl/services/jce/JCECipherFactoryBuilder.class
+SHA1-Digest: cJTJzN3mpardk6u9Q1vYkgSxl/M=
+
+Name: org/apache/derby/impl/sql/compile/UnaryOperatorNode.class
+SHA1-Digest: CkOspRKsqOLGjjjv2iJmsgrXnFE=
+
+Name: org/apache/derby/iapi/store/access/DiskHashtable.class
+SHA1-Digest: 9esIuJLEcGcpJibn1pQMiUKfYvQ=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IFactory.class
+SHA1-Digest: 2MR0wfod6jWxtcp5jRrIQqkvJ8k=
+
+Name: org/apache/derby/iapi/services/property/PropertyFactory.class
+SHA1-Digest: GOzbYVGNi1q79OUBmr9ZW5wF+Oc=
+
+Name: org/apache/derby/client/am/UpdateSensitiveClobLocatorReader.clas
+ s
+SHA1-Digest: kTuDbzhUXs5rVI8dZl68UwEOOYI=
+
+Name: org/apache/derby/impl/tools/dblook/DB_GrantRevoke.class
+SHA1-Digest: jd1JiCYxp6eUCSDPwPa0YfHB9CQ=
+
+Name: org/apache/derby/impl/sql/compile/SQLParser$JJCalls.class
+SHA1-Digest: BZLljsFPnC/VEZaWFhzjFK3HcZU=
+
+Name: org/apache/derby/client/am/ProductLevel.class
+SHA1-Digest: GA5St28ZwKqvIn6cbrAwE7QIv88=
+
+Name: org/apache/derby/impl/jdbc/LOBStoredProcedure.class
+SHA1-Digest: 4AiNlowinyGTdjeUuLnzgB3kEbw=
+
+Name: org/apache/derby/impl/store/access/btree/LeafControlRow.class
+SHA1-Digest: gf5GksqF0vfOTVI8Y2SH08OSb/I=
+
+Name: org/apache/derby/iapi/types/SQLBit.class
+SHA1-Digest: jx8GcteG9HqcOSpSWkAPmdaywJo=
+
+Name: org/apache/derby/impl/store/raw/data/TempRAFContainer.class
+SHA1-Digest: Af2zuJFxBPXV9w1iPHcBxkZaW6c=
+
+Name: org/apache/derby/impl/store/access/conglomerate/RowPosition.clas
+ s
+SHA1-Digest: Tgrva9Q4IYoH2Htd8rjSkq8nwlQ=
+
+Name: org/apache/derby/impl/sql/compile/BinaryArithmeticOperatorNode.c
+ lass
+SHA1-Digest: ISvMug3JXqT8RT5SrBGhLC1aKd0=
+
+Name: org/apache/derby/iapi/util/ReuseFactory.class
+SHA1-Digest: 7poamj17g7iW9iER8SWEQOKAEdo=
+
+Name: org/apache/derby/impl/sql/compile/UCode_CharStream.class
+SHA1-Digest: GrzXCS16pHnGdKxWcFRQFWSa20s=
+
+Name: org/apache/derby/iapi/sql/ResultColumnDescriptor.class
+SHA1-Digest: 3Wbmu65Hv7mfJAyXexH5IwBiv1g=
+
+Name: org/apache/derby/impl/io/vfmem/BlockedByteArrayOutputStream.clas
+ s
+SHA1-Digest: JS9k01noL64HkbTWXzeDHi8kntg=
+
+Name: org/apache/derby/iapi/services/io/FormatableInstanceGetter.class
+SHA1-Digest: VuS6KlX560E7h0bU8eUjSsPdMAw=
+
+Name: org/apache/derby/client/am/BlobLocatorInputStream.class
+SHA1-Digest: j4BLYiX52DRyUY8WAV3g2nVhTxc=
+
+Name: org/apache/derby/loc/m26_en.properties
+SHA1-Digest: LOD4VcHDtyQ8JbtzK9HfpvsKc/o=
+
+Name: org/apache/derby/impl/sql/execute/GenericRIChecker.class
+SHA1-Digest: chmkuU0mRpUFhX+hGWXgQTsD0IQ=
+
+Name: org/apache/derby/impl/services/locks/Control.class
+SHA1-Digest: s912y5EkLnKKUPxlOl6CDwtHVQ4=
+
+Name: org/apache/derby/impl/sql/catalog/SYSCONGLOMERATESRowFactory.cla
+ ss
+SHA1-Digest: 9tycljD1FPw5SvEXDYZdf6B1f7M=
+
+Name: org/apache/derby/impl/store/raw/data/LongColumnException.class
+SHA1-Digest: atp/KZid0uRmLs9xPWthUoVjStg=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$6.c
+ lass
+SHA1-Digest: CckdyF5r0H6hI3/daANNvpVUdTc=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealVTIStatistics.class
+SHA1-Digest: vIjtNomcVnx2+cfpBMO+E46267g=
+
+Name: org/apache/derby/impl/store/replication/master/MasterController.
+ class
+SHA1-Digest: Yy2wjMwlL16d7e3d8fpABCMLRB4=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Index_info.cla
+ ss
+SHA1-Digest: 9yaeMjX2X2Vj2XzIXIkpk9cekco=
+
+Name: org/apache/derby/impl/sql/compile/RowNumberColumnNode.class
+SHA1-Digest: jykXyermcV3m+8MJezyTp29O23k=
+
+Name: org/apache/derby/impl/drda/ReEncodedInputStream$PublicBufferOutp
+ utStream.class
+SHA1-Digest: QfY6hDWAqTvoQYxWECDXeRRApEE=
+
+Name: org/apache/derby/iapi/store/raw/AuxObject.class
+SHA1-Digest: j86nIBO8Wy2t/8Zu7mID9V4iFXY=
+
+Name: org/apache/derby/impl/sql/GenericLanguageFactory.class
+SHA1-Digest: rAOIsjpS7o2ldGB2aHFdgEakXNY=
+
+Name: org/apache/derby/iapi/store/raw/RowLock.class
+SHA1-Digest: ncz4cOv1UzKDkWd+Wub08jKN6oA=
+
+Name: org/apache/derby/impl/sql/compile/GetCurrentConnectionNode.class
+SHA1-Digest: qX0Ut1okbyqm5B8FuXj6V7KV3yY=
+
+Name: org/apache/derby/impl/services/monitor/TopService.class
+SHA1-Digest: mWSXL7iyOzJCTkyEtgNmbHh5KxM=
+
+Name: org/apache/derby/iapi/sql/dictionary/DefaultDescriptor.class
+SHA1-Digest: +p1SpUHP0xY7Gk8rbi8Kd2bbbxY=
+
+Name: org/apache/derby/iapi/types/DataValueFactoryImpl.class
+SHA1-Digest: cG/KXYjVekv33LPaMSTYKbFihrg=
+
+Name: org/apache/derby/impl/sql/compile/DefaultVTIModDeferPolicy.class
+SHA1-Digest: ZF+DtDiIBgaxbmZTm/o62jhvv4c=
+
+Name: org/apache/derby/impl/store/raw/data/ReclaimSpace.class
+SHA1-Digest: dzKeakvWUqMoyefWwjsEB4HjHAg=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Integer_info.c
+ lass
+SHA1-Digest: c7I47ql97eEqYBU/RKITSW2iBao=
+
+Name: org/apache/derby/info/tools.properties
+SHA1-Digest: r2vZlbVXjNRO4TRTueGJYiegjU0=
+
+Name: org/apache/derby/impl/services/bytecode/BCMethodCaller.class
+SHA1-Digest: BaWCbNZbEixDrYA/iiJwmCrSX0w=
+
+Name: org/apache/derby/iapi/services/daemon/DaemonFactory.class
+SHA1-Digest: OUxGba4UTxO1oZbVc066t/WVMhA=
+
+Name: org/apache/derby/impl/sql/compile/OrderByColumn.class
+SHA1-Digest: pG6gAmC20mXoNi8X4X7uLCau4dU=
+
+Name: org/apache/derby/impl/jdbc/LOBStreamControl$2.class
+SHA1-Digest: bKlCXQOuy1+ii3eD/nAabeX8+BI=
+
+Name: org/apache/derby/loc/m48_en.properties
+SHA1-Digest: 8KnGqVYXKssGZBimcf4UqJebHTw=
+
+Name: org/apache/derby/impl/jdbc/LOBFile.class
+SHA1-Digest: Mdc2KMMt8wZZas/2nq3YPh5k3BE=
+
+Name: org/apache/derby/impl/sql/execute/DropStatisticsConstantAction.c
+ lass
+SHA1-Digest: aisqvgJko17kBsLS2h1g0JezAXM=
+
+Name: org/apache/derby/iapi/services/io/FormatableBitSet.class
+SHA1-Digest: oY5mSlKXWpcvJ/uB60So+vXUt2E=
+
+Name: org/apache/derby/impl/sql/catalog/SYSCOLUMNSRowFactory.class
+SHA1-Digest: DXbz9/k22/zkMhmeVXFAa7euilY=
+
+Name: org/apache/derby/client/ClientPooledConnection.class
+SHA1-Digest: Ipdu6Xfnv9jzS6B2Jl2qJRW+80w=
+
+Name: org/apache/derby/loc/m30_en.properties
+SHA1-Digest: ePS5GwyPUrkecfuhNuPFTrQEV54=
+
+Name: org/apache/derby/catalog/IndexDescriptor.class
+SHA1-Digest: 2Redo4BV9NvAH6J/jJ0+QIWSvxE=
+
+Name: org/apache/derby/impl/store/raw/data/StreamFileContainerHandle.c
+ lass
+SHA1-Digest: y31eBst1tITR/msJqC7oXjQ4fhU=
+
+Name: org/apache/derby/iapi/types/StreamHeaderGenerator.class
+SHA1-Digest: ImMYiTfuBMWzM4tww8xdXu1hYVw=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealNestedLoopJoinStatisti
+ cs.class
+SHA1-Digest: hq9u1W0N8+I0Jl7HkyJTs8ReNSk=
+
+Name: org/apache/derby/client/net/NetCallableStatement.class
+SHA1-Digest: pp65Gk7vnFC7eqTfdBO/WV1l0Qg=
+
+Name: org/apache/derby/iapi/services/monitor/ModuleSupportable.class
+SHA1-Digest: vuFf9dFyD2Tt5ikUxYoaNG5mLvw=
+
+Name: org/apache/derby/impl/sql/compile/BaseColumnNode.class
+SHA1-Digest: gAkeCQ+DNjp78P/duDdySOkgQMs=
+
+Name: org/apache/derby/impl/sql/execute/CurrentOfResultSet.class
+SHA1-Digest: ZdH1Y5MmbqwGYtiwj3uHGnnwUVQ=
+
+Name: org/apache/derby/impl/drda/EbcdicCcsidManager.class
+SHA1-Digest: Vn073Vs7qQel9AP7Rd95Gn+wBYU=
+
+Name: org/apache/derby/iapi/store/access/StoreCostResult.class
+SHA1-Digest: 5RDTzd+xY+C7e7j5P81L9wiiXHI=
+
+Name: org/apache/derby/iapi/sql/depend/ProviderList.class
+SHA1-Digest: DLhCKIg8yKBiPXt+xoL1TezWkxE=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$7.class
+SHA1-Digest: OEcdaSx3xE39zOLfXc8kiY1DCE4=
+
+Name: org/apache/derby/iapi/services/sanity/AssertFailure.class
+SHA1-Digest: FCLcTfv6X5saxdiWMgKzjclNGF8=
+
+Name: org/apache/derby/iapi/store/access/RowSource.class
+SHA1-Digest: j53GrXC7sgaWYvrzUI23UfDF4QQ=
+
+Name: org/apache/derby/iapi/services/cache/ClassSizeCatalog.class
+SHA1-Digest: m9AE8//7eLT6lcRRKRHYunBH7ZA=
+
+Name: org/apache/derby/client/am/UpdateSensitiveLOBLocatorInputStream.
+ class
+SHA1-Digest: FiPlnQ+K1Kze39DmayXl4G4SzWQ=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredConnection40.class
+SHA1-Digest: 9i5yngreFQAYcarihajGEfQVINw=
+
+Name: org/apache/derby/impl/sql/execute/GenericConstantActionFactory.c
+ lass
+SHA1-Digest: sDKGvLMapSHT0/9vmyDpT7NDE3Q=
+
+Name: org/apache/derby/iapi/sql/dictionary/SchemaDescriptor.class
+SHA1-Digest: ofNiRQ2Ov7AD0SAZNUwJa251q6E=
+
+Name: org/apache/derby/security/DatabasePermission$2.class
+SHA1-Digest: jdNiD1vKBD6rr3UEzpn7GesZew0=
+
+Name: org/apache/derby/iapi/types/CollatorSQLChar.class
+SHA1-Digest: hoZDXzDvwRjOOAKlHX9rHxFakPI=
+
+Name: org/apache/derby/iapi/store/raw/xact/TransactionFactory.class
+SHA1-Digest: r1qiLV2pZW1W4wNbefwzrql6o0g=
+
+Name: org/apache/derby/iapi/store/raw/Loggable.class
+SHA1-Digest: p/sWyTf5k01OE9UwhIfNRk45pF8=
+
+Name: org/apache/derby/impl/sql/execute/ValueRow.class
+SHA1-Digest: JfdV53133k0qensw33D+UV8xNDs=
+
+Name: org/apache/derby/loc/drda/servlet_en.properties
+SHA1-Digest: wIfGd3HebSMcvD6ahi5RHbKFdKU=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IForwardScan.cl
+ ass
+SHA1-Digest: 1oBYrngMYCVaO97jKFAy3yABAb0=
+
+Name: org/apache/derby/impl/drda/ReEncodedInputStream.class
+SHA1-Digest: DfTx3rAMKhUdHIYAayWb1xorJoc=
+
+Name: org/apache/derby/impl/sql/compile/CreateRoleNode.class
+SHA1-Digest: djr6KKl0OW8SOk4WO5DCXtiZn+g=
+
+Name: org/apache/derby/impl/tools/ij/ParseException.class
+SHA1-Digest: B4I47wqstOwGMrdO6sifWrJGlKo=
+
+Name: org/apache/derby/loc/clientmessages_ja_JP.properties
+SHA1-Digest: Qi5H7CvO91Q9A1dyUDCctBMpKgQ=
+
+Name: org/apache/derby/impl/store/replication/net/SocketConnection.cla
+ ss
+SHA1-Digest: 7kIOqB4Y+svgJbBy88b/GdVjXQw=
+
+Name: org/apache/derby/iapi/services/locks/LockFactory.class
+SHA1-Digest: 7sW8UOJg6H1RgUKKaxnEafK82fw=
+
+Name: org/apache/derby/iapi/types/SQLChar.class
+SHA1-Digest: ajp/zh7Hdf9zLJF/nfE3I+Id0xo=
+
+Name: org/apache/derby/iapi/store/access/StaticCompiledOpenConglomInfo
+ .class
+SHA1-Digest: hDAeJ7w38l68tL9djGlS0/5lsTE=
+
+Name: org/apache/derby/impl/sql/execute/AvgAggregator.class
+SHA1-Digest: p7S7AxDTrCXWX0dnXHhWyIHucMk=
+
+Name: org/apache/derby/impl/sql/execute/DMLVTIResultSet.class
+SHA1-Digest: hc2ZR2qEXgm/xCFE/4oJ6QUjpeE=
+
+Name: org/apache/derby/impl/sql/execute/GenericAggregateResultSet.clas
+ s
+SHA1-Digest: UQiiK5Uvi6RS9l+8LzBPgfveroo=
+
+Name: org/apache/derby/impl/tools/ij/Token.class
+SHA1-Digest: yc6X4CKVn1hPgVBdiY5jKnD+DCg=
+
+Name: org/apache/derby/iapi/sql/dictionary/UniqueSQLObjectDescriptor.c
+ lass
+SHA1-Digest: 5cNJsKhARnRv0Z98LenNzamkwCU=
+
+Name: org/apache/derby/loc/drda/messages_ru.properties
+SHA1-Digest: xOPkz/MFJd8xXVAlEPObaI3pu+w=
+
+Name: org/apache/derby/impl/store/raw/data/TruncateOnCommit.class
+SHA1-Digest: uHWVxrIa3Z8CapRSrS1Io2ktsRQ=
+
+Name: org/apache/derby/impl/tools/ij/CharStream.class
+SHA1-Digest: LmK71ay9ZFad9DsZvynqtEsib9s=
+
+Name: org/apache/derby/iapi/sql/depend/DependencyManager.class
+SHA1-Digest: WolzmyEsoSaAZ9diVgIQpVh3ENU=
+
+Name: org/apache/derby/impl/store/access/sort/SortBuffer.class
+SHA1-Digest: XYNePjhTh1oZNwbXwhoUqtw34Mc=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$7.class
+SHA1-Digest: XhS8/eLPI5Yyeg07ZVtjJ0sz7pw=
+
+Name: org/apache/derby/client/am/LogicalCallableStatement40.class
+SHA1-Digest: 65aMpN3Ex6ozc7LNDn+9XngaQ1M=
+
+Name: org/apache/derby/impl/jdbc/authentication/LDAPAuthenticationSche
+ meImpl$2.class
+SHA1-Digest: 65SyFqRFBTL5Iz9WOX18hAL0vJo=
+
+Name: org/apache/derby/impl/sql/execute/TableScanResultSet.class
+SHA1-Digest: C848gVyFDu0xMZkuzQGC33E7rTw=
+
+Name: org/apache/derby/impl/sql/compile/ParseException.class
+SHA1-Digest: fuxeHb87gAPCYg3nUA2xPZDRGnw=
+
+Name: org/apache/derby/impl/io/DirStorageFactory4.class
+SHA1-Digest: gkMs4K4bNdurferQMuPDlGpTe0A=
+
+Name: org/apache/derby/loc/drda/messages_it.properties
+SHA1-Digest: lEMIE4G37KWLXzrEGV6N925v6MQ=
+
+Name: org/apache/derby/impl/services/monitor/ModuleInstance.class
+SHA1-Digest: EkUMXTr3ExnoNp5I5VEoQzCZiNU=
+
+Name: org/apache/derby/impl/sql/compile/NumericTypeCompiler.class
+SHA1-Digest: fQEewzkfaxmM4ojvYscsgyi5fxk=
+
+Name: org/apache/derby/loc/m19_en.properties
+SHA1-Digest: /25lKXxVOUNudMBEZOAxEGKtmc0=
+
+Name: org/apache/derby/impl/jdbc/TemporaryClob$1.class
+SHA1-Digest: 4kLeSVX1fXgBXQqV/r7eucIjAMI=
+
+Name: org/apache/derby/impl/sql/compile/NumericConstantNode.class
+SHA1-Digest: IJks8m5LGskZdE2Yvebe2lMa9n8=
+
+Name: org/apache/derby/impl/sql/execute/IndexSetChanger.class
+SHA1-Digest: n4fnRLtkUbLgyN52KuwnnEBDI98=
+
+Name: org/apache/derby/impl/store/raw/log/LogToFile.class
+SHA1-Digest: gjKHzsEGvodnh4A590aYKhvAlvU=
+
+Name: org/apache/derby/client/am/XaException.class
+SHA1-Digest: sefAupeD2l8bLIWue6PdLxEXjBQ=
+
+Name: org/apache/derby/impl/drda/Pkgnamcsn$1.class
+SHA1-Digest: fWmbs8F5Saq0wcIVR7TzHjJ/tMM=
+
+Name: org/apache/derby/catalog/types/BaseTypeIdImpl.class
+SHA1-Digest: 4GkDkMXmGQ5FDAwl4pZClMPEMgw=
+
+Name: org/apache/derby/iapi/services/compiler/LocalField.class
+SHA1-Digest: 30GZanmysMW+giMEViJLREe3c1I=
+
+Name: org/apache/derby/iapi/types/SQLReal.class
+SHA1-Digest: cu/YWyX2RYeTI0zHr4+vyzJ1Enc=
+
+Name: org/apache/derby/client/am/Utils.class
+SHA1-Digest: d/T3NyYGTjD7OjOa1XbD0Dd+GG8=
+
+Name: org/apache/derby/impl/jdbc/authentication/LDAPAuthenticationSche
+ meImpl.class
+SHA1-Digest: NOgmiCYJrQLw/gLx/pC7Dq4EV/4=
+
+Name: org/apache/derby/catalog/DefaultInfo.class
+SHA1-Digest: x8fQdxrqOz2cJeZpB4aG9dafGPQ=
+
+Name: org/apache/derby/impl/sql/execute/GenericExecutionFactory.class
+SHA1-Digest: lQ1ne90H0ulOOQLdvKBh/JrSTv8=
+
+Name: org/apache/derby/impl/services/locks/LockTable.class
+SHA1-Digest: LfmubmgbY1yx4NlWWkYZLy1kORg=
+
+Name: org/apache/derby/impl/sql/execute/SystemAggregator.class
+SHA1-Digest: N6tH9M9+Cn8N5B1CTjhhrNVHLQk=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealNoRowsResultSetStatist
+ ics.class
+SHA1-Digest: H/GCtcRB4+MPlg/OaeTxOPKp+2E=
+
+Name: org/apache/derby/impl/sql/execute/CurrentDatetime.class
+SHA1-Digest: CPO5cvtGIEUuIB1QUAbbwpC3eB0=
+
+Name: org/apache/derby/client/net/NetPackageReply.class
+SHA1-Digest: tRaf2oP2eJfYzGeAyKg95vl9x34=
+
+Name: org/apache/derby/impl/sql/compile/SelectNode.class
+SHA1-Digest: BtIg6FZAhAFXh9jxlE7TMjVUPB4=
+
+Name: org/apache/derby/diag/ContainedRoles.class
+SHA1-Digest: 7uuDswFSST2oHeuSDCjLaE1terA=
+
+Name: org/apache/derby/impl/sql/compile/DropRoleNode.class
+SHA1-Digest: wFWUc7EWwSSfLOf+bb+WVPDmkio=
+
+Name: org/apache/derby/impl/sql/execute/RISetChecker.class
+SHA1-Digest: HhNGP06ND3wVl8OkM+j3YGGw8D8=
+
+Name: org/apache/derby/impl/jdbc/authentication/AuthenticationServiceB
+ ase.class
+SHA1-Digest: 3NiFmBOj2gsa1Mv/ouhVd9RWQJM=
+
+Name: org/apache/derby/impl/store/raw/data/DecryptInputStream.class
+SHA1-Digest: maDyL6V8TETU/J35gYh08+zC07I=
+
+Name: org/apache/derby/impl/services/cache/CacheEntry.class
+SHA1-Digest: ThW9lA7zImd7Q2i5xKp5T6gRoTA=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredStatement.class
+SHA1-Digest: bVsAJHZtccbPen3CLpa+XtasGFE=
+
+Name: org/apache/derby/iapi/services/loader/GeneratedMethod.class
+SHA1-Digest: 3iaPdXLTy4hGi5544K6MPVOxbS0=
+
+Name: org/apache/derby/iapi/services/locks/ShExLockable.class
+SHA1-Digest: zDWww054djgWfRNlQhKqFIaIWpM=
+
+Name: org/apache/derby/impl/sql/compile/FromBaseTable.class
+SHA1-Digest: eE6qgzv8WwLLJrQEBqgLwO+zaEQ=
+
+Name: org/apache/derby/impl/store/raw/xact/XactContext.class
+SHA1-Digest: BJZFq+qJNwgQCnq1Y2eseXvphSs=
+
+Name: org/apache/derby/impl/store/raw/data/ReclaimSpaceHelper.class
+SHA1-Digest: v9UytzPnPTw+bk5zPPrwJu32lQA=
+
+Name: org/apache/derby/impl/services/cache/CacheStat.class
+SHA1-Digest: doT99DURVeZrC7DyDnFncMz2ISo=
+
+Name: org/apache/derby/impl/sql/execute/DropTableConstantAction.class
+SHA1-Digest: mk8C2w+oKWNPc6llWj3zPhx8r1M=
+
+Name: org/apache/derby/impl/store/raw/data/PageActions.class
+SHA1-Digest: ovRYS0FbDhh18d1s0TGpUweUj9g=
+
+Name: org/apache/derby/loc/m23_en.properties
+SHA1-Digest: NjurHAJwc/Yrx0wVob+Si9M8zE8=
+
+Name: org/apache/derby/impl/sql/compile/BooleanTypeCompiler.class
+SHA1-Digest: qDyipG9bP24EmQOomvhbfi/ziAw=
+
+Name: org/apache/derby/client/am/Statement.class
+SHA1-Digest: P3V2dahcxwdXpsGFaA81akeKdu0=
+
+Name: org/apache/derby/impl/sql/catalog/SYSFOREIGNKEYSRowFactory.class
+SHA1-Digest: eOzgaOThBOxzjmUTgdVOEorwqio=
+
+Name: org/apache/derby/impl/services/timer/SingletonTimerFactory$3.cla
+ ss
+SHA1-Digest: 5eSyCJms6x32OuwpvNxYk9jYtFo=
+
+Name: org/apache/derby/impl/sql/execute/GroupedAggregateResultSet.clas
+ s
+SHA1-Digest: TnnYOkT5aVJ/G1TL9eF3EHjdrlE=
+
+Name: org/apache/derby/impl/sql/compile/CollectNodesVisitor.class
+SHA1-Digest: 7fLk2tSZDEOpS+JJUQD59qitLEs=
+
+Name: org/apache/derby/impl/services/reflect/JarLoader.class
+SHA1-Digest: 6wWaLimHWGu5qM0eYUJnZsKYR1w=
+
+Name: org/apache/derby/impl/sql/compile/BooleanConstantNode.class
+SHA1-Digest: mXvrDRF6UgXzhyffkIly+TcMxvM=
+
+Name: org/apache/derby/impl/tools/ij/utilMain.class
+SHA1-Digest: qJ/+NDj76vzpfMQQdjLcbRXvtzc=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$1.class
+SHA1-Digest: CiYokV6Eh6PYEEYtcEaJHnhZ6UI=
+
+Name: org/apache/derby/impl/tools/ij/ijException.class
+SHA1-Digest: Ok3vnHahaHficK9wBGD2eq8GJ8k=
+
+Name: org/apache/derby/iapi/types/SQLVarchar.class
+SHA1-Digest: arxnliu1B8GH84CpOOpxpB29/gk=
+
+Name: org/apache/derby/impl/sql/compile/LikeEscapeOperatorNode.class
+SHA1-Digest: uiXE2QbhyFI6SQvfFw2u6/T/gl8=
+
+Name: org/apache/derby/impl/drda/ConsistencyToken.class
+SHA1-Digest: sB6reuAHUVg+vWVHwn4oA5wAhQc=
+
+Name: org/apache/derby/impl/store/raw/xact/BeginXact.class
+SHA1-Digest: sXdqTPBMywX7W1i3oRhOoMgrecw=
+
+Name: org/apache/derby/impl/jdbc/EmbedPreparedStatement30.class
+SHA1-Digest: ricBtguFXZlvQNc6p2XzaxuDtIQ=
+
+Name: org/apache/derby/iapi/types/RowLocation.class
+SHA1-Digest: vh2vQuxMbhT8NIqQd5Tn/b2jS40=
+
+Name: org/apache/derby/impl/jdbc/Util.class
+SHA1-Digest: srlg5UjsHnNGWmP67bmJJHVaZ0s=
+
+Name: org/apache/derby/impl/sql/compile/Predicate.class
+SHA1-Digest: 2S1hG7cxg7fKyrbq/TIjLxx2Hbg=
+
+Name: org/apache/derby/impl/sql/GenericColumnDescriptor.class
+SHA1-Digest: jR4RK/lQPxfO5YPJeG4cr7iWgUs=
+
+Name: org/apache/derby/client/am/ResultSetCallbackInterface.class
+SHA1-Digest: 7gZyi1ycpnUsjczTdBg/TXvaMEk=
+
+Name: org/apache/derby/loc/drda/messages_es.properties
+SHA1-Digest: qb3cvCYHMxAM4p71dN4dYq429u0=
+
+Name: org/apache/derby/loc/m45_en.properties
+SHA1-Digest: nVpsukwNUOzBV+mEaosAStfW4yg=
+
+Name: org/apache/derby/iapi/store/raw/data/DataFactory.class
+SHA1-Digest: IZWzVJhwELgCIsSJUs/AClMrTao=
+
+Name: org/apache/derby/client/net/Reply.class
+SHA1-Digest: k17kTWJ8Qmia0q3eh9pARE3vc+o=
+
+Name: org/apache/derby/impl/store/raw/data/UpdateFieldOperation.class
+SHA1-Digest: ubWY1m4bUCl8qPCCPlofW1Ymic0=
+
+Name: org/apache/derby/iapi/services/io/ApplicationObjectInputStream.c
+ lass
+SHA1-Digest: q9FUefiRJrAqJisJ6v9r4nnOC6g=
+
+Name: org/apache/derby/impl/sql/conn/GenericStatementContext$CancelQue
+ ryTask.class
+SHA1-Digest: GCcgdfUjxRuCirDxmi3kq4WoAQU=
+
+Name: org/apache/derby/impl/sql/execute/BulkTableScanResultSet.class
+SHA1-Digest: GTgirq3k2jrcyUQC7IPWhmDM1qw=
+
+Name: org/apache/derby/impl/sql/catalog/TabInfoImpl.class
+SHA1-Digest: W6YMEVAEzpobMMt2+jTBZu/JE4Y=
+
+Name: org/apache/derby/impl/sql/compile/ParameterNode.class
+SHA1-Digest: H1YIY+1iimdGzjTekPnWQNx2CEE=
+
+Name: org/apache/derby/impl/io/JarDBFile.class
+SHA1-Digest: AU9NxlyXj4aOwCcshMIr6kMo9u4=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealBasicNoPutResultSetSta
+ tistics.class
+SHA1-Digest: xkqfX05L+HSTZ7dIvKdvkl4+5TA=
+
+Name: org/apache/derby/impl/drda/DRDAStatement$DrdaParamState.class
+SHA1-Digest: rxVI3Qtbyr1FvtQ8I4+0KepI93g=
+
+Name: org/apache/derby/jdbc/ClientDataSource40.class
+SHA1-Digest: y1JFwe/yY+3mBuOKTOWoQv7bmQs=
+
+Name: org/apache/derby/impl/store/replication/buffer/ReplicationLogBuf
+ fer.class
+SHA1-Digest: 0Yud1t7kISqQfWKGuglAbCzBbsU=
+
+Name: org/apache/derby/impl/services/bytecode/CodeChunk.class
+SHA1-Digest: Ui3PMHk2flz9yJ//PBlg0g/hF8A=
+
+Name: org/apache/derby/impl/drda/DRDAResultSet.class
+SHA1-Digest: E4zL3Gh/Jp9FowskgfLk4EW2jVk=
+
+Name: org/apache/derby/client/am/FailedProperties40.class
+SHA1-Digest: s/u3fZXGOLIJ0jxa1Y625w6/Zqs=
+
+Name: org/apache/derby/client/am/LogicalConnection.class
+SHA1-Digest: VRxHvFQZcJAzI7tjtkuX4Q43EBc=
+
+Name: org/apache/derby/impl/store/raw/data/MemByteHolder.class
+SHA1-Digest: zGn+M4cMtczFB4fpt8riY8sm8+w=
+
+Name: org/apache/derby/iapi/sql/dictionary/TriggerDescriptor.class
+SHA1-Digest: UMyVq4ccwIRLTRSJbMRJqLHOI4M=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$10.
+ class
+SHA1-Digest: 9XlS4T26EJnxNSsu3cMbCembAs0=
+
+Name: org/apache/derby/iapi/services/io/DebugByteTeeOutputStream.class
+SHA1-Digest: 0nLuMByNvxZMJFP+KxzCq4Hlzuc=
+
+Name: org/apache/derby/shared/common/sanity/AssertFailure.class
+SHA1-Digest: nRvUoXyeX07j3HH9ApLryIUr8XI=
+
+Name: org/apache/derby/impl/sql/execute/UpdatableVTIConstantAction.cla
+ ss
+SHA1-Digest: 156ID/DFD3lPW7WGIAzUQjjI4f8=
+
+Name: org/apache/derby/impl/drda/Pkgnamcsn.class
+SHA1-Digest: KKrgVf5O1Ln7s9Dt8saB11tETGg=
+
+Name: org/apache/derby/impl/sql/execute/MultiProbeTableScanResultSet.c
+ lass
+SHA1-Digest: /wOjpvhiRrJadq5/5SlixAzvQYk=
+
+Name: org/apache/derby/impl/sql/compile/TableName.class
+SHA1-Digest: H4IkyQ2X4VU04bV6PpwyZc4QG98=
+
+Name: org/apache/derby/impl/store/access/conglomerate/GenericScanContr
+ oller.class
+SHA1-Digest: or0NokTtzjXcXYJ70DYIf387TlY=
+
+Name: org/apache/derby/impl/jdbc/ReaderToAscii.class
+SHA1-Digest: rWQ+HwL3axxn0kH1mZyxMru4pvU=
+
+Name: org/apache/derby/impl/load/ImportFileInputStream.class
+SHA1-Digest: BH7YjEjSFBnRLYotmlSr1zfw/34=
+
+Name: org/apache/derby/impl/jdbc/EmbedSQLException.class
+SHA1-Digest: Kn9NgD+lVLe0oYWtcT8sPjIj0R8=
+
+Name: org/apache/derby/iapi/store/access/GlobalXact.class
+SHA1-Digest: KKCig/rudpbF5gtwabyaeFhYKFY=
+
+Name: org/apache/derby/impl/sql/compile/HasCorrelatedCRsVisitor.class
+SHA1-Digest: Xd5o9/OMBCsbPCgv2IoF0H88yp8=
+
+Name: org/apache/derby/iapi/types/SQLLongint.class
+SHA1-Digest: /kKELaaSXZnYwEBOqFylaK/31xk=
+
+Name: org/apache/derby/impl/sql/catalog/SYSDUMMY1RowFactory.class
+SHA1-Digest: EK2D5nnIrLn99JU6hXwY3CvBgTQ=
+
+Name: org/apache/derby/iapi/tools/i18n/LocalizedOutput.class
+SHA1-Digest: 4snzyJuYzrrRqdRvz/BJzoWU+Dw=
+
+Name: org/apache/derby/impl/sql/GenericClassInfo.class
+SHA1-Digest: RZA/ys40FmhbMPurol1Q/s+tpNU=
+
+Name: org/apache/derby/impl/sql/execute/InsertResultSet$MyRowAllocator
+ .class
+SHA1-Digest: 8KyxI0MXkETl3iFhmDMecr1Y6+E=
+
+Name: org/apache/derby/impl/sql/catalog/SPSNameCacheable.class
+SHA1-Digest: kYP+NxkWBqTASyUKM9SXbBaSG5g=
+
+Name: org/apache/derby/impl/sql/execute/AggregatorInfo.class
+SHA1-Digest: Hae9OqQFLvtjxzcE/zdZQV5oD24=
+
+Name: org/apache/derby/iapi/util/ByteArray.class
+SHA1-Digest: a3sPuH2RPjm1uASKN7r+EiovOY8=
+
+Name: org/apache/derby/loc/m8_en.properties
+SHA1-Digest: O8NWsjailpyjg7XIEG7sU3NYBl4=
+
+Name: org/apache/derby/iapi/sql/dictionary/IndexLister.class
+SHA1-Digest: R/MQVnqJKsy5F7YM+WNEY2ktDjA=
+
+Name: org/apache/derby/iapi/sql/compile/Visitable.class
+SHA1-Digest: W+Lb/BpXfcWs3JjIy98i8iRpaGA=
+
+Name: org/apache/derby/client/am/Configuration$1.class
+SHA1-Digest: wkw8+sYmiiSEVr9BFvUc6K34yso=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$9.c
+ lass
+SHA1-Digest: iRqf3iOnHO09CNHyiVmiHcNtgIw=
+
+Name: org/apache/derby/impl/drda/StandardEXTDTAReaderInputStream.class
+SHA1-Digest: vixpnXsz2C4pLZ7LVSznJba8zuY=
+
+Name: org/apache/derby/client/am/LOBStateTracker.class
+SHA1-Digest: wPFdakTZPCyXNYSTIFlFXCKNonA=
+
+Name: org/apache/derby/impl/store/access/heap/HeapCostController.class
+SHA1-Digest: n/NkvDX6GHwRdpPL85puHNf0V3c=
+
+Name: org/apache/derby/iapi/store/raw/log/Logger.class
+SHA1-Digest: YzIsMayavb3dENOvDuBmZ/h/YAc=
+
+Name: org/apache/derby/iapi/store/raw/xact/RawTransaction.class
+SHA1-Digest: UvQZf/QX8i2sP2YDO8IoQpme/Gg=
+
+Name: org/apache/derby/iapi/sql/execute/ExecAggregator.class
+SHA1-Digest: qoxC00HJKx6AK7XIdwIdrH4PwUc=
+
+Name: org/apache/derby/jdbc/EmbeddedSimpleDataSource.class
+SHA1-Digest: ITAqFGnqTSpOwDn0PAh7nMzVZN0=
+
+Name: org/apache/derby/iapi/util/CheapDateFormatter.class
+SHA1-Digest: cvns7MHXRImLOwm1X590cG80MTM=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/TransactionManag
+ er.class
+SHA1-Digest: jUj9glOxwhDPxE+gGnpnc2/3CAk=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredPreparedStatement40.class
+SHA1-Digest: nnbVk8iuyDN5HJO9yFecDxNHK7Y=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatementTablePermission.cl
+ ass
+SHA1-Digest: TGe+4wTyF79ADiFT7+igV3puLu4=
+
+Name: org/apache/derby/iapi/store/access/ColumnOrdering.class
+SHA1-Digest: aeRf+o0Q36R8ao4LFdSzfE63Ei0=
+
+Name: org/apache/derby/iapi/sql/dictionary/TableDescriptor.class
+SHA1-Digest: WK3SXVIiTb0XVK8ca3q71SI1ohg=
+
+Name: org/apache/derby/impl/sql/execute/AnyResultSet.class
+SHA1-Digest: ULvt/jGVBUYKXSpqHuiTHS3lARc=
+
+Name: org/apache/derby/shared/common/sanity/AssertFailure$1.class
+SHA1-Digest: tLUmT5/xU/dveYGtgGa2XGWWjeI=
+
+Name: about_files/LICENSE
+SHA1-Digest: SSnBA3fhOvn5y4uw1loH/dtCkLI=
+
+Name: org/apache/derby/impl/store/raw/xact/XactXAResourceManager.class
+SHA1-Digest: vjdqnkKBdt5wcfWyZKFWtaa2nQk=
+
+Name: org/apache/derby/client/am/Statement40.class
+SHA1-Digest: rTgT0bjvMb2LUvmpiTEZcOGVE9s=
+
+Name: org/apache/derby/impl/jdbc/UTF8Reader.class
+SHA1-Digest: VcSOjb1isG+ytRgRwuhAqL04CO8=
+
+Name: org/apache/derby/impl/services/reflect/UpdateLoader$1.class
+SHA1-Digest: MdKCB1QC1heoTZN7gsGooyl0Hqw=
+
+Name: org/apache/derby/impl/sql/execute/CreateConstraintConstantAction
+ .class
+SHA1-Digest: SnWLVqdSe5gejmOYPBjZfe6SNRA=
+
+Name: org/apache/derby/client/am/UpdateSensitiveClobLocatorInputStream
+ .class
+SHA1-Digest: xcnwLkbhRhxVCIh572Oe9/ifo1g=
+
+Name: org/apache/derby/iapi/types/SqlXmlUtil.class
+SHA1-Digest: SnWUV6Nmd7G53sXZoLtYlLdWcuk=
+
+Name: org/apache/derby/iapi/services/stream/PrintWriterGetHeader.class
+SHA1-Digest: xet7AhozuvbkTLtaQgcn4LZOG+M=
+
+Name: org/apache/derby/impl/sql/compile/ValueNodeList.class
+SHA1-Digest: IGmFlVzShxmU6B3ZwhQtCBmFU2o=
+
+Name: org/apache/derby/iapi/jdbc/EngineParameterMetaData.class
+SHA1-Digest: JgK3E3jXEZjPJdDD7hdcSeoQpZI=
+
+Name: org/apache/derby/impl/sql/execute/CreateIndexConstantAction.clas
+ s
+SHA1-Digest: Xnpy13R+gIIAAlcghfhpIwso3h4=
+
+Name: org/apache/derby/impl/store/raw/data/SpaceInformation.class
+SHA1-Digest: dpllI+0oJ/LuCSWlo0xlQ0hmLbo=
+
+Name: org/apache/derby/impl/store/raw/xact/SavePoint.class
+SHA1-Digest: F/ZOqNmJf22g52EnyAEAi2qK+W4=
+
+Name: org/apache/derby/impl/tools/ij/ijResultImpl.class
+SHA1-Digest: djHGvelGeWVRYRbxCJRpj0xvblw=
+
+Name: org/apache/derby/impl/store/raw/data/PhysicalUndoOperation.class
+SHA1-Digest: MZqYVi7Q97/mf9hdaLLiNWCpcrY=
+
+Name: org/apache/derby/client/am/MaterialPreparedStatement.class
+SHA1-Digest: CuZl6Gn43sgwU3dD3Om55kj55Js=
+
+Name: org/apache/derby/impl/sql/compile/BaseTableNumbersVisitor.class
+SHA1-Digest: AavGSmyo6gChGOU3WCxC+ZM/OuE=
+
+Name: org/apache/derby/iapi/jdbc/EngineConnection.class
+SHA1-Digest: e9zz1QIz/7f6wP3KXocYXdCAuT8=
+
+Name: org/apache/derby/loc/m16_en.properties
+SHA1-Digest: 7lQAKFCQo1Elnw1T5vnf+ZTRngQ=
+
+Name: org/apache/derby/impl/sql/catalog/SYSCOLPERMSRowFactory.class
+SHA1-Digest: nHz5iGwH9wnxONcaolCH0pHr2mQ=
+
+Name: org/apache/derby/impl/sql/compile/SQLToJavaValueNode.class
+SHA1-Digest: +ul1XdpRFrodl7WCar8MkZmHZn8=
+
+Name: org/apache/derby/impl/services/reflect/DirectCall.class
+SHA1-Digest: GNbnvd2f3jidOg14DLhDYyJgmuk=
+
+Name: org/apache/derby/impl/store/raw/data/CopyRowsOperation.class
+SHA1-Digest: fY9IY9Y/NBhgZI8a9UZE4fU31oI=
+
+Name: org/apache/derby/impl/tools/ij/ijTokenManager.class
+SHA1-Digest: dk/cWeWG+/bCropTda3cIflWhEw=
+
+Name: org/apache/derby/impl/tools/dblook/DB_Index.class
+SHA1-Digest: FoV0pjZgW6S0MlVFe8eLGRv7qXU=
+
+Name: org/apache/derby/iapi/jdbc/EnginePreparedStatement.class
+SHA1-Digest: 9qg4aAhmdDUR4n0O3VW5EqfMvSs=
+
+Name: org/apache/derby/osgi/EmbeddedActivator.class
+SHA1-Digest: NuWfcOe0NlTzlxRD+aPzeNHGxg0=
+
+Name: org/apache/derby/impl/store/replication/master/LogShipper.class
+SHA1-Digest: P4tJIQZwNEHuCa0zc7A8kEAfHng=
+
+Name: org/apache/derby/impl/sql/execute/SumAggregator.class
+SHA1-Digest: Wpsb2dzYAAPP6QXCOeBgu02anAE=
+
+Name: org/apache/derby/impl/sql/catalog/SYSROLESRowFactory.class
+SHA1-Digest: JcEdGy3XGPvcCwO1I04BXsA+S6c=
+
+Name: org/apache/derby/impl/sql/GenericStatement.class
+SHA1-Digest: Jg8Nhjj38IAjJTD5ygOLESlY4Xg=
+
+Name: org/apache/derby/iapi/types/CollatorSQLLongvarchar.class
+SHA1-Digest: 7UA0wGqJ5ESVsHuJb2MN/C5pEZE=
+
+Name: org/apache/derby/client/net/NetPreparedStatement.class
+SHA1-Digest: yW32cGv3nJDFlGSl/6I+sf4J+c4=
+
+Name: org/apache/derby/iapi/types/SQLBoolean.class
+SHA1-Digest: 1gT79MyKEZSJtezY+NI5uOign90=
+
+Name: org/apache/derby/iapi/services/io/StreamStorable.class
+SHA1-Digest: BI5RigJuczPNDQABE089lEX5S4I=
+
+Name: org/apache/derby/impl/sql/execute/DMLWriteResultSet.class
+SHA1-Digest: qQ7z0G0fsxZ2esznPo1fxL8luAM=
+
+Name: org/apache/derby/iapi/services/io/ErrorInfo.class
+SHA1-Digest: H/iaqFEkxVpVfALc+tgQIy/leVc=
+
+Name: org/apache/derby/impl/sql/execute/ScalarAggregateResultSet.class
+SHA1-Digest: ku0JUvLTTCSO3Lqos7cb4kQhCwM=
+
+Name: org/apache/derby/iapi/types/ConcatableDataValue.class
+SHA1-Digest: xT8TtAYav/qatlkNeK0QeLgyc5Q=
+
+Name: org/apache/derby/impl/sql/compile/ResultColumn.class
+SHA1-Digest: SYZyygeSljyStAGLj+9ghnArpe4=
+
+Name: org/apache/derby/iapi/services/context/ContextService$1.class
+SHA1-Digest: UZcvexbfqUgmKNbk0YHJKFXvOS8=
+
+Name: org/apache/derby/iapi/sql/compile/Optimizable.class
+SHA1-Digest: NdFXannzuY6oEkLqPCSJ276PRDM=
+
+Name: org/apache/derby/impl/tools/ij/ijConstants.class
+SHA1-Digest: uMFg8IKHwrHhYdK6Vxz48Ivbz5s=
+
+Name: org/apache/derby/impl/drda/ClientThread.class
+SHA1-Digest: 9aD9sK/NDQrs5m6fAE5tLeXgUyE=
+
+Name: org/apache/derby/iapi/services/cache/ClassSize$1.class
+SHA1-Digest: z1Wfwe9gU4M3KrZcapj5kElTb9o=
+
+Name: org/apache/derby/tools/SignatureChecker$SQLRoutine.class
+SHA1-Digest: imqG6cWWU+pIlu/uypBee8ho0lg=
+
+Name: org/apache/derby/impl/tools/ij/Main$1.class
+SHA1-Digest: JjrGCfuTwTZfh/cwV8qmOsXfIRc=
+
+Name: org/apache/derby/impl/store/raw/xact/ContainerLocking3.class
+SHA1-Digest: SLexv8rA8bY8RMA7pmkBaLZ5h1E=
+
+Name: org/apache/derby/impl/drda/FdocaConstants.class
+SHA1-Digest: /yiCidMhPQvg23k+GwOD1h4IQdQ=
+
+Name: org/apache/derby/loc/m38_en.properties
+SHA1-Digest: rSXr3SzUgym/S6eUeGDBkcww1e4=
+
+Name: org/apache/derby/impl/services/stream/BasicHeaderPrintWriter.cla
+ ss
+SHA1-Digest: l+rLkspPuEEQES2G97MsiLLJVO4=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealUpdateResultSetStatist
+ ics.class
+SHA1-Digest: NiL9nIePTexxZlYxVC5kzqud5Zs=
+
+Name: org/apache/derby/impl/sql/compile/ExtractOperatorNode.class
+SHA1-Digest: mN+aaOdRQ+hwb9d9oSlFBHtmxH8=
+
+Name: org/apache/derby/iapi/error/DerbySQLException.class
+SHA1-Digest: h19LQ7Q39f+qHHbGUH9A40CMJTI=
+
+Name: org/apache/derby/impl/sql/conn/GenericStatementContext.class
+SHA1-Digest: wyQQR7TjwdpxgOI1ciLP3Yvfg8A=
+
+Name: org/apache/derby/client/net/ClientJDBCObjectFactoryImpl40.class
+SHA1-Digest: xMrB6rfkHYux8XO+coBAZlwpQY0=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealMaterializedResultSetS
+ tatistics.class
+SHA1-Digest: A7E7rHeYQhyqaQ8EMHxszU6wzWM=
+
+Name: org/apache/derby/loc/m20_en.properties
+SHA1-Digest: rKEAlaZ9kk+QqOZiZPbSnlW2WNw=
+
+Name: org/apache/derby/impl/services/cache/ReplacementPolicy$Callback.
+ class
+SHA1-Digest: S0M2pHtWPrbNSbwKxWS44Q+VlRo=
+
+Name: org/apache/derby/impl/drda/CodePointNameTable.class
+SHA1-Digest: PfsH5iWpyiamwlGdybrenruJLsE=
+
+Name: org/apache/derby/vti/VTIMetaDataTemplate.class
+SHA1-Digest: L4BndkrJWmeELMGEgrnPfmfxjcg=
+
+Name: org/apache/derby/impl/jdbc/EmbedConnection.class
+SHA1-Digest: w9WrmG7mxWMWVr0RimX8GEe28bc=
+
+Name: org/apache/derby/iapi/error/StandardException$BadMessageArgument
+ Exception.class
+SHA1-Digest: X7RT/VDXMDLNrGIGncKVxzx60ig=
+
+Name: org/apache/derby/jdbc/InternalDriver.class
+SHA1-Digest: GAEEIhuwnjJgPx3Ysca9g6ZWP54=
+
+Name: org/apache/derby/iapi/services/cache/ClassSize.class
+SHA1-Digest: XunI/G73BVjYv/p4d+u5slcjw4c=
+
+Name: org/apache/derby/impl/sql/compile/QueryTreeNodeVector.class
+SHA1-Digest: fM7mfhO8rJdgP2C5HCSAfDM6HBY=
+
+Name: org/apache/derby/impl/services/bytecode/BCMethod.class
+SHA1-Digest: GVMfL5lu2u+9smDA52Jd/RhYPBE=
+
+Name: org/apache/derby/impl/drda/DecryptionManager.class
+SHA1-Digest: WxyU7vTtlLXLyqs4qh4lF520u1M=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/ScanControllerRo
+ wSource.class
+SHA1-Digest: FEDXXqaQ4SkvxK3wXZ6lxfZ54B8=
+
+Name: org/apache/derby/impl/store/raw/data/PageCreationArgs.class
+SHA1-Digest: tyxaRJQf9t7rS8PQkFUpEVTXDFY=
+
+Name: org/apache/derby/iapi/util/UTF8Util$SkipCount.class
+SHA1-Digest: xjIObJiJWdnoNn8GG2eLD9fmQLE=
+
+Name: org/apache/derby/impl/jdbc/authentication/JNDIAuthenticationSche
+ meBase.class
+SHA1-Digest: UyYoxr2n7TZNtveUFjRN8kCtv9o=
+
+Name: org/apache/derby/authentication/UserAuthenticator.class
+SHA1-Digest: ieaZmR6q2uDrvYltYX6lLbD1zTo=
+
+Name: org/apache/derby/impl/store/access/conglomerate/GenericControlle
+ r.class
+SHA1-Digest: rHbjV2+LHzd0Z1ZnArCVMvQvRaw=
+
+Name: org/apache/derby/loc/drda/messages_fr.properties
+SHA1-Digest: AryOZCWO7FZCwIIRxIt+zdj3lAE=
+
+Name: org/apache/derby/iapi/error/ShutdownException.class
+SHA1-Digest: yxlZud0NdgrxlzXZjbzhHsqh3jE=
+
+Name: org/apache/derby/io/StorageRandomAccessFile.class
+SHA1-Digest: b9LlPl5Km2wmXbk/g+9T1Y63Oxo=
+
+Name: org/apache/derby/client/am/Decimal.class
+SHA1-Digest: A5gfcoz/T8/1+xwHIjbgBci50rM=
+
+Name: org/apache/derby/impl/jdbc/authentication/SpecificAuthentication
+ ServiceImpl.class
+SHA1-Digest: C70kq97hZNFOToSYpELWz0abU1k=
+
+Name: org/apache/derby/iapi/types/CharStreamHeaderGenerator.class
+SHA1-Digest: VD3/U0RgLx/6ZicePhHwh4DPXWE=
+
+Name: org/apache/derby/iapi/store/raw/ScanHandle.class
+SHA1-Digest: QaMtARK6SKnn46jCLdPyVH87pfI=
+
+Name: org/apache/derby/impl/sql/LanguageDbPropertySetter.class
+SHA1-Digest: /pNl1UTi7gS75ZNE7rrD/ra7jWo=
+
+Name: org/apache/derby/iapi/util/PropertyUtil.class
+SHA1-Digest: guoMY5JyXvR2GXowIjBzvc6sIps=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSet169.class
+SHA1-Digest: J4j5x763pUnywFNAGt9FNcHwYHA=
+
+Name: org/apache/derby/iapi/services/info/ProductVersionHolder.class
+SHA1-Digest: Xt0ed+IODEkcD8ggwFEHHORjJY4=
+
+Name: org/apache/derby/impl/sql/GenericActivationHolder.class
+SHA1-Digest: QtCMsgZUPGriEpmOkoUYsRRMlxw=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Utf8_info.clas
+ s
+SHA1-Digest: 9qQykgRvhJoSxi67Ywu4B3vsk5M=
+
+Name: org/apache/derby/loc/m42_en.properties
+SHA1-Digest: juI3rMGXmX/Dg0eNmqjDnm3NzuI=
+
+Name: org/apache/derby/impl/store/raw/log/StreamLogScan.class
+SHA1-Digest: Vo04t7q8XKMjvr2ziwc3BpLf6v8=
+
+Name: org/apache/derby/impl/sql/compile/CreateTriggerNode.class
+SHA1-Digest: HmgIAsZH1GZuOIuzVck+J68ACLg=
+
+Name: org/apache/derby/impl/store/raw/data/ContainerActionOnCommit.cla
+ ss
+SHA1-Digest: b+vnPvWnieBSZojtMybKFTJIRWA=
+
+Name: org/apache/derby/security/SystemPermission.class
+SHA1-Digest: SaF/bUzkQey/KU8QiOand1bNHIU=
+
+Name: org/apache/derby/impl/sql/compile/DateTypeCompiler.class
+SHA1-Digest: hLs9d78NhbFUbmFa2EIcA1a0jxg=
+
+Name: org/apache/derby/impl/store/raw/data/ContainerHandleActionOnComm
+ it.class
+SHA1-Digest: QsvRSIAwoqIyvPRbRgk2wNCldC4=
+
+Name: org/apache/derby/client/am/Types.class
+SHA1-Digest: yAyzIwzmQyUyph6quhjd4OuL+AI=
+
+Name: org/apache/derby/impl/drda/DRDAStatement$1.class
+SHA1-Digest: d3AqWNmn8mtDai1OBnPfK26+Z+U=
+
+Name: org/apache/derby/impl/sql/compile/RowOrderingImpl.class
+SHA1-Digest: +0xsmfW/uTRGfRtlagahHAcUwFQ=
+
+Name: org/apache/derby/iapi/services/diag/DiagnosticableGeneric.class
+SHA1-Digest: BggEH2UWCJFnKaweAEuBHarYYkA=
+
+Name: org/apache/derby/impl/sql/execute/GenericScanQualifier.class
+SHA1-Digest: TyV1aZ+MYf68VFXXQ6xStJvM6l4=
+
+Name: org/apache/derby/impl/sql/compile/SpecialFunctionNode.class
+SHA1-Digest: cfVmZFwwCt9uSNK5LU3qgDYlHlU=
+
+Name: org/apache/derby/impl/load/ExportAbstract.class
+SHA1-Digest: lXig2x7LNLsa9HzYod/lGF+8VtI=
+
+Name: org/apache/derby/iapi/types/Orderable.class
+SHA1-Digest: Upy4wD3QvuLexN9/pVehvf/pgxo=
+
+Name: org/apache/derby/impl/sql/execute/ConstraintInfo.class
+SHA1-Digest: kbEFuJxxhq12iokQK6vEM74Xygo=
+
+Name: org/apache/derby/iapi/types/DTSClassInfo.class
+SHA1-Digest: k0Ss6qmAxgitZMuasuZTGCxT1y0=
+
+Name: org/apache/derby/impl/services/bytecode/BCClass.class
+SHA1-Digest: tlmNWu2YPmtOP689/c/OhbOkDIQ=
+
+Name: org/apache/derby/iapi/services/loader/ClassFactory.class
+SHA1-Digest: u9k4oj1E0an2iP0YtoGwqw2mHLM=
+
+Name: org/apache/derby/iapi/services/io/Limit.class
+SHA1-Digest: A4pTrjni3hNqgE6CPam1dSHb14Y=
+
+Name: org/apache/derby/impl/store/raw/data/BaseDataFileFactory$3.class
+SHA1-Digest: ApUME73i+cFGMYufuQVW+k8yVJY=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLocking2nohold.class
+SHA1-Digest: cMfAbLaQHWp6rx20C8hQdnBV/LM=
+
+Name: org/apache/derby/impl/sql/compile/AlterTableNode.class
+SHA1-Digest: e+LCNFb27MdaCY1Cp+0qiiYL4p4=
+
+Name: org/apache/derby/impl/sql/execute/RowUtil.class
+SHA1-Digest: EbrQTGRfwExvr7bdMHxJTL4hQVg=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeScanInfo.class
+SHA1-Digest: 8L3VHTIsYECdVySIDLYrjRCA1QQ=
+
+Name: org/apache/derby/impl/sql/compile/DDLStatementNode.class
+SHA1-Digest: PufujIeLqczXV0Iq0suQ317DiOA=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/SortFactory.clas
+ s
+SHA1-Digest: 5qgr3bd175D+F292UhQzlyNwrNA=
+
+Name: org/apache/derby/iapi/store/raw/PageKey.class
+SHA1-Digest: os5p6Uyt8IeKBKhki1+lK+DeJWo=
+
+Name: org/apache/derby/iapi/jdbc/DRDAServerStarter$1.class
+SHA1-Digest: j+rzDnIFmRB/qLQvsmUuDNvcxHo=
+
+Name: org/apache/derby/impl/sql/compile/DeleteNode.class
+SHA1-Digest: t0sCACTtm6VIm6br+7kAIRj1Adc=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$2.c
+ lass
+SHA1-Digest: 5lxOwVCeGUtT5B1IGRXUAlD0Dtg=
+
+Name: org/apache/derby/loc/m5_en.properties
+SHA1-Digest: irjAiP0L6hh52nS0xWe9QR6jslw=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$4.class
+SHA1-Digest: fvUeaU1xvdjRxLn1RnujF3aQ1D4=
+
+Name: org/apache/derby/iapi/types/XMLDataValue.class
+SHA1-Digest: ppdv300ONSzjAPWrfuR8RmfVWOU=
+
+Name: org/apache/derby/iapi/services/classfile/ConstantPoolEntry.class
+SHA1-Digest: fvWqqCvIf+hGjuazm8Km0bPK7NY=
+
+Name: org/apache/derby/impl/jdbc/SQLExceptionFactory.class
+SHA1-Digest: YAZlvdIdp40dHJ22aW5Cr2wvZyk=
+
+Name: org/apache/derby/jdbc/ResourceAdapterImpl.class
+SHA1-Digest: 9Zn5l7p20JVsjOza/xGjg7myH+Y=
+
+Name: org/apache/derby/impl/load/Export.class
+SHA1-Digest: ksVYnkmfh1hW3OQr59NY+wfnCYY=
+
+Name: org/apache/derby/impl/store/raw/log/Scan.class
+SHA1-Digest: aH3sPu1FaM5mOuK1KRQlBXUdVxs=
+
+Name: org/apache/derby/impl/io/vfmem/DataStoreEntry.class
+SHA1-Digest: bJk265NeqhVVmtiZFKk1RTryCY0=
+
+Name: org/apache/derby/impl/services/cache/ClockPolicy$Holder.class
+SHA1-Digest: iOd+A7L+DjXHx+NkVJxfcOqhOh0=
+
+Name: org/apache/derby/impl/sql/compile/SumAvgAggregateDefinition.clas
+ s
+SHA1-Digest: lGzXgPHFdAD7N0qElJ7JiyoNwUc=
+
+Name: org/apache/derby/impl/drda/DRDAXAProtocol.class
+SHA1-Digest: 84DADfxvMUyzVWvwTd6XWh8nixE=
+
+Name: org/apache/derby/iapi/db/TriggerExecutionContext.class
+SHA1-Digest: 3i2qlduwGzXZ5b/PS5Gv4/Hg4Gk=
+
+Name: org/apache/derby/client/net/NetConnection.class
+SHA1-Digest: WXgzwJANOMMKkp4fHnvqILnMNjM=
+
+Name: org/apache/derby/impl/jdbc/authentication/BasicAuthenticationSer
+ viceImpl.class
+SHA1-Digest: SedsSHaALh1nnEbTe6T0PN+wQyQ=
+
+Name: org/apache/derby/impl/sql/CursorTableReference.class
+SHA1-Digest: BZxcsovcK0J6wEkhOOV+Me/GAN4=
+
+Name: org/apache/derby/impl/tools/ij/util.class
+SHA1-Digest: RurvAHOBPoeKqZSf6CNRWj4E4ag=
+
+Name: org/apache/derby/iapi/services/uuid/UUIDFactory.class
+SHA1-Digest: K2yYEsf98baVCqb3i2MZGmssrDU=
+
+Name: org/apache/derby/impl/sql/compile/UntypedNullConstantNode.class
+SHA1-Digest: GUlB2T00EE9+WG2+uRPFmKRkGwk=
+
+Name: org/apache/derby/impl/sql/execute/UpdateResultSet.class
+SHA1-Digest: giwvmqUpQb6DzYRrjdF7xb9IR2g=
+
+Name: org/apache/derby/impl/sql/compile/NOPStatementNode.class
+SHA1-Digest: oZM0r2IPYi4PMecnhpCnQlnplzU=
+
+Name: org/apache/derby/iapi/util/JBitSet.class
+SHA1-Digest: ljoqDgb2W05ox3W6V4MNca8b0Ww=
+
+Name: org/apache/derby/drda/NetworkServerControl.class
+SHA1-Digest: kpAbbcQMf3r6nmFTlqNpB2NsnRI=
+
+Name: org/apache/derby/impl/store/raw/data/StoredRecordHeader$Overflow
+ Info.class
+SHA1-Digest: c2bIyqaU/DroqlNFW9Xm0DnV4XY=
+
+Name: org/apache/derby/iapi/services/context/ContextManager$1.class
+SHA1-Digest: HIhEfThXvb42igP+R1smIJqvETA=
+
+Name: org/apache/derby/diag/StatementDuration.class
+SHA1-Digest: 7rnMpXKSabtQwCZiCX5eVkVD+pY=
+
+Name: org/apache/derby/impl/store/access/heap/HeapClassInfo.class
+SHA1-Digest: mu4lEmK/aipNXcDbCYWOjEnf5Sk=
+
+Name: org/apache/derby/iapi/store/access/FileResource.class
+SHA1-Digest: 7+5VTvIRfvCrMSHylzht61ydk2E=
+
+Name: org/apache/derby/iapi/services/property/PropertySetCallback.clas
+ s
+SHA1-Digest: pDwJBp7eV4wbpKxi3gw3srGEmgs=
+
+Name: org/apache/derby/impl/store/access/RAMTransaction.class
+SHA1-Digest: GB3Lcw4rspl0dwOSQFe8Vi9dBB0=
+
+Name: org/apache/derby/impl/jdbc/LOBInputStream.class
+SHA1-Digest: FeOF9uBevpUq3uZ7LyUefSxvPlA=
+
+Name: org/apache/derby/iapi/tools/i18n/LocalizedResource.class
+SHA1-Digest: HhvsyolQvUS29vDqJQBl9NFM9Do=
+
+Name: org/apache/derby/impl/sql/compile/DistinctNode.class
+SHA1-Digest: k0W2eltzS9HwxLkLDuLxmffNWVE=
+
+Name: org/apache/derby/iapi/services/io/FormatableIntHolder.class
+SHA1-Digest: DPrss/FzjnjpiJrGM6N7UwtharY=
+
+Name: org/apache/derby/loc/m13_en.properties
+SHA1-Digest: 54cb0GBjAgxDRkK6gn1NtntGNas=
+
+Name: org/apache/derby/impl/jdbc/EmbedCallableStatement169.class
+SHA1-Digest: 8jSuwGaa6zy7o3ryXWoBl4FgZtk=
+
+Name: org/apache/derby/impl/db/DatabaseContextImpl.class
+SHA1-Digest: //0mx3od/u7zVC/u6DtjlGOYm4g=
+
+Name: org/apache/derby/iapi/services/loader/GeneratedClass.class
+SHA1-Digest: PpAvcLqWZdr2FYrYMow/gWAcaYc=
+
+Name: org/apache/derby/impl/sql/compile/BitTypeCompiler.class
+SHA1-Digest: 7PGDZPKCJpnan8odDLA5ie+uG6o=
+
+Name: org/apache/derby/iapi/services/io/DerbyIOException.class
+SHA1-Digest: sO9JqL1F27DfcEGv6E6oXZKzBwY=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeMaxScan.class
+SHA1-Digest: yYxlGUG5zGOSKv/77j4fQkSymsk=
+
+Name: org/apache/derby/impl/sql/execute/SetTransactionIsolationConstan
+ tAction.class
+SHA1-Digest: Cie5+W6zhW9wD5VXwQvzty6wkeY=
+
+Name: org/apache/derby/loc/drda/messages_pl.properties
+SHA1-Digest: ed85fV+yrh/0w6rIxB0XI1nXNXs=
+
+Name: org/apache/derby/impl/services/monitor/BaseMonitor$1.class
+SHA1-Digest: DbLYVZiYPidByL9JN+mLCLIObpY=
+
+Name: org/apache/derby/iapi/store/access/SortCostController.class
+SHA1-Digest: KrRT851oBb43zV26geT859ppSOI=
+
+Name: org/apache/derby/impl/sql/execute/UnionResultSet.class
+SHA1-Digest: VxhIUXoJsavIZ3M3HlRsd+wCCPk=
+
+Name: org/apache/derby/impl/sql/compile/BitConstantNode.class
+SHA1-Digest: THmHt9PqEDxlILm2F1xzAaNlxmo=
+
+Name: org/apache/derby/impl/sql/compile/HalfOuterJoinNode.class
+SHA1-Digest: O8aNcae6rKQTeujPJA9I9h3G+XQ=
+
+Name: org/apache/derby/impl/sql/execute/AutoincrementCounter.class
+SHA1-Digest: 92i3B/fJIjPJi3+Yp3tAekWTI1w=
+
+Name: org/apache/derby/impl/jdbc/BinaryToRawStream.class
+SHA1-Digest: EzYbz/w+eCAv2wXdyM+yM6wV7Q0=
+
+Name: org/apache/derby/iapi/sql/conn/Authorizer.class
+SHA1-Digest: BG6LxjtDgg7vYavPfo3C0Ry1wdQ=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$3.class
+SHA1-Digest: P/MaRup822BLGdNuU6pBnR5XgFg=
+
+Name: org/apache/derby/impl/sql/compile/TimestampOperatorNode.class
+SHA1-Digest: RXVtSgN2mTROr81gMcmWgfyQEtI=
+
+Name: org/apache/derby/impl/store/raw/data/InsertOperation.class
+SHA1-Digest: 0u2TLBPWqFqWxJM0ATWn95+44/Y=
+
+Name: org/apache/derby/impl/services/reflect/ReflectLoaderJava2.class
+SHA1-Digest: VWCV7INqE6WyYI7leF4QMs6D7S8=
+
+Name: org/apache/derby/impl/io/DirFile.class
+SHA1-Digest: oUk18HM/ctLaLIKLEssWtjpnOrM=
+
+Name: org/apache/derby/impl/sql/execute/TriggerInfo.class
+SHA1-Digest: Quv1fW8wr0pemTIDKcdHbwSBjS0=
+
+Name: org/apache/derby/impl/jdbc/EmbedConnectionContext.class
+SHA1-Digest: HQD2kmEulPP/vqPA/iYBzrmuMtc=
+
+Name: org/apache/derby/impl/jdbc/ConnectionChild.class
+SHA1-Digest: QAZQ7tThUV0mVYMQMQ/l3gOnlEs=
+
+Name: org/apache/derby/iapi/sql/dictionary/RoleClosureIterator.class
+SHA1-Digest: D5MhoeCVWisBOPHlbV0M227nlAA=
+
+Name: org/apache/derby/impl/store/raw/data/StoredRecordHeader.class
+SHA1-Digest: harQ0AygzOBhblf16gDvmIi5bP0=
+
+Name: org/apache/derby/impl/sql/compile/ReferencedTablesVisitor.class
+SHA1-Digest: vLW26AT6Qv5YrSlRrtYBux0wZ8E=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeController.class
+SHA1-Digest: lSl7JNh8jvl/N+TCso1WURe20XA=
+
+Name: org/apache/derby/impl/sql/catalog/TDCacheable.class
+SHA1-Digest: FQ/+eGSskWSJDXU4Dyf8bUOWZcQ=
+
+Name: org/apache/derby/impl/sql/compile/SavepointNode.class
+SHA1-Digest: CK+UwO6yRFMUuPk/1uABawPuN4o=
+
+Name: org/apache/derby/catalog/UUID.class
+SHA1-Digest: hCSKWzK3vj5SA43OsVlw+jJYI3A=
+
+Name: org/apache/derby/loc/m35_en.properties
+SHA1-Digest: NXDq9KAsSQuaJwF1gVnwnzrIfOc=
+
+Name: org/apache/derby/loc/drda/servlet_zh_TW.properties
+SHA1-Digest: TU6d003WFvY6857yb9LHNGOg2Jw=
+
+Name: org/apache/derby/impl/sql/execute/BasicSortObserver.class
+SHA1-Digest: E1t/X/5APCAliiw/Z9SHhWelsZc=
+
+Name: org/apache/derby/client/net/Request.class
+SHA1-Digest: +YtCP40On2n7EP9U20LvfOLJFyc=
+
+Name: org/apache/derby/impl/services/cache/ReplacementPolicy.class
+SHA1-Digest: OTcuxpYtd1yMTSYxRRsT8sluXxU=
+
+Name: org/apache/derby/client/net/EncodedInputStream$PublicBufferOutpu
+ tStream.class
+SHA1-Digest: gGOaAOSh0UClT1HGTDmkxIA0KHk=
+
+Name: org/apache/derby/iapi/services/crypto/CipherFactoryBuilder.class
+SHA1-Digest: itfouYYkqjzMzgB6Brp8+wYvHAQ=
+
+Name: org/apache/derby/impl/jdbc/ClobUpdatableReader.class
+SHA1-Digest: OrukFUoNvnaNY5yQI3gzw3p4C7A=
+
+Name: org/apache/derby/impl/sql/execute/ConstraintConstantAction.class
+SHA1-Digest: j+2832wYvmJG7ctTybgwJvhw+Bo=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredConnection30.class
+SHA1-Digest: ZPlvXmT3QfeTkHzRgk/XEvPJQ5s=
+
+Name: org/apache/derby/jdbc/ClientXADataSource40.class
+SHA1-Digest: v/dzSmpKpPljzZ3t1PXudXWZqwg=
+
+Name: org/apache/derby/impl/sql/compile/MethodCallNode.class
+SHA1-Digest: ZOBmBQwjHlckfK8u0yF7LqykjG0=
+
+Name: org/apache/derby/impl/sql/compile/JavaToSQLValueNode.class
+SHA1-Digest: 6Aqg28UG/TbDs91JylfjqanbCgk=
+
+Name: org/apache/derby/impl/services/monitor/AntiGC.class
+SHA1-Digest: IVhhmHxgp/c9RkzFXZtd24J9rSw=
+
+Name: org/apache/derby/iapi/sql/execute/CursorResultSet.class
+SHA1-Digest: aaZx1iioNb7aJCYQabgpW5qWn4U=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2IRowLocking2.cl
+ ass
+SHA1-Digest: H1uQV67fdMdhHkIjUvPjzHbpr2c=
+
+Name: org/apache/derby/iapi/types/DateTimeDataValue.class
+SHA1-Digest: oWAIcomsa81FdJp4Jot1mIo+Rlo=
+
+Name: org/apache/derby/client/am/ExceptionFormatter.class
+SHA1-Digest: eiQrUvfGVLCyUkV8Z0W1FVsD/tc=
+
+Name: org/apache/derby/impl/store/raw/data/ByteHolderInputStream.class
+SHA1-Digest: Pd6y0ueWbCB0I+R6/I+q9KujupU=
+
+Name: org/apache/derby/impl/sql/catalog/PermissionsCacheable.class
+SHA1-Digest: CPgZnmjTJhqW54jij3YWVXp9EOE=
+
+Name: org/apache/derby/impl/store/raw/data/AllocExtent.class
+SHA1-Digest: 2GqiD9r/pjbE4VJaJgnaKRQ0+SY=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$3.class
+SHA1-Digest: Tw1/qIa9klV47HQtoS3TM1q8zcY=
+
+Name: org/apache/derby/client/net/NetSqldta.class
+SHA1-Digest: wi+TMhRYf6zTQ3RzSpdRN9Kx0z8=
+
+Name: org/apache/derby/impl/tools/sysinfo/ZipInfoProperties.class
+SHA1-Digest: qNKB8VyGJvVMPlAGTf4u8EoxehY=
+
+Name: org/apache/derby/impl/store/raw/data/SetReservedSpaceOperation.c
+ lass
+SHA1-Digest: Gg5/qoFkc+N1ZV+ekOK+OMJp+I8=
+
+Name: org/apache/derby/drda/NetServlet.class
+SHA1-Digest: gUotMuNxHtYAXlA83mG5f2XwRfU=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessage.c
+ lass
+SHA1-Digest: i287HDRp3SeAEYGhds5++daO8Hw=
+
+Name: org/apache/derby/iapi/sql/dictionary/RoleGrantDescriptor.class
+SHA1-Digest: DtmASIhtpxH8vOnRzAIGRRU1Trk=
+
+Name: org/apache/derby/iapi/store/raw/GlobalTransactionId.class
+SHA1-Digest: 08aTKbywmt4Ec9y0g9exTDk93eM=
+
+Name: org/apache/derby/impl/sql/compile/ConstraintDefinitionNode.class
+SHA1-Digest: 7Z3Bk6Y7wV22EX25dOfvJ7DCUNc=
+
+Name: org/apache/derby/impl/sql/compile/XMLTypeCompiler.class
+SHA1-Digest: 5L8Q1dcdnaGrIPD+Dk2/AGN6Y5A=
+
+Name: org/apache/derby/client/am/CallableLocatorProcedures.class
+SHA1-Digest: ZGuTucyu40kHpHfGaQOOIMppxSA=
+
+Name: org/apache/derby/iapi/services/cache/CacheFactory.class
+SHA1-Digest: vWOphCbY47EjkbQuJ9P86rjxH4k=
+
+Name: org/apache/derby/impl/drda/DRDAProtocolExceptionInfo.class
+SHA1-Digest: QDcdy5lP0CUHBvgD4FMlnWzSuDE=
+
+Name: org/apache/derby/iapi/services/compiler/JavaFactory.class
+SHA1-Digest: AEUM49GeciCmV+O8mgiCbuXGaZc=
+
+Name: org/apache/derby/client/net/NetResultSetReply.class
+SHA1-Digest: Y/vsci2dNPDYjeQVUzFrAGmcQGM=
+
+Name: org/apache/derby/catalog/TriggerNewTransitionRows.class
+SHA1-Digest: h08EqmFmKvXeHgsMUwHfXRwTexA=
+
+Name: org/apache/derby/impl/sql/compile/XMLConstantNode.class
+SHA1-Digest: 2ZpACfC45rQo1jimgwdx+aBzrYc=
+
+Name: org/apache/derby/impl/sql/execute/DropConstraintConstantAction.c
+ lass
+SHA1-Digest: lLHpZOKVCv7MkWeYfZRQF957fr8=
+
+Name: org/apache/derby/impl/store/replication/slave/SlaveController.cl
+ ass
+SHA1-Digest: Om6fsLiLReHNN5WVWvFceYWLwzY=
+
+Name: org/apache/derby/impl/tools/dblook/DB_View.class
+SHA1-Digest: X+QDZWRKJ3qoKisHpgyybcL6XX4=
+
+Name: org/apache/derby/iapi/types/DataType.class
+SHA1-Digest: yqADzElIMjVYcPW7ctP2jGaVklY=
+
+Name: org/apache/derby/impl/store/access/conglomerate/TemplateRow.clas
+ s
+SHA1-Digest: 03bGCzIPNMpi2Uan0D+RKuym0nI=
+
+Name: org/apache/derby/catalog/TypeDescriptor.class
+SHA1-Digest: GIB0CBEJZ1ERs9qNPZVMJuZPFu0=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeRowPosition.class
+SHA1-Digest: kYQQWP/y+7n/CHN/7kX5shqw74s=
+
+Name: org/apache/derby/impl/sql/execute/JarUtil$2.class
+SHA1-Digest: +HkmHxQSEhMqheduYiiDUhbSJus=
+
+Name: org/apache/derby/impl/sql/compile/VTIDeferModPolicy.class
+SHA1-Digest: LzTuvlmLQO3Z2IZnZau932+S2jU=
+
+Name: org/apache/derby/iapi/store/raw/log/LogInstant.class
+SHA1-Digest: xG+PrP7CbWs86KdgY5xuhV7etdI=
+
+Name: org/apache/derby/loc/drda/servlet_pt_BR.properties
+SHA1-Digest: JtjaqbLUWE4ZxccCSYsMa5VcRAg=
+
+Name: org/apache/derby/client/am/stmtcache/JDBCStatementCache.class
+SHA1-Digest: CXGXcXJpYPvyyDSQe72/Of1c0gY=
+
+Name: org/apache/derby/impl/store/raw/data/LoggableActions.class
+SHA1-Digest: ZWUe52envs+L4xmOqpDneZTR4PE=
+
+Name: about.html
+SHA1-Digest: TYdtqUq2X3wcXrMtxQkBzAgHGKc=
+
+Name: org/apache/derby/impl/sql/execute/ScrollInsensitiveResultSet.cla
+ ss
+SHA1-Digest: 0R+1rij6mScKf6GX2hsQroIlKNI=
+
+Name: org/apache/derby/catalog/ReferencedColumns.class
+SHA1-Digest: 8Z9ipC3By9DAS7fmlVK1EvHOUUQ=
+
+Name: org/apache/derby/iapi/db/PropertyInfo.class
+SHA1-Digest: /bBZMndlS6zFkVO1i85T8j2h/P0=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2INoLocking.clas
+ s
+SHA1-Digest: GkUxbV8eXKxxrSpd6dkLR/uY4i8=
+
+Name: org/apache/derby/client/am/CallableStatement40.class
+SHA1-Digest: gxoCkYrVpOsijvqeaq4cD5T1vBM=
+
+Name: org/apache/derby/impl/services/stream/BasicGetLogHeader.class
+SHA1-Digest: riMLCP83+6wIPNv4Q2l2b0TPPTk=
+
+Name: org/apache/derby/client/am/PreparedStatementCallbackInterface.cl
+ ass
+SHA1-Digest: 7JhucM1hDyiFfbEdXKHAYaO5nXY=
+
+Name: org/apache/derby/client/net/NetConnection40.class
+SHA1-Digest: ZxH6hcy13BMMkAhGTo5Uj/SImjo=
+
+Name: org/apache/derby/impl/services/daemon/BasicDaemon.class
+SHA1-Digest: KCGB9tG9P/Ui7XrWYZ976ygPR6o=
+
+Name: org/apache/derby/impl/services/cache/ClockFactory.class
+SHA1-Digest: dIuqms/EA/hoc1//1ekGnSzBEoY=
+
+Name: org/apache/derby/impl/sql/execute/CountAggregator.class
+SHA1-Digest: hdjtmjL2+ostwpKknLYnrpVwfds=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealScrollInsensitiveResul
+ tSetStatistics.class
+SHA1-Digest: cytScYa0aPBxsCPzv+KsyZ47Axc=
+
+Name: org/apache/derby/impl/sql/execute/DropIndexConstantAction.class
+SHA1-Digest: PDu+Th39YMm5cYDskEM2aTUayYs=
+
+Name: org/apache/derby/iapi/jdbc/EngineResultSet.class
+SHA1-Digest: GS5MaONpL9AAa+7xcCStkn3ZC7E=
+
+Name: org/apache/derby/impl/sql/execute/HashTableResultSet.class
+SHA1-Digest: XI0SQ6dZC8jFJOEnnpoD16mk9s4=
+
+Name: org/apache/derby/impl/sql/execute/GenericAggregator.class
+SHA1-Digest: w+Yy5wVblZ1SXiwdvs6/zaOXL0E=
+
+Name: org/apache/derby/impl/sql/catalog/SYSSTATISTICSRowFactory.class
+SHA1-Digest: Zd1mBOSKKt72EyZBZZzkuo/hn60=
+
+Name: org/apache/derby/iapi/sql/dictionary/ColumnDescriptor.class
+SHA1-Digest: +T7RIAt74ePrAbN79ltgRzvGuYc=
+
+Name: org/apache/derby/iapi/store/raw/log/LogScan.class
+SHA1-Digest: 1SfjctghOrhTom1zTq2BarffDAo=
+
+Name: org/apache/derby/loc/m2_en.properties
+SHA1-Digest: wEsL+Mpd1OmbvoVdLakcXatkI+s=
+
+Name: org/apache/derby/impl/sql/execute/CallStatementResultSet.class
+SHA1-Digest: iDfRFDiNq5H/griEf9pTUjVPvb4=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealNormalizeResultSetStat
+ istics.class
+SHA1-Digest: DEiez8AjkZak7fZUPX8iXqMa4aA=
+
+Name: org/apache/derby/impl/sql/execute/CreateSchemaConstantAction.cla
+ ss
+SHA1-Digest: dtftefi3A0qZuMlYqoBScxEH7+0=
+
+Name: org/apache/derby/impl/store/raw/data/StoredFieldHeader.class
+SHA1-Digest: HZe6baBCUm66ZmmLOZCHdMqLiuA=
+
+Name: org/apache/derby/client/am/Agent.class
+SHA1-Digest: 1TAqHUCbTVhKbsl0UXfYmzigsZk=
+
+Name: org/apache/derby/jdbc/ClientDriver.class
+SHA1-Digest: t6FaNSaf8aX0IzNPQr7pWvyARAA=
+
+Name: org/apache/derby/client/am/ColumnTypeConversionException.class
+SHA1-Digest: 1mWju2n7Z1CH3Dff2bvyqDWdhpU=
+
+Name: org/apache/derby/loc/clientmessages_de_DE.properties
+SHA1-Digest: yguY26rwQZH7JESBwfvRQlOEvnY=
+
+Name: org/apache/derby/impl/sql/compile/RowResultSetNode.class
+SHA1-Digest: rACe3UqCVh/lYbTcykmLu511/X0=
+
+Name: org/apache/derby/iapi/services/timer/TimerFactory.class
+SHA1-Digest: 26QI+DIEAKQpYrJyJgf9lySGbW0=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealHashJoinStatistics.cla
+ ss
+SHA1-Digest: 6ovGfdGcXwof9xV1d4QkQHCQuj8=
+
+Name: org/apache/derby/impl/sql/compile/ActivationClassBuilder.class
+SHA1-Digest: dFFu9pnlf3iZ+fHh7gkTJSGyETI=
+
+Name: org/apache/derby/loc/drda/messages_cs.properties
+SHA1-Digest: PrZF6JJbIpJxSqFtie18cx2gsXw=
+
+Name: org/apache/derby/iapi/sql/Statement.class
+SHA1-Digest: 6UVwLYBpdZ0EwrL6PrYZ9UiuYzo=
+
+Name: org/apache/derby/vti/DeferModification.class
+SHA1-Digest: o++c6ETXrUN+Dcr5yMUNBqhuRGI=
+
+Name: org/apache/derby/iapi/sql/execute/ExecutionFactory.class
+SHA1-Digest: zOe3CiBRdbzUfiMv9Mo+fuTK/d8=
+
+Name: org/apache/derby/impl/store/raw/data/RawField.class
+SHA1-Digest: vFw+/ETK/Y5O3dtgMDMr4vscmRU=
+
+Name: org/apache/derby/impl/services/locks/Deadlock.class
+SHA1-Digest: zURZLF25Fn2+oUGVqipuMFb4tDE=
+
+Name: org/apache/derby/impl/sql/compile/DropIndexNode.class
+SHA1-Digest: V6bOgPd6XKDfHBll3uOJHum44Tw=
+
+Name: org/apache/derby/loc/m28_en.properties
+SHA1-Digest: CVnMcG3aPu3uah6UeWXWPEpJNwE=
+
+Name: org/apache/derby/impl/sql/compile/InListOperatorNode.class
+SHA1-Digest: 3rpZcvOt+5RAwJELtFlEXJiRqTA=
+
+Name: org/apache/derby/impl/jdbc/EmbedPreparedStatement20.class
+SHA1-Digest: R8qH6Z14tcfYwFphBhDocELjjxI=
+
+Name: org/apache/derby/iapi/sql/dictionary/ColumnDescriptorList.class
+SHA1-Digest: 7HNT1du/btgi5sGHJV7Nw1UD+mc=
+
+Name: org/apache/derby/impl/sql/compile/DMLStatementNode.class
+SHA1-Digest: 5H1135Nbmiiq9Macoo0hrQ8jdWA=
+
+Name: org/apache/derby/iapi/services/classfile/ClassInput.class
+SHA1-Digest: 8Kv4Yj3FwAHGvyBvMz4pnm4rVxI=
+
+Name: org/apache/derby/impl/jdbc/EmbedDatabaseMetaData40.class
+SHA1-Digest: 6y0GkwmlwlY60/OFUYRVQ5y465A=
+
+Name: org/apache/derby/iapi/sql/execute/ResultSetStatisticsFactory.cla
+ ss
+SHA1-Digest: cw+fxsvLb135IDdfub0rWpOsCvo=
+
+Name: org/apache/derby/impl/drda/DssTrace$1.class
+SHA1-Digest: 5k7dPSw4yLlEzygQZ1A6mbcMOk4=
+
+Name: org/apache/derby/impl/sql/execute/CreateAliasConstantAction.clas
+ s
+SHA1-Digest: V+BplVs8ZaStO93TkQgUQQpKSJU=
+
+Name: org/apache/derby/iapi/error/PassThroughException.class
+SHA1-Digest: wk6AZo0sEhxVD6WgOYZO1Jv74ZQ=
+
+Name: org/apache/derby/impl/store/raw/data/CompressSpacePageOperation1
+ 0_2.class
+SHA1-Digest: zU2NMviMMbFZUL2nAhvS1OhDBis=
+
+Name: org/apache/derby/iapi/types/ReaderToUTF8Stream.class
+SHA1-Digest: Dlw2V8Onx9uL/AoxBNadWkOq7YU=
+
+Name: org/apache/derby/iapi/types/NumberDataValue.class
+SHA1-Digest: HU20g6FHUB/pQvGVvx1hULDE0NY=
+
+Name: org/apache/derby/iapi/sql/dictionary/StatisticsDescriptor.class
+SHA1-Digest: TRPDQR2M/wAXsKvIX6OXmKVLnvc=
+
+Name: org/apache/derby/impl/store/access/btree/SearchParameters.class
+SHA1-Digest: Bgdh5yNfQm3NQq0gpaYP0L0C6lQ=
+
+Name: org/apache/derby/impl/store/raw/data/DirectAllocActions.class
+SHA1-Digest: 34Nq29rhE2rjOBrufNTjF/A7dN4=
+
+Name: org/apache/derby/loc/m10_en.properties
+SHA1-Digest: vQBj9Db5K4hhXw+VpTHucKHIdb0=
+
+Name: org/apache/derby/iapi/sql/execute/ScanQualifier.class
+SHA1-Digest: LAWaQMPZnSgTjEh2ZIvuI540mqU=
+
+Name: org/apache/derby/impl/sql/execute/IndexColumnOrder.class
+SHA1-Digest: bBc4aIrUl2sUObV/qIpv9vJ0Ay0=
+
+Name: org/apache/derby/client/ClientDataSourceFactory.class
+SHA1-Digest: sli9RN+y9GRXfSVYr6jWq0b/oGg=
+
+Name: org/apache/derby/impl/store/access/btree/OpenBTree.class
+SHA1-Digest: IMQjowMtqNVP15JZwHTc706c/uI=
+
+Name: org/apache/derby/impl/drda/DRDASocketTimeoutException.class
+SHA1-Digest: 6XcONmRDPISnrDZe7e7VBZJrzo0=
+
+Name: org/apache/derby/iapi/sql/execute/RunTimeStatistics.class
+SHA1-Digest: dG7bawLfkhxpqAAxQ1ssEKbVFHY=
+
+Name: org/apache/derby/impl/load/ExportWriteDataAbstract.class
+SHA1-Digest: fCm2C8qrA4hbKab9di7pdPDlIoM=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2I.class
+SHA1-Digest: kh8XL/+2NbmJm2oLIME2lXXKWaE=
+
+Name: org/apache/derby/iapi/services/compiler/ClassBuilder.class
+SHA1-Digest: g/RDywaWD3Ft+vumxNndkbW1F/o=
+
+Name: org/apache/derby/iapi/store/access/RowLocationRetRowSource.class
+SHA1-Digest: KssI1iysOEhBcUpRuHTRG1k68qE=
+
+Name: org/apache/derby/impl/sql/compile/RevokeRoleNode.class
+SHA1-Digest: CJsnmn5UX3XHVicca6A/zeII8DE=
+
+Name: org/apache/derby/loc/drda/servlet_zh_CN.properties
+SHA1-Digest: N7W8Z9x8V3yZfm+CydR9WXoo03s=
+
+Name: org/apache/derby/impl/sql/compile/OrNode.class
+SHA1-Digest: /O18gNyV1FLXxe6K+wbog6Ukti4=
+
+Name: org/apache/derby/impl/db/StoreClassFactoryContext.class
+SHA1-Digest: D4L54GQuCxkWv5sJufBOqq+N1XY=
+
+Name: org/apache/derby/impl/load/ImportReadData.class
+SHA1-Digest: EoELp9AfnAa6DT9IdSCHGmRIWsY=
+
+Name: org/apache/derby/iapi/types/XML.class
+SHA1-Digest: LOsmIr+eFtvCTmHcEXyheVYYpsg=
+
+Name: org/apache/derby/impl/jdbc/ClobUtf8Writer.class
+SHA1-Digest: fmjkJ3SyHPf50a2NFVU/g7Q2Ae4=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$5.c
+ lass
+SHA1-Digest: YFvraz5b0CIAWaDf2XfMdr4/Pwg=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealTableScanStatistics.cl
+ ass
+SHA1-Digest: SL4DS7rURxBAYvqN9KCB1LJM2ek=
+
+Name: org/apache/derby/jdbc/EmbeddedDataSource.class
+SHA1-Digest: 8maa7bzoWq/V73gSWB8w2r2Z4D4=
+
+Name: org/apache/derby/impl/services/jmx/JMXManagementService$7.class
+SHA1-Digest: JmnObtZsGGW6vwXX5UG8b1EaNC0=
+
+Name: org/apache/derby/impl/services/reflect/JarLoader$1.class
+SHA1-Digest: cxToU5nMYsT+RitC/NfmfKO5NqU=
+
+Name: org/apache/derby/impl/store/raw/data/PageVersion.class
+SHA1-Digest: pHqki3KggJbqZspOrFH7PF/Tcik=
+
+Name: org/apache/derby/impl/sql/conn/GenericLanguageConnectionFactory.
+ class
+SHA1-Digest: 0wPHkqHTJ2fV+rTMPc1YxnOf824=
+
+Name: org/apache/derby/impl/drda/SignedBinary.class
+SHA1-Digest: tTpHB25XQaoxM+qC1slhPkurJqY=
+
+Name: org/apache/derby/loc/m32_en.properties
+SHA1-Digest: 31dku9I9X9yc3PJbWo4kT+PZzRU=
+
+Name: org/apache/derby/iapi/sql/compile/TypeCompiler.class
+SHA1-Digest: GNBqPRLYgR8sdb/hCzKyRS1zOqo=
+
+Name: org/apache/derby/impl/sql/compile/Level2OptimizerImpl.class
+SHA1-Digest: Nkb0Kl+mBVWYAlrNCQpboPMiWIM=
+
+Name: org/apache/derby/impl/load/ImportResultSetMetaData.class
+SHA1-Digest: A/tL9fiUgL5Znbg6g5iPMt8+rgc=
+
+Name: org/apache/derby/iapi/security/SecurityUtil$2.class
+SHA1-Digest: 2gcJ/IVAHTxs/ls7ysqGQxp9vSg=
+
+Name: org/apache/derby/mbeans/ManagementMBean.class
+SHA1-Digest: Ol6401jnML9umhcysIR3CmG2+Wg=
+
+Name: org/apache/derby/iapi/services/classfile/Attributes.class
+SHA1-Digest: inqDIBfUmTAH9AN07occGJi0sOQ=
+
+Name: org/apache/derby/impl/sql/execute/TriggerEvents.class
+SHA1-Digest: 7CevsS4/Q4QYrHBP1npxCZbdZrY=
+
+Name: org/apache/derby/client/am/LogicalStatementEntity.class
+SHA1-Digest: FHWrKUE3XeUKVn8GOaF1v3FiGhI=
+
+Name: org/apache/derby/impl/sql/execute/TriggerEventActivator.class
+SHA1-Digest: yOfK56e36gqf2OL4kUTq/BZAnYk=
+
+Name: org/apache/derby/iapi/error/PublicAPI.class
+SHA1-Digest: sDkxc23hh12Z0cEAxnzXi72rwhc=
+
+Name: org/apache/derby/catalog/types/UserDefinedTypeIdImpl.class
+SHA1-Digest: Je5BWGfU18KhMSG8T87uGnRVBHI=
+
+Name: org/apache/derby/impl/store/raw/log/LogCounter.class
+SHA1-Digest: kavQF7lJHfFxC18GdbVCETUXGnU=
+
+Name: org/apache/derby/impl/jdbc/LOBStreamControl$1.class
+SHA1-Digest: GgY4wlzOORuVI83q09po/PnuVaw=
+
+Name: org/apache/derby/impl/sql/catalog/SystemColumnImpl.class
+SHA1-Digest: a4e0tgfVtVGM9X58pNpTNAPKMKU=
+
+Name: org/apache/derby/iapi/store/raw/RecordHandle.class
+SHA1-Digest: bMIDL/fIenC1+76LGOkTyJkjQD4=
+
+Name: org/apache/derby/impl/sql/compile/MiscellaneousStatementNode.cla
+ ss
+SHA1-Digest: DEMPSQvWymkEPngO052h1d11+GE=
+
+Name: org/apache/derby/iapi/sql/compile/OptimizerFactory.class
+SHA1-Digest: Xk6wqAVNjMMaROskMvjCpjBy33Y=
+
+Name: org/apache/derby/impl/services/locks/Timeout.class
+SHA1-Digest: P/HkCVudISrzWghjSdLv4YS8OdY=
+
+Name: org/apache/derby/impl/store/access/btree/BranchRow.class
+SHA1-Digest: dcwFqj/Jk6Cx09szyg4W/MjewaA=
+
+Name: org/apache/derby/iapi/jdbc/JDBCBoot.class
+SHA1-Digest: a6AK0kFnZ/MsyRT+/DPy7Ka4nVA=
+
+Name: org/apache/derby/iapi/jdbc/BrokeredPreparedStatement30.class
+SHA1-Digest: mPRdNXcnsIGbc2iBHRvrlDWiiKo=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealAnyResultSetStatistics
+ .class
+SHA1-Digest: wDWMmPtaSYXG8144pqRDuG2QGGk=
+
+Name: org/apache/derby/impl/sql/compile/ColumnReference.class
+SHA1-Digest: +xoxi/fNJETKHTcKrFwAOj8x/j8=
+
+Name: org/apache/derby/impl/services/monitor/FileMonitor.class
+SHA1-Digest: ycLkzxVrZjmV0w2vT7ecCQ8Wts8=
+
+Name: org/apache/derby/tools/SignatureChecker.class
+SHA1-Digest: aJRjsvq3AteOUuyu2G518Efq348=
+
+Name: org/apache/derby/client/am/DateTime.class
+SHA1-Digest: rngnUu9m23xMxtkBfjGOZU985gs=
+
+Name: org/apache/derby/iapi/services/property/PropertyValidation.class
+SHA1-Digest: QxYxtiTHnwYO65K8CDKFVYfImC8=
+
+Name: org/apache/derby/impl/sql/compile/NodeFactoryImpl.class
+SHA1-Digest: Sk93+UdiU9RIXiUQoAmJG2xq1BY=
+
+Name: org/apache/derby/impl/tools/ij/ij$JJCalls.class
+SHA1-Digest: QFSWcVDeMmb5wk0mxD5bz7Ju6n8=
+
+Name: org/apache/derby/client/am/SqlException.class
+SHA1-Digest: jRPbib6QjQUzMvSoCTb2GH4DrEI=
+
+Name: org/apache/derby/client/am/SQLExceptionFactory40.class
+SHA1-Digest: aUnsLZ9bl7fgqiecdeS/f1ISRr0=
+
+Name: org/apache/derby/impl/store/raw/data/InitPageOperation.class
+SHA1-Digest: et9q5lz3IqW7gxoBTsqRyFHrOaA=
+
+Name: org/apache/derby/iapi/jdbc/AuthenticationService.class
+SHA1-Digest: z8tXRVReDTp3sZL7CtEg83SHzAw=
+
+Name: org/apache/derby/impl/sql/compile/UnaryDateTimestampOperatorNode
+ .class
+SHA1-Digest: v/TvXObtIIF875TVzWkxkyrflYo=
+
+Name: org/apache/derby/impl/drda/DRDAString.class
+SHA1-Digest: MTCRRNRK3wwrvskmRiZqpGM8gpY=
+
+Name: org/apache/derby/impl/drda/NetworkServerControlImpl$6.class
+SHA1-Digest: VihT66GGOtg9BKLD97QBkWCVjGc=
+
+Name: org/apache/derby/iapi/types/SQLLongVarbit.class
+SHA1-Digest: NiQTzyGXZRlTnAZeWPbPWoYmRkk=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/LogicalUndo.clas
+ s
+SHA1-Digest: HrYQchGR0y+aYIbWlCxGaKgiHlY=
+
+Name: org/apache/derby/client/am/BlobLocatorOutputStream.class
+SHA1-Digest: dCC1BHg9/mrzY9ZPXQPGCotjVMQ=
+
+Name: org/apache/derby/iapi/store/access/TransactionController.class
+SHA1-Digest: 9HoXLe2fZb0YrsY4M4QsIBAyeyg=
+
+Name: org/apache/derby/impl/drda/DDMReader.class
+SHA1-Digest: BTSGDH5F6zZHNrgJ/qCEN/vFHsI=
+
+Name: org/apache/derby/client/net/NetResultSet.class
+SHA1-Digest: Yk5blEeNje8+YTulDm6xinloj8A=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageRe
+ ceive$2.class
+SHA1-Digest: 4qkONGXFvpqEZknUMO08k57k/3g=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageRe
+ ceive$SlavePingThread.class
+SHA1-Digest: peplosxdBIYKsTlSfllfWuuFbCI=
+
+Name: org/apache/derby/iapi/sql/dictionary/ConstraintDescriptor.class
+SHA1-Digest: kWA9zQafPBTxGw6FrjV1OOYIPmk=
+
+Name: org/apache/derby/impl/sql/execute/OrderableAggregator.class
+SHA1-Digest: pk9KyOOUkvBO2YlWXYbcFZTpqw4=
+
+Name: org/apache/derby/impl/store/raw/data/StreamFileContainer.class
+SHA1-Digest: bkISGE6I/W/gWUdRJynLjwS0Ifc=
+
+Name: org/apache/derby/impl/sql/execute/SqlXmlExecutor.class
+SHA1-Digest: ILVLgFtX1ZMPYIl5LgtStfWiCWw=
+
+Name: org/apache/derby/iapi/services/i18n/BundleFinder.class
+SHA1-Digest: FRh+6RqFtC0Pyx3b80547p1pcyI=
+
+Name: org/apache/derby/security/DatabasePermission$1.class
+SHA1-Digest: N210e2g28qAOSki+EZtvPdNN0kc=
+
+Name: org/apache/derby/impl/sql/execute/rts/RunTimeStatisticsImpl.clas
+ s
+SHA1-Digest: x1MDr1SYtMvnHgD+pyqjDsYH18s=
+
+Name: org/apache/derby/iapi/types/J2SEDataValueFactory.class
+SHA1-Digest: V0pL7dSXE0IJ5aBaOIQxDerqNcg=
+
+Name: org/apache/derby/impl/store/access/btree/ControlRow.class
+SHA1-Digest: 1yaOVAUos569GlHYTkxOpcDIJvw=
+
+Name: org/apache/derby/impl/store/raw/data/BufferedByteHolderInputStre
+ am.class
+SHA1-Digest: vMkUPZAwbTfG5yciHg3QMf6RlFc=
+
+Name: org/apache/derby/impl/services/locks/ConcurrentLockSet.class
+SHA1-Digest: 0qPTAuJPxb2pOpuM/TJvA6TzE/E=
+
+Name: org/apache/derby/impl/services/uuid/BasicUUIDGetter.class
+SHA1-Digest: vwd74zETFex2K2udua0IeNqiBIw=
+
+Name: org/apache/derby/iapi/jdbc/FailedProperties40.class
+SHA1-Digest: jkxNR7p2k4xI0rdbh7UsjG/AXGY=
+
+Name: plugin.properties
+SHA1-Digest: 7PqvfcSW8GCkWHAStLWWENQ8yWA=
+
+Name: org/apache/derby/iapi/services/io/LimitInputStream.class
+SHA1-Digest: 7zkQoEJ840AxC4fCn5xQEl7cuHs=
+
+Name: org/apache/derby/impl/store/raw/xact/RowLocking3.class
+SHA1-Digest: 934f3v6rK/cZRI77BggfsLPWgbw=
+
+Name: org/apache/derby/impl/sql/catalog/SYSALIASESRowFactory.class
+SHA1-Digest: cGx41oD1IxmibzDVpGzgwWktqcM=
+
+Name: org/apache/derby/impl/services/bytecode/BCLocalField.class
+SHA1-Digest: 3EhQzvV7LwR7lLVR9Ldzcn09ti0=
+
+Name: org/apache/derby/impl/sql/execute/MiscResultSet.class
+SHA1-Digest: KUci8RZUXmBZGST0bMucMXKp9UY=
+
+Name: org/apache/derby/impl/store/replication/net/ReplicationMessageTr
+ ansmit$1.class
+SHA1-Digest: 4bjJgHqgxRovO9DI0cXZAHxwPSI=
+
+Name: org/apache/derby/impl/sql/execute/NestedLoopJoinResultSet.class
+SHA1-Digest: Ri7vm17fCt7uVqIo7RbIvuvd9QQ=
+
+Name: org/apache/derby/iapi/store/raw/ContainerKey.class
+SHA1-Digest: wG1oDKiI+E0l5Pf/HzJCzcfdFr0=
+
+Name: org/apache/derby/impl/sql/compile/SubqueryList.class
+SHA1-Digest: 8M+/oqn2svtqhLznxaZtITPb1Yg=
+
+Name: org/apache/derby/impl/sql/compile/UserTypeConstantNode.class
+SHA1-Digest: g4U/vovx+7gj4seaWZRatD8tigs=
+
+Name: org/apache/derby/impl/sql/compile/PredicateList$PredicateWrapper
+ .class
+SHA1-Digest: Hvpui565dLqUfnP1jgGhF+0KeKM=
+
+Name: org/apache/derby/client/am/PreparedStatement$PossibleTypes.class
+SHA1-Digest: UFUulceki0eA4viNInli1o2HKC8=
+
+Name: org/apache/derby/security/DatabasePermission.class
+SHA1-Digest: YQ0sptzyUuX1y45H4/iymvJAJME=
+
+Name: org/apache/derby/impl/store/raw/RawStore.class
+SHA1-Digest: SiWUCJ7MmdrRAS0y8ttsBwOdHXg=
+
+Name: org/apache/derby/impl/tools/sysinfo/Main$6.class
+SHA1-Digest: tFGkL4e6AVhVSLKpmyzl1gs0+uo=
+
+Name: org/apache/derby/impl/jdbc/authentication/LDAPAuthenticationSche
+ meImpl$1.class
+SHA1-Digest: a6HUgk7184p8snTm5wJKgnkOYzY=
+
+Name: org/apache/derby/impl/sql/compile/CurrentRowLocationNode.class
+SHA1-Digest: dXcAW1g8ySosO+jRZmaFDp6s5+Y=
+
+Name: org/apache/derby/impl/sql/execute/RoutinePrivilegeInfo.class
+SHA1-Digest: LsLtyh4Zsb1tn+s0zvJdv4Uo5bE=
+
+Name: org/apache/derby/impl/sql/execute/CreateViewConstantAction.class
+SHA1-Digest: L2ZmEan4QhMlslFl61+e7YuIO24=
+
+Name: org/apache/derby/iapi/store/access/SortInfo.class
+SHA1-Digest: 1buI7gBP7O4IfSmLDX6tfTuDE7Q=
+
+Name: org/apache/derby/impl/sql/catalog/RoleClosureIteratorImpl.class
+SHA1-Digest: Qxl4TeroJr9EPV8IebOrF0GQndE=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSet40.class
+SHA1-Digest: cmtupBGYs7ujIKhQVVcID3Ve7EE=
+
+Name: org/apache/derby/impl/sql/execute/GrantRevokeConstantAction.clas
+ s
+SHA1-Digest: 3FmBZd3MBeIUgy1FILVGoeSTVyk=
+
+Name: org/apache/derby/impl/store/raw/log/ChecksumOperation.class
+SHA1-Digest: XUVlT63mS0+7CSQgI3ZWRlANP2k=
+
+Name: org/apache/derby/client/net/NetLogWriter.class
+SHA1-Digest: lZuQ/m4qu7/m+GUtMZpj0asSmQ8=
+
+Name: org/apache/derby/client/net/StatementReply.class
+SHA1-Digest: b7Ns7dDPGgLD0keR5r18dXdV8q8=
+
+Name: org/apache/derby/impl/sql/execute/LastIndexKeyResultSet.class
+SHA1-Digest: RjkphA+hq9DZWTx+V8PmpfteSdc=
+
+Name: org/apache/derby/iapi/sql/execute/ConstantAction.class
+SHA1-Digest: QD49N8E/Xl9xtTZWwiuZWrWK80A=
+
+Name: org/apache/derby/impl/store/replication/ReplicationLogger.class
+SHA1-Digest: 9+93EMDZGLcngP9eQgN5dN0oecQ=
+
+Name: org/apache/derby/impl/store/access/btree/BTreePostCommit.class
+SHA1-Digest: K7jj6V0mMc+/kPPKJm6CBZ/wLTE=
+
+Name: org/apache/derby/impl/sql/compile/GroupByColumn.class
+SHA1-Digest: FKCFlKUcwvik1cwcmBJ1SjYBdpw=
+
+Name: org/apache/derby/iapi/services/property/PersistentSet.class
+SHA1-Digest: rBp7V+fX5g6oKB5x8EwldmfFJxE=
+
+Name: org/apache/derby/iapi/store/raw/RePreparable.class
+SHA1-Digest: RCxm7ihfMa0VqW2ILe5vbEbqIss=
+
+Name: org/apache/derby/iapi/sql/execute/RowChanger.class
+SHA1-Digest: yaLV020OOD/KCGLSGKBMqJueOnA=
+
+Name: org/apache/derby/iapi/jdbc/CharacterStreamDescriptor.class
+SHA1-Digest: CqSKQWsUCNhoweZsUXjWOuWs9Wk=
+
+Name: org/apache/derby/impl/services/locks/ConcurrentLockSet$1.class
+SHA1-Digest: VJTQq+1vPh3XGsQIflsY7blDrDA=
+
+Name: org/apache/derby/catalog/types/StatisticsImpl.class
+SHA1-Digest: fEripQw8dStgSXaaoDAZtgq2k6M=
+
+Name: org/apache/derby/impl/store/raw/data/EncryptContainerOperation.c
+ lass
+SHA1-Digest: wSlckgClEZ00Roypz35O5miy6ls=
+
+Name: org/apache/derby/catalog/GetProcedureColumns.class
+SHA1-Digest: g4j8eZ+Za9WGO1+Ysx9RlPVwn8w=
+
+Name: org/apache/derby/iapi/util/Matchable.class
+SHA1-Digest: nlUcLfrNrTlbGiIyqWT0Grj3xzo=
+
+Name: org/apache/derby/loc/m25_en.properties
+SHA1-Digest: JF34uuo3CfGx4sjVEgRlp96QZC0=
+
+Name: org/apache/derby/impl/tools/dblook/Logs.class
+SHA1-Digest: 8+AclebCzphcWSUkFKOHJniK2fI=
+
+Name: org/apache/derby/impl/jdbc/EmbedResultSetMetaData.class
+SHA1-Digest: DcbY6ibNrLxDx/EPwDydzc+ZzeQ=
+
+Name: org/apache/derby/impl/sql/compile/ValueNode.class
+SHA1-Digest: Md1Iy4dgOnh8QNCxEpXbDFSZNcc=
+
+Name: org/apache/derby/jdbc/ClientDataSource.class
+SHA1-Digest: fh7/ez/DKMZMV2oUIGCbt4700Io=
+
+Name: org/apache/derby/impl/tools/ij/ijMultipleResultSetResult.class
+SHA1-Digest: bzJRAnUzqZN2zCqU3kaV79zQSys=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2ICostController
+ .class
+SHA1-Digest: eljiypMRd+JV7/F7y03saip6mzs=
+
+Name: org/apache/derby/impl/services/locks/LockList.class
+SHA1-Digest: vcpLyUxl9sTsFNwxWfPTIJPYc/E=
+
+Name: org/apache/derby/impl/services/monitor/BaseMonitor.class
+SHA1-Digest: KSdG05dRZlavemw5/yPeAqAp0js=
+
+Name: org/apache/derby/client/net/ResultSetRequestInterface.class
+SHA1-Digest: MFtSIVU+4p66xyEonVIs7F3Xd0o=
+
+Name: org/apache/derby/impl/store/raw/xact/LockCount.class
+SHA1-Digest: m/KNDtmdBiXYtRXLUaxSRjGc/dc=
+
+Name: org/apache/derby/client/am/LogicalDatabaseMetaData.class
+SHA1-Digest: tPCKmW3UNPMa7Rx1rs6BhODALRQ=
+
+Name: org/apache/derby/impl/sql/compile/ResultSetNode.class
+SHA1-Digest: B+aPkhg6YbGIofAaIRVw+ESmYdQ=
+
+Name: org/apache/derby/impl/sql/compile/VarbitConstantNode.class
+SHA1-Digest: kBZSAzBrV0zQA0nwUIlrUIBxock=
+
+Name: org/apache/derby/iapi/services/io/ErrorObjectInput.class
+SHA1-Digest: acCES8RGQwfvywjVNrf3P8K3pcw=
+
+Name: org/apache/derby/iapi/sql/dictionary/CheckConstraintDescriptor.c
+ lass
+SHA1-Digest: 5Clgldjrk2dtfCf4st/xU5eb/l4=
+
+Name: org/apache/derby/impl/sql/compile/GroupByNode$ExpressionSorter.c
+ lass
+SHA1-Digest: zk8/ArMyk5y/0mlZsniCyXpfY4M=
+
+Name: org/apache/derby/impl/sql/execute/GenericExecutionContext.class
+SHA1-Digest: QoVJw1o9oNTKMglme1DCRrxrarY=
+
+Name: org/apache/derby/impl/store/access/RAMTransactionContext.class
+SHA1-Digest: N8Vs8mKRD7F4TWiYyGjo7PcrWp8=
+
+Name: org/apache/derby/client/net/NetStatementRequest.class
+SHA1-Digest: n6CE/g5jttA0kqE0ZprX2X9N5wQ=
+
+Name: org/apache/derby/loc/drda/servlet_ko_KR.properties
+SHA1-Digest: /XWwtPMhgCwnzIaPJ0/Qa6mqNag=
+
+Name: org/apache/derby/impl/sql/compile/RoutineDesignator.class
+SHA1-Digest: gSx1Ml5OpqbRsFzKb3HcC4iDnFQ=
+
+Name: org/apache/derby/impl/sql/execute/JarUtil.class
+SHA1-Digest: 4RPmVyyz9vGl6juDaYdKuh+iLgI=
+
+Name: org/apache/derby/iapi/sql/compile/CostEstimate.class
+SHA1-Digest: 7M6fMGRlN5sfIpGvjsAfrk8XfVI=
+
+Name: org/apache/derby/impl/jdbc/ClobAsciiStream.class
+SHA1-Digest: ImJe8LXsD94EEfe6m0h+1wUZPa8=
+
+Name: org/apache/derby/jdbc/AutoloadedDriver.class
+SHA1-Digest: 2OknURQlXsV7S8oUfxkOGD7CTlg=
+
+Name: org/apache/derby/loc/m47_en.properties
+SHA1-Digest: QCCBoqhEBNP4OYzE56W6bBWk2qI=
+
+Name: org/apache/derby/impl/sql/compile/ConstantNode.class
+SHA1-Digest: ykz+4h2TEEKlOgZXymXXB+4X0XQ=
+
+Name: org/apache/derby/impl/services/timer/SingletonTimerFactory$2.cla
+ ss
+SHA1-Digest: +5mZDHpQN4iumd2npb9EqiYIh0Y=
+
+Name: org/apache/derby/impl/sql/catalog/SYSSTATEMENTSRowFactory.class
+SHA1-Digest: Lb+BLXyUTjEtFq5WmPUf+Pv21yE=
+
+Name: org/apache/derby/client/am/ClobOutputStream.class
+SHA1-Digest: QJm2Snm90CALdAxcZacaMnUbJeA=
+
+Name: org/apache/derby/catalog/types/DecimalTypeIdImpl.class
+SHA1-Digest: 0Eyu2We7wUGSc/yq3GPHHAGTxgs=
+
+Name: org/apache/derby/impl/services/bytecode/BCJava.class
+SHA1-Digest: lg4l+6NMZmz0KyAJywFRPAa2kWY=
+
+Name: org/apache/derby/impl/sql/execute/GenericQualifier.class
+SHA1-Digest: b/f9TiBqEtyfc2IRgWenLv9ax4E=
+
+Name: org/apache/derby/impl/services/locks/AbstractPool.class
+SHA1-Digest: xr639XUiIbEtyMtoDuBIJDAGHok=
+
+Name: org/apache/derby/iapi/sql/execute/TupleFilter.class
+SHA1-Digest: P22Go138sQrItqTDpXlzx+SJ5kQ=
+
+Name: org/apache/derby/impl/sql/compile/MaterializeSubqueryNode.class
+SHA1-Digest: M7xNMHiPBIR6rJW9JLE0jmeU3K0=
+
+Name: org/apache/derby/impl/services/locks/ConcurrentLockSet$Entry.cla
+ ss
+SHA1-Digest: SE+En+VRRAY8iGZyK7dEn6hLhJA=
+
+Name: org/apache/derby/iapi/store/access/DatabaseInstant.class
+SHA1-Digest: NWdH4jRthuXHFAyQhANp8Bp8kH4=
+
+Name: org/apache/derby/impl/sql/compile/SQLParser$1.class
+SHA1-Digest: HZ8MGadtropIb83m/9st9Vb4NMU=
+
+Name: org/apache/derby/impl/services/monitor/UpdateServiceProperties.c
+ lass
+SHA1-Digest: fncvnLcHrh5/IiJJpbqLfciqCWY=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealLastIndexKeyScanStatis
+ tics.class
+SHA1-Digest: aofe9BDkFDznrZ3aEsdif8d2BlI=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealGroupedAggregateStatis
+ tics.class
+SHA1-Digest: RNdEKNPsnhT6A8/GwflnF+Z8Yz8=
+
+Name: org/apache/derby/impl/sql/execute/DeleteResultSet.class
+SHA1-Digest: /zq8on7rt9v5pI1j9aw12LUm0h4=
+
+Name: org/apache/derby/iapi/sql/dictionary/SPSDescriptor.class
+SHA1-Digest: oemUp/8PU5PsTiMNBHExYstobkY=
+
+Name: org/apache/derby/impl/sql/compile/UnaryArithmeticOperatorNode.cl
+ ass
+SHA1-Digest: rgXgDRR7sMMNaVXaN0MEZkJnf7Q=
+
+Name: org/apache/derby/loc/clientmessages.properties
+SHA1-Digest: fhqyy79A6RJnN+MVOezEakqKhrc=
+
+Name: org/apache/derby/iapi/services/monitor/Monitor.class
+SHA1-Digest: k44YoL45GYYQawxiMbzNfk3XwaQ=
+
+Name: org/apache/derby/impl/sql/compile/RevokeNode.class
+SHA1-Digest: 5ii18MKAKkyTuJxVXPXVMI8j4+w=
+
+Name: org/apache/derby/iapi/services/diag/DiagnosticUtil.class
+SHA1-Digest: QB7mT2Ac/EE06ym7G4DRQJCb1GA=
+
+Name: org/apache/derby/drda/NetServlet$2.class
+SHA1-Digest: X8czRjYfT1t58buQgJFKcoadvNY=
+
+Name: org/apache/derby/impl/sql/compile/BinaryLogicalOperatorNode.clas
+ s
+SHA1-Digest: WzVIuZv/t9jB9tMMI7iuiSCnIwk=
+
+Name: org/apache/derby/impl/store/access/btree/BTreeScan.class
+SHA1-Digest: xNVZvMcPwddFLrdEL8fTBm5eQXM=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealDistinctScanStatistics
+ .class
+SHA1-Digest: QOsWuOtGWg6Z2QG88CMKwkiqSqM=
+
+Name: org/apache/derby/authentication/SystemPrincipal.class
+SHA1-Digest: mLiiWwQRLwW++uuelaIG8AkEQPU=
+
+Name: org/apache/derby/impl/sql/compile/FKConstraintDefinitionNode.cla
+ ss
+SHA1-Digest: t8GwFZilWpr3NjmAt2ljRaPMVKI=
+
+Name: org/apache/derby/diag/ConglomInfo.class
+SHA1-Digest: YjSgEqIiaPecjkw6+82vNAL2eoU=
+
+Name: org/apache/derby/impl/sql/compile/CoalesceFunctionNode.class
+SHA1-Digest: Ue2GGIL/Wk4OKzfmo3d+GkpEWLU=
+
+Name: org/apache/derby/impl/sql/compile/TernaryOperatorNode.class
+SHA1-Digest: Q6FCXs5qa0270KFcoLiLf2TfXh4=
+
+Name: org/apache/derby/client/net/Typdef.class
+SHA1-Digest: IvWLumn64gn/rAYADbQmK0qDOdM=
+
+Name: org/apache/derby/impl/store/raw/log/ReadOnly.class
+SHA1-Digest: hb5IY1bvO2aYokmYDLKj9+hByP0=
+
+Name: org/apache/derby/impl/sql/compile/SimpleStringOperatorNode.class
+SHA1-Digest: L5yxQaPhFf5OrKXrSbKCfMj+ujM=
+
+Name: org/apache/derby/loc/drda/messages_zh_TW.properties
+SHA1-Digest: ah28fl4wJx00Z3PL2iwF+H6huJA=
+
+Name: org/apache/derby/iapi/services/io/FormatIdInputStream.class
+SHA1-Digest: 1rp7ZaWXP/uJHY/e/qUxrgbGyOk=
+
+Name: org/apache/derby/catalog/types/OldRoutineType.class
+SHA1-Digest: cUHvQjD4h4trDXZufYpxhEgRvXc=
+
+Name: org/apache/derby/impl/io/CPFile.class
+SHA1-Digest: aVTISjlJqR9t2bk8EPx/2bqgyOQ=
+
+Name: org/apache/derby/iapi/types/RawToBinaryFormatStream.class
+SHA1-Digest: YfvHAVrs6LDYpZd3p9PP87v4IXQ=
+
+Name: org/apache/derby/impl/io/DirStorageFactory.class
+SHA1-Digest: Q+fENdappb396LbzfgB/HBhMiAE=
+
+Name: org/apache/derby/impl/services/reflect/GCInstanceFactory.class
+SHA1-Digest: KypTAO/JRqIelpBu9b1WOJfwrlA=
+
+Name: org/apache/derby/impl/sql/execute/IndexRowToBaseRowResultSet.cla
+ ss
+SHA1-Digest: uH/G0bNWU1I4wSt3bIDgXY8rryY=
+
+Name: org/apache/derby/iapi/services/classfile/CONSTANT_Double_info.cl
+ ass
+SHA1-Digest: gAmGQbiXkxJuikjVKpOn6QtVkUk=
+
+Name: org/apache/derby/impl/sql/compile/Level2OptimizerFactoryImpl.cla
+ ss
+SHA1-Digest: oHi1W0IC1z4EGkGj9jYKvPZIcYg=
+
+Name: org/apache/derby/impl/sql/compile/DefaultNode.class
+SHA1-Digest: 8KkGhEgjfHmy+B8Maqz1gbfFotQ=
+
+Name: org/apache/derby/iapi/services/daemon/Serviceable.class
+SHA1-Digest: K1uhVnQ/7gP7An3vwmIGjNq8D3o=
+
+Name: org/apache/derby/impl/sql/execute/IndexRow.class
+SHA1-Digest: u9Zvqf1z70d1ZQ/CXuts5mU+t9o=
+
+Name: org/apache/derby/iapi/services/classfile/MemberTableHash.class
+SHA1-Digest: eB8iRjrfwKKVxLRNbnAa1o6lgkw=
+
+Name: org/apache/derby/impl/sql/execute/ConstantActionActivation.class
+SHA1-Digest: qHgVwRRPyAQr6ckwDsJLYTCy7NI=
+
+Name: org/apache/derby/impl/store/raw/xact/TransactionTable.class
+SHA1-Digest: hTznjqkOH+0JzeRoOrjX7FB5ib0=
+
+Name: org/apache/derby/impl/sql/execute/rts/RealInsertResultSetStatist
+ ics.class
+SHA1-Digest: yqtlHfa7VhERJ2CJ9QE21uSYQN0=
+
+Name: org/apache/derby/impl/store/access/btree/index/B2ITableLocking3.
+ class
+SHA1-Digest: jr3o4q1O02GvJ2S0DZ71DSgj2qo=
+
+Name: org/apache/derby/vti/IFastPath.class
+SHA1-Digest: xHcI2s/5s8CVahLixhwn9U46Gls=
+
+Name: org/apache/derby/iapi/sql/dictionary/GenericDescriptorList.class
+SHA1-Digest: yL5IrrU1PVAgawQ8mOx6wq82avE=
+
+Name: org/apache/derby/impl/drda/AppRequester.class
+SHA1-Digest: 4jOpxKO23sjNW7XCWtT3om7HuVs=
+
+Name: org/apache/derby/impl/store/raw/log/FlushedScan.class
+SHA1-Digest: tblzqAlG2RWUYtiDwtZOehjBECc=
+
+Name: org/apache/derby/tools/dblook.class
+SHA1-Digest: 8rZh6mM+16RT9a3arCk31+ziQj8=
+
+Name: org/apache/derby/impl/sql/execute/LockTableConstantAction.class
+SHA1-Digest: Ld5lDPOI1dvZgEsG4n++7X713Zg=
+
+Name: org/apache/derby/impl/drda/DssTrace.class
+SHA1-Digest: GieLyolh0vIkHJa7dpnBktjX+oM=
+
+Name: org/apache/derby/iapi/store/access/SortController.class
+SHA1-Digest: oviCfzIsOL02mLSpJtTCmslCrTM=
+
+Name: org/apache/derby/impl/sql/compile/ExecSPSNode.class
+SHA1-Digest: ooFh9+HskMXLQVK2izF7ozyfnGA=
+
+Name: org/apache/derby/impl/jdbc/EmbedStatement.class
+SHA1-Digest: +1jRk8MHBxApRv7Eu2UvMqJkbFg=
+
+Name: org/apache/derby/impl/sql/catalog/TableKey.class
+SHA1-Digest: RUubfKFiGmB6U5rv2OnlOxhsgqQ=
+
+Name: org/apache/derby/impl/db/SlaveDatabase$SlaveDatabaseBootThread.c
+ lass
+SHA1-Digest: snCieOSgSIElKC6q4qB3ey52Jr4=
+
+Name: org/apache/derby/iapi/services/cache/Cacheable.class
+SHA1-Digest: lX+rthv9PxyV4tZdfSksDxmc6lo=
+
+Name: org/apache/derby/jdbc/ClientConnectionPoolDataSource.class
+SHA1-Digest: WLZDWvxUZmoZs3WSWhnHO8RkfDY=
+
+Name: org/apache/derby/impl/services/monitor/StorageFactoryService$8.c
+ lass
+SHA1-Digest: IeakasS26bW5EAPzWl7cCPK0Jak=
+
+Name: org/apache/derby/impl/sql/compile/CreateIndexNode.class
+SHA1-Digest: xm0Lmw3yqVMtaNrdRVs0msASxNo=
+
+Name: org/apache/derby/impl/sql/compile/InsertNode.class
+SHA1-Digest: H4S7+tLIjvpsGgn9MfSJBGnZITo=
+
+Name: org/apache/derby/iapi/types/DataTypeDescriptor.class
+SHA1-Digest: R9lOGG1Nl3qnIZ+AqEGoyncIs9c=
+
+Name: org/apache/derby/impl/drda/Database.class
+SHA1-Digest: HX0PHwmG7dFZQpcg7b08NM+R+hQ=
+
+Name: org/apache/derby/iapi/store/access/conglomerate/Sort.class
+SHA1-Digest: liEVGML3TvjT1MeNFeFc5VJid5Y=
+
+Name: org/apache/derby/impl/store/raw/data/ByteHolder.class
+SHA1-Digest: 7fetEvez2dzse6S4d6H+ZXYoQtA=
+
+Name: org/apache/derby/loc/drda/messages_en.properties
+SHA1-Digest: lVC5bCiCXOZCOw1Sp/R0P/XRh0I=
+
+Name: org/apache/derby/impl/services/cache/ClockPolicy.class
+SHA1-Digest: 138CGwZ0aluRf+DOaeYkf8DFFYs=
+
+Name: org/apache/derby/iapi/store/raw/Undoable.class
+SHA1-Digest: RTInlxSrtsagXTVASsdYaorORF0=
+
+Name: org/apache/derby/impl/drda/LayerBStreamedEXTDTAReaderInputStream
+ .class
+SHA1-Digest: Ena8wVMFtbKFJ1sPx1suXl/Zbp4=
+

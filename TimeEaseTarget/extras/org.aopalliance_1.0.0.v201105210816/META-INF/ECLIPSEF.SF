@@ -1,0 +1,41 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: lkmL1wXwlujAAob6s8yvBwUiZfk=
+Created-By: 1.6.0 (IBM Corporation)
+SHA1-Digest-Manifest-Main-Attributes: QO6bkJCI5Ncd4gZrTTgiiykj8I4=
+
+Name: org/aopalliance/aop/Advice.class
+SHA1-Digest: AiydSeBM6EkorQqpM7MS1VpUY+U=
+
+Name: org/aopalliance/intercept/MethodInterceptor.class
+SHA1-Digest: fGhGzneoXj9Vtr2qhIDIISWcrRA=
+
+Name: org/aopalliance/intercept/Interceptor.class
+SHA1-Digest: rQ1wu6sDE8uzzBsKiJPd0O0lzmE=
+
+Name: org/aopalliance/intercept/Joinpoint.class
+SHA1-Digest: FlW9rSuO6Pl0iMXYFd/txu1JUN0=
+
+Name: org/aopalliance/aop/AspectException.class
+SHA1-Digest: IxSCYUTQ4RHCgPeXldD4tSQYYsI=
+
+Name: org/aopalliance/intercept/ConstructorInterceptor.class
+SHA1-Digest: xbt8SEAz/XC/nNqyqr+94gOKVvE=
+
+Name: META-INF/eclipse.inf
+SHA1-Digest: SAqY+5ITAL0mkdYeijlSRhyIaZk=
+
+Name: org/aopalliance/intercept/ConstructorInvocation.class
+SHA1-Digest: h0w5BT6meKHoy2TgQGsSB2aPZOw=
+
+Name: OSGI-INF/l10n/bundle.properties
+SHA1-Digest: v6rDXGRkDF1COi25EKaBQQqcW5Y=
+
+Name: org/aopalliance/intercept/Invocation.class
+SHA1-Digest: JzYUjx4B0TRaqP9bdK7ilP3KDns=
+
+Name: org/aopalliance/intercept/MethodInvocation.class
+SHA1-Digest: G34wCME2FpX+z8xmSbCR2+wBsZI=
+
+Name: about.html
+SHA1-Digest: XSSkgq5bhU6X7QKUtee7dfbMhgs=
+
