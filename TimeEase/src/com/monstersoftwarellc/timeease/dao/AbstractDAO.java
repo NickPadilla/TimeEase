@@ -432,7 +432,7 @@ public abstract class AbstractDAO<T extends IModelObject> implements IDAO<T> {
 	 * @param query
 	 * @param root
 	 */
-	private void addWhereClauses(List<WhereClause> whereClauses, CriteriaBuilder builder, CriteriaQuery<T> query, 
+	protected void addWhereClauses(List<WhereClause> whereClauses, CriteriaBuilder builder, CriteriaQuery<T> query, 
 			Root<T> root, boolean useAndBetweenPredicates, boolean addToQuery) {
 		if(whereClauses != null && !whereClauses.isEmpty()){
 			List<Predicate> predicates = new ArrayList<Predicate>();

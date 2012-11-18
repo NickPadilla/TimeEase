@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 import com.monstersoftwarellc.timeease.integration.freshbooks.AbstractRequest;
 import com.monstersoftwarellc.timeease.model.enums.ClientStatus;
+import com.monstersoftwarellc.timeease.model.impl.Client;
 
 /**
  * @author nick

@@ -9,8 +9,8 @@ import javax.naming.AuthenticationException;
 import javax.naming.ConfigurationException;
 
 import com.monstersoftwarellc.timeease.TimeEaseSession;
-import com.monstersoftwarellc.timeease.model.client.Client;
-import com.monstersoftwarellc.timeease.model.project.Project;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Project;
 
 /**
  * @author nicholas

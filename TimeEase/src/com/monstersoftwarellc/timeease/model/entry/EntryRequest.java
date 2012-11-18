@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.monstersoftwarellc.timeease.integration.freshbooks.AbstractRequest;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 
 /**
  * @author nick

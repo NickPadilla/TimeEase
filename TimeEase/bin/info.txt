@@ -1,0 +1,6 @@
+Place all db migration files here.
+
+They should follow the format. The V{Verison Number}__Description.sql
+
+Example:
+V1.2__AddNewColumns.sql

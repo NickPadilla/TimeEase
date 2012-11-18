@@ -43,8 +43,9 @@ import org.eclipse.wb.swt.SWTResourceManager;
 import swing2swt.layout.BorderLayout;
 
 import com.monstersoftwarellc.timeease.dao.IClientDAO;
-import com.monstersoftwarellc.timeease.model.client.Client;
-import com.monstersoftwarellc.timeease.model.impl.ApplicationSettings;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.property.IApplicationSettings;
+import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.ClientSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.ClientSearchCriteriaDialog;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
@@ -73,9 +74,10 @@ public class ClientsView extends ViewPart {
 	private ClientSearchCritieria searchCriteria = new ClientSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
+	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
 	private IClientDAO clientDAO = ServiceLocator.locateCurrent(IClientDAO.class);
 
-	private ApplicationSettings settings = null;
+	private IApplicationSettings settings = null;
 	private Text clientFirstNameText;
 	private Text clientLastNameText;
 	private Text clientOrganizationText;
@@ -84,9 +86,9 @@ public class ClientsView extends ViewPart {
 	 * 
 	 */
 	public ClientsView() {
-		searchCriteria.setUser(securityService.getCurrentlyLoggedInUser());
+		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
 		clients = new ArrayList<Client>();
-		settings = securityService.getCurrentlyLoggedInUser().getSettings();
+		settings = settingsFactory.getApplicationSettings();
 	}
 
 	/**
@@ -245,7 +247,7 @@ public class ClientsView extends ViewPart {
 		Client client = new Client();
 		client.setFirstName("First Name");
 		client.setLastName("Last Name");
-		client.setUser(securityService.getCurrentlyLoggedInUser());
+		client.setAccount(securityService.getCurrentlyLoggedInUser());
 		clientDAO.persist(client);
 		clients.add(client);
 		WritableList writableList = new WritableList(clients, Client.class);

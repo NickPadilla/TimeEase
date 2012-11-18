@@ -22,10 +22,12 @@ public class CustomLabelProvider extends LabelProvider {
 		if(element instanceof ILabel){
 			text = ((ILabel)element).getLabel();
 		}else{
-			throw new IllegalStateException("CustomLabelProvider is unable to handle object type, not an instance of ILabeled! Object : " 
+			throw new IllegalStateException("CustomLabelProvider is unable to handle object type, not an instance of ILabel! Object : " 
 					+ element.toString());
 		}
 		return text;
 	}
+	
+	
 
 }

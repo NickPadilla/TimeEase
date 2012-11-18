@@ -12,7 +12,7 @@ import javax.naming.ConfigurationException;
 import com.monstersoftwarellc.timeease.integration.IIntegrationService;
 import com.monstersoftwarellc.timeease.integration.ITaskService;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.model.task.TaskRequest;
 
 /**

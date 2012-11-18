@@ -51,10 +51,11 @@ import swing2swt.layout.BorderLayout;
 import com.monstersoftwarellc.timeease.dao.IClientDAO;
 import com.monstersoftwarellc.timeease.dao.IProjectDAO;
 import com.monstersoftwarellc.timeease.dao.ITaskDAO;
-import com.monstersoftwarellc.timeease.model.client.Client;
-import com.monstersoftwarellc.timeease.model.impl.ApplicationSettings;
-import com.monstersoftwarellc.timeease.model.project.Project;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Task;
+import com.monstersoftwarellc.timeease.property.IApplicationSettings;
+import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.ProjectSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.ProjectSearchCriteriaDialog;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
@@ -86,9 +87,10 @@ public class ProjectsView extends ViewPart {
 	private ProjectSearchCritieria searchCriteria = new ProjectSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
+	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
 	private IProjectDAO projectDAO = ServiceLocator.locateCurrent(IProjectDAO.class);
 
-	private ApplicationSettings settings = null;
+	private IApplicationSettings settings = null;
 	private Text projectNameText;
 	private Text projectDescriptionText;
 	private Spinner projectRateSpinner;
@@ -100,8 +102,8 @@ public class ProjectsView extends ViewPart {
 	 * 
 	 */
 	public ProjectsView() {
-		searchCriteria.setUser(securityService.getCurrentlyLoggedInUser());
-		settings = securityService.getCurrentlyLoggedInUser().getSettings();
+		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
+		settings = settingsFactory.getApplicationSettings();
 		projects = new ArrayList<Project>();
 		clients = ServiceLocator.locateCurrent(IClientDAO.class).findAllOrderBy("firstName");
 		tasks = ServiceLocator.locateCurrent(ITaskDAO.class).findAllOrderBy("name");
@@ -286,7 +288,7 @@ public class ProjectsView extends ViewPart {
 		Project project = new Project();
 		project.setName("Name");
 		project.setDescription("Description");
-		project.setUser(securityService.getCurrentlyLoggedInUser());
+		project.setAccount(securityService.getCurrentlyLoggedInUser());
 		projectDAO.persist(project);
 		projects.add(project);
 		WritableList writableList = new WritableList(projects, Project.class);

@@ -3,13 +3,10 @@
  */
 package com.monstersoftwarellc.timeease.model.impl;
 
-import javax.persistence.CascadeType;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
@@ -41,9 +38,6 @@ public class Account extends AbstractModelInput implements ILabel {
 	private String username;
 	
 	private String password;
-	
-	@OneToOne(cascade={CascadeType.PERSIST,CascadeType.MERGE},fetch=FetchType.LAZY)
-	private ApplicationSettings settings = new ApplicationSettings();
 	
 
 	/**
@@ -115,21 +109,7 @@ public class Account extends AbstractModelInput implements ILabel {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	/**
-	 * @return the settings
-	 */
-	public ApplicationSettings getSettings() {
-		return settings;
-	}
-
-	/**
-	 * @param settings the settings to set
-	 */
-	public void setSettings(ApplicationSettings settings) {
-		this.settings = settings;
-	}
-
+	
 	/* (non-Javadoc)
 	 * @see com.monstersoftwarellc.timeease.enums.ILabel#getLabel()
 	 */

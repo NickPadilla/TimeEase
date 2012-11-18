@@ -4,10 +4,10 @@
 package com.monstersoftwarellc.timeease.model.enums;
 
 import com.monstersoftwarellc.timeease.integration.IFreshbooksEntity;
-import com.monstersoftwarellc.timeease.model.client.Client;
-import com.monstersoftwarellc.timeease.model.entry.Entry;
-import com.monstersoftwarellc.timeease.model.project.Project;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 
 /**
  * @author nick

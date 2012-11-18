@@ -15,6 +15,7 @@ import org.eclipse.core.databinding.observable.list.WritableList;
 import org.eclipse.core.databinding.observable.map.IObservableMap;
 import org.eclipse.core.databinding.observable.value.IObservableValue;
 import org.eclipse.core.runtime.IStatus;
+import org.eclipse.jface.databinding.swt.SWTObservables;
 import org.eclipse.jface.databinding.viewers.ObservableListContentProvider;
 import org.eclipse.jface.databinding.viewers.ObservableMapLabelProvider;
 import org.eclipse.jface.databinding.viewers.ViewersObservables;
@@ -42,13 +43,13 @@ import org.eclipse.wb.swt.SWTResourceManager;
 import swing2swt.layout.BorderLayout;
 
 import com.monstersoftwarellc.timeease.dao.ITaskDAO;
-import com.monstersoftwarellc.timeease.model.impl.ApplicationSettings;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Task;
+import com.monstersoftwarellc.timeease.property.IApplicationSettings;
+import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.TaskSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.TaskSearchCriteriaDialog;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
 import com.monstersoftwarellc.timeease.service.ServiceLocator;
-import org.eclipse.jface.databinding.swt.SWTObservables;
 
 /**
  * @author nick
@@ -73,9 +74,10 @@ public class TasksView extends ViewPart {
 	private TaskSearchCritieria searchCriteria = new TaskSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
+	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
 	private ITaskDAO taskDAO = ServiceLocator.locateCurrent(ITaskDAO.class);
 
-	private ApplicationSettings settings = null;
+	private IApplicationSettings settings = null;
 	private Text taskNameText;
 	private Text taskDescriptionText;
 	private Spinner taskRateSpinner;
@@ -85,8 +87,8 @@ public class TasksView extends ViewPart {
 	 * 
 	 */
 	public TasksView() {
-		searchCriteria.setUser(securityService.getCurrentlyLoggedInUser());
-		settings = securityService.getCurrentlyLoggedInUser().getSettings();
+		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
+		settings = settingsFactory.getApplicationSettings();
 		tasks = new ArrayList<Task>();
 	}
 
@@ -259,7 +261,7 @@ public class TasksView extends ViewPart {
 		Task task = new Task();
 		task.setName("Name");
 		task.setDescription("Description");
-		task.setUser(securityService.getCurrentlyLoggedInUser());
+		task.setAccount(securityService.getCurrentlyLoggedInUser());
 		taskDAO.persist(task);
 		tasks.add(task);
 		WritableList writableList = new WritableList(tasks, Task.class);

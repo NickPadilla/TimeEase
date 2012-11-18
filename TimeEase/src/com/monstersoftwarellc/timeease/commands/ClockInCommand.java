@@ -13,7 +13,7 @@ import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.services.ISourceProviderService;
 
 import com.monstersoftwarellc.timeease.dao.IEntryDAO;
-import com.monstersoftwarellc.timeease.model.entry.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
 import com.monstersoftwarellc.timeease.service.ServiceLocator;
 
@@ -41,7 +41,7 @@ public class ClockInCommand extends AbstractHandler {
 		entry.setHours(0d);
 		entry.setNotes("Clocked In");
 		entry.setStartTime(now);
-		entry.setUser(ServiceLocator.locateCurrent(ISecurityService.class).getCurrentlyLoggedInUser());
+		entry.setAccount(ServiceLocator.locateCurrent(ISecurityService.class).getCurrentlyLoggedInUser());
 		// persist new entry
 		ServiceLocator.locateCurrent(IEntryDAO.class).persist(entry);
 		// spark an event so that we re-evaluate the command bindings

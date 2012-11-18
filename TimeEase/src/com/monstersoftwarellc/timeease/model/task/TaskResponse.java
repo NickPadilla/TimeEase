@@ -7,6 +7,7 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.monstersoftwarellc.timeease.integration.freshbooks.AbstractResponse;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 
 /**
  * Concrete {@link AbstractResponse} object that specifies the {@link Task} object.

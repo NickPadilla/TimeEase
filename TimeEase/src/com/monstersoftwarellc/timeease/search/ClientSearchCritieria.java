@@ -21,7 +21,7 @@ public class ClientSearchCritieria extends AbstractPropertChangeSupport implemen
 	private String lastName;
 	private String organization;
 	@MappedColumnName
-	private Account user;
+	private Account account;
 
 
 	/**
@@ -73,18 +73,18 @@ public class ClientSearchCritieria extends AbstractPropertChangeSupport implemen
 
 
 	/**
-	 * @return the user
+	 * @return the account
 	 */
-	public Account getUser() {
-		return user;
+	public Account getAccount() {
+		return account;
 	}
 
 
 	/**
-	 * @param user the user to set
+	 * @param account the account to set
 	 */
-	public void setUser(Account user) {
-		this.user = user;
+	public void setAccount(Account user) {
+		this.account = user;
 	}
 
 

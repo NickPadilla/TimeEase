@@ -1,6 +1,19 @@
 package com.monstersoftwarellc.timeease;
 
+import java.lang.reflect.InvocationTargetException;
+
+import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.core.runtime.IStatus;
+import org.eclipse.core.runtime.Status;
+import org.eclipse.equinox.internal.p2.core.helpers.LogHelper;
+import org.eclipse.equinox.internal.p2.core.helpers.ServiceHelper;
+import org.eclipse.equinox.p2.core.IProvisioningAgent;
+import org.eclipse.equinox.p2.operations.UpdateOperation;
 import org.eclipse.jface.action.MenuManager;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.dialogs.ProgressMonitorDialog;
+import org.eclipse.jface.operation.IRunnableWithProgress;
+import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -8,6 +21,7 @@ import org.eclipse.swt.events.ShellAdapter;
 import org.eclipse.swt.events.ShellEvent;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Menu;
@@ -15,6 +29,7 @@ import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Tray;
 import org.eclipse.swt.widgets.TrayItem;
 import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
@@ -22,8 +37,9 @@ import org.eclipse.ui.application.WorkbenchWindowAdvisor;
 import org.eclipse.ui.plugin.AbstractUIPlugin;
 
 import com.monstersoftwarellc.timeease.model.enums.Images;
+import com.monstersoftwarellc.timeease.utility.P2Util;
 
-
+@SuppressWarnings("restriction")
 public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 	
 	private IWorkbenchWindow window;
@@ -36,7 +52,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
 	private ApplicationActionBarAdvisor actionBarAdvisor;
 
-//	private static final String JUSTUPDATED = "justUpdated";
+	private static final String JUSTUPDATED = "justUpdated";
 	
 	public ApplicationWorkbenchWindowAdvisor(
 			IWorkbenchWindowConfigurer configurer) {
@@ -52,8 +68,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
     public void preWindowOpen() {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
         configurer.setInitialSize(new Point(800, 800));
-        configurer.setShowMenuBar(true);
-        configurer.setShowCoolBar(true);
         configurer.setShowStatusLine(true);
     }
 
@@ -77,6 +91,8 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 			hookResize();
 			hookPopupMenu();
 		}
+
+		performUpdate();
 		
 	}
 	
@@ -84,7 +100,6 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 	 * Have to do the update here as we need to have the display already created to show progress dialog. I'll have to
 	 * discuss this with navid to ensure the workflow will jive with the auto updater. 
 	 */
-	/*@SuppressWarnings("restriction")
 	private void performUpdate() {
 		final IProvisioningAgent agent = (IProvisioningAgent) ServiceHelper.getService(ApplicationActivator.getBundleContext(),
 				IProvisioningAgent.SERVICE_NAME);
@@ -130,7 +145,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		} catch (InterruptedException e) {
 		}
 	}
-*/
+
 	private void hookResize() {
 		window.getShell().addShellListener(new ShellAdapter() {
 			public void shellIconified(ShellEvent e) {
@@ -178,5 +193,5 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 		trayItem.setToolTipText("Time Ease");
 		return trayItem;
 	}
-    
+	
 }

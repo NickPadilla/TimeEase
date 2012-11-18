@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.monstersoftwarellc.timeease.integration.freshbooks.AbstractListResponse;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 
 /**
  * Concrete {@link AbstractListResponse} that is needed for the {@link Task} object.

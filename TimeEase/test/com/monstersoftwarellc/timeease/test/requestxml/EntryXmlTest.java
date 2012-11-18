@@ -6,11 +6,11 @@ package com.monstersoftwarellc.timeease.test.requestxml;
 import java.io.StringWriter;
 import java.util.Date;
 
-import com.monstersoftwarellc.timeease.model.entry.Entry;
 import com.monstersoftwarellc.timeease.model.entry.EntryRequest;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
-import com.monstersoftwarellc.timeease.model.project.Project;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.utility.FreshbooksRequestUtility;
 import com.monstersoftwarellc.timeease.utility.TimeUtil;
 

@@ -30,13 +30,14 @@ import sun.misc.BASE64Encoder;
 
 import com.monstersoftwarellc.timeease.TimeEaseSession;
 import com.monstersoftwarellc.timeease.integration.Integration;
+import com.monstersoftwarellc.timeease.integration.IntegrationType;
 import com.monstersoftwarellc.timeease.integration.freshbooks.FreshBooksIntegration;
 import com.monstersoftwarellc.timeease.integration.freshbooks.FreshbooksClientService;
-import com.monstersoftwarellc.timeease.model.client.Client;
 import com.monstersoftwarellc.timeease.model.client.ClientRequest;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
 import com.monstersoftwarellc.timeease.model.enums.ResponseStatus;
-import com.monstersoftwarellc.timeease.service.ISecurityService;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.service.ServiceLocator;
 import com.sun.net.ssl.internal.ssl.Provider;
  
@@ -85,11 +86,12 @@ public class ConnectionUtility {
 		BufferedReader bufferedReader = null;
 		StringBuffer stringBuffer = new StringBuffer();
 		FreshBooksIntegration details = null; 
-		List<Integration> integrations = ServiceLocator.locateCurrent(ISecurityService.class).getCurrentlyLoggedInUser().getSettings().getIntegrations();
-		for(Integration integration : integrations){
-			if(integration instanceof FreshBooksIntegration){
+		List<IntegrationType> integrations = ServiceLocator.locateCurrent(SettingsFactory.class).getApplicationSettings().getIntegrations();
+		for(IntegrationType integration : integrations){
+			// TODO: add way to configure the integration types
+			/*if(integration instanceof FreshBooksIntegration){
 				details = (FreshBooksIntegration) integration;
-			}
+			}*/
 		}
 		
 		if(details == null){

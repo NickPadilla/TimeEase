@@ -7,7 +7,7 @@ import org.apache.log4j.Logger;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.monstersoftwarellc.timeease.model.entry.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 
 /**
  * @author nicholas

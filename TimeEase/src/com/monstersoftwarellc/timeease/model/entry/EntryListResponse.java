@@ -10,6 +10,7 @@ import javax.xml.bind.annotation.XmlAnyElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 import com.monstersoftwarellc.timeease.integration.freshbooks.AbstractListResponse;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.utility.ComparatorUtility;
 
 /**

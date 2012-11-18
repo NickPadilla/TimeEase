@@ -34,7 +34,7 @@ public class CustomObservableMapLabelProvider extends ObservableMapLabelProvider
 	 * @see org.eclipse.jface.databinding.viewers.ObservableMapLabelProvider#getColumnText(java.lang.Object, int)
 	 */
 	@Override
-	public String getColumnText(Object element, int columnIndex ) {
+	public String getColumnText(Object element, int columnIndex) {
 		String text = "";
 		if (columnIndex < attributeMaps.length) {
 			Object result = attributeMaps[columnIndex].get(element);

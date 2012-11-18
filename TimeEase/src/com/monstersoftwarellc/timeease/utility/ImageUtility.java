@@ -65,6 +65,7 @@ public class ImageUtility {
 		baos.flush();
 		photoBytes = baos.toByteArray();
 		baos.close();
+		stream.close();
 		return photoBytes;
 	}
 

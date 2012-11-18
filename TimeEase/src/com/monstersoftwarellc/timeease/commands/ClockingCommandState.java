@@ -14,7 +14,7 @@ import org.eclipse.ui.ISources;
 import com.monstersoftwarellc.timeease.dao.IEntryDAO;
 import com.monstersoftwarellc.timeease.enums.SearchOperators;
 import com.monstersoftwarellc.timeease.model.WhereClause;
-import com.monstersoftwarellc.timeease.model.entry.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.service.ServiceLocator;
 
 /**

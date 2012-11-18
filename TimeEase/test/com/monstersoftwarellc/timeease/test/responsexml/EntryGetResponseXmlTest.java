@@ -9,10 +9,10 @@ import java.net.URL;
 import javax.naming.AuthenticationException;
 import javax.naming.ConfigurationException;
 
-import com.monstersoftwarellc.timeease.model.entry.Entry;
 import com.monstersoftwarellc.timeease.model.entry.EntryRequest;
 import com.monstersoftwarellc.timeease.model.entry.EntryResponse;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 
 /**
  * @author nick

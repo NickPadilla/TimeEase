@@ -10,7 +10,7 @@ import javax.naming.AuthenticationException;
 import javax.naming.ConfigurationException;
 
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
-import com.monstersoftwarellc.timeease.model.project.Project;
+import com.monstersoftwarellc.timeease.model.impl.Project;
 import com.monstersoftwarellc.timeease.model.project.ProjectRequest;
 import com.monstersoftwarellc.timeease.model.project.ProjectResponse;
 

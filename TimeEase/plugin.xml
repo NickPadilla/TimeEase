@@ -19,6 +19,132 @@
             id="com.monstersoftwarellc.timeease.perspective"
             name="%perspective.name">
       </perspective>
+   </extension> 
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="TimeEase.toolbar1"
+               label="%toolbar.label">
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.EntriesCommand"
+                  icon="icons/48.png"
+                  label="Entry Management"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ClockInCommand"
+                  icon="icons/48/50.png"
+                  label="Clock In"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ClockOutCommand"
+                  icon="icons/48/51.png"
+                  label="Clock Out"
+                  style="push">
+            </command>
+            <separator
+                  name="timeRelatedSeparator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ClientsCommand"
+                  icon="icons/48/47.png"
+                  label="Client Management"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ProjectsCommand"
+                  icon="icons/48/122.png"
+                  label="Project Management"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.TasksCommand"
+                  icon="icons/48/1.png"
+                  label="Task Management"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            allPopups="false"
+            locationURI="menu:org.eclipse.ui.main.menu">
+         <menu
+               label="%menu.label">
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ApplicationSettingsCommand"
+                  icon="icons/48/123.png"
+                  label="%command.label"
+                  style="push">
+            </command>
+            <separator
+                  name="exitSeparator"
+                  visible="true">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.file.exit"
+                  icon="icons/48/118.png"
+                  label="%command.label.1"
+                  style="push">
+            </command>
+         </menu>
+         <menu
+               label="Management">
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.EntriesCommand"
+                  icon="icons/32.png"
+                  label="%view.name"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ClientsCommand"
+                  icon="icons/48/47.png"
+                  label="Client Management"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ProjectsCommand"
+                  icon="icons/48/122.png"
+                  label="Project Management"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.TasksCommand"
+                  icon="icons/48/1.png"
+                  label="Task Management"
+                  style="push">
+            </command>
+         </menu>
+         <menu
+               label="%menu.label.1">
+            <command
+                  commandId="org.eclipse.ui.help.displayHelp"
+                  icon="icons/48/67.png"
+                  label="%command.label.4"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.monstersoftwarellc.timeease.commands.ReportABugEnhancementCommand"
+                  helpContextId="Send issue or enhancement to Time Ease."
+                  icon="icons/48/73.png"
+                  label="%command.label.5"
+                  style="push">
+            </command>
+            <separator
+                  name="aboutSeparator">
+            </separator>
+            <command
+                  commandId="org.eclipse.ui.help.aboutAction"
+                  icon="icons/48/65.png"
+                  label="%command.label.6"
+                  style="push">
+            </command>
+         </menu>
+      </menuContribution>
    </extension>
    <extension
          point="org.eclipse.ui.views">
@@ -199,133 +325,7 @@
                class="com.monstersoftwarellc.timeease.commands.ClockOutCommand">
          </class>
       </handler>
-	</extension> 
-   <extension
-         point="org.eclipse.ui.menus">
-      <menuContribution
-            allPopups="false"
-            locationURI="menu:org.eclipse.ui.main.menu">
-         <menu
-               label="%menu.label">
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ApplicationSettingsCommand"
-                  icon="icons/48/123.png"
-                  label="%command.label"
-                  style="push">
-            </command>
-            <separator
-                  name="exitSeparator"
-                  visible="true">
-            </separator>
-            <command
-                  commandId="org.eclipse.ui.file.exit"
-                  icon="icons/48/118.png"
-                  label="%command.label.1"
-                  style="push">
-            </command>
-         </menu>
-         <menu
-               label="Management">
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.EntriesCommand"
-                  icon="icons/32.png"
-                  label="%view.name"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ClientsCommand"
-                  icon="icons/48/47.png"
-                  label="Client Management"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ProjectsCommand"
-                  icon="icons/48/122.png"
-                  label="Project Management"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.TasksCommand"
-                  icon="icons/48/1.png"
-                  label="Task Management"
-                  style="push">
-            </command>
-         </menu>
-         <menu
-               label="%menu.label.1">
-            <command
-                  commandId="org.eclipse.ui.help.displayHelp"
-                  icon="icons/48/67.png"
-                  label="%command.label.4"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ReportABugEnhancementCommand"
-                  helpContextId="Send issue or enhancement to Time Ease."
-                  icon="icons/48/73.png"
-                  label="%command.label.5"
-                  style="push">
-            </command>
-            <separator
-                  name="aboutSeparator">
-            </separator>
-            <command
-                  commandId="org.eclipse.ui.help.aboutAction"
-                  icon="icons/48/65.png"
-                  label="%command.label.6"
-                  style="push">
-            </command>
-         </menu>
-      </menuContribution>
-      <menuContribution
-            allPopups="false"
-            locationURI="toolbar:org.eclipse.ui.main.toolbar">
-         <toolbar
-               id="TimeEase.toolbar1"
-               label="%toolbar.label">
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.EntriesCommand"
-                  icon="icons/48.png"
-                  label="Entry Management"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ClockInCommand"
-                  icon="icons/48/50.png"
-                  label="Clock In"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ClockOutCommand"
-                  icon="icons/48/51.png"
-                  label="Clock Out"
-                  style="push">
-            </command>
-            <separator
-                  name="timeRelatedSeparator"
-                  visible="true">
-            </separator>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ClientsCommand"
-                  icon="icons/48/47.png"
-                  label="Client Management"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.ProjectsCommand"
-                  icon="icons/48/122.png"
-                  label="Project Management"
-                  style="push">
-            </command>
-            <command
-                  commandId="com.monstersoftwarellc.timeease.commands.TasksCommand"
-                  icon="icons/48/1.png"
-                  label="Task Management"
-                  style="push">
-            </command>
-         </toolbar>
-      </menuContribution>
-   </extension>
+	</extension>
    <extension
          point="org.eclipse.ui.bindings">
       <key

@@ -5,7 +5,7 @@ package com.monstersoftwarellc.timeease.utility;
 
 import java.util.Comparator;
 
-import com.monstersoftwarellc.timeease.model.entry.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 
 
 /**

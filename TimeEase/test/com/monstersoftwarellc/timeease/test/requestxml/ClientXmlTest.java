@@ -6,10 +6,10 @@ package com.monstersoftwarellc.timeease.test.requestxml;
 import java.io.StringWriter;
 import java.util.Date;
 
-import com.monstersoftwarellc.timeease.model.client.Client;
 import com.monstersoftwarellc.timeease.model.client.ClientRequest;
 import com.monstersoftwarellc.timeease.model.enums.ClientStatus;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
+import com.monstersoftwarellc.timeease.model.impl.Client;
 import com.monstersoftwarellc.timeease.utility.FreshbooksRequestUtility;
 
 /**

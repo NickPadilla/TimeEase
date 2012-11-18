@@ -23,7 +23,7 @@
    </url>
 
    <includes
-         id="org.eclipse.rcp"
+         id="org.eclipse.help"
          version="0.0.0"/>
 
    <includes
@@ -31,7 +31,15 @@
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.help"
+         id="org.eclipse.emf.ecore"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.emf.common"
+         version="0.0.0"/>
+
+   <includes
+         id="org.eclipse.e4.rcp"
          version="0.0.0"/>
 
    <plugin
@@ -423,6 +431,34 @@
 
    <plugin
          id="c3p0-0.9.1.2"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="spring-data-jpa"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.springframework.data.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.aspectj.tools"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="com.springsource.org.joda.time"
          download-size="0"
          install-size="0"
          version="0.0.0"

@@ -56,11 +56,12 @@ import com.monstersoftwarellc.timeease.dao.IEntryDAO;
 import com.monstersoftwarellc.timeease.dao.IProjectDAO;
 import com.monstersoftwarellc.timeease.enums.SearchOperators;
 import com.monstersoftwarellc.timeease.model.WhereClause;
-import com.monstersoftwarellc.timeease.model.client.Client;
-import com.monstersoftwarellc.timeease.model.entry.Entry;
-import com.monstersoftwarellc.timeease.model.impl.ApplicationSettings;
-import com.monstersoftwarellc.timeease.model.project.Project;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Task;
+import com.monstersoftwarellc.timeease.property.IApplicationSettings;
+import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.EntrySearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.EntrySearchCriteriaDialog;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
@@ -95,11 +96,12 @@ public class EntriesView extends ViewPart {
 	private EntrySearchCritieria searchCriteria = new EntrySearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
+	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
 	private IEntryDAO entryDAO = ServiceLocator.locateCurrent(IEntryDAO.class);
 	private IProjectDAO projectDAO = ServiceLocator.locateCurrent(IProjectDAO.class);
-	private WhereClause clause = new WhereClause("user", securityService.getCurrentlyLoggedInUser());
+	private WhereClause clause = new WhereClause("account", securityService.getCurrentlyLoggedInUser());
 
-	private ApplicationSettings settings = null;
+	private IApplicationSettings settings = null;
 	private Text timer;
 	private int counter = 0;
 	private boolean timerStarted = false;
@@ -116,7 +118,7 @@ public class EntriesView extends ViewPart {
 	 * 
 	 */
 	public EntriesView() {
-		settings = securityService.getCurrentlyLoggedInUser().getSettings();
+		settings = settingsFactory.getApplicationSettings();
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.DATE, -7);
 		searchCriteria.setEntryDate(cal.getTime());
@@ -283,16 +285,16 @@ public class EntriesView extends ViewPart {
 			public void selectionChanged(SelectionChangedEvent event) {
 				IStructuredSelection transaction = (IStructuredSelection) comboViewer.getSelection();
 				Client client = (Client) transaction.getFirstElement();
-				if(client != null){
-					WhereClause clause = new WhereClause("client", client);
-					projects = projectDAO.findAllOrderBy(Collections.singletonList(clause), true, "name");
-					WritableList writableList = new WritableList(projects, Project.class);
-					comboViewer_1.setInput(writableList);
-					
+				if(client != null){	
 					// clear out tasks
 					tasks = Collections.emptyList();
 					WritableList writableList1 = new WritableList(tasks, Task.class);
 					comboViewer_2.setInput(writableList1);
+										
+					WhereClause clause = new WhereClause("client", client);
+					projects = projectDAO.findAllOrderBy(Collections.singletonList(clause), true, "name");
+					WritableList writableList = new WritableList(projects, Project.class);
+					comboViewer_1.setInput(writableList);
 				}
 			}
 		});
@@ -316,9 +318,16 @@ public class EntriesView extends ViewPart {
 				IStructuredSelection transaction = (IStructuredSelection) comboViewer_1.getSelection();
 				Project project = (Project) transaction.getFirstElement();
 				if(project != null){
-					tasks = project.getProjectTasks();
-					WritableList writableList = new WritableList(tasks, Task.class);
+					WritableList writableList = new WritableList(project.getProjectTasks(), Task.class);
 					comboViewer_2.setInput(writableList);
+					
+					IStructuredSelection trans = (IStructuredSelection) tableViewer.getSelection();
+					Entry entry = (Entry) trans.getFirstElement();
+					
+					if(entry != null && entry.getTask() != null){
+						IStructuredSelection sel = new StructuredSelection(entry.getTask());
+						comboViewer_2.setSelection(sel);
+					}
 				}
 			}
 		});
@@ -497,7 +506,7 @@ public class EntriesView extends ViewPart {
 		if(settings.getDefaultTask() != null){
 			entry.setTask(settings.getDefaultTask());
 		}
-		entry.setUser(securityService.getCurrentlyLoggedInUser());
+		entry.setAccount(securityService.getCurrentlyLoggedInUser());
 		entryDAO.persist(entry);
 		entries.add(entry);
 		counter = 0;

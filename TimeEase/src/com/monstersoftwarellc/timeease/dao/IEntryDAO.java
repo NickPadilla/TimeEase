@@ -3,7 +3,7 @@
  */
 package com.monstersoftwarellc.timeease.dao;
 
-import com.monstersoftwarellc.timeease.model.entry.Entry;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 
 /**
  * @author nicholas

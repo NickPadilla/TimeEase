@@ -6,11 +6,11 @@ package com.monstersoftwarellc.timeease.test.sendrecieve;
 import javax.naming.AuthenticationException;
 import javax.naming.ConfigurationException;
 
-import com.monstersoftwarellc.timeease.model.client.Client;
 import com.monstersoftwarellc.timeease.model.client.ClientRequest;
 import com.monstersoftwarellc.timeease.model.client.ClientResponse;
 import com.monstersoftwarellc.timeease.model.enums.ClientStatus;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
+import com.monstersoftwarellc.timeease.model.impl.Client;
 
 /**
  * @author nick

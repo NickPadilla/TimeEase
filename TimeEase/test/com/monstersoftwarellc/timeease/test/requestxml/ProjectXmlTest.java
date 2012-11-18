@@ -7,12 +7,12 @@ import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.monstersoftwarellc.timeease.model.client.Client;
 import com.monstersoftwarellc.timeease.model.enums.BillingMethodType;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
-import com.monstersoftwarellc.timeease.model.project.Project;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.model.project.ProjectRequest;
-import com.monstersoftwarellc.timeease.model.task.Task;
 import com.monstersoftwarellc.timeease.utility.FreshbooksRequestUtility;
 
 /**

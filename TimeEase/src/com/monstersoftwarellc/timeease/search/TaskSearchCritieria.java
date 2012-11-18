@@ -19,7 +19,7 @@ public class TaskSearchCritieria extends AbstractPropertChangeSupport implements
 	@MappedColumnName(useLikeForWhereClause=true,caseSensitive=false)
 	private String name;
 	@MappedColumnName
-	private Account user;
+	private Account account;
 
 	/**
 	 * @return the name
@@ -36,17 +36,17 @@ public class TaskSearchCritieria extends AbstractPropertChangeSupport implements
 	}
 	
 	/**
-	 * @return the user
+	 * @return the account
 	 */
-	public Account getUser() {
-		return user;
+	public Account getAccount() {
+		return account;
 	}
 
 	/**
-	 * @param user the user to set
+	 * @param account the account to set
 	 */
-	public void setUser(Account user) {
-		this.user = user;
+	public void setAccount(Account user) {
+		this.account = user;
 	}
 
 	/* (non-Javadoc)

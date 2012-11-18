@@ -3,7 +3,6 @@
  */
 package com.monstersoftwarellc.timeease;
 
-import com.monstersoftwarellc.timeease.model.impl.ApplicationSettings;
 
 /**
  * @author nick
@@ -14,8 +13,6 @@ public class TimeEaseSession {
 	private boolean online;
 	
 	private StatusLineContribution statusLineContribution;
-	
-	private ApplicationSettings applicationSettings;
 	
 	private static TimeEaseSession session;
 	
@@ -59,19 +56,4 @@ public class TimeEaseSession {
 	public void setStatusLineContribution(StatusLineContribution statusLineContribution) {
 		this.statusLineContribution = statusLineContribution;
 	}
-
-	/**
-	 * @return the applicationSettings
-	 */
-	public ApplicationSettings getApplicationSettings() {
-		return applicationSettings;
-	}
-
-	/**
-	 * @param applicationSettings the applicationSettings to set
-	 */
-	public void setApplicationSettings(ApplicationSettings applicationSettings) {
-		this.applicationSettings = applicationSettings;
-	}
-
 }

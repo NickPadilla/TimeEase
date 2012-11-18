@@ -24,41 +24,51 @@
 	</bean> -->
 	
 	<!-- JSR-303 - BeanValidation 
-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>-->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
+    -->
 
 	<!-- database solution -->
 	
 	<!-- transaction management -->
 	<tx:annotation-driven />
-	
-	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+ 	
+ 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />
 		<property name="url" value="jdbc:derby:timeease_db;create=true" />
-	</bean>
-	
+	</bean> 
+	 
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
+		<property name="driverClassName" value="org.h2.Driver" />
+		<property name="url" value="jdbc:h2:timeease_db;CACHE_SIZE=131072" />
+	</bean> -->
 	<!-- jpa properties -->
 	<util:map id="jpaMap">
 		<!-- need the deploy-on-startup so that the metamodel gets created before first use -->
-	    <entry key="eclipselink.deploy-on-startup" value="true" />
-		<!-- <entry key="eclipselink.ddl-generation" value="create-tables" /> -->
-		<entry key="eclipselink.ddl-generation.output-mode" value="both" />
-		<entry key="eclipselink.weaving" value="true"/>
+		<entry key="eclipselink.deploy-on-startup" value="true" /> 
+		<!-- we are turning off the shared cache due to the audit implementation - changes made during update do not get cached  
+		<entry key="eclipselink.cache.shared.default" value="false" />-->
+		<entry key="eclipselink.weaving" value="true" />
+		<!-- Solution to auditor date updates making it to cache - eclipselink makes temporal fields immutable 
+		<entry key="eclipselink.temporal.mutable" value="true" />-->
 		<!-- <entry key="eclipselink.weaving.output.path" value="C:\\weavedClasses"/>
-	    <entry key="eclipselink.weaving.overwrite.existing" value="true" /> -->
-	    <entry key="eclipselink.logging.level" value="FINEST" />
-	    <entry key="show-sql" value="true" />
+	    <entry key="eclipselink.weaving.overwrite.existing" value="true" />
+		<entry key="eclipselink.ddl-generation" value="create-tables" />
+		<entry key="eclipselink.ddl-generation.output-mode" value="both" /> 
+	    <entry key="eclipselink.logging.level" value="FINEST" /> 
+		<entry key="eclipselink.ddl-generation" value="create-tables" />
+		<entry key="eclipselink.ddl-generation.output-mode" value="both" /> -->
 	</util:map>
 	
-	<!-- EclipseLink vendor specific configurations -->
+	<!-- EclipseLink vendor specific configurations  -->
 	<bean id="eclipseLinkVendor-Derby" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter"
 			p:showSql="true" 
-			p:generateDdl="false"
+			p:generateDdl="true"
 			p:databasePlatform="org.eclipse.persistence.platform.database.DerbyPlatform"
 			p:database="DERBY" />
 	
 	<!-- EclipseLink vendor specific configurations 
 	<bean id="eclipseLinkVendor-H2" class="org.springframework.orm.jpa.vendor.EclipseLinkJpaVendorAdapter"
-			p:showSql="true" 
+			p:showSql="false" 
 			p:generateDdl="false"
 			p:databasePlatform="org.eclipse.persistence.platform.database.H2Platform"
 			p:database="H2" />-->
@@ -68,16 +78,18 @@
 				p:generateDdl="false"
 				p:databasePlatform="org.eclipse.persistence.platform.database.MySQLPlatform"
 				p:database="MYSQL"  /> -->	
+	
+	<context:load-time-weaver weaver-class="org.eclipse.equinox.weaving.springweaver.EquinoxAspectsLoadTimeWeaver" />
 				
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"		
 			p:dataSource-ref="dataSource"
 			p:jpaVendorAdapter-ref="eclipseLinkVendor-Derby"
-			p:jpaPropertyMap-ref="jpaMap">	
-		<property name="loadTimeWeaver">
+			p:jpaPropertyMap-ref="jpaMap" >	
+<!-- 		<property name="loadTimeWeaver">
         	<bean class="org.eclipse.equinox.weaving.springweaver.EquinoxAspectsLoadTimeWeaver">
                 <property name="weaverScope" value="APPLICATION" />
             </bean>
-        </property>
+        </property> -->
 <!-- 	    <property name="persistenceUnitPostProcessors">
 	      <list>
 	         <ref bean="bootstrap"/>
@@ -104,5 +116,10 @@
 	<!-- Scans the class path of this application for @Components to deploy as beans. bin is added so it will work in dev problem with Eclipse-->
 	<context:component-scan base-package="bin.com.monstersoftwarellc.timeease,com.monstersoftwarellc.timeease" />
 	
-
+	<bean id="applicationSettings" 
+		  class="com.monstersoftwarellc.timeease.property.IApplicationSettings"
+		  factory-bean="settingsFactory"
+		  factory-method="getApplicationSettings" lazy-init="true">
+	</bean>
+	
 </beans>

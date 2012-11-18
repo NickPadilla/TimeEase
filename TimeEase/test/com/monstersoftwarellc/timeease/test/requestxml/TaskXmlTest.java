@@ -6,7 +6,7 @@ package com.monstersoftwarellc.timeease.test.requestxml;
 import java.io.StringWriter;
 
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
-import com.monstersoftwarellc.timeease.model.task.Task;
+import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.model.task.TaskRequest;
 import com.monstersoftwarellc.timeease.utility.FreshbooksRequestUtility;
 

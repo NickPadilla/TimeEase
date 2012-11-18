@@ -11,11 +11,11 @@ import javax.naming.ConfigurationException;
 import org.eclipse.core.runtime.Assert;
 
 import com.monstersoftwarellc.timeease.integration.IEntryService;
-import com.monstersoftwarellc.timeease.model.entry.Entry;
 import com.monstersoftwarellc.timeease.model.entry.EntryRequest;
 import com.monstersoftwarellc.timeease.model.entry.EntryResponse;
 import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
 import com.monstersoftwarellc.timeease.model.enums.ResponseStatus;
+import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.utility.ConnectionUtility;
 
 /**
