@@ -52,15 +52,15 @@ public interface IApplicationSettings {
 	@PropertySequence(60)
 	public abstract OrderType getDefaultSortOrder();
 
-	@PropertyChoice("@clientDAO.findAllOrderBy('name')")
+	@PropertyChoice("@clientService.getClientRepository().findByAccountOrderByFirstNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(70)
 	public abstract Client getDefaultClient();
 
-	@PropertyChoice("@projectDAO.findAllOrderBy('name')")
+	@PropertyChoice("@projectService.getProjectRepository().findByAccountOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(80)
 	public abstract Project getDefaultProject();
 
-	@PropertyChoice("@taskDAO.findAllOrderBy('name')")
+	@PropertyChoice("@taskService.getTaskRepository().findByAccountOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(90)
 	public abstract Task getDefaultTask();
 
@@ -129,7 +129,5 @@ public interface IApplicationSettings {
 	public abstract void setDefaultProject(Project defaultProject);
 
 	public abstract void setDefaultTask(Task defaultTask);
-
-	
 
 }

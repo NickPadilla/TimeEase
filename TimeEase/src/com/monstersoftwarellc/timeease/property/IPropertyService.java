@@ -3,6 +3,7 @@
  */
 package com.monstersoftwarellc.timeease.property;
 
+
 /**
  * @author navid
  *
@@ -17,7 +18,5 @@ public interface IPropertyService {
 	 * @throws IllegalArgumentException if the clazz parameter is not an interface. Or the interface methods do not follow standard Java bean naming conventions.
 	 */
 	public abstract <T> T getProperties(Class<T> clazz);
-
-
 	
 }

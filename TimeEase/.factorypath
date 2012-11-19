@@ -1,0 +1,5 @@
+<factorypath>
+    <factorypathentry kind="WKSPJAR" id="/TimeEase/meta-gen/eclipselink-jpa-modelgen_2.4.1.v20121003-ad44345.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/TimeEase/meta-gen/javax.persistence_2.0.4.v201112161009.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="WKSPJAR" id="/TimeEase/meta-gen/eclipselink.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>

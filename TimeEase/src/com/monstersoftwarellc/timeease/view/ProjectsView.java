@@ -45,21 +45,22 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.part.ViewPart;
 import org.eclipse.wb.swt.SWTResourceManager;
+import org.springframework.data.domain.Sort;
 
 import swing2swt.layout.BorderLayout;
 
-import com.monstersoftwarellc.timeease.dao.IClientDAO;
-import com.monstersoftwarellc.timeease.dao.IProjectDAO;
-import com.monstersoftwarellc.timeease.dao.ITaskDAO;
 import com.monstersoftwarellc.timeease.model.impl.Client;
 import com.monstersoftwarellc.timeease.model.impl.Project;
 import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.property.IApplicationSettings;
-import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.ProjectSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.ProjectSearchCriteriaDialog;
+import com.monstersoftwarellc.timeease.service.IClientService;
+import com.monstersoftwarellc.timeease.service.IProjectService;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.ITaskService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.SettingsService;
 import com.monstersoftwarellc.timeease.widgets.CustomLabelProvider;
 
 /**
@@ -87,8 +88,8 @@ public class ProjectsView extends ViewPart {
 	private ProjectSearchCritieria searchCriteria = new ProjectSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
-	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
-	private IProjectDAO projectDAO = ServiceLocator.locateCurrent(IProjectDAO.class);
+	private SettingsService settingsService = ServiceLocator.locateCurrent(SettingsService.class);
+	private IProjectService projectService = ServiceLocator.locateCurrent(IProjectService.class);
 
 	private IApplicationSettings settings = null;
 	private Text projectNameText;
@@ -103,10 +104,10 @@ public class ProjectsView extends ViewPart {
 	 */
 	public ProjectsView() {
 		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
-		settings = settingsFactory.getApplicationSettings();
+		settings = settingsService.getApplicationSettings();
 		projects = new ArrayList<Project>();
-		clients = ServiceLocator.locateCurrent(IClientDAO.class).findAllOrderBy("firstName");
-		tasks = ServiceLocator.locateCurrent(ITaskDAO.class).findAllOrderBy("name");
+		clients = ServiceLocator.locateCurrent(IClientService.class).getClientRepository().findAll(new Sort(Sort.Direction.ASC, "firstName"));
+		tasks = ServiceLocator.locateCurrent(ITaskService.class).getTaskRepository().findAll(new Sort(Sort.Direction.ASC, "name"));
 	}
 
 	/**
@@ -289,7 +290,7 @@ public class ProjectsView extends ViewPart {
 		project.setName("Name");
 		project.setDescription("Description");
 		project.setAccount(securityService.getCurrentlyLoggedInUser());
-		projectDAO.persist(project);
+		projectService.getProjectRepository().saveAndFlush(project);
 		projects.add(project);
 		WritableList writableList = new WritableList(projects, Project.class);
 		tableViewer.setInput(writableList);
@@ -306,7 +307,7 @@ public class ProjectsView extends ViewPart {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Project project = (Project) transaction.getFirstElement();		
 		projects.clear();
-		projectDAO.delete(project);
+		projectService.getProjectRepository().delete(project);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
 	}
@@ -328,7 +329,7 @@ public class ProjectsView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		projects = projectDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+		projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 				settings.getNumberOfItemsToShowPerPage());
 		WritableList writableList = new WritableList(projects, Project.class);
 		tableViewer.setInput(writableList);
@@ -361,7 +362,7 @@ public class ProjectsView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						projects = projectDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(projects, Project.class);
 						tableViewer.setInput(writableList);
@@ -378,7 +379,7 @@ public class ProjectsView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						projects = projectDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(projects, Project.class);
 						tableViewer.setInput(writableList);
@@ -400,7 +401,7 @@ public class ProjectsView extends ViewPart {
 		// entries
 		long currentPageCount = projects.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && projectDAO
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && projectService.getProjectRepository()
 				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
 						settings.getNumberOfItemsToShowPerPage()) == 0)) {
 			nextPageButton.setEnabled(false);
@@ -436,7 +437,7 @@ public class ProjectsView extends ViewPart {
 						IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 						Project project = (Project) transaction.getFirstElement();
 						if (project != null) {
-							project = projectDAO.merge(project);
+							project = projectService.getProjectRepository().saveAndFlush(project);
 							tableViewer.refresh();
 						}
 					}
@@ -535,7 +536,7 @@ public class ProjectsView extends ViewPart {
 						IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 						Project project = (Project) transaction.getFirstElement();
 						if(project != null){
-							project = projectDAO.merge(project);
+							project = projectService.getProjectRepository().saveAndFlush(project);
 							tableViewer.refresh();
 						}
 					}

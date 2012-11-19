@@ -48,24 +48,24 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.part.ViewPart;
 import org.eclipse.wb.swt.SWTResourceManager;
+import org.springframework.data.domain.Sort;
 
 import swing2swt.layout.BorderLayout;
 
-import com.monstersoftwarellc.timeease.dao.IClientDAO;
-import com.monstersoftwarellc.timeease.dao.IEntryDAO;
-import com.monstersoftwarellc.timeease.dao.IProjectDAO;
 import com.monstersoftwarellc.timeease.enums.SearchOperators;
-import com.monstersoftwarellc.timeease.model.WhereClause;
 import com.monstersoftwarellc.timeease.model.impl.Client;
 import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.model.impl.Project;
 import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.property.IApplicationSettings;
-import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.EntrySearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.EntrySearchCriteriaDialog;
+import com.monstersoftwarellc.timeease.service.IClientService;
+import com.monstersoftwarellc.timeease.service.IEntryService;
+import com.monstersoftwarellc.timeease.service.IProjectService;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.SettingsService;
 import com.monstersoftwarellc.timeease.utility.TimeUtil;
 
 /**
@@ -96,10 +96,9 @@ public class EntriesView extends ViewPart {
 	private EntrySearchCritieria searchCriteria = new EntrySearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
-	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
-	private IEntryDAO entryDAO = ServiceLocator.locateCurrent(IEntryDAO.class);
-	private IProjectDAO projectDAO = ServiceLocator.locateCurrent(IProjectDAO.class);
-	private WhereClause clause = new WhereClause("account", securityService.getCurrentlyLoggedInUser());
+	private SettingsService settingsService = ServiceLocator.locateCurrent(SettingsService.class);
+	private IEntryService entryService = ServiceLocator.locateCurrent(IEntryService.class);
+	private IProjectService projectService = ServiceLocator.locateCurrent(IProjectService.class);
 
 	private IApplicationSettings settings = null;
 	private Text timer;
@@ -118,7 +117,7 @@ public class EntriesView extends ViewPart {
 	 * 
 	 */
 	public EntriesView() {
-		settings = settingsFactory.getApplicationSettings();
+		settings = settingsService.getApplicationSettings();
 		Calendar cal = Calendar.getInstance();
 		cal.add(Calendar.DATE, -7);
 		searchCriteria.setEntryDate(cal.getTime());
@@ -126,7 +125,8 @@ public class EntriesView extends ViewPart {
 		entries = new ArrayList<Entry>();
 		
 		// TODO: add active check.
-		clients = ServiceLocator.locateCurrent(IClientDAO.class).findAllOrderBy(Collections.singletonList(clause), true, "firstName");
+		clients = ServiceLocator.locateCurrent(IClientService.class).getClientRepository().
+				findByAccount(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.DESC, "firstName"));
 		projects = new ArrayList<Project>();
 		tasks = new ArrayList<Task>();
 	}
@@ -160,8 +160,7 @@ public class EntriesView extends ViewPart {
 					
 					if(entry.getProject() != null && entry.getProject().getClient() != null){
 						if(!projects.contains(entry.getProject())){
-							WhereClause clause = new WhereClause("client", entry.getProject().getClient());
-							projects = projectDAO.findAllOrderBy(Collections.singletonList(clause), true, "name");
+							projects = projectService.getProjectRepository().findByClient( entry.getProject().getClient(), new Sort(Sort.Direction.ASC, "name"));
 							WritableList writableList = new WritableList(projects, Project.class);
 							comboViewer_1.setInput(writableList);
 						}
@@ -291,8 +290,7 @@ public class EntriesView extends ViewPart {
 					WritableList writableList1 = new WritableList(tasks, Task.class);
 					comboViewer_2.setInput(writableList1);
 										
-					WhereClause clause = new WhereClause("client", client);
-					projects = projectDAO.findAllOrderBy(Collections.singletonList(clause), true, "name");
+					projects = projectService.getProjectRepository().findByClient(client, new Sort(Sort.Direction.ASC, "name"));
 					WritableList writableList = new WritableList(projects, Project.class);
 					comboViewer_1.setInput(writableList);
 				}
@@ -507,7 +505,7 @@ public class EntriesView extends ViewPart {
 			entry.setTask(settings.getDefaultTask());
 		}
 		entry.setAccount(securityService.getCurrentlyLoggedInUser());
-		entryDAO.persist(entry);
+		entryService.getEntryRepository().saveAndFlush(entry);
 		entries.add(entry);
 		counter = 0;
 		WritableList writableList = new WritableList(entries, Entry.class);
@@ -525,7 +523,7 @@ public class EntriesView extends ViewPart {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Entry entry = (Entry) transaction.getFirstElement();		
 		entries.clear();
-		entryDAO.delete(entry);
+		entryService.getEntryRepository().delete(entry);
 		reloadEntriesBasedOnCriteria();
 	}
 	
@@ -556,7 +554,7 @@ public class EntriesView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		entries = entryDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+		entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 				settings.getNumberOfItemsToShowPerPage());
 		WritableList writableList = new WritableList(entries, Entry.class);
 		tableViewer.setInput(writableList);
@@ -589,7 +587,7 @@ public class EntriesView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						entries = entryDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(entries, Entry.class);
 						tableViewer.setInput(writableList);
@@ -606,7 +604,7 @@ public class EntriesView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						entries = entryDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(entries, Entry.class);
 						tableViewer.setInput(writableList);
@@ -628,7 +626,7 @@ public class EntriesView extends ViewPart {
 		// entries
 		long currentPageCount = entries.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && entryDAO
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && entryService.getEntryRepository()
 				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
 						settings.getNumberOfItemsToShowPerPage()) == 0)) {
 			nextPageButton.setEnabled(false);
@@ -664,7 +662,7 @@ public class EntriesView extends ViewPart {
 						IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 						Entry entry = (Entry) transaction.getFirstElement();
 						if (entry != null) {
-							entry = entryDAO.merge(entry);
+							entry = entryService.getEntryRepository().saveAndFlush(entry);
 							tableViewer.refresh();
 						}
 					}

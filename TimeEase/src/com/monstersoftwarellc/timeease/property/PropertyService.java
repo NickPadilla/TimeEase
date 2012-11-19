@@ -18,7 +18,7 @@ import com.monstersoftwarellc.timeease.model.IPropertyChangeSupport;
  */
 @Service
 public class PropertyService implements IPropertyService {
-
+	
 	/* (non-Javadoc)
 	 * @see com.goldrush.service.impl.IPropertyService#getProperties(java.lang.Class)
 	 */
@@ -33,8 +33,5 @@ public class PropertyService implements IPropertyService {
 				new Class[] { clazz, IPropertyChangeSupport.class, IPropertyProxy.class },
 				new PropertyProxyInvocationHandler(clazz));
 	}
-	
-	
-
 
 }

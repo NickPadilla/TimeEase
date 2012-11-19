@@ -27,7 +27,8 @@ import org.eclipse.ui.part.ViewPart;
 import org.springframework.mail.MailException;
 
 import com.monstersoftwarellc.timeease.service.IEmailService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+
 import org.eclipse.wb.swt.SWTResourceManager;
 
 /**

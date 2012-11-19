@@ -14,9 +14,9 @@ import javax.security.auth.spi.LoginModule;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
 
-import com.monstersoftwarellc.timeease.dao.IAccountDAO;
 import com.monstersoftwarellc.timeease.model.impl.Account;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.IAccountService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 
 /**
@@ -68,7 +68,7 @@ public class TimeEaseLoginModule implements LoginModule {
 			e.printStackTrace();
 		}
 
-		user = ServiceLocator.locateCurrent(IAccountDAO.class)
+		user = ServiceLocator.locateCurrent(IAccountService.class)
 							 	 .authenticate(nameCallback.getName(), 
 									 	   	   String.valueOf(passwordCallback.getPassword()));
 		if(user != null){

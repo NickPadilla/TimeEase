@@ -1,5 +1,0 @@
-JAAS {
-    org.eclipse.equinox.security.auth.module.ExtensionLoginModule required
-        extensionId="com.monstersoftwarellc.timeease.security.TimeEaseLoginModule";
-
-};

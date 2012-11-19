@@ -42,14 +42,14 @@ import org.eclipse.wb.swt.SWTResourceManager;
 
 import swing2swt.layout.BorderLayout;
 
-import com.monstersoftwarellc.timeease.dao.ITaskDAO;
 import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.property.IApplicationSettings;
-import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.TaskSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.TaskSearchCriteriaDialog;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.ITaskService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.SettingsService;
 
 /**
  * @author nick
@@ -74,8 +74,8 @@ public class TasksView extends ViewPart {
 	private TaskSearchCritieria searchCriteria = new TaskSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
-	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
-	private ITaskDAO taskDAO = ServiceLocator.locateCurrent(ITaskDAO.class);
+	private SettingsService settingsService = ServiceLocator.locateCurrent(SettingsService.class);
+	private ITaskService taskService = ServiceLocator.locateCurrent(ITaskService.class);
 
 	private IApplicationSettings settings = null;
 	private Text taskNameText;
@@ -88,7 +88,7 @@ public class TasksView extends ViewPart {
 	 */
 	public TasksView() {
 		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
-		settings = settingsFactory.getApplicationSettings();
+		settings = settingsService.getApplicationSettings();
 		tasks = new ArrayList<Task>();
 	}
 
@@ -262,7 +262,7 @@ public class TasksView extends ViewPart {
 		task.setName("Name");
 		task.setDescription("Description");
 		task.setAccount(securityService.getCurrentlyLoggedInUser());
-		taskDAO.persist(task);
+		taskService.getTaskRepository().saveAndFlush(task);
 		tasks.add(task);
 		WritableList writableList = new WritableList(tasks, Task.class);
 		tableViewer.setInput(writableList);
@@ -279,7 +279,7 @@ public class TasksView extends ViewPart {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Task task = (Task) transaction.getFirstElement();		
 		tasks.clear();
-		taskDAO.delete(task);
+		taskService.getTaskRepository().delete(task);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
 	}
@@ -303,7 +303,7 @@ public class TasksView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		tasks = taskDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+		tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 				settings.getNumberOfItemsToShowPerPage());
 		WritableList writableList = new WritableList(tasks, Task.class);
 		tableViewer.setInput(writableList);
@@ -336,7 +336,7 @@ public class TasksView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						tasks = taskDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(tasks, Task.class);
 						tableViewer.setInput(writableList);
@@ -353,7 +353,7 @@ public class TasksView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						tasks = taskDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(tasks, Task.class);
 						tableViewer.setInput(writableList);
@@ -375,7 +375,7 @@ public class TasksView extends ViewPart {
 		// entries
 		long currentPageCount = tasks.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && taskDAO
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && taskService.getTaskRepository()
 				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
 						settings.getNumberOfItemsToShowPerPage()) == 0)) {
 			nextPageButton.setEnabled(false);
@@ -411,7 +411,7 @@ public class TasksView extends ViewPart {
 						IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 						Task task = (Task) transaction.getFirstElement();
 						if (task != null) {
-							task = taskDAO.merge(task);
+							task = taskService.getTaskRepository().saveAndFlush(task);
 							tableViewer.refresh();
 						}
 					}

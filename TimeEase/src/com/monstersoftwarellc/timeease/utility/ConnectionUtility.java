@@ -29,16 +29,11 @@ import org.eclipse.jface.operation.IRunnableWithProgress;
 import sun.misc.BASE64Encoder;
 
 import com.monstersoftwarellc.timeease.TimeEaseSession;
-import com.monstersoftwarellc.timeease.integration.Integration;
 import com.monstersoftwarellc.timeease.integration.IntegrationType;
 import com.monstersoftwarellc.timeease.integration.freshbooks.FreshBooksIntegration;
-import com.monstersoftwarellc.timeease.integration.freshbooks.FreshbooksClientService;
-import com.monstersoftwarellc.timeease.model.client.ClientRequest;
-import com.monstersoftwarellc.timeease.model.enums.RequestMethods;
 import com.monstersoftwarellc.timeease.model.enums.ResponseStatus;
-import com.monstersoftwarellc.timeease.model.impl.Client;
-import com.monstersoftwarellc.timeease.property.SettingsFactory;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.SettingsService;
 import com.sun.net.ssl.internal.ssl.Provider;
  
 /**
@@ -86,7 +81,7 @@ public class ConnectionUtility {
 		BufferedReader bufferedReader = null;
 		StringBuffer stringBuffer = new StringBuffer();
 		FreshBooksIntegration details = null; 
-		List<IntegrationType> integrations = ServiceLocator.locateCurrent(SettingsFactory.class).getApplicationSettings().getIntegrations();
+		List<IntegrationType> integrations = ServiceLocator.locateCurrent(SettingsService.class).getApplicationSettings().getIntegrations();
 		for(IntegrationType integration : integrations){
 			// TODO: add way to configure the integration types
 			/*if(integration instanceof FreshBooksIntegration){
@@ -257,13 +252,13 @@ public class ConnectionUtility {
 	 */
 	public static void checkFreshbooksCredentials() throws AuthenticationException, IllegalStateException, ConfigurationException{
 		if(areWeOnline()){
-			ClientRequest request = new ClientRequest();
+			/*ClientRequest request = new ClientRequest();
 			request.setItemsPerPage(1);
 			request.setPage(1);
 			request.setMethod(RequestMethods.LIST);
 			request.setEntity(new Client());
 			String requestString = FreshbooksRequestUtility.getRequest(request);
-			ConnectionUtility.performRequest(requestString);
+			ConnectionUtility.performRequest(requestString);*/
 		}
 	}
 

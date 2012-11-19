@@ -8,8 +8,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.monstersoftwarellc.timeease.dao.IAccountDAO;
 import com.monstersoftwarellc.timeease.model.impl.Account;
+import com.monstersoftwarellc.timeease.service.IAccountService;
 import com.monstersoftwarellc.timeease.utility.PasswordUtility;
 
 
@@ -21,12 +21,12 @@ import com.monstersoftwarellc.timeease.utility.PasswordUtility;
 public class CreateDatabaseForTesting implements ICreateDatabaseForTesting {
 
 	@Autowired
-	private IAccountDAO userDAO;
+	private IAccountService accountService;
 
 	public void createTestUpdateDatabase(boolean devMode) {
 		List<Account> listTest = null;
 		try{
-			listTest = userDAO.findAllOrderBy("name");
+			listTest = accountService.getAccountRepository().findAll();
 		}catch(IllegalArgumentException ex){
 			// no db.. 
 		}
@@ -48,7 +48,7 @@ public class CreateDatabaseForTesting implements ICreateDatabaseForTesting {
 		user.setLastName("Dude");
 		user.setPassword(PasswordUtility.encodePassword("admin"));
 		user.setUsername("admin");
-		userDAO.persist(user);
+		accountService.getAccountRepository().saveAndFlush(user);
 	}
 
 }

@@ -26,7 +26,7 @@ import org.eclipse.swt.widgets.Text;
 import com.monstersoftwarellc.timeease.property.IPropertyMetadata;
 import com.monstersoftwarellc.timeease.property.IPropertyProxy;
 import com.monstersoftwarellc.timeease.property.ISpelService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 import com.monstersoftwarellc.timeease.widgets.CustomLabelProvider;
 
 /**

@@ -14,11 +14,11 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.services.ISourceProviderService;
 
-import com.monstersoftwarellc.timeease.dao.IEntryDAO;
 import com.monstersoftwarellc.timeease.enums.SearchOperators;
 import com.monstersoftwarellc.timeease.model.WhereClause;
 import com.monstersoftwarellc.timeease.model.impl.Entry;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.IEntryService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 import com.monstersoftwarellc.timeease.utility.TimeUtil;
 
 /**
@@ -37,17 +37,14 @@ public class ClockOutCommand extends AbstractHandler {
 		// here just clock out and set the hours
 		// here we also need to present a dialog that gives them
 		// the ability to update the entry from the defaults.
-		List<WhereClause> clauses = new ArrayList<WhereClause>();
-		clauses.add(new WhereClause("startTime", null, SearchOperators.NOT_EQUAL_TO));
-		clauses.add(new WhereClause("endTime", null, SearchOperators.EQUAL_TO));
-		List<Entry> entries = ServiceLocator.locateCurrent(IEntryDAO.class).findAllOrderBy(clauses, true, "entryDate");
+		List<Entry> entries = ServiceLocator.locateCurrent(IEntryService.class).getEntryRepository().findIncompleteEntries();
 		Entry entry = entries.get(0);
 		Date now = new Date();
 		entry.setEndTime(now);
 		entry.setHours(TimeUtil.getDuration(entry.getStartTime().getTime(), now.getTime()));
 		entry.setNotes(entry.getNotes() + " - Clocked Out");
 		// persist new entry
-		ServiceLocator.locateCurrent(IEntryDAO.class).merge(entry);
+		ServiceLocator.locateCurrent(IEntryService.class).getEntryRepository().saveAndFlush(entry);
 		// spark an event so that we re-evaluate the command bindings
 		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindow(event); 
 		// get the service 

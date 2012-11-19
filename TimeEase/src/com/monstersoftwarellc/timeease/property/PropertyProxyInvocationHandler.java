@@ -14,7 +14,7 @@ import java.util.Map;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
 
-import com.monstersoftwarellc.timeease.dao.IPropertyDAO;
+import com.google.common.collect.Ordering;
 import com.monstersoftwarellc.timeease.model.impl.Property;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyChoice;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyDefault;
@@ -24,18 +24,17 @@ import com.monstersoftwarellc.timeease.property.annotations.PropertyListType;
 import com.monstersoftwarellc.timeease.property.annotations.PropertySequence;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyShared;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyUiCustomize;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
-import com.google.common.collect.Ordering;
+import com.monstersoftwarellc.timeease.service.ISettingsService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 /**
  * Handler for all property access
  */
-
 class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProxy {
 	
-	private static final IPropertyDAO propertyDAO = ServiceLocator.locateCurrent(IPropertyDAO.class);
-	
 	private static final ISpelService spelService = ServiceLocator.locateCurrent(ISpelService.class);
+	
+	private static ISettingsService settingsService = ServiceLocator.locateCurrent(ISettingsService.class);
 
 	private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
 	
@@ -68,7 +67,7 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 	
 	/**
 	 * @param propertyClass
-	 * @param propertyService TODO
+	 * @param settingsService TODO
 	 */
 	public PropertyProxyInvocationHandler(Class<?> propertyClass) {
 		super();
@@ -282,7 +281,7 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 		property.setValue(value);
 		propertyChangeSupport.firePropertyChange(meta.getName(), oldValue, value);
 		
-		propertyDAO.merge(property);
+		settingsService.getPropertyRepository().saveAndFlush(property);
 	}
 
 	/* (non-Javadoc)
@@ -298,15 +297,19 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 	}
 	
 	private Property findProperty(PropertyMetadata meta){
-		Property property = propertyDAO.findByName(meta.getLongName());
+		Property property = settingsService.findByName(meta.getLongName());
+		
+		if(settingsService != null){
+			LOG.error("Do we have a valid repository ? : " + settingsService.getPropertyRepository());
+		}
 		
 		if(property == null){
 			property = new Property();
 			property.setPropertyName(meta.getLongName());
-			// add the property since it doesn't exist in the db
-			propertyDAO.persist(property);
+			// add the property since it doesn't exist in the db 
+			settingsService.getPropertyRepository().saveAndFlush(property);
 			property = null;
-			property = propertyDAO.findByName(meta.getLongName());
+			property = settingsService.findByName(meta.getLongName());
 		}
 		
 		property.setPropertyShared(meta.isShared());

@@ -3,7 +3,6 @@
  */
 package com.monstersoftwarellc.timeease.view;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.core.databinding.DataBindingContext;
@@ -39,17 +38,18 @@ import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.part.ViewPart;
 import org.eclipse.wb.swt.SWTResourceManager;
+import org.springframework.data.domain.Sort;
 
 import swing2swt.layout.BorderLayout;
 
-import com.monstersoftwarellc.timeease.dao.IClientDAO;
 import com.monstersoftwarellc.timeease.model.impl.Client;
 import com.monstersoftwarellc.timeease.property.IApplicationSettings;
-import com.monstersoftwarellc.timeease.property.SettingsFactory;
 import com.monstersoftwarellc.timeease.search.ClientSearchCritieria;
 import com.monstersoftwarellc.timeease.search.dialogs.ClientSearchCriteriaDialog;
+import com.monstersoftwarellc.timeease.service.IClientService;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.SettingsService;
 
 /**
  * @author nick
@@ -74,8 +74,8 @@ public class ClientsView extends ViewPart {
 	private ClientSearchCritieria searchCriteria = new ClientSearchCritieria();	
 
 	private ISecurityService securityService = ServiceLocator.locateCurrent(ISecurityService.class);
-	private SettingsFactory settingsFactory = ServiceLocator.locateCurrent(SettingsFactory.class);
-	private IClientDAO clientDAO = ServiceLocator.locateCurrent(IClientDAO.class);
+	private SettingsService settingsService = ServiceLocator.locateCurrent(SettingsService.class);
+	private IClientService clientService = ServiceLocator.locateCurrent(IClientService.class);
 
 	private IApplicationSettings settings = null;
 	private Text clientFirstNameText;
@@ -87,8 +87,8 @@ public class ClientsView extends ViewPart {
 	 */
 	public ClientsView() {
 		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
-		clients = new ArrayList<Client>();
-		settings = settingsFactory.getApplicationSettings();
+		clients = clientService.getClientRepository().findByAccount(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.ASC, "firstName"));
+		settings = settingsService.getApplicationSettings();
 	}
 
 	/**
@@ -248,7 +248,7 @@ public class ClientsView extends ViewPart {
 		client.setFirstName("First Name");
 		client.setLastName("Last Name");
 		client.setAccount(securityService.getCurrentlyLoggedInUser());
-		clientDAO.persist(client);
+		clientService.getClientRepository().saveAndFlush(client);
 		clients.add(client);
 		WritableList writableList = new WritableList(clients, Client.class);
 		tableViewer.setInput(writableList);
@@ -265,7 +265,7 @@ public class ClientsView extends ViewPart {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Client client = (Client) transaction.getFirstElement();		
 		clients.clear();
-		clientDAO.delete(client);
+		clientService.getClientRepository().delete(client);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
 	}
@@ -287,7 +287,8 @@ public class ClientsView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		clients = clientDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+// TODO: fix the search critieria stuff to use JPA 2
+		clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 				settings.getNumberOfItemsToShowPerPage());
 		WritableList writableList = new WritableList(clients, Client.class);
 		tableViewer.setInput(writableList);
@@ -320,7 +321,7 @@ public class ClientsView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						clients = clientDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(clients, Client.class);
 						tableViewer.setInput(writableList);
@@ -337,7 +338,7 @@ public class ClientsView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						clients = clientDAO.getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
+						clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
 								settings.getNumberOfItemsToShowPerPage());
 						WritableList writableList = new WritableList(clients, Client.class);
 						tableViewer.setInput(writableList);
@@ -359,9 +360,9 @@ public class ClientsView extends ViewPart {
 		// entries
 		long currentPageCount = clients.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && clientDAO
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage()/* && clientService
 				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
-						settings.getNumberOfItemsToShowPerPage()) == 0)) {
+						settings.getNumberOfItemsToShowPerPage()) == 0)*/)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);
@@ -395,7 +396,7 @@ public class ClientsView extends ViewPart {
 						IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 						Client client = (Client) transaction.getFirstElement();
 						if (client != null) {
-							client = clientDAO.merge(client);
+							client = clientService.getClientRepository().saveAndFlush(client);
 							tableViewer.refresh();
 						}
 					}

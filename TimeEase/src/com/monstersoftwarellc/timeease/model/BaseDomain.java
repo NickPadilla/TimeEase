@@ -20,7 +20,7 @@ import org.eclipse.persistence.annotations.Index;
 
 import com.monstersoftwarellc.timeease.model.impl.Account;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 /**
  * @author nicholas

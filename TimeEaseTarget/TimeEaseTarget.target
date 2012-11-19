@@ -1,29 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?pde version="3.8"?><target name="Time Ease Target" sequenceNumber="70">
+<?pde version="3.8"?><target name="Time Ease Target" sequenceNumber="72">
 <locations>
 <location path="${project_loc}/blueprint" type="Directory"/>
-<location path="${project_loc}/spring" type="Directory"/>
-<location path="${project_loc}/delta.pack/eclipse" type="Directory"/>
-<location path="${project_loc}/extras" type="Directory"/>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.help.feature.group" version="1.4.0.v20120608-133537-8P7vFOTFK_Qj4JmDIQXL8Tn"/>
-<repository location="http://download.eclipse.org/releases/juno"/>
-</location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.wb.swt.feature.feature.group" version="1.5.0.r42x201206111304"/>
-<repository location="http://download.eclipse.org/releases/juno"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.persistence.sdk.feature.group" version="2.4.0.v20120613-r11652"/>
-<repository location="http://download.eclipse.org/releases/juno"/>
-</location>
-<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
-<unit id="org.eclipse.equinox.sdk.feature.group" version="3.8.0.v20120522-1841-7M7fA78g5_y-eMftHxcd13UXuq5J"/>
 <repository location="http://download.eclipse.org/releases/juno"/>
 </location>
 <location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
 <unit id="org.eclipse.pde.feature.group" version="3.8.0.v20120525-1249-7c7vFitFFt6Zr5a12MM4IKMFZ"/>
 <repository location="http://download.eclipse.org/releases/juno"/>
 </location>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.equinox.sdk.feature.group" version="3.8.0.v20120522-1841-7M7fA78g5_y-eMftHxcd13UXuq5J"/>
+<repository location="http://download.eclipse.org/releases/juno"/>
+</location>
+<location path="${project_loc}/extras" type="Directory"/>
+<location path="${project_loc}/spring" type="Directory"/>
+<location includeAllPlatforms="false" includeConfigurePhase="true" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.help.feature.group" version="1.4.0.v20120608-133537-8P7vFOTFK_Qj4JmDIQXL8Tn"/>
+<repository location="http://download.eclipse.org/releases/juno"/>
+</location>
+<location path="${project_loc}/delta.pack/eclipse" type="Directory"/>
+<location path="${project_loc}/eclipseLink" type="Directory"/>
 </locations>
 </target>

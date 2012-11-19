@@ -19,7 +19,7 @@ import org.eclipse.ui.part.ViewPart;
 import com.monstersoftwarellc.timeease.property.IApplicationSettings;
 import com.monstersoftwarellc.timeease.property.IPropertyProxy;
 import com.monstersoftwarellc.timeease.property.ui.PropertyComposite;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 
 

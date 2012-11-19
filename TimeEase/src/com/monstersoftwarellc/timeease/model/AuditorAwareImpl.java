@@ -16,7 +16,7 @@ import org.eclipse.persistence.sessions.Session;
 
 import com.monstersoftwarellc.timeease.model.impl.Account;
 import com.monstersoftwarellc.timeease.service.ISecurityService;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 
 /**

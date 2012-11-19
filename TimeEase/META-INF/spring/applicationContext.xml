@@ -6,6 +6,7 @@
 		xmlns:neo4j="http://www.springframework.org/schema/data/neo4j"
 		xmlns:util="http://www.springframework.org/schema/util"
 		xmlns:p="http://www.springframework.org/schema/p"
+		xmlns:jpa="http://www.springframework.org/schema/data/jpa"
 		xsi:schemaLocation="http://www.springframework.org/schema/beans
 							http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
 							http://www.springframework.org/schema/context
@@ -15,7 +16,9 @@
 							http://www.springframework.org/schema/data/neo4j
 							http://www.springframework.org/schema/data/neo4j/spring-neo4j-2.0.xsd
 							http://www.springframework.org/schema/util
-							http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+							http://www.springframework.org/schema/util/spring-util-3.1.xsd
+							http://www.springframework.org/schema/data/jpa
+							http://www.springframework.org/schema/data/jpa/spring-jpa.xsd">
 
 <!-- 	<bean id="bootstrap" class="com.goldrush.migrations.MigrationBootstrap" init-method="initialize">
 		<property name="dataSource" ref="dataSource" />
@@ -27,11 +30,17 @@
     <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
     -->
 
+	<!-- enable annotation driven config -->
+	<context:annotation-config />
+	
 	<!-- database solution -->
 	
 	<!-- transaction management -->
 	<tx:annotation-driven />
  	
+	<!-- Directory to scan for repository classes -->
+	<jpa:repositories base-package="bin.com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
+	
  	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />
 		<property name="url" value="jdbc:derby:timeease_db;create=true" />
@@ -41,6 +50,7 @@
 		<property name="driverClassName" value="org.h2.Driver" />
 		<property name="url" value="jdbc:h2:timeease_db;CACHE_SIZE=131072" />
 	</bean> -->
+	
 	<!-- jpa properties -->
 	<util:map id="jpaMap">
 		<!-- need the deploy-on-startup so that the metamodel gets created before first use -->
@@ -84,41 +94,27 @@
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"		
 			p:dataSource-ref="dataSource"
 			p:jpaVendorAdapter-ref="eclipseLinkVendor-Derby"
-			p:jpaPropertyMap-ref="jpaMap" >	
-<!-- 		<property name="loadTimeWeaver">
-        	<bean class="org.eclipse.equinox.weaving.springweaver.EquinoxAspectsLoadTimeWeaver">
-                <property name="weaverScope" value="APPLICATION" />
-            </bean>
-        </property> -->
+			p:jpaPropertyMap-ref="jpaMap"
+			p:packagesToScan="bin.com.monstersoftwarellc.timeease.model.impl,com.monstersoftwarellc.timeease.model.impl" >	
 <!-- 	    <property name="persistenceUnitPostProcessors">
 	      <list>
 	         <ref bean="bootstrap"/>
 	      </list>
 	   </property> -->
     </bean>
- 	
+    
+	<!-- transaction management -->
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
 			p:entityManagerFactory-ref="entityManagerFactory" />
 	
-	<bean id="defaultTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate"
-		  	p:transactionManager-ref="transactionManager">
-		  <qualifier value="defaultTransactionTemplate"/>
-	</bean>
-
-	<bean id="requireNewTransactionTemplate" class="org.springframework.transaction.support.TransactionTemplate"
-		  	p:transactionManager-ref="transactionManager" 
-		  	p:propagationBehaviorName="PROPAGATION_REQUIRES_NEW">
-		  <qualifier value="requiresNewTransactionTemplate"/>
-	</bean>	
-	
-	<bean id="serviceLocator" factory-method="getCurrentInstance" class="com.monstersoftwarellc.timeease.service.ServiceLocator" />
+	<bean id="serviceLocator" factory-method="getCurrentInstance" class="com.monstersoftwarellc.timeease.service.impl.ServiceLocator" />
 
 	<!-- Scans the class path of this application for @Components to deploy as beans. bin is added so it will work in dev problem with Eclipse-->
 	<context:component-scan base-package="bin.com.monstersoftwarellc.timeease,com.monstersoftwarellc.timeease" />
 	
 	<bean id="applicationSettings" 
 		  class="com.monstersoftwarellc.timeease.property.IApplicationSettings"
-		  factory-bean="settingsFactory"
+		  factory-bean="settingsService"
 		  factory-method="getApplicationSettings" lazy-init="true">
 	</bean>
 	

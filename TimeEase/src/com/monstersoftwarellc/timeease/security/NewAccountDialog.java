@@ -1,7 +1,5 @@
 package com.monstersoftwarellc.timeease.security;
 
-import java.util.Collections;
-
 import org.eclipse.jface.dialogs.IDialogConstants;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.jface.dialogs.TitleAreaDialog;
@@ -18,10 +16,9 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Shell;
 import org.eclipse.swt.widgets.Text;
 
-import com.monstersoftwarellc.timeease.dao.IAccountDAO;
-import com.monstersoftwarellc.timeease.model.WhereClause;
 import com.monstersoftwarellc.timeease.model.impl.Account;
-import com.monstersoftwarellc.timeease.service.ServiceLocator;
+import com.monstersoftwarellc.timeease.service.IAccountService;
+import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 import com.monstersoftwarellc.timeease.utility.PasswordUtility;
 
 public class NewAccountDialog extends TitleAreaDialog {
@@ -32,7 +29,7 @@ public class NewAccountDialog extends TitleAreaDialog {
 	private Text passwordText;
 	private Text passwordVerifyText;
 	
-	private IAccountDAO userDAO;
+	private IAccountService accountService;
 
 	/**
 	 * Create the dialog.
@@ -40,7 +37,7 @@ public class NewAccountDialog extends TitleAreaDialog {
 	 */
 	public NewAccountDialog(Shell parentShell) {
 		super(parentShell);
-		userDAO = ServiceLocator.locateCurrent(IAccountDAO.class);
+		accountService = ServiceLocator.locateCurrent(IAccountService.class);
 	}
 
 	/**
@@ -99,7 +96,7 @@ public class NewAccountDialog extends TitleAreaDialog {
 				if(loginNameText.getText().isEmpty() || passwordText.getText().isEmpty() || passwordVerifyText.getText().isEmpty()){
 					MessageDialog.openError(getShell(), "Missing Data!", "Please fill out Login Name and Password fields!");					
 				}else{
-					if(userDAO.findAllOrderBy(Collections.singletonList(new WhereClause("username",loginNameText.getText())), true).isEmpty()){
+					if(accountService.getAccountRepository().findByUsername(loginNameText.getText()) == null){
 						if(passwordVerifyText.getText().equals(passwordText.getText())){
 							// encrypt password and save user
 							Account user = new Account();
@@ -107,7 +104,7 @@ public class NewAccountDialog extends TitleAreaDialog {
 							user.setLastName(lastNameText.getText());
 							user.setPassword(PasswordUtility.encodePassword(passwordText.getText()));
 							user.setUsername(loginNameText.getText());
-							userDAO.persist(user);
+							accountService.getAccountRepository().saveAndFlush(user);
 							okPressed();
 						}else{
 							// passwords don't match

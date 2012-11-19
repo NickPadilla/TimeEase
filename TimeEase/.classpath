@@ -10,6 +10,10 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="dbmigrations"/>
 	<classpathentry kind="src" path="config"/>
-	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="src" path="metamodel">
+		<attributes>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

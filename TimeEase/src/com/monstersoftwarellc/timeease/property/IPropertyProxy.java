@@ -5,6 +5,7 @@ package com.monstersoftwarellc.timeease.property;
 
 import java.util.List;
 
+
 /**
  * All property proxies returned by {@link IPropertyService#getProperties(Class)} will automatically implement this interface.
  * @author navid
