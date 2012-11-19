@@ -3,14 +3,13 @@
  */
 package com.monstersoftwarellc.timeease.repository;
 
-import java.util.List;
-
 import javax.persistence.EntityManager;
 
+import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
-import com.monstersoftwarellc.timeease.enums.OrderType;
+import com.monstersoftwarellc.timeease.property.IApplicationSettings;
 import com.monstersoftwarellc.timeease.search.ISearchCritiera;
 
 /**
@@ -26,7 +25,7 @@ public interface IRepository<T> extends JpaRepository<T, Long>, JpaSpecification
 	 * @param page
 	 * @return
 	 */
-	List<T> getSearchListForPage(ISearchCritiera searchCriteria, OrderType defaultOrderType, int page, int numberOfItems);
+	Page<T> getSearchListPage(ISearchCritiera<T> searchCriteria, int page, IApplicationSettings settings);
 	
 	/**
 	 * Will return the count based on the given search criteria.
@@ -34,5 +33,5 @@ public interface IRepository<T> extends JpaRepository<T, Long>, JpaSpecification
 	 * @param page
 	 * @return
 	 */
-	long getRecordCountFromSearchListForPage(ISearchCritiera searchCriteria, OrderType defaultOrderType, int page, int numberOfItems);
+	int getSearchListPageCount(ISearchCritiera<T> searchCriteria, int page, IApplicationSettings settings);
 }

@@ -287,9 +287,7 @@ public class ClientsView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-// TODO: fix the search critieria stuff to use JPA 2
-		clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-				settings.getNumberOfItemsToShowPerPage());
+		clients = clientService.getClientRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 		WritableList writableList = new WritableList(clients, Client.class);
 		tableViewer.setInput(writableList);
 		if (previousPageButton != null) {
@@ -321,8 +319,7 @@ public class ClientsView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						clients = clientService.getClientRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(clients, Client.class);
 						tableViewer.setInput(writableList);
 						nextPageButton.setEnabled(true);
@@ -338,8 +335,7 @@ public class ClientsView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						clients = clientService.getClientRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						clients = clientService.getClientRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(clients, Client.class);
 						tableViewer.setInput(writableList);
 						setNextEnabledState();
@@ -360,9 +356,8 @@ public class ClientsView extends ViewPart {
 		// entries
 		long currentPageCount = clients.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage()/* && clientService
-				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
-						settings.getNumberOfItemsToShowPerPage()) == 0)*/)) {
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
+					&& clientService.getClientRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

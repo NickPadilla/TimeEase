@@ -554,8 +554,7 @@ public class EntriesView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-				settings.getNumberOfItemsToShowPerPage());
+		entries = entryService.getEntryRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 		WritableList writableList = new WritableList(entries, Entry.class);
 		tableViewer.setInput(writableList);
 		if (previousPageButton != null) {
@@ -587,8 +586,7 @@ public class EntriesView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						entries = entryService.getEntryRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(entries, Entry.class);
 						tableViewer.setInput(writableList);
 						nextPageButton.setEnabled(true);
@@ -604,8 +602,7 @@ public class EntriesView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						entries = entryService.getEntryRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						entries = entryService.getEntryRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(entries, Entry.class);
 						tableViewer.setInput(writableList);
 						setNextEnabledState();
@@ -626,9 +623,8 @@ public class EntriesView extends ViewPart {
 		// entries
 		long currentPageCount = entries.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && entryService.getEntryRepository()
-				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
-						settings.getNumberOfItemsToShowPerPage()) == 0)) {
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
+					&& entryService.getEntryRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

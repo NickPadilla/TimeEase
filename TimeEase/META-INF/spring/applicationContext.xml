@@ -40,6 +40,8 @@
  	
 	<!-- Directory to scan for repository classes -->
 	<jpa:repositories base-package="bin.com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
+	<jpa:repositories base-package="com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
+	
 	
  	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />

@@ -299,10 +299,6 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 	private Property findProperty(PropertyMetadata meta){
 		Property property = settingsService.findByName(meta.getLongName());
 		
-		if(settingsService != null){
-			LOG.error("Do we have a valid repository ? : " + settingsService.getPropertyRepository());
-		}
-		
 		if(property == null){
 			property = new Property();
 			property.setPropertyName(meta.getLongName());

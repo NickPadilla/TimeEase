@@ -329,8 +329,7 @@ public class ProjectsView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-				settings.getNumberOfItemsToShowPerPage());
+		projects = projectService.getProjectRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 		WritableList writableList = new WritableList(projects, Project.class);
 		tableViewer.setInput(writableList);
 		if (previousPageButton != null) {
@@ -362,8 +361,7 @@ public class ProjectsView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						projects = projectService.getProjectRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(projects, Project.class);
 						tableViewer.setInput(writableList);
 						nextPageButton.setEnabled(true);
@@ -379,8 +377,7 @@ public class ProjectsView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						projects = projectService.getProjectRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						projects = projectService.getProjectRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(projects, Project.class);
 						tableViewer.setInput(writableList);
 						setNextEnabledState();
@@ -401,9 +398,8 @@ public class ProjectsView extends ViewPart {
 		// entries
 		long currentPageCount = projects.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && projectService.getProjectRepository()
-				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
-						settings.getNumberOfItemsToShowPerPage()) == 0)) {
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
+					&& projectService.getProjectRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

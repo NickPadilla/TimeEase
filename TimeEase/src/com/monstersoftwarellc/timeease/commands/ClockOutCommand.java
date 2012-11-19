@@ -3,7 +3,6 @@
  */
 package com.monstersoftwarellc.timeease.commands;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,8 +13,6 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
 import org.eclipse.ui.services.ISourceProviderService;
 
-import com.monstersoftwarellc.timeease.enums.SearchOperators;
-import com.monstersoftwarellc.timeease.model.WhereClause;
 import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.service.IEntryService;
 import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;

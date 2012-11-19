@@ -3,24 +3,29 @@
  */
 package com.monstersoftwarellc.timeease.search;
 
-import javax.persistence.OrderBy;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.monstersoftwarellc.timeease.annotations.MappedColumnName;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.jpa.domain.Specifications;
+
 import com.monstersoftwarellc.timeease.model.AbstractPropertChangeSupport;
 import com.monstersoftwarellc.timeease.model.impl.Account;
+import com.monstersoftwarellc.timeease.model.impl.Client;
+import com.monstersoftwarellc.timeease.model.impl.Client_;
+import com.monstersoftwarellc.timeease.repository.specification.ClientSpecifications;
+import com.monstersoftwarellc.timeease.utility.SpecificationUtility;
 
 /**
  * @author nicholas
  *
  */
-public class ClientSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera {
+public class ClientSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera<Client> {
 
-	@OrderBy
 	private String firstName;
-	@OrderBy
 	private String lastName;
 	private String organization;
-	@MappedColumnName
 	private Account account;
 
 
@@ -91,6 +96,48 @@ public class ClientSearchCritieria extends AbstractPropertChangeSupport implemen
 	@Override
 	public String getLabel() {
 		return "Client Search";
+	}
+
+
+	@Override
+	public Specifications<Client> getQuerySpecifications() {
+		List<Specification<Client>> clientSpecs = new ArrayList<Specification<Client>>();
+		
+		if (firstName != null) {
+			clientSpecs.add(ClientSpecifications.searchForFirstName(firstName));
+		}
+		
+		if (lastName != null) {
+			clientSpecs.add(ClientSpecifications.searchForLastName(lastName));
+		}
+		
+		if (organization != null) {
+			clientSpecs.add(ClientSpecifications.searchForOrganization(organization));
+		}
+		
+		if (account != null) {
+			clientSpecs.add(ClientSpecifications.searchForAccount(account));
+		}
+		
+		// now build out our query
+		Specifications<Client> spec = null;
+		for(Specification<Client> s : clientSpecs){
+				if(spec == null){
+					spec = Specifications.where(s);
+				}else{
+					spec = spec.and(s);
+				}
+		}
+
+		return spec;
+	}
+
+
+	@Override
+	public Sort getSort() {
+		Sort sort = new Sort(SpecificationUtility.getSortDirection(), Client_.firstName.getName());
+		sort.and(new Sort(Client_.lastName.getName()));
+		return sort;
 	}
 
 }

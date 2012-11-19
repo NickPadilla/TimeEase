@@ -3,22 +3,27 @@
  */
 package com.monstersoftwarellc.timeease.search;
 
-import javax.persistence.OrderBy;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.monstersoftwarellc.timeease.annotations.MappedColumnName;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.jpa.domain.Specifications;
+
 import com.monstersoftwarellc.timeease.model.AbstractPropertChangeSupport;
 import com.monstersoftwarellc.timeease.model.impl.Account;
+import com.monstersoftwarellc.timeease.model.impl.Task;
+import com.monstersoftwarellc.timeease.model.impl.Task_;
+import com.monstersoftwarellc.timeease.repository.specification.TaskSpecifications;
+import com.monstersoftwarellc.timeease.utility.SpecificationUtility;
 
 /**
  * @author nicholas
  *
  */
-public class TaskSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera {
+public class TaskSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera<Task> {
 
-	@OrderBy
-	@MappedColumnName(useLikeForWhereClause=true,caseSensitive=false)
 	private String name;
-	@MappedColumnName
 	private Account account;
 
 	/**
@@ -55,6 +60,37 @@ public class TaskSearchCritieria extends AbstractPropertChangeSupport implements
 	@Override
 	public String getLabel() {
 		return "Task Search";
+	}
+
+	@Override
+	public Specifications<Task> getQuerySpecifications() {
+		List<Specification<Task>> projectSpecs = new ArrayList<Specification<Task>>();
+		
+		if (name != null) {
+			projectSpecs.add(TaskSpecifications.searchForNameLike(name));
+		}
+		
+		if (account != null) {
+			projectSpecs.add(TaskSpecifications.searchForAccount(account));
+		}
+		
+		// now build out our query
+		Specifications<Task> spec = null;
+		for(Specification<Task> s : projectSpecs){
+				if(spec == null){
+					spec = Specifications.where(s);
+				}else{
+					spec = spec.and(s);
+				}
+		}
+
+		return spec;
+	}
+
+	@Override
+	public Sort getSort() {
+		Sort sort = new Sort(SpecificationUtility.getSortDirection(), Task_.name.getName());
+		return sort;
 	}
 
 }

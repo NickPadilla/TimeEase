@@ -13,6 +13,6 @@ public interface ISearchCritieraDialog {
 	 * Returns the {@link ISearchCritiera} needed for this dialog.
 	 * @return
 	 */
-	public abstract ISearchCritiera getCriteria();
+	public abstract ISearchCritiera<?> getCriteria();
 	
 }

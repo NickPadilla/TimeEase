@@ -3,22 +3,27 @@
  */
 package com.monstersoftwarellc.timeease.search;
 
-import javax.persistence.OrderBy;
+import java.util.ArrayList;
+import java.util.List;
 
-import com.monstersoftwarellc.timeease.annotations.MappedColumnName;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.data.jpa.domain.Specifications;
+
 import com.monstersoftwarellc.timeease.model.AbstractPropertChangeSupport;
 import com.monstersoftwarellc.timeease.model.impl.Account;
+import com.monstersoftwarellc.timeease.model.impl.Project;
+import com.monstersoftwarellc.timeease.model.impl.Project_;
+import com.monstersoftwarellc.timeease.repository.specification.ProjectSpecifications;
+import com.monstersoftwarellc.timeease.utility.SpecificationUtility;
 
 /**
  * @author nicholas
  *
  */
-public class ProjectSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera {
+public class ProjectSearchCritieria extends AbstractPropertChangeSupport implements ISearchCritiera<Project> {
 
-	@OrderBy
-	@MappedColumnName(useLikeForWhereClause=true,caseSensitive=false)
 	private String name;
-	@MappedColumnName
 	private Account account;
 
 	/**
@@ -57,4 +62,34 @@ public class ProjectSearchCritieria extends AbstractPropertChangeSupport impleme
 		return "Project Search";
 	}
 
+	@Override
+	public Specifications<Project> getQuerySpecifications() {
+		List<Specification<Project>> projectSpecs = new ArrayList<Specification<Project>>();
+		
+		if (name != null) {
+			projectSpecs.add(ProjectSpecifications.searchForNameLike(name));
+		}
+		
+		if (account != null) {
+			projectSpecs.add(ProjectSpecifications.searchForAccount(account));
+		}
+		
+		// now build out our query
+		Specifications<Project> spec = null;
+		for(Specification<Project> s : projectSpecs){
+				if(spec == null){
+					spec = Specifications.where(s);
+				}else{
+					spec = spec.and(s);
+				}
+		}
+
+		return spec;
+	}
+
+	@Override
+	public Sort getSort() {
+		Sort sort = new Sort(SpecificationUtility.getSortDirection(), Project_.name.getName());
+		return sort;
+	}
 }

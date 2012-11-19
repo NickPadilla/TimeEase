@@ -303,8 +303,7 @@ public class TasksView extends ViewPart {
 	 */
 	private void reloadEntriesBasedOnCriteria() {
 		page = 0;
-		tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-				settings.getNumberOfItemsToShowPerPage());
+		tasks = taskService.getTaskRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 		WritableList writableList = new WritableList(tasks, Task.class);
 		tableViewer.setInput(writableList);
 		if (previousPageButton != null) {
@@ -336,8 +335,7 @@ public class TasksView extends ViewPart {
 						if (page == 0) {
 							previousPageButton.setEnabled(false);
 						}
-						tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						tasks = taskService.getTaskRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(tasks, Task.class);
 						tableViewer.setInput(writableList);
 						nextPageButton.setEnabled(true);
@@ -353,8 +351,7 @@ public class TasksView extends ViewPart {
 					@Override
 					public void widgetSelected(SelectionEvent e) {
 						++page;
-						tasks = taskService.getTaskRepository().getSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page, 
-								settings.getNumberOfItemsToShowPerPage());
+						tasks = taskService.getTaskRepository().getSearchListPage(searchCriteria, page, settings).getContent();
 						WritableList writableList = new WritableList(tasks, Task.class);
 						tableViewer.setInput(writableList);
 						setNextEnabledState();
@@ -375,9 +372,8 @@ public class TasksView extends ViewPart {
 		// entries
 		long currentPageCount = tasks.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
-				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() && taskService.getTaskRepository()
-				.getRecordCountFromSearchListForPage(searchCriteria, settings.getDefaultSortOrder(), page + 1, 
-						settings.getNumberOfItemsToShowPerPage()) == 0)) {
+				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
+					&& taskService.getTaskRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);
