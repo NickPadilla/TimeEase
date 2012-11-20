@@ -13,7 +13,6 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 
-import com.monstersoftwarellc.timeease.enums.ILabel;
 import com.monstersoftwarellc.timeease.model.AbstractModelInput;
 
 /**
@@ -21,7 +20,7 @@ import com.monstersoftwarellc.timeease.model.AbstractModelInput;
  *
  */
 @Entity
-public class Account extends AbstractModelInput implements ILabel {
+public class Account extends AbstractModelInput {
 	/**
 	 * 
 	 */

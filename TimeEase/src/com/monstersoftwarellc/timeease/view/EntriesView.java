@@ -126,7 +126,7 @@ public class EntriesView extends ViewPart {
 		
 		// TODO: add active check.
 		clients = ServiceLocator.locateCurrent(IClientService.class).getClientRepository().
-				findByAccount(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.DESC, "firstName"));
+				findByCreatedBy(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.DESC, "firstName"));
 		projects = new ArrayList<Project>();
 		tasks = new ArrayList<Task>();
 	}
@@ -504,9 +504,11 @@ public class EntriesView extends ViewPart {
 		if(settings.getDefaultTask() != null){
 			entry.setTask(settings.getDefaultTask());
 		}
-		entry.setAccount(securityService.getCurrentlyLoggedInUser());
 		entryService.getEntryRepository().saveAndFlush(entry);
-		entries.add(entry);
+		ArrayList<Entry> list = new ArrayList<Entry>();
+		list.addAll(entries);
+		list.add(entry);
+		entries = list;
 		counter = 0;
 		WritableList writableList = new WritableList(entries, Entry.class);
 		tableViewer.setInput(writableList);
@@ -522,7 +524,7 @@ public class EntriesView extends ViewPart {
 	private void deleteEntry() {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Entry entry = (Entry) transaction.getFirstElement();		
-		entries.clear();
+		entries = new ArrayList<Entry>();
 		entryService.getEntryRepository().delete(entry);
 		reloadEntriesBasedOnCriteria();
 	}
@@ -624,7 +626,7 @@ public class EntriesView extends ViewPart {
 		long currentPageCount = entries.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
 				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
-					&& entryService.getEntryRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
+					&& entryService.getEntryRepository().getSearchListPageCount(searchCriteria, page+1, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

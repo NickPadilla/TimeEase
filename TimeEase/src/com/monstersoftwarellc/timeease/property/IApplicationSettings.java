@@ -41,7 +41,7 @@ public interface IApplicationSettings {
 
 	@PropertySequence(50)
 	@PropertyDefault("0")
-	@PropertyUiCustomize({"#ui.setMaximum(999)","#ui.setDigits(2)"})
+	@PropertyUiCustomize({"#ui.setMaximum(999999)","#ui.setDigits(2)"})
 	public abstract int getDefaultRate();
 	
 	/**
@@ -52,15 +52,15 @@ public interface IApplicationSettings {
 	@PropertySequence(60)
 	public abstract OrderType getDefaultSortOrder();
 
-	@PropertyChoice("@clientService.getClientRepository().findByAccountOrderByFirstNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("@clientService.getClientRepository().findByCreatedByOrderByFirstNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(70)
 	public abstract Client getDefaultClient();
 
-	@PropertyChoice("@projectService.getProjectRepository().findByAccountOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("@projectService.getProjectRepository().findByCreatedByOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(80)
 	public abstract Project getDefaultProject();
 
-	@PropertyChoice("@taskService.getTaskRepository().findByAccountOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("@taskService.getTaskRepository().findByCreatedByOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(90)
 	public abstract Task getDefaultTask();
 

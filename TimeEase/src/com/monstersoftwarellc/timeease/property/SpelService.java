@@ -43,6 +43,18 @@ public class SpelService implements BeanFactoryAware, ISpelService{
 		context.setBeanResolver(new BeanFactoryResolver(beanFactory));
 		return parser.parseExpression(expression).getValue(context);
 	}
+
+	/* (non-Javadoc)
+	 * @see com.goldrush.property.ISpelService#getValue(java.lang.String, java.lang.Object)
+	 */
+	@Override
+	public Object getValue(String expression,Object rootObject){
+		StandardEvaluationContext context = new StandardEvaluationContext();
+		context.setTypeLocator(new BundleTypeLocator());
+		context.setBeanResolver(new BeanFactoryResolver(beanFactory));
+		context.setRootObject(rootObject);
+		return parser.parseExpression(expression).getValue(context);
+	}
 	
 	/* (non-Javadoc)
 	 * @see com.goldrush.property.ISpelService#getValue(java.lang.String, java.lang.Class)
@@ -62,7 +74,6 @@ public class SpelService implements BeanFactoryAware, ISpelService{
 		StandardEvaluationContext context = new StandardEvaluationContext();
 		context.setTypeLocator(new BundleTypeLocator());
 		context.setBeanResolver(new BeanFactoryResolver(beanFactory));
-		
 		context.setVariables(variables);
 		
 		return parser.parseExpression(expression).getValue(context);

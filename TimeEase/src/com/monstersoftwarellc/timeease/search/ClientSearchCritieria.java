@@ -116,7 +116,7 @@ public class ClientSearchCritieria extends AbstractPropertChangeSupport implemen
 		}
 		
 		if (account != null) {
-			clientSpecs.add(ClientSpecifications.searchForAccount(account));
+			clientSpecs.add(ClientSpecifications.searchForCreatedBy(account));
 		}
 		
 		// now build out our query

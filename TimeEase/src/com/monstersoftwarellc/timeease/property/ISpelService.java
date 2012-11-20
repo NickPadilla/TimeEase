@@ -19,6 +19,14 @@ public interface ISpelService {
 	public abstract Object getValue(String expression);
 
 	/**
+	 * Parses the given expression and returns the result.
+	 * @param expression the expression to parse
+	 * @param rootObject the desired root object.
+	 * @return object the result.
+	 */
+	public Object getValue(String expression,Object rootObject);
+	
+	/**
 	 * Evaluate the expression and return the result with the expected type.
 	 * @param expression the expression to parse
 	 * @param expectedResultType the return type expected.

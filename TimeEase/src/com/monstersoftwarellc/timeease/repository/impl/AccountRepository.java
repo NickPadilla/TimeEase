@@ -13,4 +13,5 @@ import com.monstersoftwarellc.timeease.repository.IRepository;
 public interface AccountRepository extends IRepository<Account> {
 
 	Account findByUsername(String username);
+	
 }

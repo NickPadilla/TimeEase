@@ -1,10 +1,19 @@
 package com.monstersoftwarellc.timeease.model.impl;
 
+import java.util.Date;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import javax.persistence.Lob;
+import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 import org.eclipse.persistence.annotations.Index;
@@ -15,11 +24,29 @@ import com.monstersoftwarellc.timeease.utility.SerialUtil;
 
 @Entity
 public class Property extends BaseDomain {
-	
+
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -6069489899248153329L;
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account createdBy;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account lastModifiedBy;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdDate;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastModifiedDate;
     
     @Index
     @Column(length=2000)
@@ -43,7 +70,48 @@ public class Property extends BaseDomain {
     
 	public Property() {
 		
-    }
+    }	
+
+	
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+	
+	public Account getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(Account createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Account getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(final Account lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
+	
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+	
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
     
     /** These methods should be used by external classes to access property values ***/
     @Transient

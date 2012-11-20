@@ -17,7 +17,7 @@ import com.monstersoftwarellc.timeease.repository.IRepository;
  */
 public interface TaskRepository extends IRepository<Task> {
  
-	List<Task> findByAccount(Account account, Sort sort);
+	List<Task> findByCreatedBy(Account account, Sort sort);
 
-	List<Task> findByAccountOrderByNameAsc(Account account);
+	List<Task> findByCreatedByOrderByNameAsc(Account account);
 }

@@ -3,6 +3,7 @@
  */
 package com.monstersoftwarellc.timeease.model.impl;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -16,21 +17,22 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlElementWrapper;
 import javax.xml.bind.annotation.XmlElements;
 import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlTransient;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.eclipse.persistence.annotations.Index;
 
 import com.monstersoftwarellc.timeease.integration.IFreshbooksEntity;
-import com.monstersoftwarellc.timeease.model.AbstractModelInput;
+import com.monstersoftwarellc.timeease.model.BaseDomain;
 import com.monstersoftwarellc.timeease.model.enums.ClientStatus;
-import com.sun.istack.internal.NotNull;
 
 /**
  * This class outlines the Client object specification, implements {@link IFreshbooksEntity}.
@@ -39,16 +41,30 @@ import com.sun.istack.internal.NotNull;
  */
 @XmlRootElement(name="client")
 @Entity
-public class Client extends AbstractModelInput implements IFreshbooksEntity {
-	
+public class Client extends BaseDomain implements IFreshbooksEntity {
+
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 2099980834607759592L;
+	private static final long serialVersionUID = 2099980834607759592L;	
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account createdBy;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account lastModifiedBy;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdDate;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastModifiedDate;
 	
 	private Integer externalId;
 	
@@ -129,26 +145,47 @@ public class Client extends AbstractModelInput implements IFreshbooksEntity {
 
 	@OneToMany(cascade=CascadeType.ALL,fetch=FetchType.LAZY)
 	private List<Contact> contacts;
-
-	@ManyToOne(fetch=FetchType.LAZY)
-	@NotNull
-	private Account account;
 	
-
-	/**
-	 * @return the id
-	 */
+	
 	public Long getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
+	
+	public Account getCreatedBy() {
+		return createdBy;
+	}
 
+	public void setCreatedBy(Account createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Account getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(final Account lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
+	
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+	
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
+	}
 	
 	/**
 	 * @param externalId the externalId to set
@@ -712,21 +749,6 @@ public class Client extends AbstractModelInput implements IFreshbooksEntity {
 		this.contacts = contacts;
 	}
 
-	/**
-	 * @return the account
-	 */
-	@XmlTransient
-	public Account getAccount() {
-		return account;
-	}
-
-	/**
-	 * @param account the account to set
-	 */
-	public void setAccount(Account user) {
-		this.account = user;
-	}
-
 	/* (non-Javadoc)
 	 * @see timeease.model.AbstractFreshbooksEntity#getFreshbooksObjectName()
 	 */
@@ -795,4 +817,5 @@ public class Client extends AbstractModelInput implements IFreshbooksEntity {
 	public String toString() {
 		return ReflectionToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE, true);
 	}
+
 }

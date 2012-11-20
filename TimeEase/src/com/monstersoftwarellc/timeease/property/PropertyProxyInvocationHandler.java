@@ -48,6 +48,8 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 
 	private static final Map<Class<?>, Object> DEFAULTS;
 
+	private Object proxy;
+
 	static {
 		Map<Class<?>, Object> map = new HashMap<Class<?>, Object>();
 		put(map, boolean.class, false);
@@ -259,7 +261,7 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 		ret = property.getValue();
 		// get default value if set
 		if(ret == null && metadata.getDefaultExpression() != null){
-			ret = spelService.getValue(metadata.getDefaultExpression());
+			ret = spelService.getValue(metadata.getDefaultExpression(), proxy);
 		}
 		
 		// for primitive types we cannot return null
@@ -291,7 +293,7 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 	public Object getChoice(IPropertyMetadata meta) {
 		Object ret = null;
 		if(meta.hasChoice()){
-			ret = spelService.getValue(((PropertyMetadata)meta).getChoiceExpression());
+			ret = spelService.getValue(((PropertyMetadata)meta).getChoiceExpression(), proxy);
 		}
 		return ret;
 	}
@@ -302,10 +304,6 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 		if(property == null){
 			property = new Property();
 			property.setPropertyName(meta.getLongName());
-			// add the property since it doesn't exist in the db 
-			settingsService.getPropertyRepository().saveAndFlush(property);
-			property = null;
-			property = settingsService.findByName(meta.getLongName());
 		}
 		
 		property.setPropertyShared(meta.isShared());
@@ -349,5 +347,9 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 			ret = true;
 		}
 		return ret;
+	}
+	
+	public void setProxy(Object proxy) {
+		this.proxy = proxy;
 	}
 }

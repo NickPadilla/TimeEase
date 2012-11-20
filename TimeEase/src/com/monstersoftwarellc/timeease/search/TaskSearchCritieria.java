@@ -71,7 +71,7 @@ public class TaskSearchCritieria extends AbstractPropertChangeSupport implements
 		}
 		
 		if (account != null) {
-			projectSpecs.add(TaskSpecifications.searchForAccount(account));
+			projectSpecs.add(TaskSpecifications.searchForCreatedBy(account));
 		}
 		
 		// now build out our query

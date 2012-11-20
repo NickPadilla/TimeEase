@@ -21,11 +21,11 @@ import com.monstersoftwarellc.timeease.model.impl.Client_;
  */
 public class ClientSpecifications {
 
-	public static Specification<Client> searchForAccount(final Account account) {
+	public static Specification<Client> searchForCreatedBy(final Account account) {
 		return new Specification<Client>() {
 			@Override
 			public Predicate toPredicate(Root<Client> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-				return cb.equal(root.get(Client_.account), account);
+				return cb.equal(root.get(Client_.createdBy), account);
 			}
 		};
 	}

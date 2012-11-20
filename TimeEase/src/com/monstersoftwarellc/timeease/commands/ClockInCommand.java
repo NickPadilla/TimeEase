@@ -14,7 +14,6 @@ import org.eclipse.ui.services.ISourceProviderService;
 
 import com.monstersoftwarellc.timeease.model.impl.Entry;
 import com.monstersoftwarellc.timeease.service.IEntryService;
-import com.monstersoftwarellc.timeease.service.ISecurityService;
 import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 
 /**
@@ -41,13 +40,12 @@ public class ClockInCommand extends AbstractHandler {
 		entry.setHours(0d);
 		entry.setNotes("Clocked In");
 		entry.setStartTime(now);
-		entry.setAccount(ServiceLocator.locateCurrent(ISecurityService.class).getCurrentlyLoggedInUser());
 		// persist new entry
 		ServiceLocator.locateCurrent(IEntryService.class).getEntryRepository().saveAndFlush(entry);
 		// spark an event so that we re-evaluate the command bindings
-				IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindow(event); 
-				// get the service 
-				ISourceProviderService service = (ISourceProviderService) window.getService(ISourceProviderService.class); 
+		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindow(event); 
+		// get the service 
+		ISourceProviderService service = (ISourceProviderService) window.getService(ISourceProviderService.class); 
 		// get our source provider by querying by the variable name 
 		ClockingCommandState clockingCommandState = (ClockingCommandState) service.getSourceProvider(ClockingCommandState.ID); 
 		// set the value 

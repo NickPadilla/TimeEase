@@ -71,7 +71,7 @@ public class ProjectSearchCritieria extends AbstractPropertChangeSupport impleme
 		}
 		
 		if (account != null) {
-			projectSpecs.add(ProjectSpecifications.searchForAccount(account));
+			projectSpecs.add(ProjectSpecifications.searchForCreatedBy(account));
 		}
 		
 		// now build out our query

@@ -3,7 +3,6 @@
  */
 package com.monstersoftwarellc.timeease.property;
 
-import org.eclipse.jface.viewers.ISelectionChangedListener;
 
 /**
  * @author navid
@@ -29,5 +28,5 @@ public interface IPropertyMetadata {
 	
 	public String[] getUiCustomizations();
 	
-	public ISelectionChangedListener getSelectionChangedListener();
+	public IPropertyMetadata getDependent();
 }

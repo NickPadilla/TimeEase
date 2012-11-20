@@ -21,11 +21,11 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.eclipse.persistence.annotations.Index;
 
 import com.monstersoftwarellc.timeease.integration.IFreshbooksEntity;
-import com.monstersoftwarellc.timeease.model.AbstractModelInput;
+import com.monstersoftwarellc.timeease.model.BaseDomain;
 import com.monstersoftwarellc.timeease.utility.TimeUtil;
-import com.sun.istack.internal.NotNull;
 
 
 /**
@@ -35,8 +35,8 @@ import com.sun.istack.internal.NotNull;
  */
 @XmlRootElement(name="time_entry")
 @Entity
-public class Entry extends AbstractModelInput implements IFreshbooksEntity {
-	
+public class Entry extends BaseDomain implements IFreshbooksEntity {
+
 	/**
 	 * 
 	 */
@@ -45,6 +45,20 @@ public class Entry extends AbstractModelInput implements IFreshbooksEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account createdBy;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account lastModifiedBy;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdDate;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastModifiedDate;
 	
 	private Long externalId;
 
@@ -73,23 +87,45 @@ public class Entry extends AbstractModelInput implements IFreshbooksEntity {
 	
 	private Boolean dirty;
 
-	@ManyToOne(fetch=FetchType.LAZY)
-	@NotNull
-	private Account account;
-
-
-	/**
-	 * @return the id
-	 */
+	
 	public Long getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Account getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(Account createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Account getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(final Account lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
+	
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+	
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
 	}
 	
 	/**
@@ -255,20 +291,6 @@ public class Entry extends AbstractModelInput implements IFreshbooksEntity {
 	 */
 	public void setDirty(Boolean dirty) {
 		this.dirty = dirty;
-	}
-
-	/**
-	 * @return the account
-	 */
-	public Account getAccount() {
-		return account;
-	}
-
-	/**
-	 * @param account the account to set
-	 */
-	public void setAccount(Account user) {
-		this.account = user;
 	}
 	
 	/* (non-Javadoc)

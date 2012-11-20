@@ -4,29 +4,10 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
 	<persistence-unit name="timeease" transaction-type="RESOURCE_LOCAL">
-	
-		<class>com.monstersoftwarellc.timeease.model.impl.Account</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Client</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Contact</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Entry</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Project</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Property</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Staff</class>
-		<class>com.monstersoftwarellc.timeease.model.impl.Task</class>
-		<class>com.monstersoftwarellc.timeease.integration.AbstractIntegration</class>
-		<class>com.monstersoftwarellc.timeease.integration.freshbooks.FreshBooksIntegration</class>
 
 		<exclude-unlisted-classes>false</exclude-unlisted-classes>
 
 		<properties>
-		
-			<!--
-			<property name="eclipselink.ddl-generation.output-mode" value="both"/>
-			<property name="eclipselink.ddl-generation" value="create-tables"/>  
-			<property name="eclipselink.ddl-generation" value="drop-and-create-tables"/> 
-			-->
-
-			<!-- Logging  -->
 		</properties>
 	</persistence-unit>
 </persistence>

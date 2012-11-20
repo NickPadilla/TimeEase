@@ -30,11 +30,11 @@ public class TaskSpecifications {
 			};
 	  }
 
-	  public static Specification<Task> searchForAccount(final Account account) {
+	  public static Specification<Task> searchForCreatedBy(final Account account) {
 		    return new Specification<Task>() {
 				@Override
 				public Predicate toPredicate(Root<Task> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-					return cb.equal(root.get(Task_.account), account);
+					return cb.equal(root.get(Task_.createdBy), account);
 				}
 			};
 	  }

@@ -34,4 +34,5 @@ public interface IRepository<T> extends JpaRepository<T, Long>, JpaSpecification
 	 * @return
 	 */
 	int getSearchListPageCount(ISearchCritiera<T> searchCriteria, int page, IApplicationSettings settings);
+	
 }

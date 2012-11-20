@@ -3,6 +3,7 @@
  */
 package com.monstersoftwarellc.timeease.view;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.eclipse.core.databinding.DataBindingContext;
@@ -59,7 +60,7 @@ public class ClientsView extends ViewPart {
 
 	public static final String ID = "com.monstersoftwarellc.timeease.view.ClientsView";
 
-	private List<Client> clients;
+	private List<Client> clients = new ArrayList<Client>();
 	
 	private Composite container;
 	private Composite clientComposite;
@@ -87,7 +88,7 @@ public class ClientsView extends ViewPart {
 	 */
 	public ClientsView() {
 		searchCriteria.setAccount(securityService.getCurrentlyLoggedInUser());
-		clients = clientService.getClientRepository().findByAccount(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.ASC, "firstName"));
+		clients.addAll(clientService.getClientRepository().findByCreatedBy(securityService.getCurrentlyLoggedInUser(), new Sort(Sort.Direction.ASC, "firstName")));
 		settings = settingsService.getApplicationSettings();
 	}
 
@@ -247,9 +248,11 @@ public class ClientsView extends ViewPart {
 		Client client = new Client();
 		client.setFirstName("First Name");
 		client.setLastName("Last Name");
-		client.setAccount(securityService.getCurrentlyLoggedInUser());
 		clientService.getClientRepository().saveAndFlush(client);
-		clients.add(client);
+		ArrayList<Client> list = new ArrayList<Client>();
+		list.addAll(clients);
+		list.add(client);
+		clients = list;
 		WritableList writableList = new WritableList(clients, Client.class);
 		tableViewer.setInput(writableList);
 		IStructuredSelection sel = new StructuredSelection(client);
@@ -264,7 +267,7 @@ public class ClientsView extends ViewPart {
 	private void deleteClient() {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Client client = (Client) transaction.getFirstElement();		
-		clients.clear();
+		clients = new ArrayList<Client>();
 		clientService.getClientRepository().delete(client);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
@@ -357,7 +360,7 @@ public class ClientsView extends ViewPart {
 		long currentPageCount = clients.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
 				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
-					&& clientService.getClientRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
+					&& clientService.getClientRepository().getSearchListPageCount(searchCriteria, page+1, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

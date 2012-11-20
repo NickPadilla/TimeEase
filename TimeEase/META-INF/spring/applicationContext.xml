@@ -32,16 +32,9 @@
 
 	<!-- enable annotation driven config -->
 	<context:annotation-config />
-	
-	<!-- database solution -->
-	
+
 	<!-- transaction management -->
 	<tx:annotation-driven />
- 	
-	<!-- Directory to scan for repository classes -->
-	<jpa:repositories base-package="bin.com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
-	<jpa:repositories base-package="com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
-	
 	
  	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource" >
 		<property name="driverClassName" value="org.apache.derby.jdbc.EmbeddedDriver" />
@@ -64,8 +57,6 @@
 		<entry key="eclipselink.temporal.mutable" value="true" />-->
 		<!-- <entry key="eclipselink.weaving.output.path" value="C:\\weavedClasses"/>
 	    <entry key="eclipselink.weaving.overwrite.existing" value="true" />
-		<entry key="eclipselink.ddl-generation" value="create-tables" />
-		<entry key="eclipselink.ddl-generation.output-mode" value="both" /> 
 	    <entry key="eclipselink.logging.level" value="FINEST" /> 
 		<entry key="eclipselink.ddl-generation" value="create-tables" />
 		<entry key="eclipselink.ddl-generation.output-mode" value="both" /> -->
@@ -93,11 +84,15 @@
 	
 	<context:load-time-weaver weaver-class="org.eclipse.equinox.weaving.springweaver.EquinoxAspectsLoadTimeWeaver" />
 				
+	<!-- Directory to scan for repository classes : these tags must come before anything else due to start up osgi restrictions -->
+	<jpa:repositories base-package="bin.com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
+	<jpa:repositories base-package="com.monstersoftwarellc.timeease.repository.impl" factory-class="com.monstersoftwarellc.timeease.repository.RepositoryImplFactoryBean"/>
+	
 	<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean"		
 			p:dataSource-ref="dataSource"
 			p:jpaVendorAdapter-ref="eclipseLinkVendor-Derby"
 			p:jpaPropertyMap-ref="jpaMap"
-			p:packagesToScan="bin.com.monstersoftwarellc.timeease.model.impl,com.monstersoftwarellc.timeease.model.impl" >	
+			p:packagesToScan="bin.com.monstersoftwarellc.timeease,com.monstersoftwarellc.timeease" >	
 <!-- 	    <property name="persistenceUnitPostProcessors">
 	      <list>
 	         <ref bean="bootstrap"/>
@@ -108,16 +103,16 @@
 	<!-- transaction management -->
 	<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"
 			p:entityManagerFactory-ref="entityManagerFactory" />
-	
-	<bean id="serviceLocator" factory-method="getCurrentInstance" class="com.monstersoftwarellc.timeease.service.impl.ServiceLocator" />
-
-	<!-- Scans the class path of this application for @Components to deploy as beans. bin is added so it will work in dev problem with Eclipse-->
-	<context:component-scan base-package="bin.com.monstersoftwarellc.timeease,com.monstersoftwarellc.timeease" />
-	
+			
 	<bean id="applicationSettings" 
 		  class="com.monstersoftwarellc.timeease.property.IApplicationSettings"
 		  factory-bean="settingsService"
 		  factory-method="getApplicationSettings" lazy-init="true">
 	</bean>
 	
+	<bean id="serviceLocator" factory-method="getCurrentInstance" class="com.monstersoftwarellc.timeease.service.impl.ServiceLocator" />
+
+	<!-- Scans the class path of this application for @Components to deploy as beans. bin is added so it will work in dev problem with Eclipse-->
+	<context:component-scan base-package="bin.com.monstersoftwarellc.timeease,com.monstersoftwarellc.timeease" />
+ 	
 </beans>

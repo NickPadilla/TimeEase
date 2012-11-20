@@ -261,9 +261,11 @@ public class TasksView extends ViewPart {
 		Task task = new Task();
 		task.setName("Name");
 		task.setDescription("Description");
-		task.setAccount(securityService.getCurrentlyLoggedInUser());
 		taskService.getTaskRepository().saveAndFlush(task);
-		tasks.add(task);
+		ArrayList<Task> list = new ArrayList<Task>();
+		list.addAll(tasks);
+		list.add(task);
+		tasks = list;
 		WritableList writableList = new WritableList(tasks, Task.class);
 		tableViewer.setInput(writableList);
 		IStructuredSelection sel = new StructuredSelection(task);
@@ -278,7 +280,7 @@ public class TasksView extends ViewPart {
 	private void deleteTask() {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Task task = (Task) transaction.getFirstElement();		
-		tasks.clear();
+		tasks = new ArrayList<Task>();
 		taskService.getTaskRepository().delete(task);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
@@ -373,7 +375,7 @@ public class TasksView extends ViewPart {
 		long currentPageCount = tasks.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
 				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
-					&& taskService.getTaskRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
+					&& taskService.getTaskRepository().getSearchListPageCount(searchCriteria, page+1, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

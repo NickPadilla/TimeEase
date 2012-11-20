@@ -41,7 +41,7 @@ public class RepositoryImpl<T> extends SimpleJpaRepository<T, Long> implements I
 	
 	@Override
 	public int getSearchListPageCount(ISearchCritiera<T> searchCriteria, int page, IApplicationSettings settings){
-		return getSearchListPage(searchCriteria, page, settings).getSize();
+		return getSearchListPage(searchCriteria, page, settings).getNumberOfElements();
 	}
 
 }

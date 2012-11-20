@@ -29,9 +29,15 @@ public class PropertyService implements IPropertyService {
 			throw new IllegalArgumentException("Clazz must be an Interface.");
 		}
 
-		return (T) Proxy.newProxyInstance(clazz.getClassLoader(),
+		PropertyProxyInvocationHandler handler = new PropertyProxyInvocationHandler(clazz);
+		
+		T ret = (T) Proxy.newProxyInstance(clazz.getClassLoader(),
 				new Class[] { clazz, IPropertyChangeSupport.class, IPropertyProxy.class },
-				new PropertyProxyInvocationHandler(clazz));
+				handler);
+		
+		handler.setProxy(ret);
+		
+		return ret;
 	}
 
 }

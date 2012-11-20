@@ -3,12 +3,16 @@
  */
 package com.monstersoftwarellc.timeease.model.impl;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -16,10 +20,10 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.eclipse.persistence.annotations.Index;
 
 import com.monstersoftwarellc.timeease.integration.IFreshbooksEntity;
-import com.monstersoftwarellc.timeease.model.AbstractModelInput;
-import com.sun.istack.internal.NotNull;
+import com.monstersoftwarellc.timeease.model.BaseDomain;
 
 /**
  * This class outlines the Task object specification, implements {@link IFreshbooksEntity}.
@@ -28,7 +32,7 @@ import com.sun.istack.internal.NotNull;
  */
 @XmlRootElement(name="task")
 @Entity
-public class Task extends AbstractModelInput implements IFreshbooksEntity {
+public class Task extends BaseDomain implements IFreshbooksEntity {
 	
 	/**
 	 * 
@@ -38,6 +42,20 @@ public class Task extends AbstractModelInput implements IFreshbooksEntity {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
+	
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account createdBy;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@Index
+	private Account lastModifiedBy;
+
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date createdDate;
+	
+	@Temporal(TemporalType.TIMESTAMP)
+	private Date lastModifiedDate;
 
 	private Integer externalId;
 	
@@ -48,23 +66,46 @@ public class Task extends AbstractModelInput implements IFreshbooksEntity {
 	private Double rate;
 
 	private String description;
-	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@NotNull
-	private Account account;
 
-	/**
-	 * @return the id
-	 */
+	
 	public Long getId() {
 		return id;
 	}
 
-	/**
-	 * @param id the id to set
-	 */
 	public void setId(Long id) {
 		this.id = id;
+	}
+	
+	public Account getCreatedBy() {
+		return createdBy;
+	}
+
+	public void setCreatedBy(Account createdBy) {
+		this.createdBy = createdBy;
+	}
+
+	public Account getLastModifiedBy() {
+		return lastModifiedBy;
+	}
+
+	public void setLastModifiedBy(final Account lastModifiedBy) {
+		this.lastModifiedBy = lastModifiedBy;
+	}
+	
+	public Date getCreatedDate() {
+		return createdDate;
+	}
+	
+	public void setCreatedDate(Date createdDate) {
+		this.createdDate = createdDate;
+	}
+	
+	public Date getLastModifiedDate() {
+		return lastModifiedDate;
+	}
+
+	public void setLastModifiedDate(Date lastModifiedDate) {
+		this.lastModifiedDate = lastModifiedDate;
 	}
 	
 	/**
@@ -140,20 +181,6 @@ public class Task extends AbstractModelInput implements IFreshbooksEntity {
 	 */
 	public void setDescription(String description) {
 		this.description = description;
-	}
-
-	/**
-	 * @return the account
-	 */
-	public Account getAccount() {
-		return account;
-	}
-
-	/**
-	 * @param account the account to set
-	 */
-	public void setAccount(Account user) {
-		this.account = user;
 	}
 
 	/* (non-Javadoc)

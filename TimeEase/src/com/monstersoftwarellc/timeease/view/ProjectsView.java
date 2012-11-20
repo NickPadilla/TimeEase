@@ -289,9 +289,11 @@ public class ProjectsView extends ViewPart {
 		Project project = new Project();
 		project.setName("Name");
 		project.setDescription("Description");
-		project.setAccount(securityService.getCurrentlyLoggedInUser());
 		projectService.getProjectRepository().saveAndFlush(project);
-		projects.add(project);
+		ArrayList<Project> list = new ArrayList<Project>();
+		list.addAll(projects);
+		list.add(project);
+		projects = list;
 		WritableList writableList = new WritableList(projects, Project.class);
 		tableViewer.setInput(writableList);
 		IStructuredSelection sel = new StructuredSelection(project);
@@ -306,7 +308,7 @@ public class ProjectsView extends ViewPart {
 	private void deleteProject() {
 		IStructuredSelection transaction = (IStructuredSelection) tableViewer.getSelection();
 		Project project = (Project) transaction.getFirstElement();		
-		projects.clear();
+		projects = new ArrayList<Project>();
 		projectService.getProjectRepository().delete(project);
 		reloadEntriesBasedOnCriteria();
 		tableViewer.setSelection(null);
@@ -399,7 +401,7 @@ public class ProjectsView extends ViewPart {
 		long currentPageCount = projects.size();
 		if (currentPageCount < settings.getNumberOfItemsToShowPerPage()
 				|| (currentPageCount == settings.getNumberOfItemsToShowPerPage() 
-					&& projectService.getProjectRepository().getSearchListPageCount(searchCriteria, page, settings) == 0)) {
+					&& projectService.getProjectRepository().getSearchListPageCount(searchCriteria, page+1, settings) == 0)) {
 			nextPageButton.setEnabled(false);
 		} else {
 			nextPageButton.setEnabled(true);

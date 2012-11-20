@@ -4,7 +4,6 @@
 package com.monstersoftwarellc.timeease.property;
 
 import org.apache.commons.lang3.StringUtils;
-import org.eclipse.jface.viewers.ISelectionChangedListener;
 
 /**
  * @author navid
@@ -234,7 +233,7 @@ class PropertyMetadata implements IPropertyMetadata {
 	}
 
 	@Override
-	public ISelectionChangedListener getSelectionChangedListener() {
+	public IPropertyMetadata getDependent() {
 		// TODO Auto-generated method stub
 		return null;
 	}

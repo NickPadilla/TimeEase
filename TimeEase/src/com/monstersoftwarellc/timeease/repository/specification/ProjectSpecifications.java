@@ -30,11 +30,11 @@ public class ProjectSpecifications {
 			};
 	  }
 
-	  public static Specification<Project> searchForAccount(final Account account) {
+	  public static Specification<Project> searchForCreatedBy(final Account account) {
 		    return new Specification<Project>() {
 				@Override
 				public Predicate toPredicate(Root<Project> root, CriteriaQuery<?> query, CriteriaBuilder cb) {
-					return cb.equal(root.get(Project_.account), account);
+					return cb.equal(root.get(Project_.createdBy), account);
 				}
 			};
 	  }

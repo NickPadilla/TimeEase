@@ -17,7 +17,7 @@ import com.monstersoftwarellc.timeease.repository.IRepository;
  */
 public interface ClientRepository extends IRepository<Client> {
 
-	List<Client> findByAccount(Account account, Sort sort);
+	List<Client> findByCreatedBy(Account account, Sort sort);
 
-	List<Client> findByAccountOrderByFirstNameAsc(Account account);
+	List<Client> findByCreatedByOrderByFirstNameAsc(Account account);
 }
