@@ -8,11 +8,14 @@ import javax.persistence.metamodel.ListAttribute;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="Dali", date="2012-11-20T15:34:11.711-0700")
+@Generated(value="Dali", date="2012-11-20T19:16:47.516-0700")
 @StaticMetamodel(Client.class)
 public class Client_ extends BaseDomain_ {
+	public static volatile SingularAttribute<Client, Long> id;
 	public static volatile SingularAttribute<Client, Account> createdBy;
 	public static volatile SingularAttribute<Client, Account> lastModifiedBy;
+	public static volatile SingularAttribute<Client, Date> createdDate;
+	public static volatile SingularAttribute<Client, Date> lastModifiedDate;
 	public static volatile SingularAttribute<Client, Integer> externalId;
 	public static volatile SingularAttribute<Client, String> firstName;
 	public static volatile SingularAttribute<Client, String> lastName;
@@ -48,7 +51,4 @@ public class Client_ extends BaseDomain_ {
 	public static volatile SingularAttribute<Client, ClientStatus> clientStatus;
 	public static volatile SingularAttribute<Client, Contact> contact;
 	public static volatile ListAttribute<Client, Contact> contacts;
-	public static volatile SingularAttribute<Client, Date> createdDate;
-	public static volatile SingularAttribute<Client, Date> lastModifiedDate;
-	public static volatile SingularAttribute<Client, Long> id;
 }

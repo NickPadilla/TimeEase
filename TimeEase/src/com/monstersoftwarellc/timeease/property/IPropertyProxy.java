@@ -29,4 +29,6 @@ public interface IPropertyProxy {
 	
 	public void setPropertyValue(IPropertyMetadata meta,Object value);
 	
+	public Object getPropertyValueByMetaName(String propertyMetaName);
+	
 }

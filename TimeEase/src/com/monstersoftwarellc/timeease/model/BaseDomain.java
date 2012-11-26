@@ -20,13 +20,6 @@ import com.monstersoftwarellc.timeease.service.impl.ServiceLocator;
 @MappedSuperclass
 public abstract class BaseDomain extends AbstractModelInput {
 
-	/**
-	 * allow a property to depend on other properties. if this property changes then update this one.. 
-	 * 
-	 * in the SPEL ensure you have access to the property object itself
-	 * 
-	 * choice is dependent on antoher property
-	 */
 	private static final long serialVersionUID = 4579977381813175101L;
 
 	public abstract void setCreatedBy(Account createdBy);

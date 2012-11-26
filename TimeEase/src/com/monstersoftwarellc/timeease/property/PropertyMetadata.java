@@ -24,7 +24,11 @@ class PropertyMetadata implements IPropertyMetadata {
 	protected Boolean hidden = null;
 	protected Integer sequence;
 	protected String[] uiCustomizations;
-
+	
+	protected IPropertyMetadata child;
+	protected boolean dependent;
+	protected Object viewerObject;
+	
 	/* (non-Javadoc)
 	 * @see com.goldrush.property.IPropertyMetadata#getLabel()
 	 */
@@ -231,10 +235,36 @@ class PropertyMetadata implements IPropertyMetadata {
 	public void setListType(Class<?> listType) {
 		this.listType = listType;
 	}
+	
+	public boolean isDependent() {
+		return dependent;
+	}
+
+	public void setDependent(boolean dependent) {
+		this.dependent = dependent;
+	}
 
 	@Override
-	public IPropertyMetadata getDependent() {
-		// TODO Auto-generated method stub
-		return null;
+	public IPropertyMetadata getDependentProperty() {
+		return child;
+	}
+
+	@Override
+	public void setDependentProperty(IPropertyMetadata dependentProperty) {
+		this.child = dependentProperty;
+	}
+
+	/**
+	 * @return the viewerObject
+	 */
+	public Object getViewerObject() {
+		return viewerObject;
+	}
+
+	/**
+	 * @param viewerObject the viewerObject to set
+	 */
+	public void setViewerObject(Object viewerObject) {
+		this.viewerObject = viewerObject;
 	}
 }

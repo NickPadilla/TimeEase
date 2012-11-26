@@ -90,10 +90,12 @@ public class PropertyComposite extends Composite {
 				((ComboViewer)ret).setLabelProvider(new CustomLabelProvider());
 				((ComboViewer)ret).setInput(propertyProxy.getChoice(metadata));
 				
-//				((ComboViewer)ret).addSelectionChangedListener(listener)
-				
 				bindingContext.bindValue(ViewersObservables.observeSingleSelection((ComboViewer)ret),
 										 BeansObservables.observeValue(propertyProxy, metadata.getName()));
+			}
+			
+			if(metadata.isDependent()){
+				metadata.setViewerObject(ret);
 			}
 			
 		}else if(Integer.class.isAssignableFrom(clazz) || int.class.isAssignableFrom(clazz) || short.class.isAssignableFrom(clazz)

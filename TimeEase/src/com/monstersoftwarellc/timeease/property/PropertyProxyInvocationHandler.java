@@ -13,11 +13,13 @@ import java.util.Map;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.log4j.Logger;
+import org.eclipse.jface.viewers.Viewer;
 
 import com.google.common.collect.Ordering;
 import com.monstersoftwarellc.timeease.model.impl.Property;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyChoice;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyDefault;
+import com.monstersoftwarellc.timeease.property.annotations.PropertyDependent;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyHidden;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyLabel;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyListType;
@@ -162,6 +164,18 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 				metadata.setListType(annotation.value());
 			}
 			
+			if(method.isAnnotationPresent(PropertyDependent.class)){
+				PropertyDependent annotation = method.getAnnotation(PropertyDependent.class);
+				if(metadata.getDependentProperty() != null){
+					LOG.warn("PropertyListType is set on both the getter and setter for " + longName + ". Will be set to " + annotation.value());
+				}
+				// set child so that he knows he is a child
+				metadata.setDependent(true);
+				
+				// set parent to have child
+				propertyMetaMap.get(annotation.value()).setDependentProperty(metadata);
+			}
+			
 			if(getter){
 				if(metadata.getType() == null){
 					metadata.setType(method.getReturnType());
@@ -284,6 +298,13 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 		propertyChangeSupport.firePropertyChange(meta.getName(), oldValue, value);
 		
 		settingsService.getPropertyRepository().saveAndFlush(property);
+		
+		// fire change support and save the new value - then allow dependent choice processing
+		// TODO: see if we can use data-binding ; major problem with that is the fact that getChoice(IP..) takes in a 
+		// parameter and I don't know if databinding can do that.
+		if(meta.getDependentProperty() != null){
+			((Viewer) meta.getDependentProperty().getViewerObject()).setInput(getChoice(meta.getDependentProperty()));
+		}
 	}
 
 	/* (non-Javadoc)
@@ -351,5 +372,18 @@ class PropertyProxyInvocationHandler implements InvocationHandler, IPropertyProx
 	
 	public void setProxy(Object proxy) {
 		this.proxy = proxy;
+	}
+
+	@Override
+	public Object getPropertyValueByMetaName(String propertyMetaName) {
+		Object ret = null;
+		IPropertyMetadata meta = getPropertyMeta(propertyMetaName);
+		if(meta != null){
+			ret = getPropertyValue(meta);
+		}else{
+			LOG.warn("IPropertyMetadata doesn't exist for proposed propertyMetaName : " + propertyMetaName);
+			// TODO: throw exception? 
+		}
+		return ret;
 	}
 }

@@ -88,7 +88,7 @@ public abstract class DependantObservable<T> extends AbstractObservableValue imp
 	}
 
 	/**
-	 * @return true if all dependencies for this observable have been established. false if this observable still does not know what it is dependent on.
+	 * @return true if all dependencies for this observable have been established. false if this observable still does not know what it is parent on.
 	 */
 	public boolean isDependenciesEstablished(){
 		return dependenciesEstablished;

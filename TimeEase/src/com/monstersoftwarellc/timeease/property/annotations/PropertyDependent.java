@@ -17,5 +17,11 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 public @interface PropertyDependent {
 	
+	
+	/**
+	 * The name of the property that is the parent to this one.  The parent property must have a lower sequence number.
+	 * 
+	 * @return
+	 */
 	String value();
 }

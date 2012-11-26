@@ -9,6 +9,7 @@ import com.monstersoftwarellc.timeease.model.impl.Project;
 import com.monstersoftwarellc.timeease.model.impl.Task;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyChoice;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyDefault;
+import com.monstersoftwarellc.timeease.property.annotations.PropertyDependent;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyListType;
 import com.monstersoftwarellc.timeease.property.annotations.PropertySequence;
 import com.monstersoftwarellc.timeease.property.annotations.PropertyUiCustomize;
@@ -52,16 +53,18 @@ public interface IApplicationSettings {
 	@PropertySequence(60)
 	public abstract OrderType getDefaultSortOrder();
 
-	@PropertyChoice("@clientService.getClientRepository().findByCreatedByOrderByFirstNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("@clientRepository.findByCreatedByOrderByFirstNameAsc(@securityService.getCurrentlyLoggedInUser())")
 	@PropertySequence(70)
 	public abstract Client getDefaultClient();
 
-	@PropertyChoice("@projectService.getProjectRepository().findByCreatedByOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("@projectRepository.findByCreatedByAndClientOrderByNameAsc(@securityService.getCurrentlyLoggedInUser(), #root.getPropertyValueByMetaName('defaultClient'))")
 	@PropertySequence(80)
+	@PropertyDependent("defaultClient")
 	public abstract Project getDefaultProject();
 
-	@PropertyChoice("@taskService.getTaskRepository().findByCreatedByOrderByNameAsc(@securityService.getCurrentlyLoggedInUser())")
+	@PropertyChoice("#root.getPropertyValueByMetaName('defaultProject') != null ? @projectRepository.findOne(#root.getPropertyValueByMetaName('defaultProject').getId()).getProjectTasks() : null")
 	@PropertySequence(90)
+	@PropertyDependent("defaultProject")
 	public abstract Task getDefaultTask();
 
 	@PropertyChoice("T(com.monstersoftwarellc.timeease.integration.IntegrationType).values()")

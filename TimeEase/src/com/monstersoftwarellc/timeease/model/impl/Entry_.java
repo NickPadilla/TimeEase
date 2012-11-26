@@ -6,11 +6,14 @@ import javax.annotation.Generated;
 import javax.persistence.metamodel.SingularAttribute;
 import javax.persistence.metamodel.StaticMetamodel;
 
-@Generated(value="Dali", date="2012-11-20T15:34:19.035-0700")
+@Generated(value="Dali", date="2012-11-20T19:16:47.573-0700")
 @StaticMetamodel(Entry.class)
 public class Entry_ extends BaseDomain_ {
+	public static volatile SingularAttribute<Entry, Long> id;
 	public static volatile SingularAttribute<Entry, Account> createdBy;
 	public static volatile SingularAttribute<Entry, Account> lastModifiedBy;
+	public static volatile SingularAttribute<Entry, Date> createdDate;
+	public static volatile SingularAttribute<Entry, Date> lastModifiedDate;
 	public static volatile SingularAttribute<Entry, Long> externalId;
 	public static volatile SingularAttribute<Entry, String> notes;
 	public static volatile SingularAttribute<Entry, Date> startTime;
@@ -22,7 +25,4 @@ public class Entry_ extends BaseDomain_ {
 	public static volatile SingularAttribute<Entry, Staff> staff;
 	public static volatile SingularAttribute<Entry, Integer> billed;
 	public static volatile SingularAttribute<Entry, Boolean> dirty;
-	public static volatile SingularAttribute<Entry, Date> createdDate;
-	public static volatile SingularAttribute<Entry, Date> lastModifiedDate;
-	public static volatile SingularAttribute<Entry, Long> id;
 }

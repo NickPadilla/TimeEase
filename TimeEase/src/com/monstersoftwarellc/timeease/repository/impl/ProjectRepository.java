@@ -22,5 +22,6 @@ public interface ProjectRepository extends IRepository<Project> {
 	
 	List<Project> findByCreatedBy(Account account, Sort sort);
 
-	List<Project> findByCreatedByOrderByNameAsc(Account Account);
+	List<Project> findByCreatedByAndClientOrderByNameAsc(Account Account, Client client);
+
 }
