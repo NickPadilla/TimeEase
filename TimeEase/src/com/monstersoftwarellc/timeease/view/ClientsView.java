@@ -248,6 +248,7 @@ public class ClientsView extends ViewPart {
 		Client client = new Client();
 		client.setFirstName("First Name");
 		client.setLastName("Last Name");
+		client.setOrganization("Your Organization");
 		clientService.getClientRepository().saveAndFlush(client);
 		ArrayList<Client> list = new ArrayList<Client>();
 		list.addAll(clients);

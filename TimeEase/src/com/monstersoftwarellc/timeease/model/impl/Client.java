@@ -29,6 +29,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
 import org.eclipse.persistence.annotations.Index;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import com.monstersoftwarellc.timeease.integration.IFreshbooksEntity;
 import com.monstersoftwarellc.timeease.model.BaseDomain;
@@ -67,11 +68,14 @@ public class Client extends BaseDomain implements IFreshbooksEntity {
 	private Date lastModifiedDate;
 	
 	private Integer externalId;
-	
+
+	@NotEmpty
 	private String firstName;
-	
+
+	@NotEmpty
 	private String lastName;
-	
+
+	@NotEmpty
 	private String organization;
 	
 	private String email;

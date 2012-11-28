@@ -17,6 +17,7 @@ import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 
 import org.eclipse.persistence.annotations.Index;
+import org.hibernate.validator.constraints.NotEmpty;
 
 import com.monstersoftwarellc.timeease.model.BaseDomain;
 import com.monstersoftwarellc.timeease.model.PropertyType;
@@ -50,6 +51,7 @@ public class Property extends BaseDomain {
     
     @Index
     @Column(length=2000)
+	@NotEmpty
     private String propertyName;
     private String label;
 // 	@Column(length=20000000, columnDefinition="longblob") // mysql/h2

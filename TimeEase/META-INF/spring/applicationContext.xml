@@ -25,11 +25,18 @@
 		<property name="baseDir" value="dbmigrations" />
 		<property name="version" value="1.0" />
 	</bean> -->
+ 	
+	<!-- JSR-303 - BeanValidation -->
+    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean">
+        <property name="validationMessageSource" ref="messageSource"/>
+    </bean>
 	
-	<!-- JSR-303 - BeanValidation 
-    <bean id="validator" class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean"/>
-    -->
-
+	<!-- Application Message Bundle -->
+	<bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource"
+			p:basename="internationalization/messages"
+			p:cacheSeconds="-1" 
+			p:defaultEncoding="UTF-8"/>
+	
 	<!-- enable annotation driven config -->
 	<context:annotation-config />
 
@@ -53,6 +60,7 @@
 		<!-- we are turning off the shared cache due to the audit implementation - changes made during update do not get cached  
 		<entry key="eclipselink.cache.shared.default" value="false" />-->
 		<entry key="eclipselink.weaving" value="true" />
+        <entry key="javax.persistence.validation.factory" value-ref="validator" />
 		<!-- Solution to auditor date updates making it to cache - eclipselink makes temporal fields immutable 
 		<entry key="eclipselink.temporal.mutable" value="true" />-->
 		<!-- <entry key="eclipselink.weaving.output.path" value="C:\\weavedClasses"/>

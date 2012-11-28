@@ -103,6 +103,7 @@ public class NewAccountDialog extends TitleAreaDialog {
 							user.setFirstName(firstNameText.getText());
 							user.setLastName(lastNameText.getText());
 							user.setPassword(PasswordUtility.encodePassword(passwordText.getText()));
+							user.setPasswordVerify(PasswordUtility.encodePassword(passwordVerifyText.getText()));
 							user.setUsername(loginNameText.getText());
 							accountService.getAccountRepository().saveAndFlush(user);
 							okPressed();

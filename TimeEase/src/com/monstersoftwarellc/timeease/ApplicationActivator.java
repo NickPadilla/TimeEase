@@ -12,7 +12,7 @@ import org.osgi.framework.BundleContext;
  *
  */
 public class ApplicationActivator extends AbstractUIPlugin {
-	
+
 	// Shared instance of bundle context
 	private static BundleContext bundleContext;
 	
@@ -29,8 +29,6 @@ public class ApplicationActivator extends AbstractUIPlugin {
 		bundleContext = context;
 		plugin = this;
 	}
-
-
 
 	/**
 	 * Returns an image descriptor for the image file at the given

@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+import javax.validation.constraints.NotNull;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
@@ -71,12 +72,15 @@ public class Entry extends BaseDomain implements IFreshbooksEntity {
 	private Date endTime;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
+	@NotNull
 	private Project project;
 
 	@ManyToOne(fetch=FetchType.LAZY)
+	@NotNull
 	private Task task;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date entryDate;
 	
 	private Double hours;

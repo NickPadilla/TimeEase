@@ -12,13 +12,16 @@ import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang3.builder.ToStringStyle;
+import org.hibernate.validator.constraints.NotBlank;
 
 import com.monstersoftwarellc.timeease.model.AbstractModelInput;
+import com.monstersoftwarellc.timeease.validation.annotation.FieldMatch;
 
 /**
  * @author nicholas
  *
  */
+@FieldMatch(fieldToMatchOn="passwordVerify", fieldsToMatch="password", message = "{FieldMatch.account.password}")
 @Entity
 public class Account extends AbstractModelInput {
 	/**
@@ -29,14 +32,19 @@ public class Account extends AbstractModelInput {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
-	
+
 	private String firstName;
-	
+
 	private String lastName;
 	
+	@NotBlank(message="{NotEmpty.account.username}")
 	private String username;
-	
+
+	@NotBlank(message="{NotEmpty.account.password}")
 	private String password;
+
+	@NotBlank(message="{NotEmpty.account.passwordVerify}")
+	private String passwordVerify;
 	
 
 	/**
@@ -152,6 +160,20 @@ public class Account extends AbstractModelInput {
 	@Override
 	public String toString() {
 		return ReflectionToStringBuilder.reflectionToString(this, ToStringStyle.DEFAULT_STYLE, true);
+	}
+
+	/**
+	 * @return the passwordVerify
+	 */
+	public String getPasswordVerify() {
+		return passwordVerify;
+	}
+
+	/**
+	 * @param passwordVerify the passwordVerify to set
+	 */
+	public void setPasswordVerify(String passwordVerify) {
+		this.passwordVerify = passwordVerify;
 	}
 	
 }
