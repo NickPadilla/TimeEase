@@ -14,7 +14,7 @@
    </configIni>
 
    <launcherArgs>
-      <vmArgs>-Dosgi.requiredJavaVersion=1.6 -XX:MaxPermSize=256m -Xms256m -Xmx786m -Dosgi.framework.extensions=org.eclipse.equinox.weaving.hook</vmArgs>
+      <vmArgs>-Dosgi.requiredJavaVersion=1.7 -XX:MaxPermSize=256m -Xms256m -Xmx786m -Dosgi.framework.extensions=org.eclipse.equinox.weaving.hook</vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts</vmArgsMac>
    </launcherArgs>
 
@@ -155,10 +155,12 @@
    </features>
 
    <configurations>
+      <plugin id="com.monstersoftwarellc.timeease" autoStart="false" startLevel="5" />
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
       <plugin id="org.eclipse.equinox.weaving.springweaver" autoStart="true" startLevel="3" />
       <plugin id="org.eclipse.gemini.blueprint.extender" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.ui" autoStart="true" startLevel="4" />
    </configurations>
 
 </product>
